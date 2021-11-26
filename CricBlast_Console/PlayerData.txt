@@ -1,0 +1,21 @@
+Names, Mat, Runs, Ave, SR, 100s, 50s, WK;
+T20I; ODI; Test;
+
+1. Bangladesh
+Tamim Iqbal, 78, 1758, 24.08, 116.96, 1, 7, 0; Tamim Iqbal, 219, 7666, 36.85, 78.6, 14, 51, 0; Tamim Iqbal, 64, 4788, 39.57, 57.75, 9, 31, 0;
+Mohammad Naim, 32, 794, 25.61, 105.02, 0, 4, 0; Mohammad Naim, 2, 1, 1, 50, 0, 0, 0; Mohammad Naim, 0, 0, 0, 0, 0, 0, 0;
+Shakib Al Hasan, 94, 1894, 22.81, 120.56, 0, 9, 117; Shakib Al Hasan, 215, 6600, 37.93, 82.14, 9, 49, 277; Shakib Al Hasan, 58, 3933, 39.33, 61.65, 5, 25, 215;
+Afif Hossain, 39, 503, 16.76, 117.52, 0, 1, 7; Afif Hossain, 7, 146, 29.2, 114.96, 0, 0, 1; Afif Hossain, 0, 0, 0, 0, 0, 0, 0;
+Mushfiqur Rahim, 99, 1465, 19.79, 115.35, 0, 6, 0; Mushfiqur Rahim, 227, 6581, 37.18, 79.05, 8, 40, 0; Mushfiqur Rahim, 75, 4696, 36.97, 47.9, 7, 23, 0;
+Mahmudullah, 113, 1971, 24.03, 117.88, 0, 6, 36; Mahmudullah, 200, 4469, 34.64, 77.05, 3, 25, 78; Mahmudullah, 50, 2914, 33.49, 53.4, 5, 16, 43;
+Mahedi Hasan, 29, 211, 14.06, 103.94, 0, 0, 24; Mahedi Hasan, 3, 24, 8, 72.72, 0, 0, 2; Mahedi Hasan, 0, 0, 0, 0, 0, 0, 0;
+Taskin Ahmed, 33, 68, 9.71, 93.15, 0, 0, 23; Taskin Ahmed, 42, 61, 4.35, 38.6, 0, 0, 55; Taskin Ahmed, 8, 156, 12, 44.19, 0, 1, 20;
+Nasum Ahmed, 18, 27, 9, 96.42, 0, 0, 22; Nasum Ahmed, 0, 0, 0, 0, 0, 0, 0; Nasum Ahmed, 0, 0, 0, 0, 0, 0, 0;
+Mustafizur Rahman, 61, 53, 3.53, 66.25, 0, 0, 86; Mustafizur Rahman, 68, 79, 7.18, 55.63, 0, 0, 127; Mustafizur Rahman, 14, 59, 4.53, 39.59, 0, 0, 30;
+Shoriful Islam, 17, 11, 2.75, 84.61, 0, 0, 22; Shoriful Islam, 4, 8, 4, 114.28, 0, 0, 7; Shoriful Islam, 1, 0, 0, 0, 0, 0, 1;
+Mohammad Mithun, 17, 127, 10.58, 93.38, 0, 0, 0; Mohammad Mithun, 34, 714, 27.46, 77.52, 0, 6, 0; Mohammad Mithun, 10, 333, 18.5, 44.28, 0, 2, 0;
+Mohammad Saifuddin, 29, 196, 17.81, 115.29, 0, 0, 31; Mohammad Saifuddin, 29, 362, 36.2, 85.78, 0, 2, 41; Mohammad Saifuddin, 0, 0, 0, 0, 0, 0, 0;
+Nurul Hasan, 30, 237, 12.47, 112.32, 0, 0, 0; Nurul Hasan, 3, 113, 56.5, 103.66, 0, 0, 0; Nurul Hasan, 3, 115, 19.16, 61.82, 0, 1, 0;
+Aminul Islam, 10, 35, 11.66, 85.36, 0, 0, 12; Aminul Islam, 0, 0, 0, 0, 0, 0, 0; Aminul Islam, 0, 0, 0, 0, 0, 0, 0;
+
+2. Australia
