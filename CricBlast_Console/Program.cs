@@ -9,7 +9,7 @@ namespace CricBlast_Console
             var players = new Players();
             string[,,] team1 = players.GetTeamPlayers(1);
 
-            Console.WriteLine(team1[2, (int) Players.Format.Test, (int) Players.States.Wicket]);
+            Console.WriteLine(team1[2, (int) Players.Format.Test, (int) Players.States.Match]);
         }
     }
 }
