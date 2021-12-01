@@ -1,7 +1,7 @@
 ﻿
 namespace CricBlast_GUI
 {
-    partial class Form2
+    partial class Form9
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace CricBlast_GUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form9));
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -73,7 +73,7 @@ namespace CricBlast_GUI
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1264, 681);
-            this.panel1.TabIndex = 1;
+            this.panel1.TabIndex = 2;
             // 
             // label5
             // 
@@ -81,11 +81,11 @@ namespace CricBlast_GUI
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label5.Location = new System.Drawing.Point(824, 515);
+            this.label5.Location = new System.Drawing.Point(819, 515);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(87, 21);
+            this.label5.Size = new System.Drawing.Size(118, 21);
             this.label5.TabIndex = 3;
-            this.label5.Text = "New here?";
+            this.label5.Text = "Not an Admin?";
             // 
             // guna2PictureBox3
             // 
@@ -174,11 +174,11 @@ namespace CricBlast_GUI
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
-            this.label6.Location = new System.Drawing.Point(903, 515);
+            this.label6.Location = new System.Drawing.Point(933, 515);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(148, 21);
+            this.label6.Size = new System.Drawing.Size(127, 21);
             this.label6.TabIndex = 3;
-            this.label6.Text = " Create an Account";
+            this.label6.Text = "Sign in as a User";
             // 
             // label4
             // 
@@ -240,9 +240,9 @@ namespace CricBlast_GUI
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label2.Location = new System.Drawing.Point(725, 229);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(205, 25);
+            this.label2.Size = new System.Drawing.Size(113, 25);
             this.label2.TabIndex = 3;
-            this.label2.Text = "EMAIL OR USERNAME";
+            this.label2.Text = "USERNAME";
             // 
             // label1
             // 
@@ -250,11 +250,11 @@ namespace CricBlast_GUI
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 36F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(801, 139);
+            this.label1.Location = new System.Drawing.Point(776, 139);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(266, 65);
+            this.label1.Size = new System.Drawing.Size(331, 65);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Welcome!";
+            this.label1.Text = "Admin Login";
             // 
             // guna2Button1
             // 
@@ -277,12 +277,12 @@ namespace CricBlast_GUI
             this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
             this.guna2Button1.Size = new System.Drawing.Size(409, 45);
             this.guna2Button1.TabIndex = 1;
-            this.guna2Button1.Text = "Sign in";
+            this.guna2Button1.Text = "Login";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::CricBlast_GUI.Properties.Resources.Logo;
+            this.pictureBox1.Image = global::CricBlast_GUI.Properties.Resources.Admin;
             this.pictureBox1.Location = new System.Drawing.Point(109, 139);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(446, 402);
@@ -290,16 +290,16 @@ namespace CricBlast_GUI
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // Form2
+            // Form9
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form2";
+            this.Name = "Form9";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form2";
+            this.Text = "Form9";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
@@ -312,19 +312,19 @@ namespace CricBlast_GUI
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
