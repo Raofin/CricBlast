@@ -101,7 +101,7 @@ namespace CricBlast_GUI
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.Image = global::CricBlast_GUI.Properties.Resources.Eye_Open;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(1097, 366);
             this.guna2PictureBox2.Name = "guna2PictureBox2";

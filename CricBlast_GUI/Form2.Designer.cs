@@ -101,7 +101,8 @@ namespace CricBlast_GUI
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2PictureBox2.Image = global::CricBlast_GUI.Properties.Resources.Eye_Close;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(1097, 366);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
@@ -111,6 +112,7 @@ namespace CricBlast_GUI
             this.guna2PictureBox2.TabIndex = 8;
             this.guna2PictureBox2.TabStop = false;
             this.guna2PictureBox2.UseTransparentBackground = true;
+            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click);
             // 
             // guna2ControlBox2
             // 
@@ -167,6 +169,7 @@ namespace CricBlast_GUI
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
             this.guna2TextBox2.Size = new System.Drawing.Size(409, 47);
             this.guna2TextBox2.TabIndex = 4;
+            this.guna2TextBox2.UseSystemPasswordChar = true;
             // 
             // label6
             // 
