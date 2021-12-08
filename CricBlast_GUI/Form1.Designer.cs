@@ -29,7 +29,6 @@ namespace CricBlast_GUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -41,7 +40,7 @@ namespace CricBlast_GUI
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.guna2ControlBox2);
             this.panel1.Controls.Add(this.guna2ControlBox1);
             this.panel1.Controls.Add(this.guna2Button1);
@@ -50,7 +49,7 @@ namespace CricBlast_GUI
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1264, 681);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 1;
             // 
             // guna2ControlBox2
             // 
@@ -119,6 +118,7 @@ namespace CricBlast_GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -134,10 +134,10 @@ namespace CricBlast_GUI
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
