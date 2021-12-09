@@ -19,11 +19,6 @@ namespace CricBlast_GUI.Forms
 
         public MainForm()
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
             InitializeComponent();
         }
 
@@ -31,6 +26,22 @@ namespace CricBlast_GUI.Forms
         {
             mainPanel.Controls.Clear();
             mainPanel.Controls.Add(value: new Welcome());
+        }
+
+        // Drag form
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+
+        [System.Runtime.InteropServices.DllImport("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        private void dragPanel_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, 0xA1, 0x2, 0);
+            }
         }
     }
 }

@@ -239,6 +239,7 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             // refreshPicture
             // 
+            this.refreshPicture.BackColor = System.Drawing.Color.Transparent;
             this.refreshPicture.Cursor = System.Windows.Forms.Cursors.Hand;
             this.refreshPicture.Image = global::CricBlast_GUI.Properties.Resources.Refresh_Colored;
             this.refreshPicture.ImageRotate = 0F;
@@ -308,7 +309,8 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
+            this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
             this.Controls.Add(this.passwordRequired);
             this.Controls.Add(this.usernameRequired);
             this.Controls.Add(this.refreshPicture);

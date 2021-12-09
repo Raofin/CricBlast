@@ -5,6 +5,15 @@ namespace CricBlast_GUI.Forms.Controls
 {
     public partial class Welcome : UserControl
     {
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // Turn on WS_EX_COMPOSITED
+                return cp;
+            }
+        }
         public Welcome()
         {
             SetStyle(
@@ -73,6 +82,8 @@ namespace CricBlast_GUI.Forms.Controls
             Controls.Clear();
             Controls.Add(new Home());
             new ChooseTeam().ShowDialog();
+            Controls.Clear();
+            Controls.Add(new Home());
         }
 
         private void usernameTextBox_TextChanged(object sender, System.EventArgs e)

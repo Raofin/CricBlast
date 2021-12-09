@@ -8,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CricBlast_GUI.Forms.Controls
+namespace CricBlast_GUI.Forms
 {
-    public partial class PlayerStats : UserControl
+    public partial class MessageBox : Form
     {
         protected override CreateParams CreateParams
         {
@@ -21,14 +21,18 @@ namespace CricBlast_GUI.Forms.Controls
                 return cp;
             }
         }
-        public PlayerStats()
+
+        public MessageBox(byte mark, string message)
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
+            DoubleBuffered = true;
             InitializeComponent();
+            messageMark.Image = mark == 0 ? Properties.Resources.Check_Mark : Properties.Resources.Error_Mark;
+            this.message.Text = message;
+        }
+
+        private void okButton_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

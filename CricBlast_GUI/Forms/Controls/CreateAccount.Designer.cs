@@ -277,7 +277,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.mobileTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.mobileTextBox.Name = "mobileTextBox";
             this.mobileTextBox.PasswordChar = '\0';
-            this.mobileTextBox.PlaceholderText = "Enter your mobile...";
+            this.mobileTextBox.PlaceholderText = "Enter your phone number...";
             this.mobileTextBox.SelectedText = "";
             this.mobileTextBox.ShadowDecoration.Parent = this.mobileTextBox;
             this.mobileTextBox.Size = new System.Drawing.Size(323, 46);
@@ -292,9 +292,9 @@ namespace CricBlast_GUI.Forms.Controls
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.label8.Location = new System.Drawing.Point(700, 322);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(90, 32);
+            this.label8.Size = new System.Drawing.Size(84, 32);
             this.label8.TabIndex = 16;
-            this.label8.Text = "Mobile";
+            this.label8.Text = "Phone";
             // 
             // emailTextBox
             // 

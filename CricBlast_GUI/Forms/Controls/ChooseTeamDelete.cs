@@ -7,22 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CricBlast_GUI.Forms.Controls;
-using CricBlast_GUI.Home;
 
-namespace CricBlast_GUI.Forms
+namespace CricBlast_GUI.Forms.Controls
 {
-    public partial class ChooseTeam : Form
+    public partial class ChooseTeamDelete : UserControl
     {
-        public ChooseTeam()
+        public ChooseTeamDelete()
         {
             InitializeComponent();
         }
 
         private void okButton_Click(object sender, EventArgs e)
         {
-            Selected.MyTeam = 1;
-            Close();
+            Controls.Clear();
+            Controls.Add(new MyTeam());
         }
     }
 }

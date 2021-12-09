@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using CricBlast_GUI.Home;
 using Guna.UI2.WinForms;
 
 namespace CricBlast_GUI.Forms.Controls
@@ -16,6 +17,7 @@ namespace CricBlast_GUI.Forms.Controls
                 ControlStyles.OptimizedDoubleBuffer,
                 true);
             InitializeComponent();
+            homeSubPanel.Controls.Add(new MyTeam());
         }
 
         public int SelectedMenu = 1;
@@ -31,25 +33,31 @@ namespace CricBlast_GUI.Forms.Controls
         {
             if (SelectedMenu == 2) return;
             homeSubPanel.Controls.Clear();
-            homeSubPanel.Controls.Add(new PlayerStats());
+            homeSubPanel.Controls.Add(value: new PlayerStats());
             ChangeButtonColor(playerStats, 2);
         }
 
         private void customizeTeam_Click(object sender, EventArgs e)
         {
             if (SelectedMenu == 3) return;
+            homeSubPanel.Controls.Clear();
+            homeSubPanel.Controls.Add(value: new CustomizeTeam());
             ChangeButtonColor(customizeTeam, 3);
         }
 
         private void addPlayers_Click(object sender, EventArgs e)
         {
             if (SelectedMenu == 4) return;
+            homeSubPanel.Controls.Clear();
+            homeSubPanel.Controls.Add(value: new AddPlayer());
             ChangeButtonColor(addPlayers, 4);
         }
 
         private void playMatch_Click(object sender, EventArgs e)
         {
             if (SelectedMenu == 5) return;
+            homeSubPanel.Controls.Clear();
+            homeSubPanel.Controls.Add(value: new PlayMatch());
             ChangeButtonColor(playMatch, 5);
         }
 
@@ -82,6 +90,21 @@ namespace CricBlast_GUI.Forms.Controls
             }
 
             SelectedMenu = changeMenu;
+        }
+
+        private void userPhoto_Click(object sender, EventArgs e)
+        {
+            new UserProfile().ShowDialog();
+        }
+
+        private void usernameLabel_Click(object sender, EventArgs e)
+        {
+            new UserProfile().ShowDialog();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

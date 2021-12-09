@@ -131,7 +131,7 @@ namespace CricBlast_GUI.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(1264, 681);
             this.Controls.Add(this.guna2ControlBox2);

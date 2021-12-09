@@ -150,6 +150,30 @@
     <Compile Include="Forms\Controls\MyTeam.Designer.cs">
       <DependentUpon>MyTeam.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Controls\ChooseTeamDelete.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\ChooseTeamDelete.Designer.cs">
+      <DependentUpon>ChooseTeamDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls\CustomizeTeam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\CustomizeTeam.Designer.cs">
+      <DependentUpon>CustomizeTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls\AddPlayer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\AddPlayer.Designer.cs">
+      <DependentUpon>AddPlayer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls\PlayMatch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\PlayMatch.Designer.cs">
+      <DependentUpon>PlayMatch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Controls\Welcome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -161,6 +185,18 @@
     </Compile>
     <Compile Include="Forms\ChooseTeam.Designer.cs">
       <DependentUpon>ChooseTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageBox.Designer.cs">
+      <DependentUpon>MessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\UserProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\UserProfile.Designer.cs">
+      <DependentUpon>UserProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\HomeDel.cs">
       <SubType>Form</SubType>
@@ -180,6 +216,7 @@
     <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Home\Selected.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -236,8 +273,26 @@
     <EmbeddedResource Include="Forms\Controls\MyTeam.resx">
       <DependentUpon>MyTeam.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\ChooseTeamDelete.resx">
+      <DependentUpon>ChooseTeamDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\CustomizeTeam.resx">
+      <DependentUpon>CustomizeTeam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\AddPlayer.resx">
+      <DependentUpon>AddPlayer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\PlayMatch.resx">
+      <DependentUpon>PlayMatch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Controls\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessageBox.resx">
+      <DependentUpon>MessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\UserProfile.resx">
+      <DependentUpon>UserProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\HomeDel.resx">
       <DependentUpon>HomeDel.cs</DependentUpon>
@@ -334,6 +389,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Unknown_User_Gray1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home_Menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blank.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SubHome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Check_Mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Error_Mark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Warning_Mark.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

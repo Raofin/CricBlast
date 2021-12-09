@@ -29,7 +29,7 @@ namespace CricBlast_GUI.Forms.Controls
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.changeTeam = new Guna.UI2.WinForms.Guna2Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -46,36 +46,36 @@ namespace CricBlast_GUI.Forms.Controls
             this.label14 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.teamLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teamLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2Button1
+            // changeTeam
             // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 4;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(570, 472);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 50;
-            this.guna2Button1.Text = "Change Team";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.changeTeam.Animated = true;
+            this.changeTeam.BackColor = System.Drawing.Color.Transparent;
+            this.changeTeam.BorderRadius = 4;
+            this.changeTeam.CheckedState.Parent = this.changeTeam;
+            this.changeTeam.CustomImages.Parent = this.changeTeam;
+            this.changeTeam.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.changeTeam.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.changeTeam.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.changeTeam.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.changeTeam.DisabledState.Parent = this.changeTeam;
+            this.changeTeam.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.changeTeam.ForeColor = System.Drawing.Color.White;
+            this.changeTeam.HoverState.Parent = this.changeTeam;
+            this.changeTeam.Location = new System.Drawing.Point(570, 472);
+            this.changeTeam.Name = "changeTeam";
+            this.changeTeam.ShadowDecoration.Parent = this.changeTeam;
+            this.changeTeam.Size = new System.Drawing.Size(180, 45);
+            this.changeTeam.TabIndex = 50;
+            this.changeTeam.Text = "Change Team";
+            this.changeTeam.Click += new System.EventHandler(this.changeTeam_Click);
             // 
             // label9
             // 
@@ -269,30 +269,6 @@ namespace CricBlast_GUI.Forms.Controls
             this.label6.TabIndex = 51;
             this.label6.Text = "Format";
             // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.Image = global::CricBlast_GUI.Properties.Resources.PlayingRecords1;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(439, 237);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(443, 200);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.guna2PictureBox2.TabIndex = 70;
-            this.guna2PictureBox2.TabStop = false;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::CricBlast_GUI.Properties.Resources.Bangladesh1;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(75, 164);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(307, 292);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 69;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -314,15 +290,41 @@ namespace CricBlast_GUI.Forms.Controls
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(307, 46);
             this.label5.TabIndex = 68;
-            this.label5.Text = "Team Name";
+            this.label5.Text = "Your Name";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.Image = global::CricBlast_GUI.Properties.Resources.PlayingRecords1;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(439, 237);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
+            this.guna2PictureBox2.Size = new System.Drawing.Size(443, 200);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.guna2PictureBox2.TabIndex = 70;
+            this.guna2PictureBox2.TabStop = false;
+            // 
+            // teamLogo
+            // 
+            this.teamLogo.BackColor = System.Drawing.Color.Transparent;
+            this.teamLogo.Image = global::CricBlast_GUI.Properties.Resources.Bangladesh1;
+            this.teamLogo.ImageRotate = 0F;
+            this.teamLogo.Location = new System.Drawing.Point(75, 164);
+            this.teamLogo.Name = "teamLogo";
+            this.teamLogo.ShadowDecoration.Parent = this.teamLogo;
+            this.teamLogo.Size = new System.Drawing.Size(307, 292);
+            this.teamLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.teamLogo.TabIndex = 69;
+            this.teamLogo.TabStop = false;
             // 
             // MyTeam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
-            this.Controls.Add(this.guna2Button1);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
+            this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.SubHome;
+            this.Controls.Add(this.changeTeam);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label8);
@@ -340,13 +342,14 @@ namespace CricBlast_GUI.Forms.Controls
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.guna2PictureBox2);
-            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.teamLogo);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
             this.Name = "MyTeam";
             this.Size = new System.Drawing.Size(956, 681);
+            this.Load += new System.EventHandler(this.MyTeam_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.teamLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -354,7 +357,7 @@ namespace CricBlast_GUI.Forms.Controls
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button changeTeam;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label8;
@@ -372,7 +375,7 @@ namespace CricBlast_GUI.Forms.Controls
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox teamLogo;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label5;
     }
