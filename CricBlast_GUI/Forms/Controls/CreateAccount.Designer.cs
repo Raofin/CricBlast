@@ -54,21 +54,21 @@ namespace CricBlast_GUI.Forms.Controls
             this.mobileError = new System.Windows.Forms.Label();
             this.genderError = new System.Windows.Forms.Label();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.eyePicture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.userPictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.captchaError = new System.Windows.Forms.Label();
             this.roundedShape = new Guna.UI2.WinForms.Guna2Shapes();
-            this.refreshPicture = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.refreshCaptchaPicture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.captchaTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eyePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.refreshPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.refreshCaptchaPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // genderRadioFemale
@@ -216,7 +216,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.passwordTextBox.SelectedText = "";
             this.passwordTextBox.ShadowDecoration.Parent = this.passwordTextBox;
             this.passwordTextBox.Size = new System.Drawing.Size(323, 46);
-            this.passwordTextBox.TabIndex = 24;
+            this.passwordTextBox.TabIndex = 3;
             this.passwordTextBox.TextChanged += new System.EventHandler(this.passwordTextBox_TextChanged);
             // 
             // label7
@@ -281,7 +281,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.mobileTextBox.SelectedText = "";
             this.mobileTextBox.ShadowDecoration.Parent = this.mobileTextBox;
             this.mobileTextBox.Size = new System.Drawing.Size(323, 46);
-            this.mobileTextBox.TabIndex = 26;
+            this.mobileTextBox.TabIndex = 4;
             this.mobileTextBox.TextChanged += new System.EventHandler(this.mobileTextBox_TextChanged);
             // 
             // label8
@@ -322,7 +322,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.emailTextBox.SelectedText = "";
             this.emailTextBox.ShadowDecoration.Parent = this.emailTextBox;
             this.emailTextBox.Size = new System.Drawing.Size(323, 46);
-            this.emailTextBox.TabIndex = 27;
+            this.emailTextBox.TabIndex = 2;
             this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
             // 
             // label3
@@ -363,7 +363,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.usernameTextBox.SelectedText = "";
             this.usernameTextBox.ShadowDecoration.Parent = this.usernameTextBox;
             this.usernameTextBox.Size = new System.Drawing.Size(323, 46);
-            this.usernameTextBox.TabIndex = 28;
+            this.usernameTextBox.TabIndex = 1;
             this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
             // 
             // label2
@@ -411,7 +411,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.register.Name = "register";
             this.register.ShadowDecoration.Parent = this.register;
             this.register.Size = new System.Drawing.Size(459, 44);
-            this.register.TabIndex = 12;
+            this.register.TabIndex = 6;
             this.register.Text = "Register";
             this.register.Click += new System.EventHandler(this.register_Click);
             // 
@@ -491,20 +491,21 @@ namespace CricBlast_GUI.Forms.Controls
             this.guna2PictureBox3.TabIndex = 33;
             this.guna2PictureBox3.TabStop = false;
             // 
-            // guna2PictureBox2
+            // eyePicture
             // 
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2PictureBox2.Image = global::CricBlast_GUI.Properties.Resources.Eye_Open;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(1124, 264);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(32, 33);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox2.TabIndex = 30;
-            this.guna2PictureBox2.TabStop = false;
-            this.guna2PictureBox2.UseTransparentBackground = true;
+            this.eyePicture.BackColor = System.Drawing.Color.Transparent;
+            this.eyePicture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.eyePicture.Image = global::CricBlast_GUI.Properties.Resources.Eye_Close;
+            this.eyePicture.ImageRotate = 0F;
+            this.eyePicture.Location = new System.Drawing.Point(1124, 264);
+            this.eyePicture.Name = "eyePicture";
+            this.eyePicture.ShadowDecoration.Parent = this.eyePicture;
+            this.eyePicture.Size = new System.Drawing.Size(32, 33);
+            this.eyePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.eyePicture.TabIndex = 30;
+            this.eyePicture.TabStop = false;
+            this.eyePicture.UseTransparentBackground = true;
+            this.eyePicture.Click += new System.EventHandler(this.eyePicture_Click);
             // 
             // userPictureBox
             // 
@@ -561,20 +562,20 @@ namespace CricBlast_GUI.Forms.Controls
             this.roundedShape.Text = "guna2Shapes1";
             this.roundedShape.Zoom = 100;
             // 
-            // refreshPicture
+            // refreshCaptchaPicture
             // 
-            this.refreshPicture.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.refreshPicture.Image = global::CricBlast_GUI.Properties.Resources.Refresh_Colored;
-            this.refreshPicture.ImageRotate = 0F;
-            this.refreshPicture.Location = new System.Drawing.Point(1126, 496);
-            this.refreshPicture.Name = "refreshPicture";
-            this.refreshPicture.ShadowDecoration.Parent = this.refreshPicture;
-            this.refreshPicture.Size = new System.Drawing.Size(28, 28);
-            this.refreshPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.refreshPicture.TabIndex = 36;
-            this.refreshPicture.TabStop = false;
-            this.refreshPicture.UseTransparentBackground = true;
-            this.refreshPicture.Click += new System.EventHandler(this.refreshPicture_Click);
+            this.refreshCaptchaPicture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.refreshCaptchaPicture.Image = global::CricBlast_GUI.Properties.Resources.Refresh_Colored;
+            this.refreshCaptchaPicture.ImageRotate = 0F;
+            this.refreshCaptchaPicture.Location = new System.Drawing.Point(1126, 496);
+            this.refreshCaptchaPicture.Name = "refreshCaptchaPicture";
+            this.refreshCaptchaPicture.ShadowDecoration.Parent = this.refreshCaptchaPicture;
+            this.refreshCaptchaPicture.Size = new System.Drawing.Size(28, 28);
+            this.refreshCaptchaPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.refreshCaptchaPicture.TabIndex = 36;
+            this.refreshCaptchaPicture.TabStop = false;
+            this.refreshCaptchaPicture.UseTransparentBackground = true;
+            this.refreshCaptchaPicture.Click += new System.EventHandler(this.refreshCaptchaPicture_Click);
             // 
             // guna2TextBox1
             // 
@@ -669,6 +670,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.captchaTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.captchaTextBox.HoverState.Parent = this.captchaTextBox;
             this.captchaTextBox.Location = new System.Drawing.Point(1011, 492);
+            this.captchaTextBox.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.captchaTextBox.MaxLength = 4;
             this.captchaTextBox.Name = "captchaTextBox";
             this.captchaTextBox.PasswordChar = '\0';
@@ -677,7 +679,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.captchaTextBox.SelectedText = "";
             this.captchaTextBox.ShadowDecoration.Parent = this.captchaTextBox;
             this.captchaTextBox.Size = new System.Drawing.Size(109, 35);
-            this.captchaTextBox.TabIndex = 41;
+            this.captchaTextBox.TabIndex = 5;
             this.captchaTextBox.TextChanged += new System.EventHandler(this.captchaTextBox_TextChanged);
             // 
             // CreateAccount
@@ -689,7 +691,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.Controls.Add(this.guna2TextBox3);
             this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.refreshPicture);
+            this.Controls.Add(this.refreshCaptchaPicture);
             this.Controls.Add(this.CaptchLabel);
             this.Controls.Add(this.roundedShape);
             this.Controls.Add(this.genderError);
@@ -701,7 +703,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.Controls.Add(this.guna2PictureBox3);
             this.Controls.Add(this.genderRadioFemale);
             this.Controls.Add(this.genderRadioMale);
-            this.Controls.Add(this.guna2PictureBox2);
+            this.Controls.Add(this.eyePicture);
             this.Controls.Add(this.userPictureBox);
             this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.login);
@@ -723,10 +725,10 @@ namespace CricBlast_GUI.Forms.Controls
             this.Name = "CreateAccount";
             this.Size = new System.Drawing.Size(1264, 681);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eyePicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.refreshPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.refreshCaptchaPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -737,7 +739,7 @@ namespace CricBlast_GUI.Forms.Controls
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2RadioButton genderRadioFemale;
         private Guna.UI2.WinForms.Guna2RadioButton genderRadioMale;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2PictureBox eyePicture;
         private Guna.UI2.WinForms.Guna2PictureBox userPictureBox;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private System.Windows.Forms.Label login;
@@ -764,7 +766,7 @@ namespace CricBlast_GUI.Forms.Controls
         private System.Windows.Forms.Label genderError;
         private System.Windows.Forms.Label captchaError;
         private Guna.UI2.WinForms.Guna2Shapes roundedShape;
-        private Guna.UI2.WinForms.Guna2PictureBox refreshPicture;
+        private Guna.UI2.WinForms.Guna2PictureBox refreshCaptchaPicture;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;

@@ -183,6 +183,16 @@ namespace CricBlast_GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Unknown_User_Gray {
+            get {
+                object obj = ResourceManager.GetObject("Unknown_User_Gray", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap User_Female {
             get {
                 object obj = ResourceManager.GetObject("User_Female", resourceCulture);

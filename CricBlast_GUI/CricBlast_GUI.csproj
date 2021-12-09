@@ -120,11 +120,53 @@
     <Compile Include="Forms\Controls\AdminLogin.Designer.cs">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Controls\Home.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls\MyTeamDel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\MyTeamDel.Designer.cs">
+      <DependentUpon>MyTeamDel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls\DashboardDel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\DashboardDel.Designer.cs">
+      <DependentUpon>DashboardDel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls\PlayerStats.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\PlayerStats.Designer.cs">
+      <DependentUpon>PlayerStats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Controls\MyTeam.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Controls\MyTeam.Designer.cs">
+      <DependentUpon>MyTeam.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Controls\Welcome.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\Controls\Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ChooseTeam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ChooseTeam.Designer.cs">
+      <DependentUpon>ChooseTeam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HomeDel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HomeDel.Designer.cs">
+      <DependentUpon>HomeDel.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Recover.cs">
       <SubType>Form</SubType>
@@ -170,14 +212,35 @@
     <EmbeddedResource Include="Form9.resx">
       <DependentUpon>Form9.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ChooseTeam.resx">
+      <DependentUpon>ChooseTeam.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Controls\CreateAccount.resx">
       <DependentUpon>CreateAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Controls\AdminLogin.resx">
       <DependentUpon>AdminLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\MyTeamDel.resx">
+      <DependentUpon>MyTeamDel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\DashboardDel.resx">
+      <DependentUpon>DashboardDel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\PlayerStats.resx">
+      <DependentUpon>PlayerStats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Controls\MyTeam.resx">
+      <DependentUpon>MyTeam.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Controls\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HomeDel.resx">
+      <DependentUpon>HomeDel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Recover.resx">
       <DependentUpon>Recover.cs</DependentUpon>
@@ -265,6 +328,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\User_Female.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unknown_User_Gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unknown_User_Gray1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

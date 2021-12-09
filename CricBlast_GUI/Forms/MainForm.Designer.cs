@@ -74,7 +74,7 @@ namespace CricBlast_GUI.Forms
             this.getStarted.Name = "getStarted";
             this.getStarted.ShadowDecoration.Parent = this.getStarted;
             this.getStarted.Size = new System.Drawing.Size(180, 45);
-            this.getStarted.TabIndex = 15;
+            this.getStarted.TabIndex = 1;
             this.getStarted.Text = "Get Started";
             this.getStarted.Click += new System.EventHandler(this.GetStarted_Click);
             // 

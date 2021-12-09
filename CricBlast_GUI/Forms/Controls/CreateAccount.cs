@@ -33,9 +33,12 @@ namespace CricBlast_GUI.Forms.Controls
             genderError.Visible = !genderRadioMale.Checked && !genderRadioFemale.Checked;
         }
 
-        private void refreshPicture_Click(object sender, EventArgs e)
+        private void refreshCaptchaPicture_Click(object sender, EventArgs e)
         {
+            captchaTextBox.Text = null;
+            captchaError.Visible = false;
             GenerateCaptcha();
+            captchaTextBox.Select();
         }
 
         private void GenerateCaptcha()
@@ -45,6 +48,24 @@ namespace CricBlast_GUI.Forms.Controls
             int number2 = r.Next(10, 20);
             CaptchaResult = (number1 + number2).ToString();
             CaptchLabel.Text = $"{number1} + {number2} =";
+        }
+
+        private bool eye;
+        private void eyePicture_Click(object sender, System.EventArgs e)
+        {
+            switch (eye)
+            {
+                case true:
+                    eyePicture.Image = Properties.Resources.Eye_Close;
+                    eye = false;
+                    passwordTextBox.UseSystemPasswordChar = true;
+                    return;
+                case false:
+                    eyePicture.Image = Properties.Resources.Eye_Open;
+                    eye = true;
+                    passwordTextBox.UseSystemPasswordChar = false;
+                    break;
+            }
         }
 
         private void genderRadioButton1_CheckedChanged(object sender, EventArgs e)

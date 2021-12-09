@@ -1,4 +1,5 @@
 ﻿using System.Windows.Forms;
+using Guna.UI2.WinForms;
 
 namespace CricBlast_GUI.Forms.Controls
 {
@@ -60,7 +61,7 @@ namespace CricBlast_GUI.Forms.Controls
             }
         }
 
-        private void label4_Click(object sender, System.EventArgs e)
+        private void forgotPassword_Click(object sender, System.EventArgs e)
         {
             new Recover().Show();
         }
@@ -69,6 +70,9 @@ namespace CricBlast_GUI.Forms.Controls
         {
             usernameRequired.Visible = string.IsNullOrWhiteSpace(usernameTextBox.Text);
             passwordRequired.Visible = string.IsNullOrWhiteSpace(passwordTextBox.Text);
+            Controls.Clear();
+            Controls.Add(new Home());
+            new ChooseTeam().ShowDialog();
         }
 
         private void usernameTextBox_TextChanged(object sender, System.EventArgs e)
