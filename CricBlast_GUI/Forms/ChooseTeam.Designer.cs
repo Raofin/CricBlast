@@ -36,6 +36,7 @@ namespace CricBlast_GUI.Forms
             this.label1 = new System.Windows.Forms.Label();
             this.okButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.teamSelectError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.userCirclePicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,6 +70,7 @@ namespace CricBlast_GUI.Forms
             this.teamComboBox.HoverState.Parent = this.teamComboBox;
             this.teamComboBox.ItemHeight = 30;
             this.teamComboBox.Items.AddRange(new object[] {
+            "Select...",
             "Afghanistan",
             "Australia",
             "Bangladesh",
@@ -76,7 +78,6 @@ namespace CricBlast_GUI.Forms
             "India",
             "New Zealand",
             "Pakistan",
-            "Select...",
             "South Africa",
             "Sri Lanka",
             "West Indies"});
@@ -85,9 +86,9 @@ namespace CricBlast_GUI.Forms
             this.teamComboBox.Name = "teamComboBox";
             this.teamComboBox.ShadowDecoration.Parent = this.teamComboBox;
             this.teamComboBox.Size = new System.Drawing.Size(279, 36);
-            this.teamComboBox.Sorted = true;
             this.teamComboBox.StartIndex = 0;
             this.teamComboBox.TabIndex = 23;
+            this.teamComboBox.SelectedIndexChanged += new System.EventHandler(this.teamComboBox_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -130,6 +131,19 @@ namespace CricBlast_GUI.Forms
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
+            // teamSelectError
+            // 
+            this.teamSelectError.AutoSize = true;
+            this.teamSelectError.BackColor = System.Drawing.Color.Transparent;
+            this.teamSelectError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teamSelectError.ForeColor = System.Drawing.Color.Red;
+            this.teamSelectError.Location = new System.Drawing.Point(382, 376);
+            this.teamSelectError.Name = "teamSelectError";
+            this.teamSelectError.Size = new System.Drawing.Size(22, 32);
+            this.teamSelectError.TabIndex = 35;
+            this.teamSelectError.Text = "!";
+            this.teamSelectError.Visible = false;
+            // 
             // ChooseTeam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -138,6 +152,7 @@ namespace CricBlast_GUI.Forms
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(473, 534);
+            this.Controls.Add(this.teamSelectError);
             this.Controls.Add(this.okButton);
             this.Controls.Add(this.teamComboBox);
             this.Controls.Add(this.label1);
@@ -159,5 +174,6 @@ namespace CricBlast_GUI.Forms
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button okButton;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private System.Windows.Forms.Label teamSelectError;
     }
 }

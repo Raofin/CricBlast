@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using CricBlast_GUI.Forms.Controls;
 using CricBlast_GUI.Home;
 
 namespace CricBlast_GUI.Forms
@@ -17,12 +9,24 @@ namespace CricBlast_GUI.Forms
         public ChooseTeam()
         {
             InitializeComponent();
+            teamComboBox.Text = "Select";
         }
 
         private void okButton_Click(object sender, EventArgs e)
         {
+            if (teamComboBox.SelectedIndex == 0)
+            {
+                teamSelectError.Visible = true;
+                return;
+            }
+
             Selected.UserTeam = Selected.TeamNumber(teamComboBox.SelectedText);
             Close();
+        }
+
+        private void teamComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            teamSelectError.Visible = teamComboBox.SelectedIndex == 0;
         }
     }
 }

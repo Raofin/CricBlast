@@ -44,12 +44,12 @@ namespace CricBlast_GUI.Forms.Controls
             this.loginAsPicture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.eyePicture = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.logo = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.refreshPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginAsPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eyePicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // login
@@ -294,16 +294,16 @@ namespace CricBlast_GUI.Forms.Controls
             this.eyePicture.UseTransparentBackground = true;
             this.eyePicture.Click += new System.EventHandler(this.eyePicture_Click);
             // 
-            // pictureBox1
+            // logo
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::CricBlast_GUI.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(118, 139);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(446, 402);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            this.logo.BackColor = System.Drawing.Color.Transparent;
+            this.logo.Image = global::CricBlast_GUI.Properties.Resources.Logo;
+            this.logo.Location = new System.Drawing.Point(118, 139);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(446, 402);
+            this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logo.TabIndex = 12;
+            this.logo.TabStop = false;
             // 
             // Welcome
             // 
@@ -326,21 +326,20 @@ namespace CricBlast_GUI.Forms.Controls
             this.Controls.Add(this.usernameLabel);
             this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.login);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.logo);
             this.Name = "Welcome";
             this.Size = new System.Drawing.Size(1264, 681);
             ((System.ComponentModel.ISupportInitialize)(this.refreshPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginAsPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eyePicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button login;
         private System.Windows.Forms.Label usernameLabel;
         private Guna.UI2.WinForms.Guna2TextBox usernameTextBox;
@@ -356,5 +355,6 @@ namespace CricBlast_GUI.Forms.Controls
         private System.Windows.Forms.Label usernameRequired;
         private System.Windows.Forms.Label passwordRequired;
         public System.Windows.Forms.Label welcomeLabel;
+        private System.Windows.Forms.PictureBox logo;
     }
 }

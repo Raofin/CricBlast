@@ -83,11 +83,11 @@ namespace CricBlast_GUI.Forms.Controls
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.Silver;
-            this.label9.Location = new System.Drawing.Point(770, 246);
+            this.label9.Location = new System.Drawing.Point(782, 246);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 31);
+            this.label9.Size = new System.Drawing.Size(59, 31);
             this.label9.TabIndex = 66;
-            this.label9.Text = "Losses";
+            this.label9.Text = "Lost";
             // 
             // label10
             // 
@@ -95,11 +95,11 @@ namespace CricBlast_GUI.Forms.Controls
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.Silver;
-            this.label10.Location = new System.Drawing.Point(677, 246);
+            this.label10.Location = new System.Drawing.Point(679, 246);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(68, 31);
+            this.label10.Size = new System.Drawing.Size(64, 31);
             this.label10.TabIndex = 65;
-            this.label10.Text = "Wins";
+            this.label10.Text = "Won";
             // 
             // label8
             // 
@@ -318,7 +318,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.teamLogo.TabIndex = 69;
             this.teamLogo.TabStop = false;
             // 
-            // UserTeam
+            // MyTeam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

@@ -57,6 +57,7 @@ namespace CricBlast_GUI.Forms.Controls
                 case true:
                     loginAsPicture.Image = Properties.Resources.Unknown_User;
                     user = false;
+                    logo.Image = Properties.Resources.Logo;
                     usernameLabel.Text = "USERNAME OR EMAIL";
                     createAccountLabel.Visible = true;
                     label5.Visible = true;
@@ -64,6 +65,7 @@ namespace CricBlast_GUI.Forms.Controls
                 case false:
                     loginAsPicture.Image = Properties.Resources.Admin_Colored;
                     user = true;
+                    logo.Image = Properties.Resources.Admin_Logo;
                     usernameLabel.Text = "ADMIN NAME OR EMAIL";
                     createAccountLabel.Visible = false;
                     label5.Visible = false;
