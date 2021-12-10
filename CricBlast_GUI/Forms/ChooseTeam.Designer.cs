@@ -32,7 +32,7 @@ namespace CricBlast_GUI.Forms
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChooseTeam));
             this.userCirclePicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.teamComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.okButton = new Guna.UI2.WinForms.Guna2Button();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
@@ -55,37 +55,39 @@ namespace CricBlast_GUI.Forms
             this.userCirclePicture.TabIndex = 0;
             this.userCirclePicture.TabStop = false;
             // 
-            // guna2ComboBox2
+            // teamComboBox
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderRadius = 4;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Items.AddRange(new object[] {
-            "Bangladesh",
-            "India",
-            "Pakistan",
+            this.teamComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.teamComboBox.BorderRadius = 4;
+            this.teamComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.teamComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.teamComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.teamComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.teamComboBox.FocusedState.Parent = this.teamComboBox;
+            this.teamComboBox.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.teamComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.teamComboBox.HoverState.Parent = this.teamComboBox;
+            this.teamComboBox.ItemHeight = 30;
+            this.teamComboBox.Items.AddRange(new object[] {
+            "Afghanistan",
             "Australia",
-            "New Zealand",
+            "Bangladesh",
             "England",
+            "India",
+            "New Zealand",
+            "Pakistan",
+            "Select...",
             "South Africa",
-            "West Indies",
             "Sri Lanka",
-            "Afghanistan"});
-            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(97, 374);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(279, 36);
-            this.guna2ComboBox2.StartIndex = 0;
-            this.guna2ComboBox2.TabIndex = 23;
+            "West Indies"});
+            this.teamComboBox.ItemsAppearance.Parent = this.teamComboBox;
+            this.teamComboBox.Location = new System.Drawing.Point(97, 374);
+            this.teamComboBox.Name = "teamComboBox";
+            this.teamComboBox.ShadowDecoration.Parent = this.teamComboBox;
+            this.teamComboBox.Size = new System.Drawing.Size(279, 36);
+            this.teamComboBox.Sorted = true;
+            this.teamComboBox.StartIndex = 0;
+            this.teamComboBox.TabIndex = 23;
             // 
             // label1
             // 
@@ -137,7 +139,7 @@ namespace CricBlast_GUI.Forms
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(473, 534);
             this.Controls.Add(this.okButton);
-            this.Controls.Add(this.guna2ComboBox2);
+            this.Controls.Add(this.teamComboBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.userCirclePicture);
             this.DoubleBuffered = true;
@@ -153,7 +155,7 @@ namespace CricBlast_GUI.Forms
 
         #endregion
         private Guna.UI2.WinForms.Guna2CirclePictureBox userCirclePicture;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox teamComboBox;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button okButton;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;

@@ -186,11 +186,17 @@
     <Compile Include="Forms\ChooseTeam.Designer.cs">
       <DependentUpon>ChooseTeam.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MessageBox.cs">
+    <Compile Include="Forms\MessageBoxYesNo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MessageBox.Designer.cs">
-      <DependentUpon>MessageBox.cs</DependentUpon>
+    <Compile Include="Forms\MessageBoxYesNo.Designer.cs">
+      <DependentUpon>MessageBoxYesNo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MessageBoxOk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MessageBoxOk.Designer.cs">
+      <DependentUpon>MessageBoxOk.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\UserProfile.cs">
       <SubType>Form</SubType>
@@ -288,8 +294,11 @@
     <EmbeddedResource Include="Forms\Controls\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MessageBox.resx">
-      <DependentUpon>MessageBox.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\MessageBoxYesNo.resx">
+      <DependentUpon>MessageBoxYesNo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MessageBoxOk.resx">
+      <DependentUpon>MessageBoxOk.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\UserProfile.resx">
       <DependentUpon>UserProfile.cs</DependentUpon>

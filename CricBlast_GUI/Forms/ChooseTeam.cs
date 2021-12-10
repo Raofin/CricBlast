@@ -21,7 +21,7 @@ namespace CricBlast_GUI.Forms
 
         private void okButton_Click(object sender, EventArgs e)
         {
-            Selected.MyTeam = 1;
+            Selected.UserTeam = Selected.TeamNumber(teamComboBox.SelectedText);
             Close();
         }
     }

@@ -30,7 +30,7 @@ namespace CricBlast_GUI.Forms.Controls
         private void InitializeComponent()
         {
             this.login = new Guna.UI2.WinForms.Guna2Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.welcomeLabel = new System.Windows.Forms.Label();
             this.usernameLabel = new System.Windows.Forms.Label();
             this.usernameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -77,17 +77,17 @@ namespace CricBlast_GUI.Forms.Controls
             this.login.Text = "Login";
             this.login.Click += new System.EventHandler(this.login_Click);
             // 
-            // label1
+            // welcomeLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 36F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(810, 139);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(266, 65);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Welcome!";
+            this.welcomeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.welcomeLabel.Font = new System.Drawing.Font("Segoe UI Black", 36F, System.Drawing.FontStyle.Bold);
+            this.welcomeLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.welcomeLabel.Location = new System.Drawing.Point(733, 139);
+            this.welcomeLabel.Name = "welcomeLabel";
+            this.welcomeLabel.Size = new System.Drawing.Size(420, 65);
+            this.welcomeLabel.TabIndex = 19;
+            this.welcomeLabel.Text = "Welcome!";
+            this.welcomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // usernameLabel
             // 
@@ -257,12 +257,12 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             this.loginAsPicture.BackColor = System.Drawing.Color.Transparent;
             this.loginAsPicture.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.loginAsPicture.Image = global::CricBlast_GUI.Properties.Resources.User_Male;
+            this.loginAsPicture.Image = global::CricBlast_GUI.Properties.Resources.Unknown_User;
             this.loginAsPicture.ImageRotate = 0F;
-            this.loginAsPicture.Location = new System.Drawing.Point(1098, 225);
+            this.loginAsPicture.Location = new System.Drawing.Point(1098, 228);
             this.loginAsPicture.Name = "loginAsPicture";
             this.loginAsPicture.ShadowDecoration.Parent = this.loginAsPicture;
-            this.loginAsPicture.Size = new System.Drawing.Size(25, 30);
+            this.loginAsPicture.Size = new System.Drawing.Size(25, 26);
             this.loginAsPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.loginAsPicture.TabIndex = 25;
             this.loginAsPicture.TabStop = false;
@@ -324,7 +324,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.Controls.Add(this.label3);
             this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.usernameLabel);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.login);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Welcome";
@@ -342,7 +342,6 @@ namespace CricBlast_GUI.Forms.Controls
         #endregion
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Button login;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label usernameLabel;
         private Guna.UI2.WinForms.Guna2TextBox usernameTextBox;
         private System.Windows.Forms.Label label3;
@@ -356,5 +355,6 @@ namespace CricBlast_GUI.Forms.Controls
         private Guna.UI2.WinForms.Guna2PictureBox refreshPicture;
         private System.Windows.Forms.Label usernameRequired;
         private System.Windows.Forms.Label passwordRequired;
+        public System.Windows.Forms.Label welcomeLabel;
     }
 }

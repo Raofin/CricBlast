@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace CricBlast_GUI.Forms
 {
-    public partial class MessageBox : Form
+    public partial class MessageBoxOk : Form
     {
         protected override CreateParams CreateParams
         {
@@ -22,12 +22,25 @@ namespace CricBlast_GUI.Forms
             }
         }
 
-        public MessageBox(byte mark, string message)
+        public MessageBoxOk(byte mark, string message, string buttonText = "Ok")
         {
             DoubleBuffered = true;
             InitializeComponent();
-            messageMark.Image = mark == 0 ? Properties.Resources.Check_Mark : Properties.Resources.Error_Mark;
+
             this.message.Text = message;
+            this.okButton.Text = buttonText;
+            switch (mark)
+            {
+                case 0:
+                    messageMark.Image = Properties.Resources.Check_Mark;
+                    break;
+                case 1:
+                    messageMark.Image = Properties.Resources.Warning_Mark;
+                    break;
+                default:
+                    messageMark.Image = Properties.Resources.Error_Mark;
+                    break;
+            }
         }
 
         private void okButton_Click(object sender, EventArgs e)

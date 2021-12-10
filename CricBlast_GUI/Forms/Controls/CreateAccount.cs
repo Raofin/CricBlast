@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using CricBlast_GUI.Home;
 
 namespace CricBlast_GUI.Forms.Controls
 {
@@ -31,6 +32,13 @@ namespace CricBlast_GUI.Forms.Controls
             passwordError.Visible = string.IsNullOrWhiteSpace(passwordTextBox.Text);
             mobileError.Visible = string.IsNullOrWhiteSpace(mobileTextBox.Text);
             genderError.Visible = !genderRadioMale.Checked && !genderRadioFemale.Checked;
+
+            if (usernameError.Visible || emailError.Visible || passwordError.Visible || mobileError.Visible ||
+                genderError.Visible)
+                new MessageBoxOk(Selected.WarningMark, "Please fill out all the fields properly.").ShowDialog();
+            else
+                new MessageBoxOk(Selected.CheckMark, "Your registration has been successfully completed.")
+                    .ShowDialog();
         }
 
         private void refreshCaptchaPicture_Click(object sender, EventArgs e)

@@ -318,7 +318,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.teamLogo.TabIndex = 69;
             this.teamLogo.TabStop = false;
             // 
-            // MyTeam
+            // UserTeam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

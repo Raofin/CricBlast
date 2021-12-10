@@ -38,7 +38,7 @@ namespace CricBlast_GUI.Forms.Controls
 
         private void MyTeam_Load(object sender, EventArgs e)
         {
-            if (Selected.MyTeam == 1)
+            if (Selected.UserTeam == 1)
             {
                 teamLogo.Visible = true;
             }
@@ -51,7 +51,7 @@ namespace CricBlast_GUI.Forms.Controls
         private void changeTeam_Click(object sender, EventArgs e)
         {
             new ChooseTeam().ShowDialog();
-            if (Selected.MyTeam == 0)
+            if (Selected.UserTeam == 0)
             {
                 teamLogo.Visible = true;
             }

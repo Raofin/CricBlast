@@ -1,4 +1,5 @@
 ﻿using System.Windows.Forms;
+using CricBlast_GUI.Home;
 using Guna.UI2.WinForms;
 
 namespace CricBlast_GUI.Forms.Controls
@@ -54,7 +55,7 @@ namespace CricBlast_GUI.Forms.Controls
             switch (user)
             {
                 case true:
-                    loginAsPicture.Image = Properties.Resources.User_Male;
+                    loginAsPicture.Image = Properties.Resources.Unknown_User;
                     user = false;
                     usernameLabel.Text = "USERNAME OR EMAIL";
                     createAccountLabel.Visible = true;
@@ -79,6 +80,15 @@ namespace CricBlast_GUI.Forms.Controls
         {
             usernameRequired.Visible = string.IsNullOrWhiteSpace(usernameTextBox.Text);
             passwordRequired.Visible = string.IsNullOrWhiteSpace(passwordTextBox.Text);
+
+
+            if (usernameRequired.Visible || passwordRequired.Visible)
+                new MessageBoxOk(Selected.WarningMark, "Please fill out all the fields properly.").ShowDialog();
+            else
+                new MessageBoxOk(Selected.CheckMark, "Your registration has been successfully completed.")
+                    .ShowDialog();
+            //Bad credentials. Please login again.
+
             Controls.Clear();
             Controls.Add(new Home());
             new ChooseTeam().ShowDialog();

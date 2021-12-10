@@ -31,8 +31,8 @@ namespace CricBlast_GUI.Forms.Controls
         {
             this.homeSubPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.menuPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.availabilityIcon = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.availability = new System.Windows.Forms.Label();
             this.usernameLabel = new System.Windows.Forms.Label();
             this.userPhoto = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.customizeTeam = new Guna.UI2.WinForms.Guna2Button();
@@ -40,11 +40,11 @@ namespace CricBlast_GUI.Forms.Controls
             this.playMatch = new Guna.UI2.WinForms.Guna2Button();
             this.addPlayers = new Guna.UI2.WinForms.Guna2Button();
             this.myTeam = new Guna.UI2.WinForms.Guna2Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.logout = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.availabilityIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -64,8 +64,8 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.menuPanel.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Home_Menu;
-            this.menuPanel.Controls.Add(this.guna2CirclePictureBox2);
-            this.menuPanel.Controls.Add(this.label3);
+            this.menuPanel.Controls.Add(this.availabilityIcon);
+            this.menuPanel.Controls.Add(this.availability);
             this.menuPanel.Controls.Add(this.usernameLabel);
             this.menuPanel.Controls.Add(this.userPhoto);
             this.menuPanel.Controls.Add(this.customizeTeam);
@@ -73,7 +73,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.menuPanel.Controls.Add(this.playMatch);
             this.menuPanel.Controls.Add(this.addPlayers);
             this.menuPanel.Controls.Add(this.myTeam);
-            this.menuPanel.Controls.Add(this.label4);
+            this.menuPanel.Controls.Add(this.logout);
             this.menuPanel.Controls.Add(this.label1);
             this.menuPanel.Controls.Add(this.pictureBox1);
             this.menuPanel.Dock = System.Windows.Forms.DockStyle.Left;
@@ -83,34 +83,36 @@ namespace CricBlast_GUI.Forms.Controls
             this.menuPanel.Size = new System.Drawing.Size(308, 681);
             this.menuPanel.TabIndex = 11;
             // 
-            // guna2CirclePictureBox2
+            // availabilityIcon
             // 
-            this.guna2CirclePictureBox2.FillColor = System.Drawing.Color.LimeGreen;
-            this.guna2CirclePictureBox2.ImageRotate = 0F;
-            this.guna2CirclePictureBox2.Location = new System.Drawing.Point(130, 553);
-            this.guna2CirclePictureBox2.Name = "guna2CirclePictureBox2";
-            this.guna2CirclePictureBox2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox2.ShadowDecoration.Parent = this.guna2CirclePictureBox2;
-            this.guna2CirclePictureBox2.Size = new System.Drawing.Size(13, 13);
-            this.guna2CirclePictureBox2.TabIndex = 7;
-            this.guna2CirclePictureBox2.TabStop = false;
+            this.availabilityIcon.FillColor = System.Drawing.Color.LimeGreen;
+            this.availabilityIcon.ImageRotate = 0F;
+            this.availabilityIcon.Location = new System.Drawing.Point(130, 556);
+            this.availabilityIcon.Name = "availabilityIcon";
+            this.availabilityIcon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.availabilityIcon.ShadowDecoration.Parent = this.availabilityIcon;
+            this.availabilityIcon.Size = new System.Drawing.Size(14, 14);
+            this.availabilityIcon.TabIndex = 7;
+            this.availabilityIcon.TabStop = false;
             // 
-            // label3
+            // availability
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Location = new System.Drawing.Point(149, 549);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(57, 21);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Online";
+            this.availability.AutoSize = true;
+            this.availability.BackColor = System.Drawing.Color.Transparent;
+            this.availability.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.availability.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.availability.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.availability.Location = new System.Drawing.Point(144, 550);
+            this.availability.Name = "availability";
+            this.availability.Size = new System.Drawing.Size(68, 25);
+            this.availability.TabIndex = 6;
+            this.availability.Text = "Online";
+            this.availability.Click += new System.EventHandler(this.availability_Click);
             // 
             // usernameLabel
             // 
             this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.usernameLabel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.usernameLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.usernameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.usernameLabel.Location = new System.Drawing.Point(122, 517);
@@ -118,7 +120,6 @@ namespace CricBlast_GUI.Forms.Controls
             this.usernameLabel.Size = new System.Drawing.Size(151, 32);
             this.usernameLabel.TabIndex = 6;
             this.usernameLabel.Text = "Username";
-            this.usernameLabel.Click += new System.EventHandler(this.usernameLabel_Click);
             // 
             // userPhoto
             // 
@@ -263,19 +264,19 @@ namespace CricBlast_GUI.Forms.Controls
             this.myTeam.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.myTeam.Click += new System.EventHandler(this.myTeam_Click);
             // 
-            // label4
+            // logout
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Firebrick;
-            this.label4.Location = new System.Drawing.Point(109, 594);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 30);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Logout";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.logout.AutoSize = true;
+            this.logout.BackColor = System.Drawing.Color.Transparent;
+            this.logout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logout.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logout.ForeColor = System.Drawing.Color.Firebrick;
+            this.logout.Location = new System.Drawing.Point(109, 594);
+            this.logout.Name = "logout";
+            this.logout.Size = new System.Drawing.Size(86, 30);
+            this.logout.TabIndex = 4;
+            this.logout.Text = "Logout";
+            this.logout.Click += new System.EventHandler(this.logout_Click);
             // 
             // label1
             // 
@@ -311,7 +312,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.Size = new System.Drawing.Size(1264, 681);
             this.menuPanel.ResumeLayout(false);
             this.menuPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.availabilityIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPhoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -320,8 +321,8 @@ namespace CricBlast_GUI.Forms.Controls
 
         #endregion
         private Guna.UI2.WinForms.Guna2Panel menuPanel;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
-        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox availabilityIcon;
+        private System.Windows.Forms.Label availability;
         private System.Windows.Forms.Label usernameLabel;
         private Guna.UI2.WinForms.Guna2CirclePictureBox userPhoto;
         private Guna.UI2.WinForms.Guna2Button customizeTeam;
@@ -329,9 +330,9 @@ namespace CricBlast_GUI.Forms.Controls
         private Guna.UI2.WinForms.Guna2Button playMatch;
         private Guna.UI2.WinForms.Guna2Button addPlayers;
         private Guna.UI2.WinForms.Guna2Button myTeam;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Panel homeSubPanel;
+        private System.Windows.Forms.Label logout;
     }
 }

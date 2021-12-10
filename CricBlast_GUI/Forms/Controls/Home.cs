@@ -61,9 +61,13 @@ namespace CricBlast_GUI.Forms.Controls
             ChangeButtonColor(playMatch, 5);
         }
 
-        private void changeTeam_Click(object sender, EventArgs e)
+        private void logout_Click(object sender, EventArgs e)
         {
-            new ChooseTeam().ShowDialog();
+            new MessageBoxYesNo(1, "Are you sure you want to log out?").ShowDialog();
+
+            if (!Selected.MessageBox) return;
+            Controls.Clear();
+            Controls.Add(new Welcome { welcomeLabel = { Text = "Welcome Back!" } });
         }
 
         private void ChangeButtonColor(Guna2Button button, int changeMenu)
@@ -97,14 +101,22 @@ namespace CricBlast_GUI.Forms.Controls
             new UserProfile().ShowDialog();
         }
 
-        private void usernameLabel_Click(object sender, EventArgs e)
+        private bool isAvailable = true;
+        private void availability_Click(object sender, EventArgs e)
         {
-            new UserProfile().ShowDialog();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
+            switch (isAvailable)
+            {
+                case true:
+                    availability.Text = "Offline";
+                    availabilityIcon.FillColor = Color.Gray;
+                     isAvailable = false;
+                    break;
+                case false:
+                    availability.Text = "Online";
+                    availabilityIcon.FillColor = Color.LimeGreen;
+                    isAvailable = true;
+                    break;
+            }
         }
     }
 }

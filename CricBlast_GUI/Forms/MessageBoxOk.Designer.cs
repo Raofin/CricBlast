@@ -1,7 +1,7 @@
 ﻿
 namespace CricBlast_GUI.Forms
 {
-    partial class MessageBox
+    partial class MessageBoxOk
     {
         /// <summary>
         /// Required designer variable.
@@ -102,6 +102,7 @@ namespace CricBlast_GUI.Forms
             this.Controls.Add(this.messageMark);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MessageBox";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.messageMark)).EndInit();
             this.ResumeLayout(false);

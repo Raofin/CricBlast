@@ -217,6 +217,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.passwordTextBox.ShadowDecoration.Parent = this.passwordTextBox;
             this.passwordTextBox.Size = new System.Drawing.Size(323, 46);
             this.passwordTextBox.TabIndex = 3;
+            this.passwordTextBox.UseSystemPasswordChar = true;
             this.passwordTextBox.TextChanged += new System.EventHandler(this.passwordTextBox_TextChanged);
             // 
             // label7

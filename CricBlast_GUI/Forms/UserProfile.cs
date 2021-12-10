@@ -33,7 +33,7 @@ namespace CricBlast_GUI.Forms
         {
             if (modify)
             {
-                new MessageBox(0, "Your account information has been successfully updated :)").ShowDialog();
+                new MessageBoxOk(0, "Your account information has been successfully updated :)").ShowDialog();
                 return;
             }
             usernameLabel.Visible = emailLabel.Visible = passwordLabel.Visible = phoneLabel.Visible = false;
