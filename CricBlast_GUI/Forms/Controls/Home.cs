@@ -17,6 +17,11 @@ namespace CricBlast_GUI.Forms.Controls
                 ControlStyles.OptimizedDoubleBuffer,
                 true);
             InitializeComponent();
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+            new ChooseTeam().ShowDialog();
             homeSubPanel.Controls.Add(new MyTeam());
         }
 

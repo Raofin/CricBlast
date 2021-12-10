@@ -35,21 +35,21 @@ namespace CricBlast_GUI.Forms.Controls
             this.label8 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
+            this.testMatch = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.teamName = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.teamLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.odiMatch = new System.Windows.Forms.Label();
+            this.t20iMatch = new System.Windows.Forms.Label();
+            this.testWon = new System.Windows.Forms.Label();
+            this.odiWon = new System.Windows.Forms.Label();
+            this.t20iWon = new System.Windows.Forms.Label();
+            this.testLost = new System.Windows.Forms.Label();
+            this.odiLost = new System.Windows.Forms.Label();
+            this.t20iLost = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teamLogo)).BeginInit();
             this.SuspendLayout();
@@ -112,6 +112,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.label8.Size = new System.Drawing.Size(82, 31);
             this.label8.TabIndex = 64;
             this.label8.Text = "Match";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label13
             // 
@@ -137,113 +138,17 @@ namespace CricBlast_GUI.Forms.Controls
             this.label12.TabIndex = 62;
             this.label12.Text = "ODI";
             // 
-            // label22
+            // testMatch
             // 
-            this.label22.AutoSize = true;
-            this.label22.BackColor = System.Drawing.Color.Transparent;
-            this.label22.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
-            this.label22.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label22.Location = new System.Drawing.Point(791, 392);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(40, 31);
-            this.label22.TabIndex = 61;
-            this.label22.Text = "77";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
-            this.label21.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label21.Location = new System.Drawing.Point(691, 392);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(40, 31);
-            this.label21.TabIndex = 60;
-            this.label21.Text = "43";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
-            this.label19.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label19.Location = new System.Drawing.Point(785, 343);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(53, 31);
-            this.label19.TabIndex = 67;
-            this.label19.Text = "245";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
-            this.label18.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label18.Location = new System.Drawing.Point(685, 343);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(53, 31);
-            this.label18.TabIndex = 58;
-            this.label18.Text = "136";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
-            this.label20.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label20.Location = new System.Drawing.Point(585, 392);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(53, 31);
-            this.label20.TabIndex = 59;
-            this.label20.Text = "122";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
-            this.label16.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label16.Location = new System.Drawing.Point(791, 293);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(40, 31);
-            this.label16.TabIndex = 56;
-            this.label16.Text = "92";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
-            this.label17.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label17.Location = new System.Drawing.Point(585, 343);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(53, 31);
-            this.label17.TabIndex = 55;
-            this.label17.Text = "388";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
-            this.label15.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label15.Location = new System.Drawing.Point(691, 293);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(40, 31);
-            this.label15.TabIndex = 54;
-            this.label15.Text = "15";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
-            this.label14.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label14.Location = new System.Drawing.Point(585, 293);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(53, 31);
-            this.label14.TabIndex = 53;
-            this.label14.Text = "124";
+            this.testMatch.BackColor = System.Drawing.Color.Transparent;
+            this.testMatch.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
+            this.testMatch.ForeColor = System.Drawing.Color.AliceBlue;
+            this.testMatch.Location = new System.Drawing.Point(573, 293);
+            this.testMatch.Name = "testMatch";
+            this.testMatch.Size = new System.Drawing.Size(76, 31);
+            this.testMatch.TabIndex = 53;
+            this.testMatch.Text = "0";
+            this.testMatch.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label11
             // 
@@ -281,17 +186,18 @@ namespace CricBlast_GUI.Forms.Controls
             this.label7.TabIndex = 57;
             this.label7.Text = "Playing Records";
             // 
-            // label5
+            // teamName
             // 
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Black", 25F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label5.Location = new System.Drawing.Point(75, 471);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(307, 46);
-            this.label5.TabIndex = 68;
-            this.label5.Text = "Your Name";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.teamName.BackColor = System.Drawing.Color.Transparent;
+            this.teamName.Font = new System.Drawing.Font("Segoe UI Black", 25F, System.Drawing.FontStyle.Bold);
+            this.teamName.ForeColor = System.Drawing.Color.AliceBlue;
+            this.teamName.Location = new System.Drawing.Point(55, 471);
+            this.teamName.Name = "teamName";
+            this.teamName.Size = new System.Drawing.Size(347, 46);
+            this.teamName.TabIndex = 68;
+            this.teamName.Text = "Team Name";
+            this.teamName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.teamName.Visible = false;
             // 
             // guna2PictureBox2
             // 
@@ -308,7 +214,7 @@ namespace CricBlast_GUI.Forms.Controls
             // teamLogo
             // 
             this.teamLogo.BackColor = System.Drawing.Color.Transparent;
-            this.teamLogo.Image = global::CricBlast_GUI.Properties.Resources.Bangladesh1;
+            this.teamLogo.FillColor = System.Drawing.Color.Transparent;
             this.teamLogo.ImageRotate = 0F;
             this.teamLogo.Location = new System.Drawing.Point(75, 164);
             this.teamLogo.Name = "teamLogo";
@@ -317,6 +223,103 @@ namespace CricBlast_GUI.Forms.Controls
             this.teamLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.teamLogo.TabIndex = 69;
             this.teamLogo.TabStop = false;
+            this.teamLogo.Visible = false;
+            // 
+            // odiMatch
+            // 
+            this.odiMatch.BackColor = System.Drawing.Color.Transparent;
+            this.odiMatch.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
+            this.odiMatch.ForeColor = System.Drawing.Color.AliceBlue;
+            this.odiMatch.Location = new System.Drawing.Point(573, 343);
+            this.odiMatch.Name = "odiMatch";
+            this.odiMatch.Size = new System.Drawing.Size(76, 31);
+            this.odiMatch.TabIndex = 53;
+            this.odiMatch.Text = "0";
+            this.odiMatch.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // t20iMatch
+            // 
+            this.t20iMatch.BackColor = System.Drawing.Color.Transparent;
+            this.t20iMatch.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
+            this.t20iMatch.ForeColor = System.Drawing.Color.AliceBlue;
+            this.t20iMatch.Location = new System.Drawing.Point(573, 392);
+            this.t20iMatch.Name = "t20iMatch";
+            this.t20iMatch.Size = new System.Drawing.Size(76, 31);
+            this.t20iMatch.TabIndex = 53;
+            this.t20iMatch.Text = "0";
+            this.t20iMatch.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // testWon
+            // 
+            this.testWon.BackColor = System.Drawing.Color.Transparent;
+            this.testWon.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
+            this.testWon.ForeColor = System.Drawing.Color.AliceBlue;
+            this.testWon.Location = new System.Drawing.Point(673, 293);
+            this.testWon.Name = "testWon";
+            this.testWon.Size = new System.Drawing.Size(76, 31);
+            this.testWon.TabIndex = 53;
+            this.testWon.Text = "0";
+            this.testWon.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // odiWon
+            // 
+            this.odiWon.BackColor = System.Drawing.Color.Transparent;
+            this.odiWon.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
+            this.odiWon.ForeColor = System.Drawing.Color.AliceBlue;
+            this.odiWon.Location = new System.Drawing.Point(673, 343);
+            this.odiWon.Name = "odiWon";
+            this.odiWon.Size = new System.Drawing.Size(76, 31);
+            this.odiWon.TabIndex = 53;
+            this.odiWon.Text = "0";
+            this.odiWon.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // t20iWon
+            // 
+            this.t20iWon.BackColor = System.Drawing.Color.Transparent;
+            this.t20iWon.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
+            this.t20iWon.ForeColor = System.Drawing.Color.AliceBlue;
+            this.t20iWon.Location = new System.Drawing.Point(673, 392);
+            this.t20iWon.Name = "t20iWon";
+            this.t20iWon.Size = new System.Drawing.Size(76, 31);
+            this.t20iWon.TabIndex = 53;
+            this.t20iWon.Text = "0";
+            this.t20iWon.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // testLost
+            // 
+            this.testLost.BackColor = System.Drawing.Color.Transparent;
+            this.testLost.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
+            this.testLost.ForeColor = System.Drawing.Color.AliceBlue;
+            this.testLost.Location = new System.Drawing.Point(773, 293);
+            this.testLost.Name = "testLost";
+            this.testLost.Size = new System.Drawing.Size(76, 31);
+            this.testLost.TabIndex = 53;
+            this.testLost.Text = "0";
+            this.testLost.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // odiLost
+            // 
+            this.odiLost.BackColor = System.Drawing.Color.Transparent;
+            this.odiLost.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
+            this.odiLost.ForeColor = System.Drawing.Color.AliceBlue;
+            this.odiLost.Location = new System.Drawing.Point(773, 343);
+            this.odiLost.Name = "odiLost";
+            this.odiLost.Size = new System.Drawing.Size(76, 31);
+            this.odiLost.TabIndex = 53;
+            this.odiLost.Text = "0";
+            this.odiLost.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // t20iLost
+            // 
+            this.t20iLost.BackColor = System.Drawing.Color.Transparent;
+            this.t20iLost.Font = new System.Drawing.Font("Segoe UI", 17F, System.Drawing.FontStyle.Bold);
+            this.t20iLost.ForeColor = System.Drawing.Color.AliceBlue;
+            this.t20iLost.Location = new System.Drawing.Point(773, 392);
+            this.t20iLost.Name = "t20iLost";
+            this.t20iLost.Size = new System.Drawing.Size(76, 31);
+            this.t20iLost.TabIndex = 53;
+            this.t20iLost.Text = "0";
+            this.t20iLost.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // MyTeam
             // 
@@ -330,24 +333,23 @@ namespace CricBlast_GUI.Forms.Controls
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label22);
-            this.Controls.Add(this.label21);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.label14);
+            this.Controls.Add(this.t20iLost);
+            this.Controls.Add(this.odiLost);
+            this.Controls.Add(this.testLost);
+            this.Controls.Add(this.t20iWon);
+            this.Controls.Add(this.odiWon);
+            this.Controls.Add(this.testWon);
+            this.Controls.Add(this.t20iMatch);
+            this.Controls.Add(this.odiMatch);
+            this.Controls.Add(this.testMatch);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.teamLogo);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.teamName);
             this.Name = "MyTeam";
             this.Size = new System.Drawing.Size(956, 681);
-            this.Load += new System.EventHandler(this.MyTeam_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.teamLogo)).EndInit();
             this.ResumeLayout(false);
@@ -363,20 +365,20 @@ namespace CricBlast_GUI.Forms.Controls
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label testMatch;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private Guna.UI2.WinForms.Guna2PictureBox teamLogo;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label teamName;
+        private System.Windows.Forms.Label odiMatch;
+        private System.Windows.Forms.Label t20iMatch;
+        private System.Windows.Forms.Label testWon;
+        private System.Windows.Forms.Label odiWon;
+        private System.Windows.Forms.Label t20iWon;
+        private System.Windows.Forms.Label testLost;
+        private System.Windows.Forms.Label odiLost;
+        private System.Windows.Forms.Label t20iLost;
     }
 }

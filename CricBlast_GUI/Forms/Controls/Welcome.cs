@@ -93,9 +93,6 @@ namespace CricBlast_GUI.Forms.Controls
 
             Controls.Clear();
             Controls.Add(new Home());
-            new ChooseTeam().ShowDialog();
-            Controls.Clear();
-            Controls.Add(new Home());
         }
 
         private void usernameTextBox_TextChanged(object sender, System.EventArgs e)

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,11 @@ namespace CricBlast_GUI.Home
         public static int OpponentTeam { get; set; }
         public static bool MessageBox { get; set; }
 
+        public static string test { get; set; }
+
+        public static Bitmap UserTeamLogo { get; set; }
+
+        public static string[] UserTeamStats { get; set; }
 
         public static readonly byte CheckMark = 0;
         public static readonly byte WarningMark = 1;

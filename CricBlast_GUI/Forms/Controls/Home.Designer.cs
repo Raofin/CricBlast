@@ -310,6 +310,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.Controls.Add(this.menuPanel);
             this.Name = "Home";
             this.Size = new System.Drawing.Size(1264, 681);
+            this.Load += new System.EventHandler(this.Home_Load);
             this.menuPanel.ResumeLayout(false);
             this.menuPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.availabilityIcon)).EndInit();

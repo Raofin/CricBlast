@@ -20,7 +20,8 @@ namespace CricBlast_GUI.Forms
                 return;
             }
 
-            Selected.UserTeam = Selected.TeamNumber(teamComboBox.SelectedText);
+            Selected.UserTeam = Selected.TeamNumber(teamComboBox.SelectedItem.ToString());
+            Selected.UserTeamLogo = Teams.Logo.GetLogo(Selected.UserTeam);
             Close();
         }
 

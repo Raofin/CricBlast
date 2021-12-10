@@ -1,13 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using CricBlast_GUI.Home;
+using static CricBlast_GUI.Home.Selected;
+using static Teams.Team;
 
 namespace CricBlast_GUI.Forms.Controls
 {
@@ -34,31 +28,34 @@ namespace CricBlast_GUI.Forms.Controls
                      ControlStyles.SupportsTransparentBackColor
                 , true);
             InitializeComponent();
-        }
-
-        private void MyTeam_Load(object sender, EventArgs e)
-        {
-            if (Selected.UserTeam == 1)
-            {
-                teamLogo.Visible = true;
-            }
-            else
-            {
-                teamLogo.Visible = false;
-            }
+            SetStats();
         }
 
         private void changeTeam_Click(object sender, EventArgs e)
         {
             new ChooseTeam().ShowDialog();
-            if (Selected.UserTeam == 0)
-            {
-                teamLogo.Visible = true;
-            }
-            else
-            {
-                teamLogo.Visible = false;
-            }
+            SetStats();
+        }
+
+        private void SetStats()
+        {
+            teamLogo.Image = UserTeamLogo;
+            teamName.Text = GetState(UserTeam, TeamName);
+            UserTeamStats = GetAllStates(UserTeam);
+            teamName.Visible = true;
+            teamLogo.Visible = true;
+
+            testMatch.Text = UserTeamStats[TestMatch];
+            testWon.Text = UserTeamStats[TestWon];
+            testLost.Text = UserTeamStats[TestLost];
+
+            odiMatch.Text = UserTeamStats[OdiMatch];
+            odiWon.Text = UserTeamStats[OdiWon];
+            odiLost.Text = UserTeamStats[OdiLost];
+
+            t20iMatch.Text = UserTeamStats[T20IMatch];
+            t20iWon.Text = UserTeamStats[T20IWon];
+            t20iLost.Text = UserTeamStats[T20ILost];
         }
     }
 }
