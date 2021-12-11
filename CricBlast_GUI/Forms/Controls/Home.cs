@@ -58,7 +58,7 @@ namespace CricBlast_GUI.Forms.Controls
             ChangeButtonColor(addPlayers, 4);
         }
 
-        private void playMatch_Click(object sender, EventArgs e)
+        public void playMatch_Click(object sender, EventArgs e)
         {
             if (SelectedMenu == 5) return;
             homeSubPanel.Controls.Clear();
