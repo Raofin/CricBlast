@@ -2,6 +2,7 @@
 using System.Windows.Forms;
 using CricBlast_GUI.Home;
 using Players;
+using static Teams.Team;
 
 namespace CricBlast_GUI.Forms.Controls
 {
@@ -29,6 +30,12 @@ namespace CricBlast_GUI.Forms.Controls
 
         private void PlayerStats_Load(object sender, EventArgs e)
         {
+            changeFormatComboBox.Items.Add("T20I");
+            changeFormatComboBox.Items.Add("ODI");
+            changeFormatComboBox.Items.Add("Test");
+
+            for (int i = 0; i < 15; i++) changePlayerComboBox.Items.Add(Selected.UserTeamPlayerStats[i, 0, 0]);
+
             changePlayerComboBox.SelectedIndex = Selected.Player;
             changeFormatComboBox.SelectedIndex = Selected.Format;
             SetStats();
@@ -49,6 +56,7 @@ namespace CricBlast_GUI.Forms.Controls
         private void SetStats()
         {
             playerPhoto.Image = Images.GetPlayerImage(Selected.UserTeam, changePlayerComboBox.SelectedIndex);
+            userTeamName.Text = GetState(Selected.UserTeam, TeamName);
             playerName.Text = GetStats(0);
             matches.Text = GetStats(1);
             runs.Text = GetStats(2);

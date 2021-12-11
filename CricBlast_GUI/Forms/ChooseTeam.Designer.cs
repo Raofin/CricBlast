@@ -162,6 +162,7 @@ namespace CricBlast_GUI.Forms
             this.Name = "ChooseTeam";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.ChooseTeam_Load);
             ((System.ComponentModel.ISupportInitialize)(this.userCirclePicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

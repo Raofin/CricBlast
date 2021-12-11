@@ -68,16 +68,11 @@ namespace CricBlast_GUI.Forms.Controls
             this.changeFormatComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.changeFormatComboBox.HoverState.Parent = this.changeFormatComboBox;
             this.changeFormatComboBox.ItemHeight = 30;
-            this.changeFormatComboBox.Items.AddRange(new object[] {
-            "T20I",
-            "ODI",
-            "Test"});
             this.changeFormatComboBox.ItemsAppearance.Parent = this.changeFormatComboBox;
             this.changeFormatComboBox.Location = new System.Drawing.Point(625, 247);
             this.changeFormatComboBox.Name = "changeFormatComboBox";
             this.changeFormatComboBox.ShadowDecoration.Parent = this.changeFormatComboBox;
             this.changeFormatComboBox.Size = new System.Drawing.Size(260, 36);
-            this.changeFormatComboBox.StartIndex = 0;
             this.changeFormatComboBox.TabIndex = 37;
             this.changeFormatComboBox.SelectedIndexChanged += new System.EventHandler(this.changeFormatComboBox_SelectedIndexChanged);
             // 
@@ -106,22 +101,6 @@ namespace CricBlast_GUI.Forms.Controls
             this.changePlayerComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.changePlayerComboBox.HoverState.Parent = this.changePlayerComboBox;
             this.changePlayerComboBox.ItemHeight = 30;
-            this.changePlayerComboBox.Items.AddRange(new object[] {
-            "Tamim Iqbal",
-            "Mohammad Naim",
-            "Shakib Al Hasan",
-            "Afif Hossain",
-            "Mushfiqur Rahim",
-            "Mahmudullah",
-            "Mahedi Hasan",
-            "Taskin Ahmed",
-            "Nasum Ahmed",
-            "Mustafizur Rahman",
-            "Shoriful Islam",
-            "Mohammad Mithun",
-            "Saifuddin",
-            "Nurul Hasan",
-            "Aminul Islam"});
             this.changePlayerComboBox.ItemsAppearance.Parent = this.changePlayerComboBox;
             this.changePlayerComboBox.Location = new System.Drawing.Point(625, 168);
             this.changePlayerComboBox.Name = "changePlayerComboBox";
@@ -151,9 +130,9 @@ namespace CricBlast_GUI.Forms.Controls
             this.userTeamName.ForeColor = System.Drawing.Color.AliceBlue;
             this.userTeamName.Location = new System.Drawing.Point(258, 255);
             this.userTeamName.Name = "userTeamName";
-            this.userTeamName.Size = new System.Drawing.Size(121, 28);
+            this.userTeamName.Size = new System.Drawing.Size(62, 28);
             this.userTeamName.TabIndex = 31;
-            this.userTeamName.Text = "Bangladesh";
+            this.userTeamName.Text = "Team";
             // 
             // playerName
             // 
@@ -163,9 +142,9 @@ namespace CricBlast_GUI.Forms.Controls
             this.playerName.ForeColor = System.Drawing.Color.AliceBlue;
             this.playerName.Location = new System.Drawing.Point(255, 209);
             this.playerName.Name = "playerName";
-            this.playerName.Size = new System.Drawing.Size(277, 46);
+            this.playerName.Size = new System.Drawing.Size(222, 46);
             this.playerName.TabIndex = 30;
-            this.playerName.Text = "Shakib Al Hasan";
+            this.playerName.Text = "Player Name";
             this.playerName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label23
@@ -200,9 +179,9 @@ namespace CricBlast_GUI.Forms.Controls
             this.fifties.ForeColor = System.Drawing.Color.AliceBlue;
             this.fifties.Location = new System.Drawing.Point(693, 413);
             this.fifties.Name = "fifties";
-            this.fifties.Size = new System.Drawing.Size(60, 46);
+            this.fifties.Size = new System.Drawing.Size(40, 46);
             this.fifties.TabIndex = 23;
-            this.fifties.Text = "49";
+            this.fifties.Text = "0";
             // 
             // hundreds
             // 
@@ -214,7 +193,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.hundreds.Name = "hundreds";
             this.hundreds.Size = new System.Drawing.Size(40, 46);
             this.hundreds.TabIndex = 21;
-            this.hundreds.Text = "9";
+            this.hundreds.Text = "0";
             // 
             // strikeRate
             // 
@@ -224,9 +203,9 @@ namespace CricBlast_GUI.Forms.Controls
             this.strikeRate.ForeColor = System.Drawing.Color.AliceBlue;
             this.strikeRate.Location = new System.Drawing.Point(311, 525);
             this.strikeRate.Name = "strikeRate";
-            this.strikeRate.Size = new System.Drawing.Size(109, 46);
+            this.strikeRate.Size = new System.Drawing.Size(40, 46);
             this.strikeRate.TabIndex = 19;
-            this.strikeRate.Text = "82.14";
+            this.strikeRate.Text = "0";
             // 
             // label17
             // 
@@ -257,7 +236,7 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             this.playerPhoto.BorderRadius = 4;
             this.playerPhoto.FillColor = System.Drawing.Color.Transparent;
-            this.playerPhoto.Image = global::CricBlast_GUI.Properties.Resources.Shakib;
+            this.playerPhoto.Image = global::CricBlast_GUI.Properties.Resources.User_Male_WhiteBack;
             this.playerPhoto.ImageRotate = 0F;
             this.playerPhoto.Location = new System.Drawing.Point(85, 131);
             this.playerPhoto.Name = "playerPhoto";
@@ -275,9 +254,9 @@ namespace CricBlast_GUI.Forms.Controls
             this.wickets.ForeColor = System.Drawing.Color.AliceBlue;
             this.wickets.Location = new System.Drawing.Point(693, 469);
             this.wickets.Name = "wickets";
-            this.wickets.Size = new System.Drawing.Size(80, 46);
+            this.wickets.Size = new System.Drawing.Size(40, 46);
             this.wickets.TabIndex = 23;
-            this.wickets.Text = "277";
+            this.wickets.Text = "0";
             // 
             // label2
             // 
@@ -299,9 +278,9 @@ namespace CricBlast_GUI.Forms.Controls
             this.matches.ForeColor = System.Drawing.Color.AliceBlue;
             this.matches.Location = new System.Drawing.Point(311, 357);
             this.matches.Name = "matches";
-            this.matches.Size = new System.Drawing.Size(80, 46);
+            this.matches.Size = new System.Drawing.Size(40, 46);
             this.matches.TabIndex = 20;
-            this.matches.Text = "215";
+            this.matches.Text = "0";
             // 
             // runs
             // 
@@ -311,9 +290,9 @@ namespace CricBlast_GUI.Forms.Controls
             this.runs.ForeColor = System.Drawing.Color.AliceBlue;
             this.runs.Location = new System.Drawing.Point(311, 413);
             this.runs.Name = "runs";
-            this.runs.Size = new System.Drawing.Size(100, 46);
+            this.runs.Size = new System.Drawing.Size(40, 46);
             this.runs.TabIndex = 22;
-            this.runs.Text = "6600";
+            this.runs.Text = "0";
             // 
             // label8
             // 
@@ -335,9 +314,9 @@ namespace CricBlast_GUI.Forms.Controls
             this.average.ForeColor = System.Drawing.Color.AliceBlue;
             this.average.Location = new System.Drawing.Point(311, 469);
             this.average.Name = "average";
-            this.average.Size = new System.Drawing.Size(109, 46);
+            this.average.Size = new System.Drawing.Size(40, 46);
             this.average.TabIndex = 26;
-            this.average.Text = "37.71";
+            this.average.Text = "0";
             // 
             // label9
             // 

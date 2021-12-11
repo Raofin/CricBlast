@@ -9,7 +9,11 @@ namespace CricBlast_GUI.Forms
         public ChooseTeam()
         {
             InitializeComponent();
-            teamComboBox.Text = "Select";
+        }
+        
+        private void ChooseTeam_Load(object sender, EventArgs e)
+        {
+            teamComboBox.SelectedIndex = Selected.UserTeam == 0 ? 0 : Selected.UserTeam + 1;
         }
 
         private void okButton_Click(object sender, EventArgs e)
