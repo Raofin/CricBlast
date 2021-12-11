@@ -22,6 +22,7 @@ namespace CricBlast_GUI.Forms
 
             Selected.UserTeam = Selected.TeamNumber(teamComboBox.SelectedItem.ToString());
             Selected.UserTeamLogo = Teams.Logo.GetLogo(Selected.UserTeam);
+            Selected.UserTeamPlayerStats = Players.Stats.GetTeamPlayers(Selected.UserTeam);
             Close();
         }
 

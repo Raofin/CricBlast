@@ -29,58 +29,57 @@ namespace CricBlast_GUI.Forms.Controls
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.changeFormatComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.changePlayerComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.userTeamName = new System.Windows.Forms.Label();
+            this.playerName = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.fifties = new System.Windows.Forms.Label();
+            this.hundreds = new System.Windows.Forms.Label();
+            this.strikeRate = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.playerPhoto = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.wickets = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.matches = new System.Windows.Forms.Label();
+            this.runs = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.average = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerPhoto)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2ComboBox2
+            // changeFormatComboBox
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderRadius = 4;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 17F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Items.AddRange(new object[] {
-            "Test",
+            this.changeFormatComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.changeFormatComboBox.BorderRadius = 4;
+            this.changeFormatComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.changeFormatComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.changeFormatComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.changeFormatComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.changeFormatComboBox.FocusedState.Parent = this.changeFormatComboBox;
+            this.changeFormatComboBox.Font = new System.Drawing.Font("Segoe UI", 17F);
+            this.changeFormatComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.changeFormatComboBox.HoverState.Parent = this.changeFormatComboBox;
+            this.changeFormatComboBox.ItemHeight = 30;
+            this.changeFormatComboBox.Items.AddRange(new object[] {
+            "T20I",
             "ODI",
-            "T20I"});
-            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(625, 247);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(260, 36);
-            this.guna2ComboBox2.StartIndex = 1;
-            this.guna2ComboBox2.TabIndex = 37;
+            "Test"});
+            this.changeFormatComboBox.ItemsAppearance.Parent = this.changeFormatComboBox;
+            this.changeFormatComboBox.Location = new System.Drawing.Point(625, 247);
+            this.changeFormatComboBox.Name = "changeFormatComboBox";
+            this.changeFormatComboBox.ShadowDecoration.Parent = this.changeFormatComboBox;
+            this.changeFormatComboBox.Size = new System.Drawing.Size(260, 36);
+            this.changeFormatComboBox.StartIndex = 0;
+            this.changeFormatComboBox.TabIndex = 37;
+            this.changeFormatComboBox.SelectedIndexChanged += new System.EventHandler(this.changeFormatComboBox_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -94,20 +93,20 @@ namespace CricBlast_GUI.Forms.Controls
             this.label12.TabIndex = 35;
             this.label12.Text = "CHANGE FORMAT";
             // 
-            // guna2ComboBox1
+            // changePlayerComboBox
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 4;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 17F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.changePlayerComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.changePlayerComboBox.BorderRadius = 4;
+            this.changePlayerComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.changePlayerComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.changePlayerComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.changePlayerComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.changePlayerComboBox.FocusedState.Parent = this.changePlayerComboBox;
+            this.changePlayerComboBox.Font = new System.Drawing.Font("Segoe UI", 17F);
+            this.changePlayerComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.changePlayerComboBox.HoverState.Parent = this.changePlayerComboBox;
+            this.changePlayerComboBox.ItemHeight = 30;
+            this.changePlayerComboBox.Items.AddRange(new object[] {
             "Tamim Iqbal",
             "Mohammad Naim",
             "Shakib Al Hasan",
@@ -123,13 +122,14 @@ namespace CricBlast_GUI.Forms.Controls
             "Saifuddin",
             "Nurul Hasan",
             "Aminul Islam"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(625, 168);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(260, 36);
-            this.guna2ComboBox1.StartIndex = 2;
-            this.guna2ComboBox1.TabIndex = 38;
+            this.changePlayerComboBox.ItemsAppearance.Parent = this.changePlayerComboBox;
+            this.changePlayerComboBox.Location = new System.Drawing.Point(625, 168);
+            this.changePlayerComboBox.Name = "changePlayerComboBox";
+            this.changePlayerComboBox.ShadowDecoration.Parent = this.changePlayerComboBox;
+            this.changePlayerComboBox.Size = new System.Drawing.Size(260, 36);
+            this.changePlayerComboBox.StartIndex = 0;
+            this.changePlayerComboBox.TabIndex = 38;
+            this.changePlayerComboBox.SelectedIndexChanged += new System.EventHandler(this.changePlayer_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -143,42 +143,30 @@ namespace CricBlast_GUI.Forms.Controls
             this.label10.TabIndex = 36;
             this.label10.Text = "CHANGE PLAYER";
             // 
-            // label6
+            // userTeamName
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label6.Location = new System.Drawing.Point(258, 255);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(121, 28);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "Bangladesh";
+            this.userTeamName.AutoSize = true;
+            this.userTeamName.BackColor = System.Drawing.Color.Transparent;
+            this.userTeamName.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.userTeamName.ForeColor = System.Drawing.Color.AliceBlue;
+            this.userTeamName.Location = new System.Drawing.Point(258, 255);
+            this.userTeamName.Name = "userTeamName";
+            this.userTeamName.Size = new System.Drawing.Size(121, 28);
+            this.userTeamName.TabIndex = 31;
+            this.userTeamName.Text = "Bangladesh";
             // 
-            // label5
+            // playerName
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label5.Location = new System.Drawing.Point(255, 209);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(277, 46);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "Shakib Al Hasan";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.label16.ForeColor = System.Drawing.Color.Silver;
-            this.label16.Location = new System.Drawing.Point(154, 525);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(150, 46);
-            this.label16.TabIndex = 29;
-            this.label16.Text = "Average";
+            this.playerName.AutoSize = true;
+            this.playerName.BackColor = System.Drawing.Color.Transparent;
+            this.playerName.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.playerName.ForeColor = System.Drawing.Color.AliceBlue;
+            this.playerName.Location = new System.Drawing.Point(255, 209);
+            this.playerName.Name = "playerName";
+            this.playerName.Size = new System.Drawing.Size(277, 46);
+            this.playerName.TabIndex = 30;
+            this.playerName.Text = "Shakib Al Hasan";
+            this.playerName.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label23
             // 
@@ -186,35 +174,11 @@ namespace CricBlast_GUI.Forms.Controls
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
             this.label23.ForeColor = System.Drawing.Color.Silver;
-            this.label23.Location = new System.Drawing.Point(521, 469);
+            this.label23.Location = new System.Drawing.Point(521, 413);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(118, 46);
             this.label23.TabIndex = 28;
             this.label23.Text = "Fifties";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.label9.ForeColor = System.Drawing.Color.Silver;
-            this.label9.Location = new System.Drawing.Point(154, 469);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(99, 46);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "Runs";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.label15.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label15.Location = new System.Drawing.Point(311, 525);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(109, 46);
-            this.label15.TabIndex = 26;
-            this.label15.Text = "37.71";
             // 
             // label21
             // 
@@ -222,95 +186,47 @@ namespace CricBlast_GUI.Forms.Controls
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
             this.label21.ForeColor = System.Drawing.Color.Silver;
-            this.label21.Location = new System.Drawing.Point(521, 413);
+            this.label21.Location = new System.Drawing.Point(521, 357);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(177, 46);
             this.label21.TabIndex = 25;
             this.label21.Text = "Hundreds";
             // 
-            // label8
+            // fifties
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.Silver;
-            this.label8.Location = new System.Drawing.Point(154, 413);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(153, 46);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "Matches";
+            this.fifties.AutoSize = true;
+            this.fifties.BackColor = System.Drawing.Color.Transparent;
+            this.fifties.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.fifties.ForeColor = System.Drawing.Color.AliceBlue;
+            this.fifties.Location = new System.Drawing.Point(693, 413);
+            this.fifties.Name = "fifties";
+            this.fifties.Size = new System.Drawing.Size(60, 46);
+            this.fifties.TabIndex = 23;
+            this.fifties.Text = "49";
             // 
-            // label20
+            // hundreds
             // 
-            this.label20.AutoSize = true;
-            this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.label20.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label20.Location = new System.Drawing.Point(693, 469);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(60, 46);
-            this.label20.TabIndex = 23;
-            this.label20.Text = "49";
+            this.hundreds.AutoSize = true;
+            this.hundreds.BackColor = System.Drawing.Color.Transparent;
+            this.hundreds.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.hundreds.ForeColor = System.Drawing.Color.AliceBlue;
+            this.hundreds.Location = new System.Drawing.Point(693, 357);
+            this.hundreds.Name = "hundreds";
+            this.hundreds.Size = new System.Drawing.Size(40, 46);
+            this.hundreds.TabIndex = 21;
+            this.hundreds.Text = "9";
             // 
-            // label14
+            // strikeRate
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.label14.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label14.Location = new System.Drawing.Point(311, 469);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(100, 46);
-            this.label14.TabIndex = 22;
-            this.label14.Text = "6600";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.label19.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label19.Location = new System.Drawing.Point(693, 413);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(40, 46);
-            this.label19.TabIndex = 21;
-            this.label19.Text = "9";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.label13.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label13.Location = new System.Drawing.Point(311, 413);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(80, 46);
-            this.label13.TabIndex = 20;
-            this.label13.Text = "215";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.label18.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label18.Location = new System.Drawing.Point(693, 357);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(109, 46);
-            this.label18.TabIndex = 19;
-            this.label18.Text = "82.14";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.label11.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label11.Location = new System.Drawing.Point(311, 357);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(60, 46);
-            this.label11.TabIndex = 18;
-            this.label11.Text = "34";
+            this.strikeRate.AutoSize = true;
+            this.strikeRate.BackColor = System.Drawing.Color.Transparent;
+            this.strikeRate.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.strikeRate.ForeColor = System.Drawing.Color.AliceBlue;
+            this.strikeRate.Location = new System.Drawing.Point(311, 525);
+            this.strikeRate.Name = "strikeRate";
+            this.strikeRate.Size = new System.Drawing.Size(109, 46);
+            this.strikeRate.TabIndex = 19;
+            this.strikeRate.Text = "82.14";
             // 
             // label17
             // 
@@ -318,23 +234,11 @@ namespace CricBlast_GUI.Forms.Controls
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
             this.label17.ForeColor = System.Drawing.Color.Silver;
-            this.label17.Location = new System.Drawing.Point(521, 357);
+            this.label17.Location = new System.Drawing.Point(154, 525);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(151, 46);
             this.label17.TabIndex = 32;
             this.label17.Text = "Str. Rate";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Location = new System.Drawing.Point(154, 357);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 46);
-            this.label7.TabIndex = 27;
-            this.label7.Text = "Age";
             // 
             // guna2PictureBox2
             // 
@@ -349,31 +253,31 @@ namespace CricBlast_GUI.Forms.Controls
             this.guna2PictureBox2.TabIndex = 34;
             this.guna2PictureBox2.TabStop = false;
             // 
-            // guna2PictureBox1
+            // playerPhoto
             // 
-            this.guna2PictureBox1.BorderRadius = 4;
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::CricBlast_GUI.Properties.Resources.Shakib;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(85, 131);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(152, 152);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 33;
-            this.guna2PictureBox1.TabStop = false;
+            this.playerPhoto.BorderRadius = 4;
+            this.playerPhoto.FillColor = System.Drawing.Color.Transparent;
+            this.playerPhoto.Image = global::CricBlast_GUI.Properties.Resources.Shakib;
+            this.playerPhoto.ImageRotate = 0F;
+            this.playerPhoto.Location = new System.Drawing.Point(85, 131);
+            this.playerPhoto.Name = "playerPhoto";
+            this.playerPhoto.ShadowDecoration.Parent = this.playerPhoto;
+            this.playerPhoto.Size = new System.Drawing.Size(152, 152);
+            this.playerPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.playerPhoto.TabIndex = 33;
+            this.playerPhoto.TabStop = false;
             // 
-            // label1
+            // wickets
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label1.Location = new System.Drawing.Point(693, 525);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 46);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "277";
+            this.wickets.AutoSize = true;
+            this.wickets.BackColor = System.Drawing.Color.Transparent;
+            this.wickets.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.wickets.ForeColor = System.Drawing.Color.AliceBlue;
+            this.wickets.Location = new System.Drawing.Point(693, 469);
+            this.wickets.Name = "wickets";
+            this.wickets.Size = new System.Drawing.Size(80, 46);
+            this.wickets.TabIndex = 23;
+            this.wickets.Text = "277";
             // 
             // label2
             // 
@@ -381,11 +285,83 @@ namespace CricBlast_GUI.Forms.Controls
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(521, 525);
+            this.label2.Location = new System.Drawing.Point(521, 469);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(145, 46);
             this.label2.TabIndex = 28;
             this.label2.Text = "Wickets";
+            // 
+            // matches
+            // 
+            this.matches.AutoSize = true;
+            this.matches.BackColor = System.Drawing.Color.Transparent;
+            this.matches.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.matches.ForeColor = System.Drawing.Color.AliceBlue;
+            this.matches.Location = new System.Drawing.Point(311, 357);
+            this.matches.Name = "matches";
+            this.matches.Size = new System.Drawing.Size(80, 46);
+            this.matches.TabIndex = 20;
+            this.matches.Text = "215";
+            // 
+            // runs
+            // 
+            this.runs.AutoSize = true;
+            this.runs.BackColor = System.Drawing.Color.Transparent;
+            this.runs.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.runs.ForeColor = System.Drawing.Color.AliceBlue;
+            this.runs.Location = new System.Drawing.Point(311, 413);
+            this.runs.Name = "runs";
+            this.runs.Size = new System.Drawing.Size(100, 46);
+            this.runs.TabIndex = 22;
+            this.runs.Text = "6600";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.Silver;
+            this.label8.Location = new System.Drawing.Point(154, 357);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(153, 46);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Matches";
+            // 
+            // average
+            // 
+            this.average.AutoSize = true;
+            this.average.BackColor = System.Drawing.Color.Transparent;
+            this.average.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.average.ForeColor = System.Drawing.Color.AliceBlue;
+            this.average.Location = new System.Drawing.Point(311, 469);
+            this.average.Name = "average";
+            this.average.Size = new System.Drawing.Size(109, 46);
+            this.average.TabIndex = 26;
+            this.average.Text = "37.71";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.label9.ForeColor = System.Drawing.Color.Silver;
+            this.label9.Location = new System.Drawing.Point(154, 413);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(99, 46);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "Runs";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.Transparent;
+            this.label16.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.label16.ForeColor = System.Drawing.Color.Silver;
+            this.label16.Location = new System.Drawing.Point(154, 469);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(150, 46);
+            this.label16.TabIndex = 29;
+            this.label16.Text = "Average";
             // 
             // PlayerStats
             // 
@@ -394,35 +370,34 @@ namespace CricBlast_GUI.Forms.Controls
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.SubHome;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Controls.Add(this.guna2ComboBox2);
+            this.Controls.Add(this.changeFormatComboBox);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.guna2ComboBox1);
+            this.Controls.Add(this.changePlayerComboBox);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.guna2PictureBox2);
-            this.Controls.Add(this.guna2PictureBox1);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label16);
+            this.Controls.Add(this.playerPhoto);
+            this.Controls.Add(this.userTeamName);
+            this.Controls.Add(this.playerName);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label23);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label15);
             this.Controls.Add(this.label21);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label20);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label19);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label18);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.wickets);
+            this.Controls.Add(this.fifties);
+            this.Controls.Add(this.hundreds);
+            this.Controls.Add(this.strikeRate);
             this.Controls.Add(this.label17);
-            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.average);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.runs);
+            this.Controls.Add(this.matches);
             this.DoubleBuffered = true;
             this.Name = "PlayerStats";
             this.Size = new System.Drawing.Size(956, 681);
+            this.Load += new System.EventHandler(this.PlayerStats_Load);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerPhoto)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -430,29 +405,27 @@ namespace CricBlast_GUI.Forms.Controls
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox changeFormatComboBox;
         private System.Windows.Forms.Label label12;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox changePlayerComboBox;
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label16;
+        private Guna.UI2.WinForms.Guna2PictureBox playerPhoto;
+        private System.Windows.Forms.Label userTeamName;
+        private System.Windows.Forms.Label playerName;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label fifties;
+        private System.Windows.Forms.Label hundreds;
+        private System.Windows.Forms.Label strikeRate;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label wickets;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label matches;
+        private System.Windows.Forms.Label runs;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label average;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label16;
     }
 }

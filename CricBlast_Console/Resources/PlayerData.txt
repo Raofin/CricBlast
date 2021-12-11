@@ -1,0 +1,70 @@
+Names, Mat, Runs, Ave, SR, 100s, 50s, WK, photo;
+T20I; ODI; Test;
+
+arr[Player][Format][States];
+
+0. Afghanistan
+
+1. Australia
+
+2. Bangladesh
+Tamim Iqbal, 78, 1758, 24.08, 116.96, 1, 7, 0; Tamim Iqbal, 219, 7666, 36.85, 78.6, 14, 51, 0; Tamim Iqbal, 64, 4788, 39.57, 57.75, 9, 31, 0;
+Mohammad Naim, 32, 794, 25.61, 105.02, 0, 4, 0; Mohammad Naim, 2, 1, 1, 50, 0, 0, 0; Mohammad Naim, 0, 0, 0, 0, 0, 0, 0;
+Shakib Al Hasan, 94, 1894, 22.81, 120.56, 0, 9, 117; Shakib Al Hasan, 215, 6600, 37.93, 82.14, 9, 49, 277; Shakib Al Hasan, 58, 3933, 39.33, 61.65, 5, 25, 215;
+Afif Hossain, 39, 503, 16.76, 117.52, 0, 1, 7; Afif Hossain, 7, 146, 29.2, 114.96, 0, 0, 1; Afif Hossain, 0, 0, 0, 0, 0, 0, 0;
+Mushfiqur Rahim, 99, 1465, 19.79, 115.35, 0, 6, 0; Mushfiqur Rahim, 227, 6581, 37.18, 79.05, 8, 40, 0; Mushfiqur Rahim, 75, 4696, 36.97, 47.9, 7, 23, 0;
+Mahmudullah, 113, 1971, 24.03, 117.88, 0, 6, 36; Mahmudullah, 200, 4469, 34.64, 77.05, 3, 25, 78; Mahmudullah, 50, 2914, 33.49, 53.4, 5, 16, 43;
+Mahedi Hasan, 29, 211, 14.06, 103.94, 0, 0, 24; Mahedi Hasan, 3, 24, 8, 72.72, 0, 0, 2; Mahedi Hasan, 0, 0, 0, 0, 0, 0, 0;
+Taskin Ahmed, 33, 68, 9.71, 93.15, 0, 0, 23; Taskin Ahmed, 42, 61, 4.35, 38.6, 0, 0, 55; Taskin Ahmed, 8, 156, 12, 44.19, 0, 1, 20;
+Nasum Ahmed, 18, 27, 9, 96.42, 0, 0, 22; Nasum Ahmed, 0, 0, 0, 0, 0, 0, 0; Nasum Ahmed, 0, 0, 0, 0, 0, 0, 0;
+Mustafizur Rahman, 61, 53, 3.53, 66.25, 0, 0, 86; Mustafizur Rahman, 68, 79, 7.18, 55.63, 0, 0, 127; Mustafizur Rahman, 14, 59, 4.53, 39.59, 0, 0, 30;
+Shoriful Islam, 17, 11, 2.75, 84.61, 0, 0, 22; Shoriful Islam, 4, 8, 4, 114.28, 0, 0, 7; Shoriful Islam, 1, 0, 0, 0, 0, 0, 1;
+Mohammad Mithun, 17, 127, 10.58, 93.38, 0, 0, 0; Mohammad Mithun, 34, 714, 27.46, 77.52, 0, 6, 0; Mohammad Mithun, 10, 333, 18.5, 44.28, 0, 2, 0;
+Mohammad Saifuddin, 29, 196, 17.81, 115.29, 0, 0, 31; Mohammad Saifuddin, 29, 362, 36.2, 85.78, 0, 2, 41; Mohammad Saifuddin, 0, 0, 0, 0, 0, 0, 0;
+Nurul Hasan, 30, 237, 12.47, 112.32, 0, 0, 0; Nurul Hasan, 3, 113, 56.5, 103.66, 0, 0, 0; Nurul Hasan, 3, 115, 19.16, 61.82, 0, 1, 0;
+Aminul Islam, 10, 35, 11.66, 85.36, 0, 0, 12; Aminul Islam, 0, 0, 0, 0, 0, 0, 0; Aminul Islam, 0, 0, 0, 0, 0, 0, 0;
+
+
+3. England
+
+4. India
+
+5. New Zealand
+
+6. Pakistan
+
+7. South Africa
+
+8.Sri Lanka 
+Dimuth Karunaratne, 0, 0, 0, 0, 0, 0, 0; Dimuth Karunaratne, 34, 767, 27.39, 74.39, 0, 6, 0; Dimuth Karunaratne, 74, 5454, 39.52, 50.0, 13, 27, 2;
+Avishka Fernando, 29, 325, 12.5, 93.83, 0, 0, 0; Avishka Fernando, 26, 964, 37.08, 92.34, 3, 5, 0; Avishka Fernando, 0, 0, 0, 0, 0, 0, 0;
+Suranga Lakmal, 11, 7, 2.33, 63.34, 0, 0, 8; Suranga Lakmal, 86, 244, 9.38, 60.4, 0, 0, 109; Suranga Lakmal, 68, 929, 11.61, 48.44, 0, 0, 168;
+Lasith Malinga, 83, 136, 6.48, 84.47, 0, 0, 107; Lasith Malinga, 226, 567, 6.83, 74.51, 0, 1, 338; Lasith Malinga, 30, 275, 11.46, 44.43, 0, 1, 101;
+Angelo Mathews, 78, 1148, 25.51, 117.74, 0, 5, 38; Angelo Mathews, 218, 5835, 41.68, 83.32, 3, 40, 120; Angelo Mathews, 92, 6338, 44.63, 48.52, 11, 37, 33;
+Jeevan Mendis, 22, 208, 18.91, 119.54, 0, 0, 12; Jeevan Mendis, 58, 636, 18.72, 82.7, 0, 1, 28; Jeevan Mendis, 0, 0, 0, 0, 0, 0, 0;
+Kusal Mendis, 29, 538, 18.55, 127.19, 0, 5, 0; Kusal Mendis, 79, 2228, 30.11, 83.98, 2, 17, 0; Kusal Mendis, 47, 3022, 34.74, 55.15, 7, 11, 1;
+Kusal Perera, 59, 1539, 26.53, 131.31,  0, 12, 0; Kusal Perera, 107, 3071, 31.34, 92.31, 6, 15, 0; Kusal Perera, 22, 1177, 30.97, 72.25, 2, 7, 0;
+Thisara Perera, 84, 1204, 23.15, 151.64, 0, 3, 51; Thisara Perera, 166, 2338, 19.98, 112.08, 1, 10, 175; Thisara Perera, 6, 203, 20.3, 73.02, 0, 1, 11;
+Kasun Rajitha, 10, 8, 4.0, 34.78, 0, 0, 10; Kasun Rajitha, 10, 1, 1.0, 9.09, 0, 0, 10; Kasun Rajitha, 9, 35, 3.5, 15.02, 0, 0, 25;l
+Dhananjaya de Silva, 22, 412, 20.6, 108.42, 0, 2, 5; Dhananjaya de Silva, 56, 1199, 26.64, 76.18, 0, 7, 28; Dhananjaya de Silva, 38, 2472, 38.62, 56.74, 8, 9, 25;
+Milinda Siriwardana, 22, 275, 17.19, 132.21, 0, 0, 8; Milinda Siriwardana, 27, 516, 22.43, 98.29, 0, 3, 9; Milinda Siriwardana, 5, 298, 33.11, 65.64, 0, 2, 11;
+Lahiru Thirimanne, 26, 291, 16.17, 108.99, 0, 0, 0; Lahiru Thirimanne, 127, 3164, 34.77, 72.09, 4, 21, 3; Lahiru Thirimanne, 42, 2063, 27.51, 39.55, 3, 10, 0;
+Isuru Udana, 34, 256, 18.29, 137.63, 0, 1, 27; Isuru Udana, 21, 237, 16.93, 95.18, 0, 1, 18; Isuru Udana, 0, 0, 0, 0, 0, 0, 0;
+Jeffrey Vandersay, 10, 15, 15.0, 88.24, 0, 0, 6; Jeffrey Vandersay, 12, 71, 11.83, 42.77, 0, 0, 11; Jeffrey Vandersay, 0, 0, 0, 0, 0, 0, 0;
+
+9. West Indies
+Chris Gayle, 79, 1899, 27.39, 137.51, 2, 14, 20; Chris Gayle, 301, 10480, 37.7, 87.2, 25, 54, 167; Chris Gayle, 103, 7215, 42.19, 60.28, 15, 37, 73;
+Jason Holder, 30, 225, 17.31, 123.63, 0, 0, 23; Jason Holder, 121, 1894, 24.92, 93.16, 0, 0, 140; Jason Holder, 53, 2477, 30.96, 58.17, 3, 11, 138;
+Fabian Allen, 28, 250, 17.86, 138.89, 0, 0, 20; Fabian Allen, 17, 158, 15.8, 93.16, 0, 1, 5; Fabian Allen, 0, 0, 0, 0, 0, 0, 0;
+Sunil Ambris, 0, 0, 0, 0, 0, 0, 0; Sunil Ambris 16, 473,36.38, 95.75, 1, 0, 0, 16; Sunil Ambris, 6, 166, 13.83, 46.63, 0, 0, 0;
+Carlos Brathwaite, 41, 310, 14.76, 113.14, 0, 0, 31; Carlos Brathwaite, 44, 559, 16.44, 91.04, 1, 0, 43; Carlos Brathwaite, 3, 181, 45.25, 63.73, 0, 3, 1;
+Darren Bravo, 21, 345, 19.17, 106.48, 0, 0, 0; Darren Bravo, 119, 3071, 30.11, 70.32, 4, 18, o; Darren Bravo, 56, 3538, 36.1, 44.86, 8, 17, 0;
+Sheldon Cottrell, 34, 18, 4.5, 62.07, 0, 0, 42; Sheldon Cottrell, 38, 88, 11.0, 67.69, 0, 0, 52; Sheldon Cottrell, 2, 11, 2.75, 45.83, 0, 0, 2;
+Shannon Gabriel, 2, 0, 0, 0, 0, 0, 3; Shannon Gabriel, 25, 24, 3.43, 38.1, 0, 0, 33; Shannon Gabriel, 56, 221, 4.25, 34.8, 0, 0, 161;
+Shimron Hetmyer, 42, 666, 21.48, 118.72, 0, 3, 0; Shimron Hetmyer, 47, 1447, 35.29, 106.4, 5, 4, 0; Shimron Hetmyer, 16, 838, 27.93, 73.64,0, 5, 0;
+Shai Hope, 13, 238, 21.64, 136.0, 0, 2, 0; Shai Hope, 83, 3599, 52.16, 74.78, 10, 19, 0; Shai Hope, 38, 1762, 25.01, 41.85, 2, 5, 0;
+Evin Lewis, 50, 1423, 30.28, 155.52, 2, 10, 0; Evin Lewis, 57, 18.47, 36.22, 82.97, 4, 10, 0; Evin Lewis, 0, 0, 0, 0, 0, 0, 0;
+Ashley Nurse, 13, 85, 42.5, 119.72, 0, 0, 8; Ashley Nurse, 54, 502, 19.31, 97.86, 0, 0, 49; Ashley Nurse, 0, 0, 0, 0, 0, 0, 0;
+Nicholas Pooran, 46, 738, 22.36, 125.72, 0, 3, 0; Nicholas Pooran, 1044, 47.75, 103.88, 1, 8, 0, 0; Nicholas Pooran, 0, 0, 0, 0, 0, 0, 0;
+Kemar Roach, 11, 3, 0.0, 150, 0, 0, 10; Kemar Roach, 92, 308, 13.39, 53.47, 0, 0, 124; Kemar Roach, 68, 1042, 11.82, 39.38, 0, 0, 231;
+Oshane Thomas, 17, 8,  4.0, 72.73, 0, 0, 19; Oshane Thomas, 20, 13, 2.6, 24.53, 0, 0, 27; Oshane Thomas, 0, 0, 0, 0, 0, 0, 0;
