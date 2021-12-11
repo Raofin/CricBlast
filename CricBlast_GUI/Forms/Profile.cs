@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace CricBlast_GUI.Forms
 {
-    public partial class UserProfile : Form
+    public partial class Profile : Form
     {
         protected override CreateParams CreateParams
         {
@@ -23,7 +23,7 @@ namespace CricBlast_GUI.Forms
             }
         }
 
-        public UserProfile()
+        public Profile()
         {
             InitializeComponent();
         }

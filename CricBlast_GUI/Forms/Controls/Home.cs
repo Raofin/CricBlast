@@ -103,7 +103,7 @@ namespace CricBlast_GUI.Forms.Controls
 
         private void userPhoto_Click(object sender, EventArgs e)
         {
-            new UserProfile().ShowDialog();
+            new Profile().ShowDialog();
         }
 
         private bool isAvailable = true;

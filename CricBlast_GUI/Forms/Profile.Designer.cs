@@ -1,7 +1,7 @@
 ﻿
 namespace CricBlast_GUI.Forms
 {
-    partial class UserProfile
+    partial class Profile
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace CricBlast_GUI.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserProfile));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profile));
             this.modifyButton = new Guna.UI2.WinForms.Guna2Button();
             this.userCirclePicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.label12 = new System.Windows.Forms.Label();

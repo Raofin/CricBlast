@@ -310,7 +310,7 @@ namespace CricBlast_GUI.Forms.Controls
             this._3.Location = new System.Drawing.Point(127, 396);
             this._3.Name = "_3";
             this._3.ShadowDecoration.Parent = this._3;
-            this._3.Size = new System.Drawing.Size(258, 36);
+            this._3.Size = new System.Drawing.Size(260, 36);
             this._3.TabIndex = 38;
             // 
             // _9
