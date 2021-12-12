@@ -17,19 +17,7 @@ namespace CricBlast_GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
             Application.Run(new MainForm());
-
-            //Application.Run(new Form1());
-            //Application.Run(new Form2());
-            //Application.Run(new Form3());
-            //Application.Run(new Form4());
-            //Application.Run(new Form5());
-            //Application.Run(new Form6());
-            //Application.Run(new Form7());
-            //Application.Run(new Form8());
-            //Application.Run(new Form9());
-            //Application.Run(new Form10());
         }
     }
 }

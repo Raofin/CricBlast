@@ -71,10 +71,8 @@ namespace CricBlast_GUI.Forms
             this.teamComboBox.ItemHeight = 30;
             this.teamComboBox.Items.AddRange(new object[] {
             "Select...",
-            "Afghanistan",
             "Australia",
             "Bangladesh",
-            "England",
             "India",
             "New Zealand",
             "Pakistan",

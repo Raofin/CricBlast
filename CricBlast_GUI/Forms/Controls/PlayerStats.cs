@@ -2,7 +2,7 @@
 using System.Windows.Forms;
 using CricBlast_GUI.Home;
 using Players;
-using static Teams.Team;
+using Teams;
 
 namespace CricBlast_GUI.Forms.Controls
 {
@@ -55,8 +55,8 @@ namespace CricBlast_GUI.Forms.Controls
 
         private void SetStats()
         {
-            playerPhoto.Image = Images.GetPlayerImage(Selected.UserTeam, changePlayerComboBox.SelectedIndex);
-            userTeamName.Text = GetState(Selected.UserTeam, TeamName);
+            playerPhoto.Image = Player.GetPlayerImage(Selected.UserTeam, changePlayerComboBox.SelectedIndex);
+            userTeamName.Text = Team.GetStats(Selected.UserTeam, Team.TeamName);
             playerName.Text = GetStats(0);
             matches.Text = GetStats(1);
             runs.Text = GetStats(2);
