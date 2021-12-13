@@ -23,10 +23,12 @@ namespace CricBlast_GUI.Forms
                 teamSelectError.Visible = true;
                 return;
             }
-
+            
             Selected.UserTeam = TeamNumber(teamComboBox.SelectedItem.ToString());
             Selected.UserTeamLogo = Teams.Team.GetLogo(Selected.UserTeam);
             Selected.UserTeamPlayerStats = Players.Player.GetTeamPlayers(Selected.UserTeam);
+            Selected.Player = 0;
+            Selected.Format = 0;
             Close();
         }
 

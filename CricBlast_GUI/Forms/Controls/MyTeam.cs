@@ -40,7 +40,7 @@ namespace CricBlast_GUI.Forms.Controls
         private void SetStats()
         {
             teamLogo.Image = UserTeamLogo;
-            teamName.Text = GetStats(UserTeam - 1, TeamName);
+            teamName.Text = GetStats(UserTeam, TeamName);
             UserTeamStats = GetAllStats(UserTeam);
             teamName.Visible = true;
             teamLogo.Visible = true;
