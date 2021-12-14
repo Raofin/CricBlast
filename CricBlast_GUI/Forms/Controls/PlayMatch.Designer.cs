@@ -29,14 +29,14 @@ namespace CricBlast_GUI.Forms.Controls
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.opponentLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.userTeamLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.guna2ComboBox4 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.pitchComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.stadiumComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.formatComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.opponentComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -44,22 +44,22 @@ namespace CricBlast_GUI.Forms.Controls
             this.label23 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label11 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opponentLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userTeamLogo)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2PictureBox2
+            // opponentLogo
             // 
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = global::CricBlast_GUI.Properties.Resources.India;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(638, 119);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(185, 185);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox2.TabIndex = 19;
-            this.guna2PictureBox2.TabStop = false;
+            this.opponentLogo.BackColor = System.Drawing.Color.Transparent;
+            this.opponentLogo.Image = global::CricBlast_GUI.Properties.Resources.India;
+            this.opponentLogo.ImageRotate = 0F;
+            this.opponentLogo.Location = new System.Drawing.Point(638, 119);
+            this.opponentLogo.Name = "opponentLogo";
+            this.opponentLogo.ShadowDecoration.Parent = this.opponentLogo;
+            this.opponentLogo.Size = new System.Drawing.Size(185, 185);
+            this.opponentLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.opponentLogo.TabIndex = 19;
+            this.opponentLogo.TabStop = false;
             // 
             // label12
             // 
@@ -73,18 +73,18 @@ namespace CricBlast_GUI.Forms.Controls
             this.label12.Text = "INDIA";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2PictureBox1
+            // userTeamLogo
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::CricBlast_GUI.Properties.Resources.Bangladesh1;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(138, 123);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(185, 185);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 20;
-            this.guna2PictureBox1.TabStop = false;
+            this.userTeamLogo.BackColor = System.Drawing.Color.Transparent;
+            this.userTeamLogo.Image = global::CricBlast_GUI.Properties.Resources.Bangladesh1;
+            this.userTeamLogo.ImageRotate = 0F;
+            this.userTeamLogo.Location = new System.Drawing.Point(138, 123);
+            this.userTeamLogo.Name = "userTeamLogo";
+            this.userTeamLogo.ShadowDecoration.Parent = this.userTeamLogo;
+            this.userTeamLogo.Size = new System.Drawing.Size(185, 185);
+            this.userTeamLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.userTeamLogo.TabIndex = 20;
+            this.userTeamLogo.TabStop = false;
             // 
             // label10
             // 
@@ -98,45 +98,45 @@ namespace CricBlast_GUI.Forms.Controls
             this.label10.Text = "BANGLADESH";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2ComboBox4
+            // pitchComboBox
             // 
-            this.guna2ComboBox4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox4.BorderRadius = 4;
-            this.guna2ComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox4.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox4.FocusedState.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.guna2ComboBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox4.HoverState.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.ItemHeight = 30;
-            this.guna2ComboBox4.Items.AddRange(new object[] {
+            this.pitchComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.pitchComboBox.BorderRadius = 4;
+            this.pitchComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.pitchComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.pitchComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.pitchComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.pitchComboBox.FocusedState.Parent = this.pitchComboBox;
+            this.pitchComboBox.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.pitchComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.pitchComboBox.HoverState.Parent = this.pitchComboBox;
+            this.pitchComboBox.ItemHeight = 30;
+            this.pitchComboBox.Items.AddRange(new object[] {
             "Green Pitch",
             "Dusty Pitch",
             "Dead Pitch"});
-            this.guna2ComboBox4.ItemsAppearance.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Location = new System.Drawing.Point(87, 505);
-            this.guna2ComboBox4.Name = "guna2ComboBox4";
-            this.guna2ComboBox4.ShadowDecoration.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Size = new System.Drawing.Size(364, 36);
-            this.guna2ComboBox4.StartIndex = 0;
-            this.guna2ComboBox4.TabIndex = 26;
+            this.pitchComboBox.ItemsAppearance.Parent = this.pitchComboBox;
+            this.pitchComboBox.Location = new System.Drawing.Point(87, 505);
+            this.pitchComboBox.Name = "pitchComboBox";
+            this.pitchComboBox.ShadowDecoration.Parent = this.pitchComboBox;
+            this.pitchComboBox.Size = new System.Drawing.Size(364, 36);
+            this.pitchComboBox.StartIndex = 0;
+            this.pitchComboBox.TabIndex = 26;
             // 
-            // guna2ComboBox3
+            // stadiumComboBox
             // 
-            this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox3.BorderRadius = 4;
-            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.FocusedState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox3.HoverState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.Items.AddRange(new object[] {
+            this.stadiumComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.stadiumComboBox.BorderRadius = 4;
+            this.stadiumComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.stadiumComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.stadiumComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.stadiumComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.stadiumComboBox.FocusedState.Parent = this.stadiumComboBox;
+            this.stadiumComboBox.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.stadiumComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.stadiumComboBox.HoverState.Parent = this.stadiumComboBox;
+            this.stadiumComboBox.ItemHeight = 30;
+            this.stadiumComboBox.Items.AddRange(new object[] {
             "Sher-E-Bangla Cricket Stadium",
             "Narendra Modi Stadium",
             "Melbourne Cricket Ground",
@@ -155,53 +155,53 @@ namespace CricBlast_GUI.Forms.Controls
             "Barabati Stadium",
             "Saifai International Cricket Stadium",
             "Eden Park"});
-            this.guna2ComboBox3.ItemsAppearance.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(511, 505);
-            this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Size = new System.Drawing.Size(364, 36);
-            this.guna2ComboBox3.StartIndex = 0;
-            this.guna2ComboBox3.TabIndex = 27;
+            this.stadiumComboBox.ItemsAppearance.Parent = this.stadiumComboBox;
+            this.stadiumComboBox.Location = new System.Drawing.Point(511, 505);
+            this.stadiumComboBox.Name = "stadiumComboBox";
+            this.stadiumComboBox.ShadowDecoration.Parent = this.stadiumComboBox;
+            this.stadiumComboBox.Size = new System.Drawing.Size(364, 36);
+            this.stadiumComboBox.StartIndex = 0;
+            this.stadiumComboBox.TabIndex = 27;
             // 
-            // guna2ComboBox1
+            // formatComboBox
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 4;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.formatComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.formatComboBox.BorderRadius = 4;
+            this.formatComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.formatComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.formatComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.formatComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.formatComboBox.FocusedState.Parent = this.formatComboBox;
+            this.formatComboBox.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.formatComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.formatComboBox.HoverState.Parent = this.formatComboBox;
+            this.formatComboBox.ItemHeight = 30;
+            this.formatComboBox.Items.AddRange(new object[] {
             "Test",
             "ODI",
             "T20I"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(511, 430);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(364, 36);
-            this.guna2ComboBox1.StartIndex = 1;
-            this.guna2ComboBox1.TabIndex = 28;
+            this.formatComboBox.ItemsAppearance.Parent = this.formatComboBox;
+            this.formatComboBox.Location = new System.Drawing.Point(511, 430);
+            this.formatComboBox.Name = "formatComboBox";
+            this.formatComboBox.ShadowDecoration.Parent = this.formatComboBox;
+            this.formatComboBox.Size = new System.Drawing.Size(364, 36);
+            this.formatComboBox.StartIndex = 1;
+            this.formatComboBox.TabIndex = 28;
             // 
-            // guna2ComboBox2
+            // opponentComboBox
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderRadius = 4;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Items.AddRange(new object[] {
+            this.opponentComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.opponentComboBox.BorderRadius = 4;
+            this.opponentComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.opponentComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.opponentComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.opponentComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.opponentComboBox.FocusedState.Parent = this.opponentComboBox;
+            this.opponentComboBox.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.opponentComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.opponentComboBox.HoverState.Parent = this.opponentComboBox;
+            this.opponentComboBox.ItemHeight = 30;
+            this.opponentComboBox.Items.AddRange(new object[] {
             "India",
             "Pakistan",
             "Australia",
@@ -211,13 +211,14 @@ namespace CricBlast_GUI.Forms.Controls
             "West Indies",
             "Sri Lanka",
             "Afghanistan"});
-            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(87, 430);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(364, 36);
-            this.guna2ComboBox2.StartIndex = 0;
-            this.guna2ComboBox2.TabIndex = 29;
+            this.opponentComboBox.ItemsAppearance.Parent = this.opponentComboBox;
+            this.opponentComboBox.Location = new System.Drawing.Point(87, 430);
+            this.opponentComboBox.Name = "opponentComboBox";
+            this.opponentComboBox.ShadowDecoration.Parent = this.opponentComboBox;
+            this.opponentComboBox.Size = new System.Drawing.Size(364, 36);
+            this.opponentComboBox.StartIndex = 0;
+            this.opponentComboBox.TabIndex = 29;
+            this.opponentComboBox.SelectedIndexChanged += new System.EventHandler(this.opponentComboBox_SelectedIndexChanged);
             // 
             // label8
             // 
@@ -319,14 +320,14 @@ namespace CricBlast_GUI.Forms.Controls
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.SubHome;
-            this.Controls.Add(this.guna2PictureBox2);
+            this.Controls.Add(this.opponentLogo);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.userTeamLogo);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.guna2ComboBox4);
-            this.Controls.Add(this.guna2ComboBox3);
-            this.Controls.Add(this.guna2ComboBox1);
-            this.Controls.Add(this.guna2ComboBox2);
+            this.Controls.Add(this.pitchComboBox);
+            this.Controls.Add(this.stadiumComboBox);
+            this.Controls.Add(this.formatComboBox);
+            this.Controls.Add(this.opponentComboBox);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -336,8 +337,8 @@ namespace CricBlast_GUI.Forms.Controls
             this.Controls.Add(this.label11);
             this.Name = "PlayMatch";
             this.Size = new System.Drawing.Size(956, 681);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.opponentLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userTeamLogo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -345,14 +346,14 @@ namespace CricBlast_GUI.Forms.Controls
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2PictureBox opponentLogo;
         private System.Windows.Forms.Label label12;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox userTeamLogo;
         private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox4;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox pitchComboBox;
+        private Guna.UI2.WinForms.Guna2ComboBox stadiumComboBox;
+        private Guna.UI2.WinForms.Guna2ComboBox formatComboBox;
+        private Guna.UI2.WinForms.Guna2ComboBox opponentComboBox;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;

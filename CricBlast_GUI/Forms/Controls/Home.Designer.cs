@@ -62,7 +62,7 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             // menuPanel
             // 
-            this.menuPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
+            this.menuPanel.BackColor = System.Drawing.Color.Transparent;
             this.menuPanel.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Home_Menu;
             this.menuPanel.Controls.Add(this.availabilityIcon);
             this.menuPanel.Controls.Add(this.availability);
@@ -305,7 +305,8 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
+            this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
             this.Controls.Add(this.homeSubPanel);
             this.Controls.Add(this.menuPanel);
             this.Name = "Home";

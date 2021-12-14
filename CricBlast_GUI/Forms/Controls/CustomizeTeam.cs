@@ -44,6 +44,7 @@ namespace CricBlast_GUI.Forms.Controls
 
         private void setPlayer(Guna2ComboBox setPlayer, int player)
         {
+            setPlayer.Items.Clear();
             setPlayer.Items.Add(GetStats(Selected.PlayingEleven[player], 0));
             setPlayer.Items.Add(GetStats(11, 0));
             setPlayer.Items.Add(GetStats(12, 0));
