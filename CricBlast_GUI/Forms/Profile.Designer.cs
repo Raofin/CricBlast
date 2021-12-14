@@ -400,7 +400,7 @@ namespace CricBlast_GUI.Forms
             this.accountCreated.TabIndex = 32;
             this.accountCreated.Text = "10/12/2021";
             // 
-            // UserProfile
+            // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -428,9 +428,10 @@ namespace CricBlast_GUI.Forms
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.usernameTextBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "UserProfile";
+            this.Name = "Profile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Profile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.userCirclePicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.genderPicture)).EndInit();
             this.ResumeLayout(false);

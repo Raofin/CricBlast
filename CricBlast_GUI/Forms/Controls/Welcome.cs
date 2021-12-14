@@ -1,5 +1,8 @@
-﻿using CricBlast_GUI.Home;
+﻿using System.Configuration;
+using System.Data.SqlClient;
+using CricBlast_GUI.Home;
 using System.Windows.Forms;
+using CricBlast_GUI.Database;
 
 namespace CricBlast_GUI.Forms.Controls
 {
@@ -72,26 +75,32 @@ namespace CricBlast_GUI.Forms.Controls
             }
         }
 
-        private void forgotPassword_Click(object sender, System.EventArgs e)
-        {
-            new Recover().Show();
-        }
-
         private void login_Click(object sender, System.EventArgs e)
         {
             usernameRequired.Visible = string.IsNullOrWhiteSpace(usernameTextBox.Text);
             passwordRequired.Visible = string.IsNullOrWhiteSpace(passwordTextBox.Text);
 
 
-            if (usernameRequired.Visible || passwordRequired.Visible)
-                new MessageBoxOk(Selected.WarningMark, "Please fill out all the fields properly.").ShowDialog();
-            else
-                new MessageBoxOk(Selected.CheckMark, "Your registration has been successfully completed.")
-                    .ShowDialog();
-            //Bad credentials. Please login again.
+            if (!usernameRequired.Visible && !passwordRequired.Visible)
+            {
+                if (Login.verify(usernameTextBox.Text, passwordTextBox.Text))
+                {
+                    new MessageBoxOk(Selected.CheckMark, "Your registration has been successfully completed.")
+                        .ShowDialog();
+                    Controls.Clear();
+                    Controls.Add(new Home());
+                    return;
+                }
 
-            Controls.Clear();
-            Controls.Add(new Home());
+                new MessageBoxOk(Selected.ErrorMark, "Bad credentials. Please login again.").ShowDialog();
+            }
+            else
+                new MessageBoxOk(Selected.WarningMark, "Please fill out all the fields properly.").ShowDialog();
+        }
+
+        private void forgotPassword_Click(object sender, System.EventArgs e)
+        {
+            new Recover().Show();
         }
 
         private void usernameTextBox_TextChanged(object sender, System.EventArgs e)

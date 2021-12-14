@@ -27,5 +27,7 @@ namespace CricBlast_GUI.Home
         public static readonly byte CheckMark = 0;
         public static readonly byte WarningMark = 1;
         public static readonly byte ErrorMark = 2;
+
+        public static int UserId { get; set; }
     }
 }

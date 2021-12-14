@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CricBlast_GUI.Home;
 
 namespace CricBlast_GUI.Forms
 {
@@ -26,6 +29,33 @@ namespace CricBlast_GUI.Forms
         public Profile()
         {
             InitializeComponent();
+
+
+        }
+
+
+        private void Profile_Load(object sender, EventArgs e)
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                var query = "SELECT * FROM Users WHERE Id = @id";
+
+                SqlCommand sqlCommand = new SqlCommand(query, connection);
+                sqlCommand.Parameters.AddWithValue("@id", Selected.UserId);
+
+                connection.Open();
+                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+
+
+                while (sqlDataReader.Read())
+                {
+                    usernameLabel.Text = sqlDataReader["Username"].ToString();
+                    emailLabel.Text = sqlDataReader["Email"].ToString();
+                    passwordLabel.Text = sqlDataReader["Password"].ToString();
+                    phoneLabel.Text = sqlDataReader["PhoneNumber"].ToString();
+                }
+            }
         }
 
         private bool modify = false;
@@ -45,6 +75,12 @@ namespace CricBlast_GUI.Forms
 
             usernameLabel.Visible = emailLabel.Visible = passwordLabel.Visible = phoneLabel.Visible = false;
             usernameTextBox.Visible = emailTextBox.Visible = passwordTextBox.Visible = phoneTextBox.Visible = true;
+
+            usernameTextBox.Text = usernameLabel.Text;
+            emailTextBox.Text = emailLabel.Text;
+            passwordTextBox.Text = passwordLabel.Text;
+            phoneTextBox.Text = phoneLabel.Text;
+
             modifyButton.Text = "Confirm";
             modifyButton.FillColor = Color.Tomato;
             modify = true;

@@ -31,7 +31,7 @@ namespace CricBlast_GUI.Forms.Controls
         {
             this.genderRadioFemale = new Guna.UI2.WinForms.Guna2RadioButton();
             this.genderRadioMale = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.choosePhoto = new Guna.UI2.WinForms.Guna2Button();
             this.login = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -117,28 +117,29 @@ namespace CricBlast_GUI.Forms.Controls
             this.genderRadioMale.UseVisualStyleBackColor = false;
             this.genderRadioMale.CheckedChanged += new System.EventHandler(this.genderRadioButton1_CheckedChanged);
             // 
-            // guna2Button2
+            // choosePhoto
             // 
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderRadius = 4;
-            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
-            this.guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.DisabledState.Parent = this.guna2Button2;
-            this.guna2Button2.FillColor = System.Drawing.Color.MediumPurple;
-            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
-            this.guna2Button2.ForeColor = System.Drawing.Color.White;
-            this.guna2Button2.HoverState.Parent = this.guna2Button2;
-            this.guna2Button2.Location = new System.Drawing.Point(905, 429);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
-            this.guna2Button2.Size = new System.Drawing.Size(260, 46);
-            this.guna2Button2.TabIndex = 29;
-            this.guna2Button2.Text = "Choose a Photo";
+            this.choosePhoto.BackColor = System.Drawing.Color.Transparent;
+            this.choosePhoto.BorderRadius = 4;
+            this.choosePhoto.CheckedState.Parent = this.choosePhoto;
+            this.choosePhoto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.choosePhoto.CustomImages.Parent = this.choosePhoto;
+            this.choosePhoto.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.choosePhoto.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.choosePhoto.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.choosePhoto.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.choosePhoto.DisabledState.Parent = this.choosePhoto;
+            this.choosePhoto.FillColor = System.Drawing.Color.MediumPurple;
+            this.choosePhoto.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.choosePhoto.ForeColor = System.Drawing.Color.White;
+            this.choosePhoto.HoverState.Parent = this.choosePhoto;
+            this.choosePhoto.Location = new System.Drawing.Point(905, 429);
+            this.choosePhoto.Name = "choosePhoto";
+            this.choosePhoto.ShadowDecoration.Parent = this.choosePhoto;
+            this.choosePhoto.Size = new System.Drawing.Size(260, 46);
+            this.choosePhoto.TabIndex = 29;
+            this.choosePhoto.Text = "Choose a Photo";
+            this.choosePhoto.Click += new System.EventHandler(this.choosePhoto_Click);
             // 
             // login
             // 
@@ -706,7 +707,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.Controls.Add(this.genderRadioMale);
             this.Controls.Add(this.eyePicture);
             this.Controls.Add(this.userPictureBox);
-            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.choosePhoto);
             this.Controls.Add(this.login);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label9);
@@ -742,7 +743,7 @@ namespace CricBlast_GUI.Forms.Controls
         private Guna.UI2.WinForms.Guna2RadioButton genderRadioMale;
         private Guna.UI2.WinForms.Guna2PictureBox eyePicture;
         private Guna.UI2.WinForms.Guna2PictureBox userPictureBox;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button choosePhoto;
         private System.Windows.Forms.Label login;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label9;

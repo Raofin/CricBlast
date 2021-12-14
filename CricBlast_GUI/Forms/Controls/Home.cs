@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
 using CricBlast_GUI.Home;
@@ -21,8 +23,30 @@ namespace CricBlast_GUI.Forms.Controls
 
         private void Home_Load(object sender, EventArgs e)
         {
+            getName();
             new ChooseTeam().ShowDialog();
             homeSubPanel.Controls.Add(new MyTeam());
+        }
+
+        private void getName()
+        {
+            string connectionString = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                var query = "SELECT * FROM Users WHERE Id = @id";
+
+                SqlCommand sqlCommand = new SqlCommand(query, connection);
+                sqlCommand.Parameters.AddWithValue("@id", Selected.UserId);
+
+                connection.Open();
+                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
+
+
+                while (sqlDataReader.Read())
+                {
+                    usernameLabel.Text = sqlDataReader["Username"].ToString();
+                }
+            }
         }
 
         public int SelectedMenu = 1;

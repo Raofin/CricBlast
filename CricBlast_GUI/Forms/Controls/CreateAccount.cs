@@ -1,5 +1,8 @@
 ﻿using System;
+using System.Drawing;
+using System.IO;
 using System.Windows.Forms;
+using CricBlast_GUI.Database;
 using CricBlast_GUI.Home;
 
 namespace CricBlast_GUI.Forms.Controls
@@ -7,6 +10,7 @@ namespace CricBlast_GUI.Forms.Controls
     public partial class CreateAccount : UserControl
     {
         private string CaptchaResult { get; set; }
+        private int Gender { get; set; }
 
         public CreateAccount()
         {
@@ -35,10 +39,26 @@ namespace CricBlast_GUI.Forms.Controls
 
             if (usernameError.Visible || emailError.Visible || passwordError.Visible || mobileError.Visible ||
                 genderError.Visible)
+            {
                 new MessageBoxOk(Selected.WarningMark, "Please fill out all the fields properly.").ShowDialog();
+            }
             else
-                new MessageBoxOk(Selected.CheckMark, "Your registration has been successfully completed.")
-                    .ShowDialog();
+            {
+                if (Register.checkExistingAccount(emailTextBox.Text))
+                {
+                    new MessageBoxOk(Selected.ErrorMark, "You already have an account with that email.")
+                        .ShowDialog();
+                }
+                else
+                {
+                    Register.createAccount(usernameTextBox.Text, emailTextBox.Text, passwordTextBox.Text, mobileTextBox.Text, Gender);
+                    new MessageBoxOk(Selected.CheckMark, "Your registration has been successfully completed.")
+                        .ShowDialog();
+                    Controls.Clear();
+                    Controls.Add(new Welcome());
+                }
+
+            }
         }
 
         private void refreshCaptchaPicture_Click(object sender, EventArgs e)
@@ -79,12 +99,14 @@ namespace CricBlast_GUI.Forms.Controls
         private void genderRadioButton1_CheckedChanged(object sender, EventArgs e)
         {
             userPictureBox.Image = Properties.Resources.User_Male;
+            Gender = 1;
             genderError.Visible = false;
         }
 
         private void genderRadioButton2_CheckedChanged(object sender, EventArgs e)
         {
             userPictureBox.Image = Properties.Resources.User_Female;
+            Gender = 0;
             genderError.Visible = false;
         }
 
@@ -111,6 +133,16 @@ namespace CricBlast_GUI.Forms.Controls
         private void captchaTextBox_TextChanged(object sender, EventArgs e)
         {
             captchaError.Visible = !captchaTextBox.Text.Trim().Equals(CaptchaResult);
+        }
+        
+        private void choosePhoto_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Images|*.bmp;*.jpg;*.gif;*.png;*.tif";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                userPictureBox.Image = new Bitmap(open.FileName);
+            }
         }
     }
 }

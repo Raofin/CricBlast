@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -32,12 +33,15 @@ namespace CricBlast_GUI.Forms
             switch (mark)
             {
                 case 0:
+                    SystemSounds.Asterisk.Play();
                     messageMark.Image = Properties.Resources.Check_Mark;
                     break;
                 case 1:
+                    SystemSounds.Exclamation.Play();
                     messageMark.Image = Properties.Resources.Warning_Mark;
                     break;
                 default:
+                    SystemSounds.Hand.Play();
                     messageMark.Image = Properties.Resources.Error_Mark;
                     break;
             }
