@@ -44,14 +44,14 @@ namespace CricBlast_GUI.Forms.Controls
             }
             else
             {
-                if (Register.checkExistingAccount(emailTextBox.Text))
+                if (Account.isUnique(emailTextBox.Text))
                 {
                     new MessageBoxOk(Selected.ErrorMark, "You already have an account with that email.")
                         .ShowDialog();
                 }
                 else
                 {
-                    Register.createAccount(usernameTextBox.Text, emailTextBox.Text, passwordTextBox.Text, mobileTextBox.Text, Gender);
+                    Account.create(usernameTextBox.Text, emailTextBox.Text, passwordTextBox.Text, mobileTextBox.Text, Gender);
                     new MessageBoxOk(Selected.CheckMark, "Your registration has been successfully completed.")
                         .ShowDialog();
                     Controls.Clear();

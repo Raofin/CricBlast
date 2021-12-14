@@ -8,8 +8,7 @@ namespace CricBlast_GUI.Database
     {
         public static bool verify(string username, string password)
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
-            using (SqlConnection connection = new SqlConnection(connectionString))
+            using (SqlConnection connection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
                 var query = "SELECT * FROM Users WHERE Username = @username AND Password = @password";
 
@@ -20,9 +19,19 @@ namespace CricBlast_GUI.Database
                 connection.Open();
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
 
-                if (sqlDataReader.HasRows)
-                    while (sqlDataReader.Read())
-                        Selected.UserId = (int) sqlDataReader["Id"];
+                if (!sqlDataReader.HasRows) 
+                    return sqlDataReader.HasRows;
+
+                while (sqlDataReader.Read())
+                {
+
+                    Selected.UserDetails[0] = sqlDataReader["Id"].ToString();
+                    Selected.UserDetails[1] = sqlDataReader["UserName"].ToString();
+                    Selected.UserDetails[2] = sqlDataReader["Email"].ToString();
+                    Selected.UserDetails[3] = sqlDataReader["Password"].ToString();
+                    Selected.UserDetails[4] = sqlDataReader["PhoneNumber"].ToString();
+                    Selected.UserDetails[5] = sqlDataReader["Gender"].ToString();
+                }
 
                 return sqlDataReader.HasRows;
             }

@@ -40,7 +40,6 @@ namespace CricBlast_GUI.Forms.Controls
             this.label7 = new System.Windows.Forms.Label();
             this.CaptchLabel = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.mobileTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.emailTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -64,6 +63,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.captchaTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.mobileTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eyePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).BeginInit();
@@ -257,35 +257,6 @@ namespace CricBlast_GUI.Forms.Controls
             this.label10.TabIndex = 17;
             this.label10.Text = "Captcha";
             // 
-            // mobileTextBox
-            // 
-            this.mobileTextBox.Animated = true;
-            this.mobileTextBox.BackColor = System.Drawing.Color.Transparent;
-            this.mobileTextBox.BorderRadius = 3;
-            this.mobileTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.mobileTextBox.DefaultText = "";
-            this.mobileTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.mobileTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.mobileTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.mobileTextBox.DisabledState.Parent = this.mobileTextBox;
-            this.mobileTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.mobileTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.mobileTextBox.FocusedState.Parent = this.mobileTextBox;
-            this.mobileTextBox.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.mobileTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.mobileTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.mobileTextBox.HoverState.Parent = this.mobileTextBox;
-            this.mobileTextBox.Location = new System.Drawing.Point(842, 315);
-            this.mobileTextBox.Margin = new System.Windows.Forms.Padding(5);
-            this.mobileTextBox.Name = "mobileTextBox";
-            this.mobileTextBox.PasswordChar = '\0';
-            this.mobileTextBox.PlaceholderText = "Enter your phone number...";
-            this.mobileTextBox.SelectedText = "";
-            this.mobileTextBox.ShadowDecoration.Parent = this.mobileTextBox;
-            this.mobileTextBox.Size = new System.Drawing.Size(323, 46);
-            this.mobileTextBox.TabIndex = 4;
-            this.mobileTextBox.TextChanged += new System.EventHandler(this.mobileTextBox_TextChanged);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -351,11 +322,11 @@ namespace CricBlast_GUI.Forms.Controls
             this.usernameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.usernameTextBox.DisabledState.Parent = this.usernameTextBox;
             this.usernameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.usernameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.usernameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(161)))), ((int)(((byte)(92)))));
             this.usernameTextBox.FocusedState.Parent = this.usernameTextBox;
             this.usernameTextBox.Font = new System.Drawing.Font("Segoe UI", 16F);
             this.usernameTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.usernameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.usernameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(161)))), ((int)(((byte)(92)))));
             this.usernameTextBox.HoverState.Parent = this.usernameTextBox;
             this.usernameTextBox.Location = new System.Drawing.Point(842, 144);
             this.usernameTextBox.Margin = new System.Windows.Forms.Padding(5);
@@ -684,6 +655,35 @@ namespace CricBlast_GUI.Forms.Controls
             this.captchaTextBox.TabIndex = 5;
             this.captchaTextBox.TextChanged += new System.EventHandler(this.captchaTextBox_TextChanged);
             // 
+            // mobileTextBox
+            // 
+            this.mobileTextBox.Animated = true;
+            this.mobileTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.mobileTextBox.BorderRadius = 3;
+            this.mobileTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.mobileTextBox.DefaultText = "";
+            this.mobileTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.mobileTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.mobileTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.mobileTextBox.DisabledState.Parent = this.mobileTextBox;
+            this.mobileTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.mobileTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.mobileTextBox.FocusedState.Parent = this.mobileTextBox;
+            this.mobileTextBox.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.mobileTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.mobileTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.mobileTextBox.HoverState.Parent = this.mobileTextBox;
+            this.mobileTextBox.Location = new System.Drawing.Point(842, 315);
+            this.mobileTextBox.Margin = new System.Windows.Forms.Padding(5);
+            this.mobileTextBox.Name = "mobileTextBox";
+            this.mobileTextBox.PasswordChar = '\0';
+            this.mobileTextBox.PlaceholderText = "Enter your phone number...";
+            this.mobileTextBox.SelectedText = "";
+            this.mobileTextBox.ShadowDecoration.Parent = this.mobileTextBox;
+            this.mobileTextBox.Size = new System.Drawing.Size(323, 46);
+            this.mobileTextBox.TabIndex = 4;
+            this.mobileTextBox.TextChanged += new System.EventHandler(this.mobileTextBox_TextChanged);
+            // 
             // CreateAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -752,7 +752,6 @@ namespace CricBlast_GUI.Forms.Controls
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label CaptchLabel;
         private System.Windows.Forms.Label label10;
-        private Guna.UI2.WinForms.Guna2TextBox mobileTextBox;
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2TextBox emailTextBox;
         private System.Windows.Forms.Label label3;
@@ -773,5 +772,6 @@ namespace CricBlast_GUI.Forms.Controls
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         private Guna.UI2.WinForms.Guna2TextBox captchaTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox mobileTextBox;
     }
 }

@@ -52,6 +52,10 @@ namespace CricBlast_GUI.Forms
             this.close = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.accountCreated = new System.Windows.Forms.Label();
+            this.usernameError = new System.Windows.Forms.Label();
+            this.emailError = new System.Windows.Forms.Label();
+            this.passwordError = new System.Windows.Forms.Label();
+            this.mobileError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.userCirclePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.genderPicture)).BeginInit();
             this.SuspendLayout();
@@ -184,6 +188,7 @@ namespace CricBlast_GUI.Forms
             this.usernameTextBox.Size = new System.Drawing.Size(227, 35);
             this.usernameTextBox.TabIndex = 33;
             this.usernameTextBox.Visible = false;
+            this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
             // 
             // emailTextBox
             // 
@@ -241,7 +246,6 @@ namespace CricBlast_GUI.Forms
             this.passwordTextBox.ShadowDecoration.Parent = this.passwordTextBox;
             this.passwordTextBox.Size = new System.Drawing.Size(227, 35);
             this.passwordTextBox.TabIndex = 33;
-            this.passwordTextBox.UseSystemPasswordChar = true;
             this.passwordTextBox.Visible = false;
             // 
             // phoneTextBox
@@ -400,6 +404,61 @@ namespace CricBlast_GUI.Forms
             this.accountCreated.TabIndex = 32;
             this.accountCreated.Text = "10/12/2021";
             // 
+            // usernameError
+            // 
+            this.usernameError.AutoSize = true;
+            this.usernameError.BackColor = System.Drawing.Color.Transparent;
+            this.usernameError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameError.ForeColor = System.Drawing.Color.Red;
+            this.usernameError.Location = new System.Drawing.Point(461, 271);
+            this.usernameError.Name = "usernameError";
+            this.usernameError.Size = new System.Drawing.Size(22, 32);
+            this.usernameError.TabIndex = 35;
+            this.usernameError.Text = "!";
+            this.usernameError.Visible = false;
+            // 
+            // emailError
+            // 
+            this.emailError.AutoSize = true;
+            this.emailError.BackColor = System.Drawing.Color.Transparent;
+            this.emailError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailError.ForeColor = System.Drawing.Color.Red;
+            this.emailError.Location = new System.Drawing.Point(461, 319);
+            this.emailError.Name = "emailError";
+            this.emailError.Size = new System.Drawing.Size(22, 32);
+            this.emailError.TabIndex = 36;
+            this.emailError.Text = "!";
+            this.emailError.Visible = false;
+            this.emailError.TextChanged += new System.EventHandler(this.emailError_TextChanged);
+            // 
+            // passwordError
+            // 
+            this.passwordError.AutoSize = true;
+            this.passwordError.BackColor = System.Drawing.Color.Transparent;
+            this.passwordError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.passwordError.ForeColor = System.Drawing.Color.Red;
+            this.passwordError.Location = new System.Drawing.Point(461, 363);
+            this.passwordError.Name = "passwordError";
+            this.passwordError.Size = new System.Drawing.Size(22, 32);
+            this.passwordError.TabIndex = 37;
+            this.passwordError.Text = "!";
+            this.passwordError.Visible = false;
+            this.passwordError.TextChanged += new System.EventHandler(this.passwordError_TextChanged);
+            // 
+            // mobileError
+            // 
+            this.mobileError.AutoSize = true;
+            this.mobileError.BackColor = System.Drawing.Color.Transparent;
+            this.mobileError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mobileError.ForeColor = System.Drawing.Color.Red;
+            this.mobileError.Location = new System.Drawing.Point(461, 409);
+            this.mobileError.Name = "mobileError";
+            this.mobileError.Size = new System.Drawing.Size(22, 32);
+            this.mobileError.TabIndex = 38;
+            this.mobileError.Text = "!";
+            this.mobileError.Visible = false;
+            this.mobileError.TextChanged += new System.EventHandler(this.mobileError_TextChanged);
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -407,6 +466,10 @@ namespace CricBlast_GUI.Forms
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(534, 647);
+            this.Controls.Add(this.mobileError);
+            this.Controls.Add(this.passwordError);
+            this.Controls.Add(this.emailError);
+            this.Controls.Add(this.usernameError);
             this.Controls.Add(this.genderPicture);
             this.Controls.Add(this.accountCreated);
             this.Controls.Add(this.genderLabel);
@@ -431,7 +494,6 @@ namespace CricBlast_GUI.Forms
             this.Name = "Profile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Profile_Load);
             ((System.ComponentModel.ISupportInitialize)(this.userCirclePicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.genderPicture)).EndInit();
             this.ResumeLayout(false);
@@ -462,5 +524,9 @@ namespace CricBlast_GUI.Forms
         private Guna.UI2.WinForms.Guna2Button close;
         private System.Windows.Forms.Label accountCreated;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label usernameError;
+        private System.Windows.Forms.Label emailError;
+        private System.Windows.Forms.Label passwordError;
+        private System.Windows.Forms.Label mobileError;
     }
 }

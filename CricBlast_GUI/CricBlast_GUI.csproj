@@ -72,8 +72,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\ConnectionString.cs" />
     <Compile Include="Database\UserProfile.cs" />
-    <Compile Include="Database\Register.cs" />
+    <Compile Include="Database\Account.cs" />
     <Compile Include="Database\Login.cs" />
     <Compile Include="Forms\Controls\CreateAccount.cs">
       <SubType>UserControl</SubType>

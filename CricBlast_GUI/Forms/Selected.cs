@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
@@ -28,6 +29,6 @@ namespace CricBlast_GUI.Home
         public static readonly byte WarningMark = 1;
         public static readonly byte ErrorMark = 2;
 
-        public static int UserId { get; set; }
+        public static string[] UserDetails = new string[10];
     }
 }

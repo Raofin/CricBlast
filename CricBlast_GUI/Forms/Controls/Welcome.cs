@@ -85,8 +85,7 @@ namespace CricBlast_GUI.Forms.Controls
             {
                 if (Login.verify(usernameTextBox.Text, passwordTextBox.Text))
                 {
-                    new MessageBoxOk(Selected.CheckMark, "Your registration has been successfully completed.")
-                        .ShowDialog();
+                    new MessageBoxOk(Selected.CheckMark, "Your registration has been successfully completed.").ShowDialog();
                     Controls.Clear();
                     Controls.Add(new Home());
                     return;
