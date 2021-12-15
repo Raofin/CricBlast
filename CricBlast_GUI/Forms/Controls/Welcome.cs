@@ -61,6 +61,8 @@ namespace CricBlast_GUI.Forms.Controls
                     user = false;
                     logo.Image = Properties.Resources.Logo;
                     usernameLabel.Text = "USERNAME OR EMAIL";
+                    usernameTextBox.Text = "";
+                    passwordTextBox.Text = "";
                     createAccountLabel.Visible = true;
                     label5.Visible = true;
                     return;
@@ -69,6 +71,8 @@ namespace CricBlast_GUI.Forms.Controls
                     user = true;
                     logo.Image = Properties.Resources.Admin_Logo;
                     usernameLabel.Text = "ADMIN NAME OR EMAIL";
+                    usernameTextBox.Text = "";
+                    passwordTextBox.Text = "";
                     createAccountLabel.Visible = false;
                     label5.Visible = false;
                     break;
@@ -85,7 +89,7 @@ namespace CricBlast_GUI.Forms.Controls
             {
                 if (Login.verify(usernameTextBox.Text, passwordTextBox.Text))
                 {
-                    new MessageBoxOk(Selected.CheckMark, "Your registration has been successfully completed.").ShowDialog();
+                    new MessageBoxOk(Selected.CheckMark, "You have successfully logged in.").ShowDialog();
                     Controls.Clear();
                     Controls.Add(new Home());
                     return;
@@ -99,7 +103,9 @@ namespace CricBlast_GUI.Forms.Controls
 
         private void forgotPassword_Click(object sender, System.EventArgs e)
         {
-            new Recover().Show();
+            new Recover().ShowDialog();
+            usernameTextBox.Text = Selected.UserDetails[2];
+            passwordTextBox.Text = Selected.UserDetails[3];
         }
 
         private void usernameTextBox_TextChanged(object sender, System.EventArgs e)
@@ -110,6 +116,12 @@ namespace CricBlast_GUI.Forms.Controls
         private void passwordTextBox_TextChanged(object sender, System.EventArgs e)
         {
             passwordRequired.Visible = false;
+        }
+
+        private void Welcome_Load(object sender, System.EventArgs e)
+        {
+            usernameTextBox.Text = Selected.UserDetails[2];
+            passwordTextBox.Text = Selected.UserDetails[3];
         }
     }
 }

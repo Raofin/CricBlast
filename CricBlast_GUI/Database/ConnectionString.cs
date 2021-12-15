@@ -9,6 +9,6 @@ namespace CricBlast_GUI.Database
 {
     public static class ConnectionString
     {
-        public static string CrikBlastDB = ConfigurationManager.ConnectionStrings["Database"].ConnectionString;
+        public static string CrikBlastDB = ConfigurationManager.ConnectionStrings["LocalDB"].ConnectionString;
     }
 }

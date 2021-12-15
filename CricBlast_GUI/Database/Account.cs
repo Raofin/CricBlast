@@ -61,7 +61,5 @@ namespace CricBlast_GUI.Database
                 sqlCommand.ExecuteNonQuery();
             }
         }
-
-
     }
 }

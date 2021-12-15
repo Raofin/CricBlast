@@ -329,6 +329,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.Controls.Add(this.logo);
             this.Name = "Welcome";
             this.Size = new System.Drawing.Size(1264, 681);
+            this.Load += new System.EventHandler(this.Welcome_Load);
             ((System.ComponentModel.ISupportInitialize)(this.refreshPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginAsPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();

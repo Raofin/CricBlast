@@ -30,34 +30,34 @@ namespace CricBlast_GUI.Forms
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.recoveredUserPicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.emailTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.usernameLabel = new System.Windows.Forms.Label();
             this.recoverButton = new Guna.UI2.WinForms.Guna2Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.recoveredName = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.recoveredPassword = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.error = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.recoveredUserPicture)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2CirclePictureBox1
+            // recoveredUserPicture
             // 
-            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CirclePictureBox1.Image = global::CricBlast_GUI.Properties.Resources.User_Male_GrayBack;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(192, 52);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(200, 200);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 0;
-            this.guna2CirclePictureBox1.TabStop = false;
-            this.guna2CirclePictureBox1.UseTransparentBackground = true;
+            this.recoveredUserPicture.BackColor = System.Drawing.Color.Transparent;
+            this.recoveredUserPicture.Image = global::CricBlast_GUI.Properties.Resources.User_Male_GrayBack;
+            this.recoveredUserPicture.ImageRotate = 0F;
+            this.recoveredUserPicture.Location = new System.Drawing.Point(192, 52);
+            this.recoveredUserPicture.Name = "recoveredUserPicture";
+            this.recoveredUserPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.recoveredUserPicture.ShadowDecoration.Parent = this.recoveredUserPicture;
+            this.recoveredUserPicture.Size = new System.Drawing.Size(200, 200);
+            this.recoveredUserPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.recoveredUserPicture.TabIndex = 0;
+            this.recoveredUserPicture.TabStop = false;
+            this.recoveredUserPicture.UseTransparentBackground = true;
             // 
             // emailTextBox
             // 
@@ -149,27 +149,27 @@ namespace CricBlast_GUI.Forms
             this.label2.TabIndex = 23;
             this.label2.Text = "Password  :";
             // 
-            // guna2HtmlLabel1
+            // recoveredName
             // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(243, 366);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(24, 39);
-            this.guna2HtmlLabel1.TabIndex = 25;
-            this.guna2HtmlLabel1.Text = "...";
+            this.recoveredName.BackColor = System.Drawing.Color.Transparent;
+            this.recoveredName.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
+            this.recoveredName.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.recoveredName.Location = new System.Drawing.Point(243, 366);
+            this.recoveredName.Name = "recoveredName";
+            this.recoveredName.Size = new System.Drawing.Size(24, 39);
+            this.recoveredName.TabIndex = 25;
+            this.recoveredName.Text = "...";
             // 
-            // guna2HtmlLabel2
+            // recoveredPassword
             // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(243, 403);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(24, 39);
-            this.guna2HtmlLabel2.TabIndex = 25;
-            this.guna2HtmlLabel2.Text = "...";
+            this.recoveredPassword.BackColor = System.Drawing.Color.Transparent;
+            this.recoveredPassword.Font = new System.Drawing.Font("Segoe UI Semibold", 20F, System.Drawing.FontStyle.Bold);
+            this.recoveredPassword.ForeColor = System.Drawing.Color.MediumSeaGreen;
+            this.recoveredPassword.Location = new System.Drawing.Point(243, 403);
+            this.recoveredPassword.Name = "recoveredPassword";
+            this.recoveredPassword.Size = new System.Drawing.Size(24, 39);
+            this.recoveredPassword.TabIndex = 25;
+            this.recoveredPassword.Text = "...";
             // 
             // guna2ControlBox1
             // 
@@ -213,20 +213,20 @@ namespace CricBlast_GUI.Forms
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(584, 561);
             this.Controls.Add(this.guna2ControlBox1);
-            this.Controls.Add(this.guna2HtmlLabel2);
-            this.Controls.Add(this.guna2HtmlLabel1);
+            this.Controls.Add(this.recoveredPassword);
+            this.Controls.Add(this.recoveredName);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.error);
             this.Controls.Add(this.usernameLabel);
             this.Controls.Add(this.recoverButton);
-            this.Controls.Add(this.guna2CirclePictureBox1);
+            this.Controls.Add(this.recoveredUserPicture);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Recover";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.recoveredUserPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -234,14 +234,14 @@ namespace CricBlast_GUI.Forms
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox recoveredUserPicture;
         private Guna.UI2.WinForms.Guna2TextBox emailTextBox;
         private System.Windows.Forms.Label usernameLabel;
         private Guna.UI2.WinForms.Guna2Button recoverButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
+        private Guna.UI2.WinForms.Guna2HtmlLabel recoveredName;
+        private Guna.UI2.WinForms.Guna2HtmlLabel recoveredPassword;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private System.Windows.Forms.Label error;

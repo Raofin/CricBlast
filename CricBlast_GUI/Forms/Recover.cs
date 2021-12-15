@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CricBlast_GUI.Database;
+using CricBlast_GUI.Home;
 
 namespace CricBlast_GUI.Forms
 {
@@ -33,6 +35,13 @@ namespace CricBlast_GUI.Forms
 
         private void recoverButton_Click(object sender, EventArgs e)
         {
+            if (Login.recover(emailTextBox.Text))
+            {
+                recoveredName.Text = Selected.UserDetails[1];
+                recoveredPassword.Text = Selected.UserDetails[3];
+                recoveredUserPicture.Image = Selected.UserImage;
+
+            }
             error.Visible = string.IsNullOrWhiteSpace(emailTextBox.Text);
         }
 
