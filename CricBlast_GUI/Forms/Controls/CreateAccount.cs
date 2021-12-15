@@ -35,23 +35,22 @@ namespace CricBlast_GUI.Forms.Controls
             emailError.Visible = string.IsNullOrWhiteSpace(emailTextBox.Text);
             passwordError.Visible = string.IsNullOrWhiteSpace(passwordTextBox.Text);
             mobileError.Visible = string.IsNullOrWhiteSpace(mobileTextBox.Text);
+            photoError.Visible = UserPicture == null;
             genderError.Visible = !genderRadioMale.Checked && !genderRadioFemale.Checked;
+            captchaError.Visible = !captchaTextBox.Text.Trim().Equals(CaptchaResult);
+
 
             if (usernameError.Visible || emailError.Visible || passwordError.Visible || mobileError.Visible ||
-                genderError.Visible)
-            {
+                photoError.Visible || genderError.Visible || captchaError.Visible)
                 new MessageBoxOk(Selected.WarningMark, "Please fill out all the fields properly.").ShowDialog();
-            }
             else
             {
                 if (Account.isUnique(emailTextBox.Text))
-                {
                     new MessageBoxOk(Selected.ErrorMark, "You already have an account with that email.")
                         .ShowDialog();
-                }
                 else
                 {
-                    Account.create(usernameTextBox.Text, emailTextBox.Text, passwordTextBox.Text, mobileTextBox.Text, Gender);
+                    Account.create(usernameTextBox.Text, emailTextBox.Text, passwordTextBox.Text, mobileTextBox.Text, Gender, UserPicture);
                     new MessageBoxOk(Selected.CheckMark, "Your registration has been successfully completed.")
                         .ShowDialog();
                     Controls.Clear();
@@ -134,15 +133,16 @@ namespace CricBlast_GUI.Forms.Controls
         {
             captchaError.Visible = !captchaTextBox.Text.Trim().Equals(CaptchaResult);
         }
-        
+
+        private Image UserPicture { get; set; }
+
         private void choosePhoto_Click(object sender, EventArgs e)
         {
             OpenFileDialog open = new OpenFileDialog();
-            open.Filter = "Images|*.bmp;*.jpg;*.gif;*.png;*.tif";
-            if (open.ShowDialog() == DialogResult.OK)
-            {
-                userPictureBox.Image = new Bitmap(open.FileName);
-            }
+            open.Filter = "Images|*.bmp;*.jpg;*.gif;*.png";
+            if (open.ShowDialog() == DialogResult.OK) 
+                UserPicture = userPictureBox.Image = new Bitmap(open.FileName);
         }
+
     }
 }

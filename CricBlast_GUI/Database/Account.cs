@@ -1,4 +1,7 @@
 ﻿using System.Data.SqlClient;
+using System.Drawing;
+using System.IO;
+using System.Runtime.InteropServices;
 
 namespace CricBlast_GUI.Database
 {
@@ -19,11 +22,13 @@ namespace CricBlast_GUI.Database
             }
         }
 
-        public static void create(string username, string email, string password, string phoneNumber, int gender)
+        public static void create(string username, string email, string password, 
+            string phoneNumber, int gender, Image image)
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
-                var query = "INSERT INTO Users (Username, Email, Password, PhoneNumber, Gender) VALUES (@username, @email, @password, @phoneNumber, @gender)";
+                var query = "INSERT INTO Users (Username, Email, Password, PhoneNumber, Gender, Image) " +
+                            "VALUES (@username, @email, @password, @phoneNumber, @gender, @image)";
 
                 SqlCommand sqlCommand = new SqlCommand(query, connection);
                 sqlCommand.Parameters.AddWithValue("@username", username);
@@ -31,6 +36,7 @@ namespace CricBlast_GUI.Database
                 sqlCommand.Parameters.AddWithValue("@password", password);
                 sqlCommand.Parameters.AddWithValue("@phoneNumber", phoneNumber);
                 sqlCommand.Parameters.AddWithValue("@gender", gender);
+                sqlCommand.Parameters.AddWithValue("@image", Convert.toBytes(image));
 
                 connection.Open();
                 sqlCommand.ExecuteNonQuery();
@@ -41,7 +47,8 @@ namespace CricBlast_GUI.Database
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
-                var query = "UPDATE Users SET Username = @username, Email = @email, Password = @password, PhoneNumber = @phoneNumber WHERE Id =@id";
+                var query = "UPDATE Users SET Username = @username, Email = @email, " +
+                            "Password = @password, PhoneNumber = @phoneNumber WHERE Id = @id";
 
                 SqlCommand sqlCommand = new SqlCommand(query, connection);
                 sqlCommand.Parameters.AddWithValue("@id", id);
@@ -54,5 +61,7 @@ namespace CricBlast_GUI.Database
                 sqlCommand.ExecuteNonQuery();
             }
         }
+
+
     }
 }

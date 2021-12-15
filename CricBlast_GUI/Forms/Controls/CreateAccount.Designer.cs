@@ -64,6 +64,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
             this.captchaTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.mobileTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.photoError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eyePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).BeginInit();
@@ -684,11 +685,25 @@ namespace CricBlast_GUI.Forms.Controls
             this.mobileTextBox.TabIndex = 4;
             this.mobileTextBox.TextChanged += new System.EventHandler(this.mobileTextBox_TextChanged);
             // 
+            // photoError
+            // 
+            this.photoError.AutoSize = true;
+            this.photoError.BackColor = System.Drawing.Color.Transparent;
+            this.photoError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.photoError.ForeColor = System.Drawing.Color.Red;
+            this.photoError.Location = new System.Drawing.Point(1171, 436);
+            this.photoError.Name = "photoError";
+            this.photoError.Size = new System.Drawing.Size(22, 32);
+            this.photoError.TabIndex = 41;
+            this.photoError.Text = "!";
+            this.photoError.Visible = false;
+            // 
             // CreateAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
+            this.Controls.Add(this.photoError);
             this.Controls.Add(this.captchaTextBox);
             this.Controls.Add(this.guna2TextBox3);
             this.Controls.Add(this.guna2TextBox2);
@@ -773,5 +788,6 @@ namespace CricBlast_GUI.Forms.Controls
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
         private Guna.UI2.WinForms.Guna2TextBox captchaTextBox;
         private Guna.UI2.WinForms.Guna2TextBox mobileTextBox;
+        private System.Windows.Forms.Label photoError;
     }
 }

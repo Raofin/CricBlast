@@ -73,6 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\ConnectionString.cs" />
+    <Compile Include="Database\Convert.cs" />
     <Compile Include="Database\UserProfile.cs" />
     <Compile Include="Database\Account.cs" />
     <Compile Include="Database\Login.cs" />

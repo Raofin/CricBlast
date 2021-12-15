@@ -14,6 +14,7 @@ namespace CricBlast_GUI.Forms
         private void ChooseTeam_Load(object sender, EventArgs e)
         {
             teamComboBox.SelectedIndex = Selected.UserTeam == 0 ? 0 : Selected.UserTeam;
+            userCirclePicture.Image = Selected.UserImage;
         }
 
         private void okButton_Click(object sender, EventArgs e)
@@ -23,7 +24,7 @@ namespace CricBlast_GUI.Forms
                 teamSelectError.Visible = true;
                 return;
             }
-            
+
             Selected.UserTeam = TeamNumber(teamComboBox.SelectedItem.ToString());
             Selected.UserTeamLogo = Teams.Team.GetLogo(Selected.UserTeam);
             Selected.UserTeamPlayerStats = Players.Player.GetTeamPlayers(Selected.UserTeam);

@@ -24,6 +24,7 @@ namespace CricBlast_GUI.Forms.Controls
         private void Home_Load(object sender, EventArgs e)
         {
             usernameLabel.Text = Selected.UserDetails[1];
+            userPhoto.Image = Selected.UserImage;
             new ChooseTeam().ShowDialog();
             homeSubPanel.Controls.Add(new MyTeam());
         }
@@ -107,6 +108,8 @@ namespace CricBlast_GUI.Forms.Controls
         private void userPhoto_Click(object sender, EventArgs e)
         {
             new Profile().ShowDialog();
+            usernameLabel.Text = Selected.UserDetails[1];
+            userPhoto.Image = Selected.UserImage;
         }
 
         private bool isAvailable = true;

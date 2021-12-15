@@ -30,6 +30,8 @@ namespace CricBlast_GUI.Forms
             emailLabel.Text = UserDetails[2];
             passwordLabel.Text = UserDetails[3];
             phoneLabel.Text = UserDetails[4];
+            userCirclePicture.Image = UserImage;
+
             if (UserDetails[5].Equals("0"))
             {
                 genderLabel.Text = "Female";

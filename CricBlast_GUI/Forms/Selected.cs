@@ -30,5 +30,6 @@ namespace CricBlast_GUI.Home
         public static readonly byte ErrorMark = 2;
 
         public static string[] UserDetails = new string[10];
+        public static Image UserImage { get; set; }
     }
 }

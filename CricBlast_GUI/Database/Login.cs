@@ -1,40 +1,43 @@
-﻿using System.Configuration;
-using System.Data.SqlClient;
-using CricBlast_GUI.Home;
+﻿using System.Data.SqlClient;
+using static CricBlast_GUI.Home.Selected;
 
 namespace CricBlast_GUI.Database
 {
     public class Login
     {
-        public static bool verify(string username, string password)
+        public static bool verify(string email, string password)
         {
             using (SqlConnection connection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
-                var query = "SELECT * FROM Users WHERE Username = @username AND Password = @password";
+                var query = "SELECT * FROM Users WHERE Email = @email AND Password = @password";
 
                 SqlCommand sqlCommand = new SqlCommand(query, connection);
-                sqlCommand.Parameters.AddWithValue("@username", username);
+                sqlCommand.Parameters.AddWithValue("@email", email);
                 sqlCommand.Parameters.AddWithValue("@password", password);
 
                 connection.Open();
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
 
-                if (!sqlDataReader.HasRows) 
+                if (!sqlDataReader.HasRows)
                     return sqlDataReader.HasRows;
 
                 while (sqlDataReader.Read())
                 {
-
-                    Selected.UserDetails[0] = sqlDataReader["Id"].ToString();
-                    Selected.UserDetails[1] = sqlDataReader["UserName"].ToString();
-                    Selected.UserDetails[2] = sqlDataReader["Email"].ToString();
-                    Selected.UserDetails[3] = sqlDataReader["Password"].ToString();
-                    Selected.UserDetails[4] = sqlDataReader["PhoneNumber"].ToString();
-                    Selected.UserDetails[5] = sqlDataReader["Gender"].ToString();
+                    UserDetails[0] = sqlDataReader["Id"].ToString();
+                    UserDetails[1] = sqlDataReader["UserName"].ToString();
+                    UserDetails[2] = sqlDataReader["Email"].ToString();
+                    UserDetails[3] = sqlDataReader["Password"].ToString();
+                    UserDetails[4] = sqlDataReader["PhoneNumber"].ToString();
+                    UserDetails[5] = sqlDataReader["Gender"].ToString();
+                    UserImage = Convert.toImage((byte[]) sqlDataReader["Image"]);
                 }
 
                 return sqlDataReader.HasRows;
             }
+
+
+
         }
+
     }
 }
