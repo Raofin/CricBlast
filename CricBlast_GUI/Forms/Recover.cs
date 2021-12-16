@@ -35,7 +35,7 @@ namespace CricBlast_GUI.Forms
 
         private void recoverButton_Click(object sender, EventArgs e)
         {
-            if (Login.recover(emailTextBox.Text))
+            if (Login.Recover(emailTextBox.Text))
             {
                 recoveredName.Text = Selected.UserDetails[1];
                 recoveredPassword.Text = Selected.UserDetails[3];

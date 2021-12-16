@@ -73,7 +73,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\ConnectionString.cs" />
-    <Compile Include="Database\Convert.cs" />
+    <Compile Include="Database\ConvertImage.cs" />
     <Compile Include="Database\UserProfile.cs" />
     <Compile Include="Database\Account.cs" />
     <Compile Include="Database\Login.cs" />
@@ -373,6 +373,7 @@
   <ItemGroup>
     <Content Include="Libraries\Players.dll" />
     <Content Include="Libraries\Teams.dll" />
+    <None Include="Resources\RefreshShadowed_Colored.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

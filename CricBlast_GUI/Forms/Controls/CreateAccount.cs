@@ -45,12 +45,12 @@ namespace CricBlast_GUI.Forms.Controls
                 new MessageBoxOk(Selected.WarningMark, "Please fill out all the fields properly.").ShowDialog();
             else
             {
-                if (Account.isUnique(emailTextBox.Text))
+                if (Account.IsUnique(emailTextBox.Text))
                     new MessageBoxOk(Selected.ErrorMark, "You already have an account with that email.")
                         .ShowDialog();
                 else
                 {
-                    Account.create(usernameTextBox.Text, emailTextBox.Text, passwordTextBox.Text, mobileTextBox.Text, Gender, UserPicture);
+                    Account.Create(usernameTextBox.Text, emailTextBox.Text, passwordTextBox.Text, mobileTextBox.Text, Gender, UserPicture);
                     new MessageBoxOk(Selected.CheckMark, "Your registration has been successfully completed.")
                         .ShowDialog();
                     Controls.Clear();

@@ -56,8 +56,10 @@ namespace CricBlast_GUI.Forms
             this.emailError = new System.Windows.Forms.Label();
             this.passwordError = new System.Windows.Forms.Label();
             this.mobileError = new System.Windows.Forms.Label();
+            this.changeProfilePicture = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.userCirclePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.genderPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.changeProfilePicture)).BeginInit();
             this.SuspendLayout();
             // 
             // modifyButton
@@ -459,6 +461,23 @@ namespace CricBlast_GUI.Forms
             this.mobileError.Visible = false;
             this.mobileError.TextChanged += new System.EventHandler(this.mobileError_TextChanged);
             // 
+            // changeProfilePicture
+            // 
+            this.changeProfilePicture.BackColor = System.Drawing.Color.Transparent;
+            this.changeProfilePicture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.changeProfilePicture.Image = global::CricBlast_GUI.Properties.Resources.RefreshShadowed_Colored;
+            this.changeProfilePicture.ImageRotate = 0F;
+            this.changeProfilePicture.Location = new System.Drawing.Point(308, 196);
+            this.changeProfilePicture.Name = "changeProfilePicture";
+            this.changeProfilePicture.ShadowDecoration.Parent = this.changeProfilePicture;
+            this.changeProfilePicture.Size = new System.Drawing.Size(50, 50);
+            this.changeProfilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.changeProfilePicture.TabIndex = 39;
+            this.changeProfilePicture.TabStop = false;
+            this.changeProfilePicture.UseTransparentBackground = true;
+            this.changeProfilePicture.Visible = false;
+            this.changeProfilePicture.Click += new System.EventHandler(this.changeProfilePicture_Click);
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -466,6 +485,7 @@ namespace CricBlast_GUI.Forms
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(534, 647);
+            this.Controls.Add(this.changeProfilePicture);
             this.Controls.Add(this.mobileError);
             this.Controls.Add(this.passwordError);
             this.Controls.Add(this.emailError);
@@ -485,17 +505,18 @@ namespace CricBlast_GUI.Forms
             this.Controls.Add(this.label2);
             this.Controls.Add(this.close);
             this.Controls.Add(this.modifyButton);
-            this.Controls.Add(this.userCirclePicture);
             this.Controls.Add(this.phoneTextBox);
             this.Controls.Add(this.passwordTextBox);
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.usernameTextBox);
+            this.Controls.Add(this.userCirclePicture);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Profile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.userCirclePicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.genderPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.changeProfilePicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -528,5 +549,6 @@ namespace CricBlast_GUI.Forms
         private System.Windows.Forms.Label emailError;
         private System.Windows.Forms.Label passwordError;
         private System.Windows.Forms.Label mobileError;
+        private Guna.UI2.WinForms.Guna2PictureBox changeProfilePicture;
     }
 }

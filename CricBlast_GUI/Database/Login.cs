@@ -7,46 +7,43 @@ namespace CricBlast_GUI.Database
 {
     public static class Login
     {
-        public static bool verify(string nameOrEmail, string password)
+        public static bool Verify(string nameOrEmail, string password)
         {
-            using (SqlConnection connection = new SqlConnection(ConnectionString.CrikBlastDB))
+            var query = $"SELECT * FROM Users WHERE (Username = '{nameOrEmail}' OR Email = '{nameOrEmail}') AND Password = '{password}'";
+
+            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
-                var query = "SELECT * FROM Users WHERE (Username = @nameOrEmail OR Email = @nameOrEmail) AND Password = @password";
+                using (var sqlCommand = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    var sqlDataReader = sqlCommand.ExecuteReader();
 
-                SqlCommand sqlCommand = new SqlCommand(query, connection);
-                sqlCommand.Parameters.AddWithValue("@nameOrEmail", nameOrEmail);
-                sqlCommand.Parameters.AddWithValue("@password", password);
-                
-                connection.Open();
-                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
-
-                if (!sqlDataReader.HasRows) return sqlDataReader.HasRows;
-
-                loadProfile(sqlDataReader);
-                return sqlDataReader.HasRows;
+                    if (!sqlDataReader.HasRows) return false;
+                    LoadProfile(sqlDataReader);
+                    return true;
+                }
             }
         }
 
-        public static bool recover(string email)
+        public static bool Recover(string email)
         {
-            using (SqlConnection connection = new SqlConnection(ConnectionString.CrikBlastDB))
+            var query = $"SELECT * FROM Users WHERE Email = '{email}'";
+
+            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
-                var query = "SELECT * FROM Users WHERE Email = @email";
+                using (var sqlCommand = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    var sqlDataReader = sqlCommand.ExecuteReader();
 
-                SqlCommand sqlCommand = new SqlCommand(query, connection);
-                sqlCommand.Parameters.AddWithValue("@email", email);
-
-                connection.Open();
-                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
-
-                if (!sqlDataReader.HasRows) return sqlDataReader.HasRows;
-
-                loadProfile(sqlDataReader);
-                return sqlDataReader.HasRows;
+                    if (!sqlDataReader.HasRows) return false;
+                    LoadProfile(sqlDataReader);
+                    return true;
+                }
             }
         }
 
-        private static void loadProfile(SqlDataReader sqlDataReader)
+        public static void LoadProfile(SqlDataReader sqlDataReader)
         {
             while (sqlDataReader.Read())
             {
@@ -56,7 +53,15 @@ namespace CricBlast_GUI.Database
                 UserDetails[3] = sqlDataReader["Password"].ToString();
                 UserDetails[4] = sqlDataReader["PhoneNumber"].ToString();
                 UserDetails[5] = sqlDataReader["Gender"].ToString();
-                UserImage = Convert.toImage((byte[])sqlDataReader["Image"]);
+
+                try
+                {
+                    UserImage = ConvertImage.ToImage((byte[]) sqlDataReader["Image"]);
+                }
+                catch (InvalidCastException)
+                {
+                    UserImage = null;
+                }
             }
         }
     }

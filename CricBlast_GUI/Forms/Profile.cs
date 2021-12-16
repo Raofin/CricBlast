@@ -20,9 +20,16 @@ namespace CricBlast_GUI.Forms
 
         public Profile()
         {
+            SetStyle(
+                ControlStyles.UserPaint |
+                ControlStyles.AllPaintingInWmPaint |
+                ControlStyles.OptimizedDoubleBuffer,
+                true);
             InitializeComponent();
             loadProfile();
         }
+
+        private Image userNewImage = UserImage;
 
         private void loadProfile()
         {
@@ -65,30 +72,42 @@ namespace CricBlast_GUI.Forms
                 UserDetails[2] = emailLabel.Text = emailTextBox.Text;
                 UserDetails[3] = passwordLabel.Text = passwordTextBox.Text;
                 UserDetails[4] = phoneLabel.Text = phoneTextBox.Text;
+                UserImage = userCirclePicture.Image = userNewImage;
 
-                usernameLabel.Visible = emailLabel.Visible = passwordLabel.Visible = phoneLabel.Visible = true;
-                usernameTextBox.Visible = emailTextBox.Visible = passwordTextBox.Visible = phoneTextBox.Visible = false;
+                usernameLabel.Visible = emailLabel.Visible = passwordLabel.Visible = phoneLabel.Visible = changeProfilePicture.Visible = true;
+                usernameTextBox.Visible = emailTextBox.Visible = passwordTextBox.Visible = phoneTextBox.Visible = changeProfilePicture.Visible = false;
                 modifyButton.Text = "Modify";
                 modifyButton.FillColor = Color.FromArgb(37, 161, 92);
                 modify = false;
 
-                Account.modify(UserDetails[1], UserDetails[2], UserDetails[3], UserDetails[4], UserDetails[0]);
+                Account.Modify(UserDetails[1], UserDetails[2], UserDetails[3], UserDetails[4], UserImage, UserDetails[0]);
                 new MessageBoxOk(0, "Your account information has been successfully updated :)").ShowDialog();
                 return;
             }
 
-            usernameLabel.Visible = emailLabel.Visible = passwordLabel.Visible = phoneLabel.Visible = false;
-            usernameTextBox.Visible = emailTextBox.Visible = passwordTextBox.Visible = phoneTextBox.Visible = true;
+            usernameLabel.Visible = emailLabel.Visible = passwordLabel.Visible = phoneLabel.Visible = changeProfilePicture.Visible = false;
+            usernameTextBox.Visible = emailTextBox.Visible = passwordTextBox.Visible = phoneTextBox.Visible = changeProfilePicture.Visible = true;
 
             usernameTextBox.Text = UserDetails[1];
             emailTextBox.Text = UserDetails[2];
             passwordTextBox.Text = UserDetails[3];
             phoneTextBox.Text = UserDetails[4];
+            userCirclePicture.Image = UserImage;
 
             modifyButton.Text = "Confirm";
             modifyButton.FillColor = Color.Tomato;
             modify = true;
         }
+
+
+        private void changeProfilePicture_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Images|*.bmp;*.jpg;*.gif;*.png";
+            if (open.ShowDialog() == DialogResult.OK)
+                userNewImage = userCirclePicture.Image = new Bitmap(open.FileName);
+        }
+
 
         private void close_Click(object sender, EventArgs e)
         {

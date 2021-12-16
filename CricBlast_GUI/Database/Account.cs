@@ -5,60 +5,56 @@ using System.Runtime.InteropServices;
 
 namespace CricBlast_GUI.Database
 {
-    public class Account
+    public static class Account
     {
-        public static bool isUnique(string email)
+        public static bool IsUnique(string email)
         {
-            using (SqlConnection connection = new SqlConnection(ConnectionString.CrikBlastDB))
+            var query = $"SELECT * FROM Users WHERE Email = '{email}'";
+
+            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
-                var query = "SELECT * FROM Users WHERE Email = @email";
-
-                SqlCommand sqlCommand = new SqlCommand(query, connection);
-                sqlCommand.Parameters.AddWithValue("@email", email);
-
-                connection.Open();
-                SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
-                return sqlDataReader.HasRows;
+                using (var sqlCommand = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    var sqlDataReader = sqlCommand.ExecuteReader();
+                    return sqlDataReader.HasRows;
+                }
             }
         }
 
-        public static void create(string username, string email, string password, 
-            string phoneNumber, int gender, Image image)
+        public static void Create(string username, string email, string password, string phoneNumber, int gender, Image image)
         {
-            using (SqlConnection connection = new SqlConnection(ConnectionString.CrikBlastDB))
+            var query = "INSERT INTO Users (Username, Email, Password, PhoneNumber, Gender, Image) " +
+                        $"VALUES ('{username}', '{email}', '{password}', '{phoneNumber}', '{gender}', @image)";
+
+            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
-                var query = "INSERT INTO Users (Username, Email, Password, PhoneNumber, Gender, Image) " +
-                            "VALUES (@username, @email, @password, @phoneNumber, @gender, @image)";
 
-                SqlCommand sqlCommand = new SqlCommand(query, connection);
-                sqlCommand.Parameters.AddWithValue("@username", username);
-                sqlCommand.Parameters.AddWithValue("@email", email);
-                sqlCommand.Parameters.AddWithValue("@password", password);
-                sqlCommand.Parameters.AddWithValue("@phoneNumber", phoneNumber);
-                sqlCommand.Parameters.AddWithValue("@gender", gender);
-                sqlCommand.Parameters.AddWithValue("@image", Convert.toBytes(image));
-
-                connection.Open();
-                sqlCommand.ExecuteNonQuery();
+                using (var sqlCommand = new SqlCommand(query, connection))
+                {
+                    sqlCommand.Parameters.AddWithValue("@image", ConvertImage.ToBytes(image));
+                    connection.Open();
+                    sqlCommand.ExecuteNonQuery();
+                }
             }
         }
 
-        public static void modify(string username, string email, string password, string phoneNumber, string id)
+        public static void Modify(string username, string email, string password, string phoneNumber, Image image, string id)
         {
-            using (SqlConnection connection = new SqlConnection(ConnectionString.CrikBlastDB))
+            var query = $"UPDATE Users SET Username = '{username}', Email = '{email}', Password = '{password}', " +
+                        $"PhoneNumber = '{phoneNumber}', Image = @image WHERE Id = '{id}'";
+
+            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
-                var query = "UPDATE Users SET Username = @username, Email = @email, " +
-                            "Password = @password, PhoneNumber = @phoneNumber WHERE Id = @id";
+                using (var sqlCommand = new SqlCommand(query, connection))
+                {
+                    sqlCommand.Parameters.AddWithValue("@image", ConvertImage.ToBytes(image));
+                    connection.Open();
+                    sqlCommand.ExecuteNonQuery();
 
-                SqlCommand sqlCommand = new SqlCommand(query, connection);
-                sqlCommand.Parameters.AddWithValue("@id", id);
-                sqlCommand.Parameters.AddWithValue("@username", username);
-                sqlCommand.Parameters.AddWithValue("@email", email);
-                sqlCommand.Parameters.AddWithValue("@password", password);
-                sqlCommand.Parameters.AddWithValue("@phoneNumber", phoneNumber);
-
-                connection.Open();
-                sqlCommand.ExecuteNonQuery();
+                    var sqlDataReader = sqlCommand.ExecuteReader();
+                    Login.LoadProfile(sqlDataReader);
+                }
             }
         }
     }

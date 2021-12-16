@@ -213,6 +213,16 @@ namespace CricBlast_GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap RefreshShadowed_Colored {
+            get {
+                object obj = ResourceManager.GetObject("RefreshShadowed_Colored", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Shakib {
             get {
                 object obj = ResourceManager.GetObject("Shakib", resourceCulture);

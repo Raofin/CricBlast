@@ -75,6 +75,10 @@ namespace CricBlast_GUI.Forms.Controls
             new MessageBoxYesNo(1, "Are you sure you want to log out?").ShowDialog();
 
             if (!Selected.MessageBox) return;
+
+            Array.Clear(Selected.UserDetails, 0, Selected.UserDetails.Length);
+            Selected.UserImage = null;
+
             Controls.Clear();
             Controls.Add(new Welcome { welcomeLabel = { Text = "Welcome Back!" } });
         }

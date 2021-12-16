@@ -87,7 +87,7 @@ namespace CricBlast_GUI.Forms.Controls
 
             if (!usernameRequired.Visible && !passwordRequired.Visible)
             {
-                if (Login.verify(usernameTextBox.Text, passwordTextBox.Text))
+                if (Login.Verify(usernameTextBox.Text, passwordTextBox.Text))
                 {
                     new MessageBoxOk(Selected.CheckMark, "You have successfully logged in.").ShowDialog();
                     Controls.Clear();
