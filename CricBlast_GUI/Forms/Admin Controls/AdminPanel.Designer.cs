@@ -30,7 +30,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
         private void InitializeComponent()
         {
             this.adminSubPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.menuPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.adminMenuPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.availabilityIcon = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.availability = new System.Windows.Forms.Label();
             this.usernameLabel = new System.Windows.Forms.Label();
@@ -41,9 +41,8 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.addPlayers = new Guna.UI2.WinForms.Guna2Button();
             this.myTeam = new Guna.UI2.WinForms.Guna2Button();
             this.logout = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.menuPanel.SuspendLayout();
+            this.adminMenuPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.availabilityIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,28 +59,27 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.adminSubPanel.Size = new System.Drawing.Size(956, 681);
             this.adminSubPanel.TabIndex = 14;
             // 
-            // menuPanel
+            // adminMenuPanel
             // 
-            this.menuPanel.BackColor = System.Drawing.Color.Transparent;
-            this.menuPanel.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Home_Menu;
-            this.menuPanel.Controls.Add(this.availabilityIcon);
-            this.menuPanel.Controls.Add(this.availability);
-            this.menuPanel.Controls.Add(this.usernameLabel);
-            this.menuPanel.Controls.Add(this.userPhoto);
-            this.menuPanel.Controls.Add(this.customizeTeam);
-            this.menuPanel.Controls.Add(this.playerStats);
-            this.menuPanel.Controls.Add(this.playMatch);
-            this.menuPanel.Controls.Add(this.addPlayers);
-            this.menuPanel.Controls.Add(this.myTeam);
-            this.menuPanel.Controls.Add(this.logout);
-            this.menuPanel.Controls.Add(this.label1);
-            this.menuPanel.Controls.Add(this.pictureBox1);
-            this.menuPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.menuPanel.Location = new System.Drawing.Point(0, 0);
-            this.menuPanel.Name = "menuPanel";
-            this.menuPanel.ShadowDecoration.Parent = this.menuPanel;
-            this.menuPanel.Size = new System.Drawing.Size(308, 681);
-            this.menuPanel.TabIndex = 13;
+            this.adminMenuPanel.BackColor = System.Drawing.Color.Transparent;
+            this.adminMenuPanel.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Home_Menu;
+            this.adminMenuPanel.Controls.Add(this.availabilityIcon);
+            this.adminMenuPanel.Controls.Add(this.availability);
+            this.adminMenuPanel.Controls.Add(this.usernameLabel);
+            this.adminMenuPanel.Controls.Add(this.userPhoto);
+            this.adminMenuPanel.Controls.Add(this.customizeTeam);
+            this.adminMenuPanel.Controls.Add(this.playerStats);
+            this.adminMenuPanel.Controls.Add(this.playMatch);
+            this.adminMenuPanel.Controls.Add(this.addPlayers);
+            this.adminMenuPanel.Controls.Add(this.myTeam);
+            this.adminMenuPanel.Controls.Add(this.logout);
+            this.adminMenuPanel.Controls.Add(this.pictureBox1);
+            this.adminMenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.adminMenuPanel.Location = new System.Drawing.Point(0, 0);
+            this.adminMenuPanel.Name = "adminMenuPanel";
+            this.adminMenuPanel.ShadowDecoration.Parent = this.adminMenuPanel;
+            this.adminMenuPanel.Size = new System.Drawing.Size(308, 681);
+            this.adminMenuPanel.TabIndex = 13;
             // 
             // availabilityIcon
             // 
@@ -270,25 +268,13 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.logout.TabIndex = 4;
             this.logout.Text = "Logout";
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 25F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(108, 50);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(165, 46);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "CricBlast";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::CricBlast_GUI.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(45, 41);
+            this.pictureBox1.Image = global::CricBlast_GUI.Properties.Resources.Admin_Panel;
+            this.pictureBox1.Location = new System.Drawing.Point(50, 52);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(57, 64);
+            this.pictureBox1.Size = new System.Drawing.Size(188, 69);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -299,11 +285,11 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
             this.Controls.Add(this.adminSubPanel);
-            this.Controls.Add(this.menuPanel);
+            this.Controls.Add(this.adminMenuPanel);
             this.Name = "AdminPanel";
             this.Size = new System.Drawing.Size(1264, 681);
-            this.menuPanel.ResumeLayout(false);
-            this.menuPanel.PerformLayout();
+            this.adminMenuPanel.ResumeLayout(false);
+            this.adminMenuPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.availabilityIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPhoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -314,7 +300,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel adminSubPanel;
-        private Guna.UI2.WinForms.Guna2Panel menuPanel;
+        private Guna.UI2.WinForms.Guna2Panel adminMenuPanel;
         private Guna.UI2.WinForms.Guna2CirclePictureBox availabilityIcon;
         private System.Windows.Forms.Label availability;
         private System.Windows.Forms.Label usernameLabel;
@@ -325,7 +311,6 @@ namespace CricBlast_GUI.Forms.Admin_Controls
         private Guna.UI2.WinForms.Guna2Button addPlayers;
         private Guna.UI2.WinForms.Guna2Button myTeam;
         private System.Windows.Forms.Label logout;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

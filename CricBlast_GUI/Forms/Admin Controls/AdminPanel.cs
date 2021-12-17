@@ -7,6 +7,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
         public AdminPanel()
         {
             InitializeComponent();
+            adminSubPanel.Controls.Add(new ManageUser());
         }
     }
 }

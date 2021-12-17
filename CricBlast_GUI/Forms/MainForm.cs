@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Runtime.CompilerServices;
 using System.Windows.Forms;
+using CricBlast_GUI.Forms.Admin_Controls;
 using CricBlast_GUI.Forms.Controls;
 
 namespace CricBlast_GUI.Forms
@@ -26,6 +27,7 @@ namespace CricBlast_GUI.Forms
         {
             mainPanel.Controls.Clear();
             mainPanel.Controls.Add(value: new Welcome());
+            //mainPanel.Controls.Add(value: new AdminPanel());
         }
 
         // Drag form
