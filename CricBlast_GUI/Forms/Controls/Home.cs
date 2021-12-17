@@ -76,11 +76,22 @@ namespace CricBlast_GUI.Forms.Controls
 
             if (!Selected.MessageBox) return;
 
-            Array.Clear(Selected.UserDetails, 0, Selected.UserDetails.Length);
-            Selected.UserImage = null;
-
+            clearUserDetails();
             Controls.Clear();
             Controls.Add(new Welcome { welcomeLabel = { Text = "Welcome Back!" } });
+        }
+
+        private void clearUserDetails()
+        {
+            Array.Clear(Selected.UserDetails, 0, Selected.UserDetails.Length);
+            Selected.UserImage = null;
+            Selected.UserTeam = 0;
+            Selected.OpponentTeam = 0;
+            Selected.UserTeamLogo = null;
+            Array.Clear(Selected.UserTeamStats, 0, Selected.UserTeamStats.Length);
+            Array.Clear(Selected.UserTeamPlayerStats, 0, Selected.UserTeamPlayerStats.Length);
+            Selected.Player = 0;
+            Selected.Format = 0;
         }
 
         private void ChangeButtonColor(Guna2Button button, int changeMenu)

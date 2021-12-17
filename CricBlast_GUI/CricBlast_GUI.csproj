@@ -74,7 +74,6 @@
   <ItemGroup>
     <Compile Include="Database\ConnectionString.cs" />
     <Compile Include="Database\ConvertImage.cs" />
-    <Compile Include="Database\UserProfile.cs" />
     <Compile Include="Database\Account.cs" />
     <Compile Include="Database\Login.cs" />
     <Compile Include="Forms\Controls\CreateAccount.cs">
@@ -143,6 +142,12 @@
     <Compile Include="Forms\Controls\PlayMatch.Designer.cs">
       <DependentUpon>PlayMatch.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Admin Controls\AdminPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin Controls\AdminPanel.Designer.cs">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Controls\Welcome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -196,6 +201,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\ChooseTeam.resx">
       <DependentUpon>ChooseTeam.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Controls\CreateAccount.resx">
       <DependentUpon>CreateAccount.cs</DependentUpon>
@@ -229,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Controls\PlayMatch.resx">
       <DependentUpon>PlayMatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin Controls\AdminPanel.resx">
+      <DependentUpon>AdminPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Controls\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>

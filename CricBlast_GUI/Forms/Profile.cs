@@ -26,12 +26,10 @@ namespace CricBlast_GUI.Forms
                 ControlStyles.OptimizedDoubleBuffer,
                 true);
             InitializeComponent();
-            loadProfile();
+            LoadProfile();
         }
-
-        private Image userNewImage = UserImage;
-
-        private void loadProfile()
+        
+        private void LoadProfile()
         {
             usernameLabel.Text = UserDetails[1];
             emailLabel.Text = UserDetails[2];
@@ -51,11 +49,13 @@ namespace CricBlast_GUI.Forms
             }
         }
 
-        private bool modify;
+        private bool _modify;
+        private bool _modifyPhoto;
+        private Image _userNewImage = UserImage;
 
         private void modify_Click(object sender, EventArgs e)
         {
-            if (modify)
+            if (_modify)
             {
                 usernameError.Visible = string.IsNullOrWhiteSpace(usernameTextBox.Text);
                 emailError.Visible = string.IsNullOrWhiteSpace(emailTextBox.Text);
@@ -72,21 +72,27 @@ namespace CricBlast_GUI.Forms
                 UserDetails[2] = emailLabel.Text = emailTextBox.Text;
                 UserDetails[3] = passwordLabel.Text = passwordTextBox.Text;
                 UserDetails[4] = phoneLabel.Text = phoneTextBox.Text;
-                UserImage = userCirclePicture.Image = userNewImage;
+                UserImage = userCirclePicture.Image = _userNewImage;
 
-                usernameLabel.Visible = emailLabel.Visible = passwordLabel.Visible = phoneLabel.Visible = changeProfilePicture.Visible = true;
-                usernameTextBox.Visible = emailTextBox.Visible = passwordTextBox.Visible = phoneTextBox.Visible = changeProfilePicture.Visible = false;
+                usernameLabel.Visible = emailLabel.Visible =
+                    passwordLabel.Visible = phoneLabel.Visible = changeProfilePicture.Visible = true;
+                usernameTextBox.Visible = emailTextBox.Visible =
+                    passwordTextBox.Visible = phoneTextBox.Visible = changeProfilePicture.Visible = false;
                 modifyButton.Text = "Modify";
                 modifyButton.FillColor = Color.FromArgb(37, 161, 92);
-                modify = false;
+                _modify = false;
 
-                Account.Modify(UserDetails[1], UserDetails[2], UserDetails[3], UserDetails[4], UserImage, UserDetails[0]);
+                Account.ModifyDetails(UserDetails[1], UserDetails[2], UserDetails[3], UserDetails[4], UserDetails[0]);
+                if (_modifyPhoto) Account.ModifyPhoto(_userNewImage, UserDetails[0]);
+
                 new MessageBoxOk(0, "Your account information has been successfully updated :)").ShowDialog();
                 return;
             }
 
-            usernameLabel.Visible = emailLabel.Visible = passwordLabel.Visible = phoneLabel.Visible = changeProfilePicture.Visible = false;
-            usernameTextBox.Visible = emailTextBox.Visible = passwordTextBox.Visible = phoneTextBox.Visible = changeProfilePicture.Visible = true;
+            usernameLabel.Visible = emailLabel.Visible =
+                passwordLabel.Visible = phoneLabel.Visible = changeProfilePicture.Visible = false;
+            usernameTextBox.Visible = emailTextBox.Visible =
+                passwordTextBox.Visible = phoneTextBox.Visible = changeProfilePicture.Visible = true;
 
             usernameTextBox.Text = UserDetails[1];
             emailTextBox.Text = UserDetails[2];
@@ -96,18 +102,18 @@ namespace CricBlast_GUI.Forms
 
             modifyButton.Text = "Confirm";
             modifyButton.FillColor = Color.Tomato;
-            modify = true;
+            _modify = true;
         }
-
 
         private void changeProfilePicture_Click(object sender, EventArgs e)
         {
-            OpenFileDialog open = new OpenFileDialog();
-            open.Filter = "Images|*.bmp;*.jpg;*.gif;*.png";
-            if (open.ShowDialog() == DialogResult.OK)
-                userNewImage = userCirclePicture.Image = new Bitmap(open.FileName);
+            using (var openFileDialog = new OpenFileDialog {Filter = Properties.Resources.ImageFilter})
+            {
+                if (openFileDialog.ShowDialog() != DialogResult.OK) return;
+                _userNewImage = userCirclePicture.Image = new Bitmap(openFileDialog.FileName);
+                _modifyPhoto = true;
+            }
         }
-
 
         private void close_Click(object sender, EventArgs e)
         {

@@ -5,6 +5,9 @@ namespace CricBlast_GUI.Home
 {
     class Selected
     {
+        public static string[] UserDetails = new string[10];
+        public static Image UserImage { get; set; }
+
         public static int UserTeam { get; set; }
         public static int OpponentTeam { get; set; }
         public static bool MessageBox { get; set; }
@@ -23,8 +26,5 @@ namespace CricBlast_GUI.Home
         public static readonly byte CheckMark = 0;
         public static readonly byte WarningMark = 1;
         public static readonly byte ErrorMark = 2;
-
-        public static string[] UserDetails = new string[10];
-        public static Image UserImage { get; set; }
     }
 }

@@ -1,7 +1,5 @@
 ﻿using System.Data.SqlClient;
 using System.Drawing;
-using System.IO;
-using System.Runtime.InteropServices;
 
 namespace CricBlast_GUI.Database
 {
@@ -39,10 +37,27 @@ namespace CricBlast_GUI.Database
             }
         }
 
-        public static void Modify(string username, string email, string password, string phoneNumber, Image image, string id)
+        public static void ModifyDetails(string username, string email, string password, string phoneNumber, string id)
         {
             var query = $"UPDATE Users SET Username = '{username}', Email = '{email}', Password = '{password}', " +
-                        $"PhoneNumber = '{phoneNumber}', Image = @image WHERE Id = '{id}'";
+                        $"PhoneNumber = '{phoneNumber}' WHERE Id = '{id}'";
+
+            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
+            {
+                using (var sqlCommand = new SqlCommand(query, connection))
+                {
+                    connection.Open();
+                    sqlCommand.ExecuteNonQuery();
+
+                    var sqlDataReader = sqlCommand.ExecuteReader();
+                    Login.LoadProfile(sqlDataReader);
+                }
+            }
+        }
+
+        public static void ModifyPhoto(Image image, string id)
+        {
+            var query = $"UPDATE Users SET Image = @image WHERE Id = '{id}'";
 
             using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
             {

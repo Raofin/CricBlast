@@ -31,60 +31,37 @@ namespace CricBlast_GUI.Forms
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Profile));
-            this.modifyButton = new Guna.UI2.WinForms.Guna2Button();
             this.userCirclePicture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.usernameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.emailTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.passwordTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.phoneTextBox = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.genderLabel = new System.Windows.Forms.Label();
-            this.genderPicture = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.usernameLabel = new System.Windows.Forms.Label();
-            this.emailLabel = new System.Windows.Forms.Label();
-            this.phoneLabel = new System.Windows.Forms.Label();
-            this.passwordLabel = new System.Windows.Forms.Label();
+            this.modifyButton = new Guna.UI2.WinForms.Guna2Button();
             this.close = new Guna.UI2.WinForms.Guna2Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.usernameLabel = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.emailLabel = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.phoneLabel = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.passwordLabel = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.genderLabel = new System.Windows.Forms.Label();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.accountCreated = new System.Windows.Forms.Label();
+            this.genderPicture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.usernameError = new System.Windows.Forms.Label();
             this.emailError = new System.Windows.Forms.Label();
             this.passwordError = new System.Windows.Forms.Label();
             this.mobileError = new System.Windows.Forms.Label();
             this.changeProfilePicture = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.userCirclePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.genderPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.changeProfilePicture)).BeginInit();
             this.SuspendLayout();
-            // 
-            // modifyButton
-            // 
-            this.modifyButton.Animated = true;
-            this.modifyButton.BackColor = System.Drawing.Color.Transparent;
-            this.modifyButton.BorderRadius = 4;
-            this.modifyButton.CheckedState.Parent = this.modifyButton;
-            this.modifyButton.CustomImages.Parent = this.modifyButton;
-            this.modifyButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.modifyButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.modifyButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.modifyButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.modifyButton.DisabledState.Parent = this.modifyButton;
-            this.modifyButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(161)))), ((int)(((byte)(92)))));
-            this.modifyButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.modifyButton.ForeColor = System.Drawing.Color.White;
-            this.modifyButton.HoverState.Parent = this.modifyButton;
-            this.modifyButton.Location = new System.Drawing.Point(289, 550);
-            this.modifyButton.Name = "modifyButton";
-            this.modifyButton.ShadowDecoration.Parent = this.modifyButton;
-            this.modifyButton.Size = new System.Drawing.Size(180, 45);
-            this.modifyButton.TabIndex = 27;
-            this.modifyButton.Text = "Modify";
-            this.modifyButton.Click += new System.EventHandler(this.modify_Click);
             // 
             // userCirclePicture
             // 
@@ -101,66 +78,6 @@ namespace CricBlast_GUI.Forms
             this.userCirclePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.userCirclePicture.TabIndex = 25;
             this.userCirclePicture.TabStop = false;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.label12.ForeColor = System.Drawing.Color.Silver;
-            this.label12.Location = new System.Drawing.Point(89, 455);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(98, 32);
-            this.label12.TabIndex = 32;
-            this.label12.Text = "Gender";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.label7.ForeColor = System.Drawing.Color.Silver;
-            this.label7.Location = new System.Drawing.Point(89, 363);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(123, 32);
-            this.label7.TabIndex = 31;
-            this.label7.Text = "Password";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.label8.ForeColor = System.Drawing.Color.Silver;
-            this.label8.Location = new System.Drawing.Point(89, 409);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(87, 32);
-            this.label8.TabIndex = 30;
-            this.label8.Text = "Phone";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(89, 317);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 32);
-            this.label3.TabIndex = 29;
-            this.label3.Text = "Email";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(89, 271);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 32);
-            this.label2.TabIndex = 28;
-            this.label2.Text = "Username";
             // 
             // usernameTextBox
             // 
@@ -279,85 +196,29 @@ namespace CricBlast_GUI.Forms
             this.phoneTextBox.TabIndex = 33;
             this.phoneTextBox.Visible = false;
             // 
-            // guna2BorderlessForm1
+            // modifyButton
             // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // genderLabel
-            // 
-            this.genderLabel.AutoSize = true;
-            this.genderLabel.BackColor = System.Drawing.Color.Transparent;
-            this.genderLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.genderLabel.ForeColor = System.Drawing.Color.White;
-            this.genderLabel.Location = new System.Drawing.Point(264, 455);
-            this.genderLabel.Name = "genderLabel";
-            this.genderLabel.Size = new System.Drawing.Size(71, 32);
-            this.genderLabel.TabIndex = 32;
-            this.genderLabel.Text = "Male";
-            // 
-            // genderPicture
-            // 
-            this.genderPicture.BackColor = System.Drawing.Color.Transparent;
-            this.genderPicture.BorderRadius = 4;
-            this.genderPicture.Image = global::CricBlast_GUI.Properties.Resources.Unknown_User;
-            this.genderPicture.ImageRotate = 0F;
-            this.genderPicture.Location = new System.Drawing.Point(228, 456);
-            this.genderPicture.Name = "genderPicture";
-            this.genderPicture.ShadowDecoration.Parent = this.genderPicture;
-            this.genderPicture.Size = new System.Drawing.Size(30, 30);
-            this.genderPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.genderPicture.TabIndex = 34;
-            this.genderPicture.TabStop = false;
-            // 
-            // usernameLabel
-            // 
-            this.usernameLabel.AutoSize = true;
-            this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
-            this.usernameLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.usernameLabel.ForeColor = System.Drawing.Color.White;
-            this.usernameLabel.Location = new System.Drawing.Point(222, 271);
-            this.usernameLabel.Name = "usernameLabel";
-            this.usernameLabel.Size = new System.Drawing.Size(129, 32);
-            this.usernameLabel.TabIndex = 28;
-            this.usernameLabel.Text = "Username";
-            // 
-            // emailLabel
-            // 
-            this.emailLabel.AutoSize = true;
-            this.emailLabel.BackColor = System.Drawing.Color.Transparent;
-            this.emailLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.emailLabel.ForeColor = System.Drawing.Color.White;
-            this.emailLabel.Location = new System.Drawing.Point(222, 317);
-            this.emailLabel.Name = "emailLabel";
-            this.emailLabel.Size = new System.Drawing.Size(77, 32);
-            this.emailLabel.TabIndex = 29;
-            this.emailLabel.Text = "Email";
-            // 
-            // phoneLabel
-            // 
-            this.phoneLabel.AutoSize = true;
-            this.phoneLabel.BackColor = System.Drawing.Color.Transparent;
-            this.phoneLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.phoneLabel.ForeColor = System.Drawing.Color.White;
-            this.phoneLabel.Location = new System.Drawing.Point(222, 409);
-            this.phoneLabel.Name = "phoneLabel";
-            this.phoneLabel.Size = new System.Drawing.Size(87, 32);
-            this.phoneLabel.TabIndex = 30;
-            this.phoneLabel.Text = "Phone";
-            // 
-            // passwordLabel
-            // 
-            this.passwordLabel.AutoSize = true;
-            this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
-            this.passwordLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
-            this.passwordLabel.ForeColor = System.Drawing.Color.White;
-            this.passwordLabel.Location = new System.Drawing.Point(222, 363);
-            this.passwordLabel.Name = "passwordLabel";
-            this.passwordLabel.Size = new System.Drawing.Size(123, 32);
-            this.passwordLabel.TabIndex = 31;
-            this.passwordLabel.Text = "Password";
+            this.modifyButton.Animated = true;
+            this.modifyButton.BackColor = System.Drawing.Color.Transparent;
+            this.modifyButton.BorderRadius = 4;
+            this.modifyButton.CheckedState.Parent = this.modifyButton;
+            this.modifyButton.CustomImages.Parent = this.modifyButton;
+            this.modifyButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.modifyButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.modifyButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.modifyButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.modifyButton.DisabledState.Parent = this.modifyButton;
+            this.modifyButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(161)))), ((int)(((byte)(92)))));
+            this.modifyButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.modifyButton.ForeColor = System.Drawing.Color.White;
+            this.modifyButton.HoverState.Parent = this.modifyButton;
+            this.modifyButton.Location = new System.Drawing.Point(289, 550);
+            this.modifyButton.Name = "modifyButton";
+            this.modifyButton.ShadowDecoration.Parent = this.modifyButton;
+            this.modifyButton.Size = new System.Drawing.Size(180, 45);
+            this.modifyButton.TabIndex = 27;
+            this.modifyButton.Text = "Modify";
+            this.modifyButton.Click += new System.EventHandler(this.modify_Click);
             // 
             // close
             // 
@@ -382,6 +243,114 @@ namespace CricBlast_GUI.Forms
             this.close.Text = "Close";
             this.close.Click += new System.EventHandler(this.close_Click);
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.Silver;
+            this.label2.Location = new System.Drawing.Point(89, 271);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(129, 32);
+            this.label2.TabIndex = 28;
+            this.label2.Text = "Username";
+            // 
+            // usernameLabel
+            // 
+            this.usernameLabel.AutoSize = true;
+            this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
+            this.usernameLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.usernameLabel.ForeColor = System.Drawing.Color.White;
+            this.usernameLabel.Location = new System.Drawing.Point(222, 271);
+            this.usernameLabel.Name = "usernameLabel";
+            this.usernameLabel.Size = new System.Drawing.Size(129, 32);
+            this.usernameLabel.TabIndex = 28;
+            this.usernameLabel.Text = "Username";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.Silver;
+            this.label3.Location = new System.Drawing.Point(89, 317);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 32);
+            this.label3.TabIndex = 29;
+            this.label3.Text = "Email";
+            // 
+            // emailLabel
+            // 
+            this.emailLabel.AutoSize = true;
+            this.emailLabel.BackColor = System.Drawing.Color.Transparent;
+            this.emailLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.emailLabel.ForeColor = System.Drawing.Color.White;
+            this.emailLabel.Location = new System.Drawing.Point(222, 317);
+            this.emailLabel.Name = "emailLabel";
+            this.emailLabel.Size = new System.Drawing.Size(77, 32);
+            this.emailLabel.TabIndex = 29;
+            this.emailLabel.Text = "Email";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.label8.ForeColor = System.Drawing.Color.Silver;
+            this.label8.Location = new System.Drawing.Point(89, 409);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(87, 32);
+            this.label8.TabIndex = 30;
+            this.label8.Text = "Phone";
+            // 
+            // phoneLabel
+            // 
+            this.phoneLabel.AutoSize = true;
+            this.phoneLabel.BackColor = System.Drawing.Color.Transparent;
+            this.phoneLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.phoneLabel.ForeColor = System.Drawing.Color.White;
+            this.phoneLabel.Location = new System.Drawing.Point(222, 409);
+            this.phoneLabel.Name = "phoneLabel";
+            this.phoneLabel.Size = new System.Drawing.Size(87, 32);
+            this.phoneLabel.TabIndex = 30;
+            this.phoneLabel.Text = "Phone";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.label7.ForeColor = System.Drawing.Color.Silver;
+            this.label7.Location = new System.Drawing.Point(89, 363);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(123, 32);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Password";
+            // 
+            // passwordLabel
+            // 
+            this.passwordLabel.AutoSize = true;
+            this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
+            this.passwordLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.passwordLabel.ForeColor = System.Drawing.Color.White;
+            this.passwordLabel.Location = new System.Drawing.Point(222, 363);
+            this.passwordLabel.Name = "passwordLabel";
+            this.passwordLabel.Size = new System.Drawing.Size(123, 32);
+            this.passwordLabel.TabIndex = 31;
+            this.passwordLabel.Text = "Password";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Transparent;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.label12.ForeColor = System.Drawing.Color.Silver;
+            this.label12.Location = new System.Drawing.Point(89, 455);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(98, 32);
+            this.label12.TabIndex = 32;
+            this.label12.Text = "Gender";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -394,6 +363,24 @@ namespace CricBlast_GUI.Forms
             this.label1.TabIndex = 32;
             this.label1.Text = "Account Created";
             // 
+            // genderLabel
+            // 
+            this.genderLabel.AutoSize = true;
+            this.genderLabel.BackColor = System.Drawing.Color.Transparent;
+            this.genderLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
+            this.genderLabel.ForeColor = System.Drawing.Color.White;
+            this.genderLabel.Location = new System.Drawing.Point(264, 455);
+            this.genderLabel.Name = "genderLabel";
+            this.genderLabel.Size = new System.Drawing.Size(71, 32);
+            this.genderLabel.TabIndex = 32;
+            this.genderLabel.Text = "Male";
+            // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
             // accountCreated
             // 
             this.accountCreated.AutoSize = true;
@@ -405,6 +392,20 @@ namespace CricBlast_GUI.Forms
             this.accountCreated.Size = new System.Drawing.Size(149, 32);
             this.accountCreated.TabIndex = 32;
             this.accountCreated.Text = "10/12/2021";
+            // 
+            // genderPicture
+            // 
+            this.genderPicture.BackColor = System.Drawing.Color.Transparent;
+            this.genderPicture.BorderRadius = 4;
+            this.genderPicture.Image = global::CricBlast_GUI.Properties.Resources.Unknown_User;
+            this.genderPicture.ImageRotate = 0F;
+            this.genderPicture.Location = new System.Drawing.Point(228, 456);
+            this.genderPicture.Name = "genderPicture";
+            this.genderPicture.ShadowDecoration.Parent = this.genderPicture;
+            this.genderPicture.Size = new System.Drawing.Size(30, 30);
+            this.genderPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.genderPicture.TabIndex = 34;
+            this.genderPicture.TabStop = false;
             // 
             // usernameError
             // 
@@ -478,12 +479,21 @@ namespace CricBlast_GUI.Forms
             this.changeProfilePicture.Visible = false;
             this.changeProfilePicture.Click += new System.EventHandler(this.changeProfilePicture_Click);
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(534, 647);
+            this.guna2Panel1.TabIndex = 40;
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
-            this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
             this.ClientSize = new System.Drawing.Size(534, 647);
             this.Controls.Add(this.changeProfilePicture);
             this.Controls.Add(this.mobileError);
@@ -510,6 +520,7 @@ namespace CricBlast_GUI.Forms
             this.Controls.Add(this.emailTextBox);
             this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.userCirclePicture);
+            this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Profile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -524,31 +535,32 @@ namespace CricBlast_GUI.Forms
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Button modifyButton;
         private Guna.UI2.WinForms.Guna2CirclePictureBox userCirclePicture;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2TextBox usernameTextBox;
         private Guna.UI2.WinForms.Guna2TextBox emailTextBox;
         private Guna.UI2.WinForms.Guna2TextBox passwordTextBox;
         private Guna.UI2.WinForms.Guna2TextBox phoneTextBox;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private System.Windows.Forms.Label genderLabel;
-        private Guna.UI2.WinForms.Guna2PictureBox genderPicture;
-        private System.Windows.Forms.Label passwordLabel;
-        private System.Windows.Forms.Label phoneLabel;
-        private System.Windows.Forms.Label emailLabel;
-        private System.Windows.Forms.Label usernameLabel;
+        private Guna.UI2.WinForms.Guna2Button modifyButton;
         private Guna.UI2.WinForms.Guna2Button close;
-        private System.Windows.Forms.Label accountCreated;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label usernameLabel;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label emailLabel;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label phoneLabel;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label passwordLabel;
+        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label usernameError;
-        private System.Windows.Forms.Label emailError;
-        private System.Windows.Forms.Label passwordError;
-        private System.Windows.Forms.Label mobileError;
+        private System.Windows.Forms.Label genderLabel;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2PictureBox changeProfilePicture;
+        private System.Windows.Forms.Label mobileError;
+        private System.Windows.Forms.Label passwordError;
+        private System.Windows.Forms.Label emailError;
+        private System.Windows.Forms.Label usernameError;
+        private Guna.UI2.WinForms.Guna2PictureBox genderPicture;
+        private System.Windows.Forms.Label accountCreated;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }

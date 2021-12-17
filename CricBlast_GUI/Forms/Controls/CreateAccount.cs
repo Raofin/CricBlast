@@ -11,6 +11,7 @@ namespace CricBlast_GUI.Forms.Controls
     {
         private string CaptchaResult { get; set; }
         private int Gender { get; set; }
+        private Image UserPicture { get; set; }
 
         public CreateAccount()
         {
@@ -50,7 +51,8 @@ namespace CricBlast_GUI.Forms.Controls
                         .ShowDialog();
                 else
                 {
-                    Account.Create(usernameTextBox.Text, emailTextBox.Text, passwordTextBox.Text, mobileTextBox.Text, Gender, UserPicture);
+                    Account.Create(usernameTextBox.Text, emailTextBox.Text, passwordTextBox.Text, mobileTextBox.Text,
+                        Gender, UserPicture);
                     new MessageBoxOk(Selected.CheckMark, "Your registration has been successfully completed.")
                         .ShowDialog();
                     Controls.Clear();
@@ -70,28 +72,38 @@ namespace CricBlast_GUI.Forms.Controls
 
         private void GenerateCaptcha()
         {
-            var r = new Random();
-            int number1 = r.Next(10, 20);
-            int number2 = r.Next(10, 20);
+            var random = new Random();
+            int number1 = random.Next(10, 20);
+            int number2 = random.Next(10, 20);
             CaptchaResult = (number1 + number2).ToString();
             CaptchLabel.Text = $"{number1} + {number2} =";
         }
 
-        private bool eye;
+        private bool _eye;
+
         private void eyePicture_Click(object sender, System.EventArgs e)
         {
-            switch (eye)
+            switch (_eye)
             {
                 case true:
                     eyePicture.Image = Properties.Resources.Eye_Close;
-                    eye = false;
+                    _eye = false;
                     passwordTextBox.UseSystemPasswordChar = true;
                     return;
                 case false:
                     eyePicture.Image = Properties.Resources.Eye_Open;
-                    eye = true;
+                    _eye = true;
                     passwordTextBox.UseSystemPasswordChar = false;
                     break;
+            }
+        }
+
+        private void choosePhoto_Click(object sender, EventArgs e)
+        {
+            using (var openFileDialog = new OpenFileDialog { Filter = Properties.Resources.ImageFilter })
+            {
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                    UserPicture = userPictureBox.Image = new Bitmap(openFileDialog.FileName);
             }
         }
 
@@ -133,16 +145,6 @@ namespace CricBlast_GUI.Forms.Controls
         {
             captchaError.Visible = !captchaTextBox.Text.Trim().Equals(CaptchaResult);
         }
-
-        private Image UserPicture { get; set; }
-
-        private void choosePhoto_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog open = new OpenFileDialog();
-            open.Filter = "Images|*.bmp;*.jpg;*.gif;*.png";
-            if (open.ShowDialog() == DialogResult.OK) 
-                UserPicture = userPictureBox.Image = new Bitmap(open.FileName);
-        }
-
     }
 }
+

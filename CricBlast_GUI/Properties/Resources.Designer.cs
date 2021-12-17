@@ -171,6 +171,15 @@ namespace CricBlast_GUI.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Images|*.bmp;*.jpg;*.png.
+        /// </summary>
+        internal static string ImageFilter {
+            get {
+                return ResourceManager.GetString("ImageFilter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap India {
