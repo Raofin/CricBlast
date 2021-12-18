@@ -127,21 +127,20 @@ namespace CricBlast_GUI.Forms.Controls
             userPhoto.Image = Selected.UserImage;
         }
 
-        private bool isAvailable = true;
+        private bool _isAvailable = true;
         private void availability_Click(object sender, EventArgs e)
         {
-            switch (isAvailable)
+            if (_isAvailable)
             {
-                case true:
-                    availability.Text = "Offline";
-                    availabilityIcon.FillColor = Color.Gray;
-                     isAvailable = false;
-                    break;
-                case false:
-                    availability.Text = "Online";
-                    availabilityIcon.FillColor = Color.LimeGreen;
-                    isAvailable = true;
-                    break;
+                availability.Text = "Offline";
+                availabilityIcon.FillColor = Color.Gray;
+                _isAvailable = false;
+            }
+            else
+            {
+                availability.Text = "Online";
+                availabilityIcon.FillColor = Color.LimeGreen;
+                _isAvailable = true;
             }
         }
     }

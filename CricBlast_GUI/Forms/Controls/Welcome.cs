@@ -1,8 +1,7 @@
-﻿using System.Configuration;
-using System.Data.SqlClient;
-using CricBlast_GUI.Home;
+﻿using CricBlast_GUI.Home;
 using System.Windows.Forms;
 using CricBlast_GUI.Database;
+using CricBlast_GUI.Forms.Admin_Controls;
 
 namespace CricBlast_GUI.Forms.Controls
 {
@@ -17,6 +16,10 @@ namespace CricBlast_GUI.Forms.Controls
                 return cp;
             }
         }
+
+        private bool _eye;
+        private bool _admin;
+
         public Welcome()
         {
             SetStyle(
@@ -27,38 +30,31 @@ namespace CricBlast_GUI.Forms.Controls
             InitializeComponent();
         }
 
-        private void label6_Click(object sender, System.EventArgs e)
-        {
-            Controls.Clear();
-            Controls.Add(value: new CreateAccount());
-        }
-
-        private bool eye;
         private void eyePicture_Click(object sender, System.EventArgs e)
         {
-            switch (eye)
+            switch (_eye)
             {
                 case true:
                     eyePicture.Image = Properties.Resources.Eye_Close;
-                    eye = false;
+                    _eye = false;
                     passwordTextBox.UseSystemPasswordChar = true;
                     return;
                 case false:
                     eyePicture.Image = Properties.Resources.Eye_Open;
-                    eye = true;
+                    _eye = true;
                     passwordTextBox.UseSystemPasswordChar = false;
                     break;
             }
         }
 
-        private bool user;
+
         private void refreshPicture_Click(object sender, System.EventArgs e)
         {
-            switch (user)
+            switch (_admin)
             {
                 case true:
                     loginAsPicture.Image = Properties.Resources.Unknown_User;
-                    user = false;
+                    _admin = false;
                     logo.Image = Properties.Resources.Logo;
                     usernameLabel.Text = "USERNAME OR EMAIL";
                     usernameTextBox.Text = "";
@@ -68,7 +64,7 @@ namespace CricBlast_GUI.Forms.Controls
                     return;
                 case false:
                     loginAsPicture.Image = Properties.Resources.Admin_Colored;
-                    user = true;
+                    _admin = true;
                     logo.Image = Properties.Resources.Admin_Logo;
                     usernameLabel.Text = "ADMIN NAME OR EMAIL";
                     usernameTextBox.Text = "";
@@ -84,26 +80,57 @@ namespace CricBlast_GUI.Forms.Controls
             usernameRequired.Visible = string.IsNullOrWhiteSpace(usernameTextBox.Text);
             passwordRequired.Visible = string.IsNullOrWhiteSpace(passwordTextBox.Text);
 
-
-            if (!usernameRequired.Visible && !passwordRequired.Visible)
+            switch (usernameRequired.Visible)
             {
-                if (Login.Verify(usernameTextBox.Text, passwordTextBox.Text))
-                {
-                    new MessageBoxOk(Selected.CheckMark, "You have successfully logged in.").ShowDialog();
-                    Controls.Clear();
-                    Controls.Add(new Home());
-                    return;
-                }
+                case false when !passwordRequired.Visible:
+                    switch (_admin)
+                    {
+                        case true when usernameTextBox.Text == "admin" && passwordTextBox.Text == "admin":
+                            new MessageBoxOk(Selected.CheckMark, "You have successfully logged in.").ShowDialog();
+                            Controls.Clear();
+                            Controls.Add(new AdminPanel());
+                            return;
+                        case false when Login.Verify(usernameTextBox.Text, passwordTextBox.Text):
+                            new MessageBoxOk(Selected.CheckMark, "You have successfully logged in.").ShowDialog();
+                            Controls.Clear();
+                            Controls.Add(new Home());
+                            return;
+                        default:
+                            new MessageBoxOk(Selected.ErrorMark, "Bad credentials. Please login again.").ShowDialog();
+                            break;
+                    }
 
-                new MessageBoxOk(Selected.ErrorMark, "Bad credentials. Please login again.").ShowDialog();
+                    break;
+                default:
+                    new MessageBoxOk(Selected.WarningMark, "Please fill out all the fields properly.").ShowDialog();
+                    break;
             }
-            else
-                new MessageBoxOk(Selected.WarningMark, "Please fill out all the fields properly.").ShowDialog();
         }
 
         private void forgotPassword_Click(object sender, System.EventArgs e)
         {
-            new Recover().ShowDialog();
+            switch (_admin)
+            {
+                case true:
+                    usernameTextBox.Text = "admin";
+                    passwordTextBox.Text = "admin";
+                    return;
+                default:
+                    new Recover().ShowDialog();
+                    usernameTextBox.Text = Selected.UserDetails[2];
+                    passwordTextBox.Text = Selected.UserDetails[3];
+                    break;
+            }
+        }
+
+        private void createAccountLabel_Click(object sender, System.EventArgs e)
+        {
+            Controls.Clear();
+            Controls.Add(value: new CreateAccount());
+        }
+
+        private void Welcome_Load(object sender, System.EventArgs e)
+        {
             usernameTextBox.Text = Selected.UserDetails[2];
             passwordTextBox.Text = Selected.UserDetails[3];
         }
@@ -116,12 +143,6 @@ namespace CricBlast_GUI.Forms.Controls
         private void passwordTextBox_TextChanged(object sender, System.EventArgs e)
         {
             passwordRequired.Visible = false;
-        }
-
-        private void Welcome_Load(object sender, System.EventArgs e)
-        {
-            usernameTextBox.Text = Selected.UserDetails[2];
-            passwordTextBox.Text = Selected.UserDetails[3];
         }
     }
 }

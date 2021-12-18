@@ -168,7 +168,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.createAccountLabel.Size = new System.Drawing.Size(148, 21);
             this.createAccountLabel.TabIndex = 15;
             this.createAccountLabel.Text = " Create an Account";
-            this.createAccountLabel.Click += new System.EventHandler(this.label6_Click);
+            this.createAccountLabel.Click += new System.EventHandler(this.createAccountLabel_Click);
             // 
             // passwordTextBox
             // 

@@ -29,18 +29,6 @@ namespace CricBlast_GUI.Forms
             LoadProfile();
         }
 
-        public Profile(int viewOrModify)
-        {
-            if (viewOrModify == 1)
-            {
-                close.Visible = false;
-                modifyButton.Visible = false;
-                closeMiddle.Visible = true;
-            }
-            else
-                _modify = true;
-        }
-
         private bool _modify;
         private bool _modifyPhoto;
         private Image _userNewImage = UserImage;
@@ -183,11 +171,6 @@ namespace CricBlast_GUI.Forms
                 emailLabel.Font = new Font("Arial Narrow", emailLabel.Font.Size, FontStyle.Bold);
                 emailLabel.Location = new Point(172, 298);
             }
-        }
-
-        private void closeMiddle_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }

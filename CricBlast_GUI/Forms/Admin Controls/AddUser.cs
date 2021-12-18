@@ -1,36 +1,26 @@
 ﻿using System;
+using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
-using System.IO;
 using System.Windows.Forms;
 using CricBlast_GUI.Database;
 using CricBlast_GUI.Home;
 
-namespace CricBlast_GUI.Forms.Controls
+namespace CricBlast_GUI.Forms.Admin_Controls
 {
-    public partial class CreateAccount : UserControl
+    public partial class AddUser : UserControl
     {
-        private string CaptchaResult { get; set; }
         private int Gender { get; set; }
         private Image UserPicture { get; set; }
 
-        public CreateAccount()
+        public AddUser()
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
             InitializeComponent();
-            GenerateCaptcha();
+            allUserGridPanel.Controls.Add(new UserList());
         }
 
-        private void login_Click(object sender, EventArgs e)
-        {
-            Controls.Clear();
-            Controls.Add(value: new Welcome());
-        }
 
-        private void register_Click(object sender, EventArgs e)
+        private void addButton_Click(object sender, EventArgs e)
         {
             usernameError.Visible = string.IsNullOrWhiteSpace(usernameTextBox.Text);
             emailError.Visible = string.IsNullOrWhiteSpace(emailTextBox.Text);
@@ -38,49 +28,40 @@ namespace CricBlast_GUI.Forms.Controls
             mobileError.Visible = string.IsNullOrWhiteSpace(mobileTextBox.Text);
             photoError.Visible = UserPicture == null;
             genderError.Visible = !genderRadioMale.Checked && !genderRadioFemale.Checked;
-            captchaError.Visible = !captchaTextBox.Text.Trim().Equals(CaptchaResult);
-
 
             if (usernameError.Visible || emailError.Visible || passwordError.Visible || mobileError.Visible ||
-                photoError.Visible || genderError.Visible || captchaError.Visible)
+                photoError.Visible || genderError.Visible)
                 new MessageBoxOk(Selected.WarningMark, "Please fill out all the fields properly.").ShowDialog();
             else
             {
                 if (Account.IsUnique(emailTextBox.Text))
-                    new MessageBoxOk(Selected.ErrorMark, "You already have an account with that email.")
+                    new MessageBoxOk(Selected.ErrorMark, "That email address is already in use by another account.")
                         .ShowDialog();
                 else
                 {
                     Account.Create(usernameTextBox.Text, emailTextBox.Text, passwordTextBox.Text, 
                         mobileTextBox.Text, Gender, UserPicture);
-                    new MessageBoxOk(Selected.CheckMark, "Your registration has been successfully completed.")
+                    new MessageBoxOk(Selected.CheckMark, "The user has been added successfully.")
                         .ShowDialog();
-                    Controls.Clear();
-                    Controls.Add(new Welcome());
+
+                    usernameTextBox.Text = "";
+                    emailTextBox.Text = "";
+                    passwordTextBox.Text = "";
+                    mobileTextBox.Text = "";
+                    genderRadioMale.Checked = genderRadioFemale.Checked = false;
+                    userPictureBox.Image = Properties.Resources.Unknown_User;
+                    UserPicture = null;
+
+                    allUserGridPanel.Controls.Clear();
+                    allUserGridPanel.Controls.Add(new UserList());
+                    
                 }
             }
         }
 
-        private void refreshCaptchaPicture_Click(object sender, EventArgs e)
-        {
-            captchaTextBox.Text = null;
-            captchaError.Visible = false;
-            GenerateCaptcha();
-            captchaTextBox.Select();
-        }
-
-        private void GenerateCaptcha()
-        {
-            var random = new Random();
-            int number1 = random.Next(10, 20);
-            int number2 = random.Next(10, 20);
-            CaptchaResult = (number1 + number2).ToString();
-            CaptchLabel.Text = $"{number1} + {number2} =";
-        }
-
         private bool _eye;
 
-        private void eyePicture_Click(object sender, System.EventArgs e)
+        private void eyePicture_Click(object sender, EventArgs e)
         {
             switch (_eye)
             {
@@ -106,7 +87,7 @@ namespace CricBlast_GUI.Forms.Controls
             }
         }
 
-        private void genderRadioButton1_CheckedChanged(object sender, EventArgs e)
+        private void genderRadioMale_CheckedChanged(object sender, EventArgs e)
         {
             if (UserPicture != null) return;
             userPictureBox.Image = Properties.Resources.User_Male;
@@ -114,7 +95,7 @@ namespace CricBlast_GUI.Forms.Controls
             genderError.Visible = false;
         }
 
-        private void genderRadioButton2_CheckedChanged(object sender, EventArgs e)
+        private void genderRadioFemale_CheckedChanged(object sender, EventArgs e)
         {
             if (UserPicture != null) return;
             userPictureBox.Image = Properties.Resources.User_Female;
@@ -141,11 +122,5 @@ namespace CricBlast_GUI.Forms.Controls
         {
             mobileError.Visible = false;
         }
-
-        private void captchaTextBox_TextChanged(object sender, EventArgs e)
-        {
-            captchaError.Visible = !captchaTextBox.Text.Trim().Equals(CaptchaResult);
-        }
     }
 }
-

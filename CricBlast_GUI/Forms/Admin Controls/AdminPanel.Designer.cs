@@ -35,11 +35,11 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.availability = new System.Windows.Forms.Label();
             this.usernameLabel = new System.Windows.Forms.Label();
             this.userPhoto = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.customizeTeam = new Guna.UI2.WinForms.Guna2Button();
-            this.playerStats = new Guna.UI2.WinForms.Guna2Button();
-            this.playMatch = new Guna.UI2.WinForms.Guna2Button();
-            this.addPlayers = new Guna.UI2.WinForms.Guna2Button();
-            this.myTeam = new Guna.UI2.WinForms.Guna2Button();
+            this.manageUser = new Guna.UI2.WinForms.Guna2Button();
+            this.tournaments = new Guna.UI2.WinForms.Guna2Button();
+            this.projectDetails = new Guna.UI2.WinForms.Guna2Button();
+            this.addUser = new Guna.UI2.WinForms.Guna2Button();
+            this.dashboard = new Guna.UI2.WinForms.Guna2Button();
             this.logout = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.adminMenuPanel.SuspendLayout();
@@ -67,16 +67,17 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.adminMenuPanel.Controls.Add(this.availability);
             this.adminMenuPanel.Controls.Add(this.usernameLabel);
             this.adminMenuPanel.Controls.Add(this.userPhoto);
-            this.adminMenuPanel.Controls.Add(this.customizeTeam);
-            this.adminMenuPanel.Controls.Add(this.playerStats);
-            this.adminMenuPanel.Controls.Add(this.playMatch);
-            this.adminMenuPanel.Controls.Add(this.addPlayers);
-            this.adminMenuPanel.Controls.Add(this.myTeam);
+            this.adminMenuPanel.Controls.Add(this.manageUser);
+            this.adminMenuPanel.Controls.Add(this.tournaments);
+            this.adminMenuPanel.Controls.Add(this.projectDetails);
+            this.adminMenuPanel.Controls.Add(this.addUser);
+            this.adminMenuPanel.Controls.Add(this.dashboard);
             this.adminMenuPanel.Controls.Add(this.logout);
             this.adminMenuPanel.Controls.Add(this.pictureBox1);
             this.adminMenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.adminMenuPanel.Location = new System.Drawing.Point(0, 0);
             this.adminMenuPanel.Name = "adminMenuPanel";
+            this.adminMenuPanel.ShadowDecoration.Depth = 5;
             this.adminMenuPanel.ShadowDecoration.Parent = this.adminMenuPanel;
             this.adminMenuPanel.Size = new System.Drawing.Size(308, 681);
             this.adminMenuPanel.TabIndex = 13;
@@ -105,6 +106,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.availability.Size = new System.Drawing.Size(68, 25);
             this.availability.TabIndex = 6;
             this.availability.Text = "Online";
+            this.availability.Click += new System.EventHandler(this.availability_Click);
             // 
             // usernameLabel
             // 
@@ -112,20 +114,23 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.usernameLabel.Cursor = System.Windows.Forms.Cursors.Default;
             this.usernameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.usernameLabel.Location = new System.Drawing.Point(122, 517);
+            this.usernameLabel.Location = new System.Drawing.Point(128, 517);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(151, 32);
             this.usernameLabel.TabIndex = 6;
-            this.usernameLabel.Text = "Username";
+            this.usernameLabel.Text = "Admin";
             // 
             // userPhoto
             // 
             this.userPhoto.BackColor = System.Drawing.Color.Transparent;
-            this.userPhoto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.userPhoto.Image = global::CricBlast_GUI.Properties.Resources.User_Male_GrayBack;
+            this.userPhoto.Cursor = System.Windows.Forms.Cursors.Default;
+            this.userPhoto.FillColor = System.Drawing.Color.Transparent;
+            this.userPhoto.Image = global::CricBlast_GUI.Properties.Resources.Admin;
             this.userPhoto.ImageRotate = 0F;
             this.userPhoto.Location = new System.Drawing.Point(52, 517);
             this.userPhoto.Name = "userPhoto";
+            this.userPhoto.ShadowDecoration.Color = System.Drawing.Color.Silver;
+            this.userPhoto.ShadowDecoration.Depth = 100;
             this.userPhoto.ShadowDecoration.Enabled = true;
             this.userPhoto.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.userPhoto.ShadowDecoration.Parent = this.userPhoto;
@@ -133,127 +138,133 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.userPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.userPhoto.TabIndex = 5;
             this.userPhoto.TabStop = false;
+            this.userPhoto.UseTransparentBackground = true;
             // 
-            // customizeTeam
+            // manageUser
             // 
-            this.customizeTeam.BackColor = System.Drawing.Color.Transparent;
-            this.customizeTeam.BorderRadius = 10;
-            this.customizeTeam.CheckedState.Parent = this.customizeTeam;
-            this.customizeTeam.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.customizeTeam.CustomImages.Parent = this.customizeTeam;
-            this.customizeTeam.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.customizeTeam.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.customizeTeam.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.customizeTeam.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.customizeTeam.DisabledState.Parent = this.customizeTeam;
-            this.customizeTeam.FillColor = System.Drawing.Color.Transparent;
-            this.customizeTeam.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.customizeTeam.ForeColor = System.Drawing.Color.White;
-            this.customizeTeam.HoverState.Parent = this.customizeTeam;
-            this.customizeTeam.Location = new System.Drawing.Point(45, 334);
-            this.customizeTeam.Name = "customizeTeam";
-            this.customizeTeam.ShadowDecoration.Parent = this.customizeTeam;
-            this.customizeTeam.Size = new System.Drawing.Size(198, 45);
-            this.customizeTeam.TabIndex = 1;
-            this.customizeTeam.Text = "Add New User";
-            this.customizeTeam.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.manageUser.BackColor = System.Drawing.Color.Transparent;
+            this.manageUser.BorderRadius = 10;
+            this.manageUser.CheckedState.Parent = this.manageUser;
+            this.manageUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.manageUser.CustomImages.Parent = this.manageUser;
+            this.manageUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.manageUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.manageUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.manageUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.manageUser.DisabledState.Parent = this.manageUser;
+            this.manageUser.FillColor = System.Drawing.Color.Transparent;
+            this.manageUser.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.manageUser.ForeColor = System.Drawing.Color.White;
+            this.manageUser.HoverState.Parent = this.manageUser;
+            this.manageUser.Location = new System.Drawing.Point(45, 334);
+            this.manageUser.Name = "manageUser";
+            this.manageUser.ShadowDecoration.Parent = this.manageUser;
+            this.manageUser.Size = new System.Drawing.Size(198, 45);
+            this.manageUser.TabIndex = 1;
+            this.manageUser.Text = "Manage Users";
+            this.manageUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.manageUser.Click += new System.EventHandler(this.manageUser_Click);
             // 
-            // playerStats
+            // tournaments
             // 
-            this.playerStats.BackColor = System.Drawing.Color.Transparent;
-            this.playerStats.BorderRadius = 10;
-            this.playerStats.CheckedState.Parent = this.playerStats;
-            this.playerStats.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.playerStats.CustomImages.Parent = this.playerStats;
-            this.playerStats.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.playerStats.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.playerStats.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.playerStats.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.playerStats.DisabledState.Parent = this.playerStats;
-            this.playerStats.FillColor = System.Drawing.Color.Transparent;
-            this.playerStats.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.playerStats.ForeColor = System.Drawing.Color.White;
-            this.playerStats.HoverState.Parent = this.playerStats;
-            this.playerStats.Location = new System.Drawing.Point(45, 208);
-            this.playerStats.Name = "playerStats";
-            this.playerStats.ShadowDecoration.Parent = this.playerStats;
-            this.playerStats.Size = new System.Drawing.Size(198, 45);
-            this.playerStats.TabIndex = 1;
-            this.playerStats.Text = "Tournaments";
-            this.playerStats.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tournaments.BackColor = System.Drawing.Color.Transparent;
+            this.tournaments.BorderRadius = 10;
+            this.tournaments.CheckedState.Parent = this.tournaments;
+            this.tournaments.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tournaments.CustomImages.Parent = this.tournaments;
+            this.tournaments.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.tournaments.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.tournaments.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.tournaments.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.tournaments.DisabledState.Parent = this.tournaments;
+            this.tournaments.FillColor = System.Drawing.Color.Transparent;
+            this.tournaments.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.tournaments.ForeColor = System.Drawing.Color.White;
+            this.tournaments.HoverState.Parent = this.tournaments;
+            this.tournaments.Location = new System.Drawing.Point(45, 208);
+            this.tournaments.Name = "tournaments";
+            this.tournaments.ShadowDecoration.Parent = this.tournaments;
+            this.tournaments.Size = new System.Drawing.Size(198, 45);
+            this.tournaments.TabIndex = 1;
+            this.tournaments.Text = "Tournaments";
+            this.tournaments.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tournaments.Click += new System.EventHandler(this.tournaments_Click);
             // 
-            // playMatch
+            // projectDetails
             // 
-            this.playMatch.BackColor = System.Drawing.Color.Transparent;
-            this.playMatch.BorderRadius = 10;
-            this.playMatch.CheckedState.Parent = this.playMatch;
-            this.playMatch.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.playMatch.CustomImages.Parent = this.playMatch;
-            this.playMatch.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.playMatch.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.playMatch.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.playMatch.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.playMatch.DisabledState.Parent = this.playMatch;
-            this.playMatch.FillColor = System.Drawing.Color.Transparent;
-            this.playMatch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.playMatch.ForeColor = System.Drawing.Color.White;
-            this.playMatch.HoverState.Parent = this.playMatch;
-            this.playMatch.Location = new System.Drawing.Point(45, 397);
-            this.playMatch.Name = "playMatch";
-            this.playMatch.ShadowDecoration.Parent = this.playMatch;
-            this.playMatch.Size = new System.Drawing.Size(198, 45);
-            this.playMatch.TabIndex = 1;
-            this.playMatch.Text = "Admin Details";
-            this.playMatch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.projectDetails.BackColor = System.Drawing.Color.Transparent;
+            this.projectDetails.BorderRadius = 10;
+            this.projectDetails.CheckedState.Parent = this.projectDetails;
+            this.projectDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.projectDetails.CustomImages.Parent = this.projectDetails;
+            this.projectDetails.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.projectDetails.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.projectDetails.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.projectDetails.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.projectDetails.DisabledState.Parent = this.projectDetails;
+            this.projectDetails.FillColor = System.Drawing.Color.Transparent;
+            this.projectDetails.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.projectDetails.ForeColor = System.Drawing.Color.White;
+            this.projectDetails.HoverState.Parent = this.projectDetails;
+            this.projectDetails.Location = new System.Drawing.Point(45, 397);
+            this.projectDetails.Name = "projectDetails";
+            this.projectDetails.ShadowDecoration.Parent = this.projectDetails;
+            this.projectDetails.Size = new System.Drawing.Size(198, 45);
+            this.projectDetails.TabIndex = 1;
+            this.projectDetails.Text = "Project Details";
+            this.projectDetails.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.projectDetails.Click += new System.EventHandler(this.projectDetails_Click);
             // 
-            // addPlayers
+            // addUser
             // 
-            this.addPlayers.BackColor = System.Drawing.Color.Transparent;
-            this.addPlayers.BorderRadius = 10;
-            this.addPlayers.CheckedState.Parent = this.addPlayers;
-            this.addPlayers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addPlayers.CustomImages.Parent = this.addPlayers;
-            this.addPlayers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.addPlayers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.addPlayers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.addPlayers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.addPlayers.DisabledState.Parent = this.addPlayers;
-            this.addPlayers.FillColor = System.Drawing.Color.Transparent;
-            this.addPlayers.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.addPlayers.ForeColor = System.Drawing.Color.White;
-            this.addPlayers.HoverState.Parent = this.addPlayers;
-            this.addPlayers.Location = new System.Drawing.Point(45, 271);
-            this.addPlayers.Name = "addPlayers";
-            this.addPlayers.ShadowDecoration.Parent = this.addPlayers;
-            this.addPlayers.Size = new System.Drawing.Size(198, 45);
-            this.addPlayers.TabIndex = 1;
-            this.addPlayers.Text = "Manage User";
-            this.addPlayers.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.addUser.BackColor = System.Drawing.Color.Transparent;
+            this.addUser.BorderRadius = 10;
+            this.addUser.CheckedState.Parent = this.addUser;
+            this.addUser.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.addUser.CustomImages.Parent = this.addUser;
+            this.addUser.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.addUser.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.addUser.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.addUser.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.addUser.DisabledState.Parent = this.addUser;
+            this.addUser.FillColor = System.Drawing.Color.Transparent;
+            this.addUser.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.addUser.ForeColor = System.Drawing.Color.White;
+            this.addUser.HoverState.Parent = this.addUser;
+            this.addUser.Location = new System.Drawing.Point(45, 271);
+            this.addUser.Name = "addUser";
+            this.addUser.ShadowDecoration.Parent = this.addUser;
+            this.addUser.Size = new System.Drawing.Size(198, 45);
+            this.addUser.TabIndex = 1;
+            this.addUser.Text = "Add Users";
+            this.addUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.addUser.Click += new System.EventHandler(this.addUser_Click);
             // 
-            // myTeam
+            // dashboard
             // 
-            this.myTeam.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.myTeam.BackColor = System.Drawing.Color.Transparent;
-            this.myTeam.BorderRadius = 10;
-            this.myTeam.CheckedState.Parent = this.myTeam;
-            this.myTeam.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.myTeam.CustomImages.Parent = this.myTeam;
-            this.myTeam.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.myTeam.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.myTeam.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.myTeam.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.myTeam.DisabledState.Parent = this.myTeam;
-            this.myTeam.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(161)))), ((int)(((byte)(47)))));
-            this.myTeam.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.myTeam.ForeColor = System.Drawing.Color.White;
-            this.myTeam.HoverState.Parent = this.myTeam;
-            this.myTeam.Location = new System.Drawing.Point(45, 145);
-            this.myTeam.Name = "myTeam";
-            this.myTeam.ShadowDecoration.Parent = this.myTeam;
-            this.myTeam.Size = new System.Drawing.Size(198, 45);
-            this.myTeam.TabIndex = 1;
-            this.myTeam.Text = "Dashboard";
-            this.myTeam.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dashboard.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.dashboard.BackColor = System.Drawing.Color.Transparent;
+            this.dashboard.BorderRadius = 10;
+            this.dashboard.CheckedState.Parent = this.dashboard;
+            this.dashboard.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dashboard.CustomImages.Parent = this.dashboard;
+            this.dashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.dashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.dashboard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.dashboard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.dashboard.DisabledState.Parent = this.dashboard;
+            this.dashboard.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(161)))), ((int)(((byte)(47)))));
+            this.dashboard.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.dashboard.ForeColor = System.Drawing.Color.White;
+            this.dashboard.HoverState.Parent = this.dashboard;
+            this.dashboard.Location = new System.Drawing.Point(45, 145);
+            this.dashboard.Name = "dashboard";
+            this.dashboard.ShadowDecoration.Parent = this.dashboard;
+            this.dashboard.Size = new System.Drawing.Size(198, 45);
+            this.dashboard.TabIndex = 1;
+            this.dashboard.Text = "Dashboard";
+            this.dashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dashboard.Click += new System.EventHandler(this.dashboard_Click);
             // 
             // logout
             // 
@@ -267,6 +278,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.logout.Size = new System.Drawing.Size(86, 30);
             this.logout.TabIndex = 4;
             this.logout.Text = "Logout";
+            this.logout.Click += new System.EventHandler(this.logout_Click);
             // 
             // pictureBox1
             // 
@@ -288,6 +300,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.Controls.Add(this.adminMenuPanel);
             this.Name = "AdminPanel";
             this.Size = new System.Drawing.Size(1264, 681);
+            this.Load += new System.EventHandler(this.AdminPanel_Load);
             this.adminMenuPanel.ResumeLayout(false);
             this.adminMenuPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.availabilityIcon)).EndInit();
@@ -305,11 +318,11 @@ namespace CricBlast_GUI.Forms.Admin_Controls
         private System.Windows.Forms.Label availability;
         private System.Windows.Forms.Label usernameLabel;
         private Guna.UI2.WinForms.Guna2CirclePictureBox userPhoto;
-        private Guna.UI2.WinForms.Guna2Button customizeTeam;
-        private Guna.UI2.WinForms.Guna2Button playerStats;
-        private Guna.UI2.WinForms.Guna2Button playMatch;
-        private Guna.UI2.WinForms.Guna2Button addPlayers;
-        private Guna.UI2.WinForms.Guna2Button myTeam;
+        private Guna.UI2.WinForms.Guna2Button manageUser;
+        private Guna.UI2.WinForms.Guna2Button tournaments;
+        private Guna.UI2.WinForms.Guna2Button projectDetails;
+        private Guna.UI2.WinForms.Guna2Button addUser;
+        private Guna.UI2.WinForms.Guna2Button dashboard;
         private System.Windows.Forms.Label logout;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

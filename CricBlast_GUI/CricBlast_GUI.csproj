@@ -77,6 +77,12 @@
     <Compile Include="Database\ConvertImage.cs" />
     <Compile Include="Database\Account.cs" />
     <Compile Include="Database\Login.cs" />
+    <Compile Include="Forms\Admin Controls\AddUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin Controls\AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Admin Controls\Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -89,11 +95,29 @@
     <Compile Include="Forms\Admin Controls\ManageUser.Designer.cs">
       <DependentUpon>ManageUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Admin Controls\ProjectDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin Controls\ProjectDetails.Designer.cs">
+      <DependentUpon>ProjectDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin Controls\TournamentsAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin Controls\TournamentsAdmin.Designer.cs">
+      <DependentUpon>TournamentsAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Admin Controls\UserControl1.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Forms\Admin Controls\UserControl1.Designer.cs">
       <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Admin Controls\UserList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin Controls\UserList.Designer.cs">
+      <DependentUpon>UserList.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Controls\CreateAccount.cs">
       <SubType>UserControl</SubType>
@@ -224,14 +248,26 @@
     <Compile Include="Forms\Selected.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\Admin Controls\AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin Controls\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin Controls\ManageUser.resx">
       <DependentUpon>ManageUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin Controls\ProjectDetails.resx">
+      <DependentUpon>ProjectDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin Controls\TournamentsAdmin.resx">
+      <DependentUpon>TournamentsAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin Controls\UserControl1.resx">
       <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin Controls\UserList.resx">
+      <DependentUpon>UserList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\ChooseTeam.resx">
       <DependentUpon>ChooseTeam.cs</DependentUpon>
