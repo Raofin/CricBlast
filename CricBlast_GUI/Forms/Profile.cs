@@ -27,6 +27,7 @@ namespace CricBlast_GUI.Forms
                 true);
             InitializeComponent();
             LoadProfile();
+
         }
         
         private void LoadProfile()
@@ -35,7 +36,11 @@ namespace CricBlast_GUI.Forms
             emailLabel.Text = UserDetails[2];
             passwordLabel.Text = UserDetails[3];
             phoneLabel.Text = UserDetails[4];
+            accountCreated.Text = UserDetails[6];
+            played.Text = UserDetails[7];
+            won.Text = UserDetails[8];
             userCirclePicture.Image = UserImage;
+            setEmailFont();
 
             if (UserDetails[5].Equals("0"))
             {
@@ -72,6 +77,8 @@ namespace CricBlast_GUI.Forms
                 UserDetails[2] = emailLabel.Text = emailTextBox.Text;
                 UserDetails[3] = passwordLabel.Text = passwordTextBox.Text;
                 UserDetails[4] = phoneLabel.Text = phoneTextBox.Text;
+
+                
                 UserImage = userCirclePicture.Image = _userNewImage;
 
                 usernameLabel.Visible = emailLabel.Visible =
@@ -84,6 +91,7 @@ namespace CricBlast_GUI.Forms
 
                 Account.ModifyDetails(UserDetails[1], UserDetails[2], UserDetails[3], UserDetails[4], UserDetails[0]);
                 if (_modifyPhoto) Account.ModifyPhoto(_userNewImage, UserDetails[0]);
+                setEmailFont();
 
                 new MessageBoxOk(0, "Your account information has been successfully updated :)").ShowDialog();
                 return;
@@ -103,6 +111,7 @@ namespace CricBlast_GUI.Forms
             modifyButton.Text = "Confirm";
             modifyButton.FillColor = Color.Tomato;
             _modify = true;
+            setEmailFont();
         }
 
         private void changeProfilePicture_Click(object sender, EventArgs e)
@@ -138,6 +147,20 @@ namespace CricBlast_GUI.Forms
         private void mobileError_TextChanged(object sender, EventArgs e)
         {
             mobileError.Visible = false;
+        }
+
+        private void setEmailFont()
+        {
+            if (emailLabel.Text.Length < 21)
+            {
+                emailLabel.Font = new Font("Segoe UI", emailLabel.Font.Size, FontStyle.Bold);
+                emailLabel.Location = new Point(172, 296);
+            }
+            else
+            {
+                emailLabel.Font = new Font("Arial Narrow", emailLabel.Font.Size, FontStyle.Bold);
+                emailLabel.Location = new Point(172, 298);
+            }
         }
     }
 }

@@ -55,6 +55,9 @@ namespace CricBlast_GUI.Database
                 UserDetails[3] = sqlDataReader["Password"].ToString();
                 UserDetails[4] = sqlDataReader["PhoneNumber"].ToString();
                 UserDetails[5] = sqlDataReader["Gender"].ToString();
+                UserDetails[6] = Convert.ToDateTime(sqlDataReader["Joined"]).ToString("dd/MM/yyyy");
+                UserDetails[7] = sqlDataReader["Played"].ToString();
+                UserDetails[8] = sqlDataReader["Won"].ToString();
 
                 try
                 {

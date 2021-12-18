@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System;
+using System.Data.SqlClient;
 using System.Drawing;
 
 namespace CricBlast_GUI.Database
@@ -22,8 +23,8 @@ namespace CricBlast_GUI.Database
 
         public static void Create(string username, string email, string password, string phoneNumber, int gender, Image image)
         {
-            var query = "INSERT INTO Users (Username, Email, Password, PhoneNumber, Gender, Image) " +
-                        $"VALUES ('{username}', '{email}', '{password}', '{phoneNumber}', '{gender}', @image)";
+            var query = "INSERT INTO Users (Username, Email, Password, PhoneNumber, Gender, Image, Joined, Played, Won) " +
+                        $"VALUES ('{username}', '{email}', '{password}', '{phoneNumber}', '{gender}', @image, '{DateTime.Now}', '0', '0')";
 
             using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
