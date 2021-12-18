@@ -62,6 +62,7 @@ namespace CricBlast_GUI.Forms
             this.emailLabel = new System.Windows.Forms.Label();
             this.phoneLabel = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.closeMiddle = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.userCirclePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.genderPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.changeProfilePicture)).BeginInit();
@@ -535,6 +536,7 @@ namespace CricBlast_GUI.Forms
             // guna2Panel1
             // 
             this.guna2Panel1.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
+            this.guna2Panel1.Controls.Add(this.closeMiddle);
             this.guna2Panel1.Controls.Add(this.phoneLabel);
             this.guna2Panel1.Controls.Add(this.emailLabel);
             this.guna2Panel1.Controls.Add(this.changeProfilePicture);
@@ -557,6 +559,29 @@ namespace CricBlast_GUI.Forms
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(534, 646);
             this.guna2Panel1.TabIndex = 40;
+            // 
+            // closeMiddle
+            // 
+            this.closeMiddle.Animated = true;
+            this.closeMiddle.BackColor = System.Drawing.Color.Transparent;
+            this.closeMiddle.BorderRadius = 4;
+            this.closeMiddle.CheckedState.Parent = this.closeMiddle;
+            this.closeMiddle.CustomImages.Parent = this.closeMiddle;
+            this.closeMiddle.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.closeMiddle.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.closeMiddle.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.closeMiddle.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.closeMiddle.DisabledState.Parent = this.closeMiddle;
+            this.closeMiddle.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.closeMiddle.ForeColor = System.Drawing.Color.White;
+            this.closeMiddle.HoverState.Parent = this.closeMiddle;
+            this.closeMiddle.Location = new System.Drawing.Point(177, 560);
+            this.closeMiddle.Name = "closeMiddle";
+            this.closeMiddle.ShadowDecoration.Parent = this.closeMiddle;
+            this.closeMiddle.Size = new System.Drawing.Size(180, 45);
+            this.closeMiddle.TabIndex = 44;
+            this.closeMiddle.Text = "Close";
+            this.closeMiddle.Click += new System.EventHandler(this.closeMiddle_Click);
             // 
             // Profile
             // 
@@ -624,5 +649,6 @@ namespace CricBlast_GUI.Forms
         private Guna.UI2.WinForms.Guna2CirclePictureBox userCirclePicture;
         private Guna.UI2.WinForms.Guna2TextBox emailTextBox;
         private Guna.UI2.WinForms.Guna2TextBox phoneTextBox;
+        private Guna.UI2.WinForms.Guna2Button closeMiddle;
     }
 }

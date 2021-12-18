@@ -2,11 +2,12 @@
 using System.Drawing;
 using System.Windows.Forms;
 using CricBlast_GUI.Database;
-using static CricBlast_GUI.Home.Selected;
+using CricBlast_GUI.Home;
+using static CricBlast_GUI.Database.Admin;
 
 namespace CricBlast_GUI.Forms
 {
-    public partial class Profile : Form
+    public partial class AdminView : Form
     {
         protected override CreateParams CreateParams
         {
@@ -18,7 +19,7 @@ namespace CricBlast_GUI.Forms
             }
         }
 
-        public Profile()
+        public AdminView()
         {
             SetStyle(
                 ControlStyles.UserPaint |
@@ -29,46 +30,49 @@ namespace CricBlast_GUI.Forms
             LoadProfile();
         }
 
-        public Profile(int viewOrModify)
+        public AdminView(int viewOrModify)
         {
+            SetStyle(
+                ControlStyles.UserPaint |
+                ControlStyles.AllPaintingInWmPaint |
+                ControlStyles.OptimizedDoubleBuffer,
+                true);
+            InitializeComponent();
+            LoadProfile();
+
             if (viewOrModify == 1)
             {
-                close.Visible = false;
+                closeButton.Visible = false;
                 modifyButton.Visible = false;
                 closeMiddle.Visible = true;
             }
             else
+            {
                 _modify = true;
+                HideModify();
+            }
+
+
         }
 
         private bool _modify;
         private bool _modifyPhoto;
-        private Image _userNewImage = UserImage;
-
-        private void modify_Click(object sender, EventArgs e)
-        {
-            if (_modify)
-            {
-                ShowModify();
-                return;
-            }
-
-            HideModify();
-        }
+        private Image _userNewImage = TempUserImage;
+        
 
         private void LoadProfile()
         {
-            usernameLabel.Text = UserDetails[1];
-            emailLabel.Text = UserDetails[2];
-            passwordLabel.Text = UserDetails[3];
-            phoneLabel.Text = UserDetails[4];
-            accountCreated.Text = UserDetails[6];
-            played.Text = UserDetails[7];
-            won.Text = UserDetails[8];
-            userCirclePicture.Image = UserImage;
+            usernameLabel.Text = TempUserDetails[1];
+            emailLabel.Text = TempUserDetails[2];
+            passwordLabel.Text = TempUserDetails[3];
+            phoneLabel.Text = TempUserDetails[4];
+            accountCreated.Text = TempUserDetails[6];
+            played.Text = TempUserDetails[7];
+            won.Text = TempUserDetails[8];
+            userCirclePicture.Image = TempUserImage;
             SetEmailFont();
 
-            if (UserDetails[5].Equals("0"))
+            if (TempUserDetails[5].Equals("0"))
             {
                 genderLabel.Text = "Female";
                 genderPicture.Image = Properties.Resources.User_Female;
@@ -89,17 +93,16 @@ namespace CricBlast_GUI.Forms
 
             if (usernameError.Visible || emailError.Visible || passwordError.Visible || mobileError.Visible)
             {
-                new MessageBoxOk(WarningMark, "Please fill out all the fields properly.").ShowDialog();
+                new MessageBoxOk(Selected.WarningMark, "Please fill out all the fields properly.").ShowDialog();
                 return;
             }
 
-            UserDetails[1] = usernameLabel.Text = usernameTextBox.Text;
-            UserDetails[2] = emailLabel.Text = emailTextBox.Text;
-            UserDetails[3] = passwordLabel.Text = passwordTextBox.Text;
-            UserDetails[4] = phoneLabel.Text = phoneTextBox.Text;
+            TempUserDetails[1] = usernameLabel.Text = usernameTextBox.Text;
+            TempUserDetails[2] = emailLabel.Text = emailTextBox.Text;
+            TempUserDetails[3] = passwordLabel.Text = passwordTextBox.Text;
+            TempUserDetails[4] = phoneLabel.Text = phoneTextBox.Text;
 
-
-            UserImage = userCirclePicture.Image = _userNewImage;
+            TempUserImage = userCirclePicture.Image = _userNewImage;
 
             usernameLabel.Visible = emailLabel.Visible =
                 passwordLabel.Visible = phoneLabel.Visible = changeProfilePicture.Visible = true;
@@ -109,12 +112,11 @@ namespace CricBlast_GUI.Forms
             modifyButton.FillColor = Color.FromArgb(37, 161, 92);
             _modify = false;
 
-            Account.ModifyDetails(UserDetails[1], UserDetails[2], UserDetails[3], UserDetails[4], UserDetails[0]);
-            if (_modifyPhoto) Account.ModifyPhoto(_userNewImage, UserDetails[0]);
+            Account.ModifyDetails(TempUserDetails[1], TempUserDetails[2], TempUserDetails[3], TempUserDetails[4], TempUserDetails[0]);
+            if (_modifyPhoto) Account.ModifyPhoto(_userNewImage, TempUserDetails[0]);
             SetEmailFont();
 
-            new MessageBoxOk(0, "Your account information has been successfully updated :)").ShowDialog();
-            
+            new MessageBoxOk(0, "Account information has been successfully updated :)").ShowDialog();
         }
 
         private void HideModify()
@@ -124,51 +126,16 @@ namespace CricBlast_GUI.Forms
             usernameTextBox.Visible = emailTextBox.Visible =
                 passwordTextBox.Visible = phoneTextBox.Visible = changeProfilePicture.Visible = true;
 
-            usernameTextBox.Text = UserDetails[1];
-            emailTextBox.Text = UserDetails[2];
-            passwordTextBox.Text = UserDetails[3];
-            phoneTextBox.Text = UserDetails[4];
-            userCirclePicture.Image = UserImage;
+            usernameTextBox.Text = TempUserDetails[1];
+            emailTextBox.Text = TempUserDetails[2];
+            passwordTextBox.Text = TempUserDetails[3];
+            phoneTextBox.Text = TempUserDetails[4];
+            userCirclePicture.Image = TempUserImage;
 
             modifyButton.Text = "Confirm";
             modifyButton.FillColor = Color.Tomato;
             _modify = true;
             SetEmailFont();
-        }
-
-        private void changeProfilePicture_Click(object sender, EventArgs e)
-        {
-            using (var openFileDialog = new OpenFileDialog {Filter = Properties.Resources.ImageFilter})
-            {
-                if (openFileDialog.ShowDialog() != DialogResult.OK) return;
-                _userNewImage = userCirclePicture.Image = new Bitmap(openFileDialog.FileName);
-                _modifyPhoto = true;
-            }
-        }
-
-        private void close_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void usernameTextBox_TextChanged(object sender, EventArgs e)
-        {
-            usernameError.Visible = false;
-        }
-
-        private void emailError_TextChanged(object sender, EventArgs e)
-        {
-            emailError.Visible = false;
-        }
-
-        private void passwordError_TextChanged(object sender, EventArgs e)
-        {
-            passwordError.Visible = false;
-        }
-
-        private void mobileError_TextChanged(object sender, EventArgs e)
-        {
-            mobileError.Visible = false;
         }
 
         private void SetEmailFont()
@@ -185,9 +152,55 @@ namespace CricBlast_GUI.Forms
             }
         }
 
+        private void modifyButton_Click(object sender, EventArgs e)
+        {
+            if (_modify)
+            {
+                ShowModify();
+                return;
+            }
+
+            HideModify();
+        }
+
+        private void changeProfilePicture_Click(object sender, EventArgs e)
+        {
+            using (var openFileDialog = new OpenFileDialog { Filter = Properties.Resources.ImageFilter })
+            {
+                if (openFileDialog.ShowDialog() != DialogResult.OK) return;
+                _userNewImage = userCirclePicture.Image = new Bitmap(openFileDialog.FileName);
+                _modifyPhoto = true;
+            }
+        }
+
         private void closeMiddle_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void close_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void usernameTextBox_TextChanged(object sender, EventArgs e)
+        {
+            usernameError.Visible = false;
+        }
+
+        private void emailTextBox_TextChanged(object sender, EventArgs e)
+        {
+            emailError.Visible = false;
+        }
+
+        private void passwordTextBox_TextChanged(object sender, EventArgs e)
+        {
+            passwordError.Visible = false;
+        }
+
+        private void phoneTextBox_TextChanged(object sender, EventArgs e)
+        {
+            mobileError.Visible = false;
         }
     }
 }
