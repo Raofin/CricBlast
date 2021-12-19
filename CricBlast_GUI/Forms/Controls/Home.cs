@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Configuration;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
 using CricBlast_GUI.Home;
@@ -10,6 +8,8 @@ namespace CricBlast_GUI.Forms.Controls
 {
     public partial class Home : UserControl
     {
+        public int SelectedMenu = 1;
+        private bool _isAvailable = true;
 
         public Home()
         {
@@ -29,7 +29,6 @@ namespace CricBlast_GUI.Forms.Controls
             homeSubPanel.Controls.Add(new MyTeam());
         }
 
-        public int SelectedMenu = 1;
         private void myTeam_Click(object sender, EventArgs e)
         {
             if (SelectedMenu == 1) return;
@@ -78,7 +77,7 @@ namespace CricBlast_GUI.Forms.Controls
 
             clearUserDetails();
             Controls.Clear();
-            Controls.Add(new Welcome { welcomeLabel = { Text = "Welcome Back!" } });
+            Controls.Add(new Welcome {welcomeLabel = {Text = "Welcome Back!"}});
         }
 
         private void clearUserDetails()
@@ -127,7 +126,6 @@ namespace CricBlast_GUI.Forms.Controls
             userPhoto.Image = Selected.UserImage;
         }
 
-        private bool _isAvailable = true;
         private void availability_Click(object sender, EventArgs e)
         {
             if (_isAvailable)

@@ -21,6 +21,9 @@ namespace CricBlast_GUI.Forms
         public MainForm()
         {
             InitializeComponent();
+
+            //mainPanel.Controls.Clear();
+            //mainPanel.Controls.Add(value: new AdminPanel());
         }
 
         private void GetStarted_Click(object sender, EventArgs e)

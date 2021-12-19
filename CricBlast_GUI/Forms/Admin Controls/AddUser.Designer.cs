@@ -499,10 +499,11 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             // allUserGridPanel
             // 
             this.allUserGridPanel.BackColor = System.Drawing.Color.Transparent;
-            this.allUserGridPanel.Location = new System.Drawing.Point(585, 182);
+            this.allUserGridPanel.BorderRadius = 5;
+            this.allUserGridPanel.Location = new System.Drawing.Point(585, 175);
             this.allUserGridPanel.Name = "allUserGridPanel";
             this.allUserGridPanel.ShadowDecoration.Parent = this.allUserGridPanel;
-            this.allUserGridPanel.Size = new System.Drawing.Size(310, 394);
+            this.allUserGridPanel.Size = new System.Drawing.Size(310, 401);
             this.allUserGridPanel.TabIndex = 74;
             // 
             // label4

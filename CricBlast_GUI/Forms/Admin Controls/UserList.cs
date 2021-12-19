@@ -18,10 +18,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
                 sqlConnection.Open();
-                var sqlDataAdapter =
-                    new SqlDataAdapter(
-                        "SELECT Email, Image FROM Users",
-                        sqlConnection);
+                var sqlDataAdapter = new SqlDataAdapter("SELECT Email, Image FROM Users", sqlConnection);
                 var dataTable = new DataTable();
                 sqlDataAdapter.Fill(dataTable);
                 AllUserGrid.Columns[0].DataPropertyName = "Image";

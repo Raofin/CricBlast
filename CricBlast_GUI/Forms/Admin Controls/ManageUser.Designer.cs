@@ -238,6 +238,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.UserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.UserName.HeaderText = "NAME";
             this.UserName.Name = "UserName";
+            this.UserName.ReadOnly = true;
             this.UserName.Width = 120;
             // 
             // Email
@@ -245,6 +246,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.Email.HeaderText = "EMAIL ADDRESS";
             this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
             this.Email.Width = 280;
             // 
             // Password
@@ -252,6 +254,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.Password.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.Password.HeaderText = "PASSWORD";
             this.Password.Name = "Password";
+            this.Password.ReadOnly = true;
             this.Password.Width = 120;
             // 
             // Joined
@@ -259,6 +262,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.Joined.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.Joined.HeaderText = "JOINED";
             this.Joined.Name = "Joined";
+            this.Joined.ReadOnly = true;
             this.Joined.Width = 130;
             // 
             // Played

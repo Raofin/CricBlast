@@ -107,12 +107,6 @@
     <Compile Include="Forms\Admin Controls\TournamentsAdmin.Designer.cs">
       <DependentUpon>TournamentsAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Admin Controls\UserControl1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Admin Controls\UserControl1.Designer.cs">
-      <DependentUpon>UserControl1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Admin Controls\UserList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -262,9 +256,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin Controls\TournamentsAdmin.resx">
       <DependentUpon>TournamentsAdmin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Admin Controls\UserControl1.resx">
-      <DependentUpon>UserControl1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin Controls\UserList.resx">
       <DependentUpon>UserList.cs</DependentUpon>
@@ -455,6 +446,7 @@
   <ItemGroup>
     <Content Include="Libraries\Players.dll" />
     <Content Include="Libraries\Teams.dll" />
+    <None Include="Resources\Project Details.png" />
     <None Include="Resources\Admin_Panel.png" />
     <None Include="Resources\RefreshShadowed_Colored.png" />
   </ItemGroup>

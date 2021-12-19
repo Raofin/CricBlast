@@ -47,6 +47,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             }
             catch
             {
+                // ignored
             }
         }
 
@@ -61,6 +62,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             }
             catch
             {
+                // ignored
             }
         }
 
@@ -73,6 +75,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             }
             catch
             {
+                // ignored
             }
         }
     }

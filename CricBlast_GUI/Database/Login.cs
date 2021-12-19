@@ -65,7 +65,6 @@ namespace CricBlast_GUI.Database
                 }
                 catch
                 {
-                    new MessageBoxOk(2, "error").ShowDialog();
                     UserImage = null;
                 }
             }
