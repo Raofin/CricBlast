@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using CricBlast_GUI.Home;
 using static CricBlast_GUI.Home.Selected;
 using static Teams.Team;
 
@@ -41,7 +40,7 @@ namespace CricBlast_GUI.Forms.Controls
         private void SetStats()
         {
             teamLogo.Image = UserTeamLogo;
-            teamName.Text = GetStats(UserTeam, TeamName);
+            teamName.Text = UserTeamName;
             UserTeamStats = GetAllStats(UserTeam);
             teamName.Visible = true;
             teamLogo.Visible = true;

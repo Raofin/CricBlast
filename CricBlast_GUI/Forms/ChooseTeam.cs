@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using CricBlast_GUI.Home;
+using static Teams.Team;
 
 namespace CricBlast_GUI.Forms
 {
@@ -24,12 +25,12 @@ namespace CricBlast_GUI.Forms
                 teamSelectError.Visible = true;
                 return;
             }
-
             Selected.UserTeam = TeamNumber(teamComboBox);
             Selected.UserTeamLogo = Teams.Team.GetLogo(Selected.UserTeam);
             Selected.UserTeamPlayerStats = Players.Player.GetTeamPlayers(Selected.UserTeam);
             Selected.Player = 0;
             Selected.Format = 0;
+            Selected.UserTeamName = GetStats(Selected.UserTeam, TeamName);
             Close();
         }
 

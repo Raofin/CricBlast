@@ -12,6 +12,7 @@ namespace CricBlast_GUI.Home
         public static int OpponentTeam { get; set; }
         public static bool MessageBox { get; set; }
 
+        public static string UserTeamName { get; set; }
         public static Bitmap UserTeamLogo { get; set; }
         public static Bitmap OpponentTeamLogo { get; set; }
 

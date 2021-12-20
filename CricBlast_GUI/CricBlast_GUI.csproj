@@ -131,12 +131,6 @@
     <Compile Include="Forms\Controls\GamePlayPanel.Designer.cs">
       <DependentUpon>GamePlayPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Controls\GameSelectPanel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Forms\Controls\GameSelectPanel.Designer.cs">
-      <DependentUpon>GameSelectPanel.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\Controls\Home.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -285,9 +279,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Controls\GamePlayPanel.resx">
       <DependentUpon>GamePlayPanel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Controls\GameSelectPanel.resx">
-      <DependentUpon>GameSelectPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Controls\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>

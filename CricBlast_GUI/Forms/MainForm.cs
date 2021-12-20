@@ -22,8 +22,8 @@ namespace CricBlast_GUI.Forms
         {
             InitializeComponent();
 
-            mainPanel.Controls.Clear();
-            mainPanel.Controls.Add(value: new Controls.Home());
+            //mainPanel.Controls.Clear();
+            //mainPanel.Controls.Add(value: new Controls.Home());
             //mainPanel.Controls.Add(value: new AdminPanel());
         }
 
