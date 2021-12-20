@@ -127,26 +127,26 @@
   <data name="Admin_Colored" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Admin_Colored.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Shakib" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Shakib.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Warning_Mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Warning_Mark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="User_Male" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\User_Colored.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="User_Female" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\User_Female.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="PlayingRecords1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\PlayingRecords1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Project Details" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Project Details.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Admin_Panel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Admin_Panel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Eye_Open" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Eye_Open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Home_Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home_Menu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="User_Male_GrayBack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\User_Male_GrayBack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Warning_Mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Warning_Mark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="PlayingRecords1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\PlayingRecords1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,17 +160,17 @@
   <data name="Blank" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Blank.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Eye_Open" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Eye_Open.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Unknown_User" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Unknown_User.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Error_Mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Error_Mark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="User_Female" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\User_Female.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Home_Menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Home_Menu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Shakib" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Shakib.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="RefreshShadowed_Colored" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\RefreshShadowed_Colored.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,7 +199,10 @@
   <data name="Eye_Close" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Eye_Close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Project Details" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Project Details.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="User_Male" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\User_Colored.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Question_Mark" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Question_Mark.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

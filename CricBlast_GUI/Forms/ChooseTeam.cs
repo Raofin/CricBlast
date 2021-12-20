@@ -25,7 +25,7 @@ namespace CricBlast_GUI.Forms
                 return;
             }
 
-            Selected.UserTeam = TeamNumber(teamComboBox.SelectedItem.ToString());
+            Selected.UserTeam = TeamNumber(teamComboBox);
             Selected.UserTeamLogo = Teams.Team.GetLogo(Selected.UserTeam);
             Selected.UserTeamPlayerStats = Players.Player.GetTeamPlayers(Selected.UserTeam);
             Selected.Player = 0;
@@ -38,9 +38,9 @@ namespace CricBlast_GUI.Forms
             teamSelectError.Visible = teamComboBox.SelectedIndex == 0;
         }
 
-        private int TeamNumber(string selectedTeam)
+        public static int TeamNumber(ComboBox selectedTeam)
         {
-            switch (selectedTeam.Trim())
+            switch (selectedTeam.SelectedItem.ToString().Trim())
             {
                 case "Australia":
                     return 1;

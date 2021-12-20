@@ -34,10 +34,6 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dbPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.UserDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.welcomeLabel = new System.Windows.Forms.Label();
-            this.viewDetails = new Guna.UI2.WinForms.Guna2Button();
-            this.modify = new Guna.UI2.WinForms.Guna2Button();
-            this.delete = new Guna.UI2.WinForms.Guna2Button();
             this.User = new System.Windows.Forms.DataGridViewImageColumn();
             this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +41,10 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.Joined = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Played = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Won = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.welcomeLabel = new System.Windows.Forms.Label();
+            this.viewDetails = new Guna.UI2.WinForms.Guna2Button();
+            this.modify = new Guna.UI2.WinForms.Guna2Button();
+            this.delete = new Guna.UI2.WinForms.Guna2Button();
             this.dbPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UserDataGridView)).BeginInit();
             this.SuspendLayout();
@@ -88,7 +88,6 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.UserDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.UserDataGridView.ColumnHeadersHeight = 40;
-            this.UserDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.UserDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.User,
             this.UserName,
@@ -131,7 +130,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.UserDataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.UserDataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.UserDataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.UserDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.UserDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.UserDataGridView.ThemeStyle.HeaderStyle.Height = 40;
             this.UserDataGridView.ThemeStyle.ReadOnly = false;
             this.UserDataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
@@ -141,6 +140,63 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.UserDataGridView.ThemeStyle.RowsStyle.Height = 30;
             this.UserDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.UserDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // User
+            // 
+            this.User.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.User.HeaderText = "";
+            this.User.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
+            this.User.Name = "User";
+            this.User.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.User.Width = 47;
+            // 
+            // UserName
+            // 
+            this.UserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.UserName.HeaderText = "NAME";
+            this.UserName.Name = "UserName";
+            this.UserName.ReadOnly = true;
+            this.UserName.Width = 120;
+            // 
+            // Email
+            // 
+            this.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Email.HeaderText = "EMAIL ADDRESS";
+            this.Email.Name = "Email";
+            this.Email.ReadOnly = true;
+            this.Email.Width = 280;
+            // 
+            // Password
+            // 
+            this.Password.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Password.HeaderText = "PASSWORD";
+            this.Password.Name = "Password";
+            this.Password.ReadOnly = true;
+            this.Password.Width = 120;
+            // 
+            // Joined
+            // 
+            this.Joined.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Joined.HeaderText = "JOINED";
+            this.Joined.Name = "Joined";
+            this.Joined.ReadOnly = true;
+            this.Joined.Width = 130;
+            // 
+            // Played
+            // 
+            this.Played.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Played.HeaderText = "PLAYED";
+            this.Played.Name = "Played";
+            this.Played.ReadOnly = true;
+            this.Played.Width = 70;
+            // 
+            // Won
+            // 
+            this.Won.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
+            this.Won.HeaderText = "WON";
+            this.Won.Name = "Won";
+            this.Won.ReadOnly = true;
+            this.Won.Width = 75;
             // 
             // welcomeLabel
             // 
@@ -223,63 +279,6 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.delete.TabIndex = 47;
             this.delete.Text = "Delete";
             this.delete.Click += new System.EventHandler(this.delete_Click);
-            // 
-            // User
-            // 
-            this.User.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.User.HeaderText = "";
-            this.User.ImageLayout = System.Windows.Forms.DataGridViewImageCellLayout.Zoom;
-            this.User.Name = "User";
-            this.User.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.User.Width = 47;
-            // 
-            // UserName
-            // 
-            this.UserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.UserName.HeaderText = "NAME";
-            this.UserName.Name = "UserName";
-            this.UserName.ReadOnly = true;
-            this.UserName.Width = 120;
-            // 
-            // Email
-            // 
-            this.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Email.HeaderText = "EMAIL ADDRESS";
-            this.Email.Name = "Email";
-            this.Email.ReadOnly = true;
-            this.Email.Width = 280;
-            // 
-            // Password
-            // 
-            this.Password.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Password.HeaderText = "PASSWORD";
-            this.Password.Name = "Password";
-            this.Password.ReadOnly = true;
-            this.Password.Width = 120;
-            // 
-            // Joined
-            // 
-            this.Joined.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Joined.HeaderText = "JOINED";
-            this.Joined.Name = "Joined";
-            this.Joined.ReadOnly = true;
-            this.Joined.Width = 130;
-            // 
-            // Played
-            // 
-            this.Played.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Played.HeaderText = "PLAYED";
-            this.Played.Name = "Played";
-            this.Played.ReadOnly = true;
-            this.Played.Width = 70;
-            // 
-            // Won
-            // 
-            this.Won.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            this.Won.HeaderText = "WON";
-            this.Won.Name = "Won";
-            this.Won.ReadOnly = true;
-            this.Won.Width = 75;
             // 
             // ManageUser
             // 
