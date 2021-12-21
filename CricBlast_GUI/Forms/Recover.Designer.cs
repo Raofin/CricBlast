@@ -38,26 +38,26 @@ namespace CricBlast_GUI.Forms
             this.label2 = new System.Windows.Forms.Label();
             this.recoveredName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.recoveredPassword = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.error = new System.Windows.Forms.Label();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             ((System.ComponentModel.ISupportInitialize)(this.recoveredUserPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // recoveredUserPicture
             // 
             this.recoveredUserPicture.BackColor = System.Drawing.Color.Transparent;
-            this.recoveredUserPicture.Image = global::CricBlast_GUI.Properties.Resources.User_Male_GrayBack;
+            this.recoveredUserPicture.Image = global::CricBlast_GUI.Properties.Resources.User_Male_WhiteBack;
             this.recoveredUserPicture.ImageRotate = 0F;
             this.recoveredUserPicture.Location = new System.Drawing.Point(192, 52);
             this.recoveredUserPicture.Name = "recoveredUserPicture";
+            this.recoveredUserPicture.ShadowDecoration.Enabled = true;
             this.recoveredUserPicture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.recoveredUserPicture.ShadowDecoration.Parent = this.recoveredUserPicture;
             this.recoveredUserPicture.Size = new System.Drawing.Size(200, 200);
             this.recoveredUserPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.recoveredUserPicture.TabIndex = 0;
             this.recoveredUserPicture.TabStop = false;
-            this.recoveredUserPicture.UseTransparentBackground = true;
             // 
             // emailTextBox
             // 
@@ -171,20 +171,6 @@ namespace CricBlast_GUI.Forms
             this.recoveredPassword.TabIndex = 25;
             this.recoveredPassword.Text = "...";
             // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.Animated = true;
-            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(540, 0);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox1.TabIndex = 26;
-            // 
             // guna2BorderlessForm1
             // 
             this.guna2BorderlessForm1.ContainerControl = this;
@@ -204,6 +190,20 @@ namespace CricBlast_GUI.Forms
             this.error.TabIndex = 23;
             this.error.Text = "- error!";
             this.error.Visible = false;
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.Animated = true;
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(540, 0);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.TabIndex = 26;
             // 
             // Recover
             // 
@@ -242,8 +242,8 @@ namespace CricBlast_GUI.Forms
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2HtmlLabel recoveredName;
         private Guna.UI2.WinForms.Guna2HtmlLabel recoveredPassword;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private System.Windows.Forms.Label error;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }
 }

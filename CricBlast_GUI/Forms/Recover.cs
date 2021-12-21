@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Media;
 using System.Windows.Forms;
 using CricBlast_GUI.Database;
 using CricBlast_GUI.Home;
@@ -19,10 +13,11 @@ namespace CricBlast_GUI.Forms
             get
             {
                 CreateParams cp = base.CreateParams;
-                cp.ExStyle |= 0x02000000;  // Turn on WS_EX_COMPOSITED
+                cp.ExStyle |= 0x02000000; // Turn on WS_EX_COMPOSITED
                 return cp;
             }
         }
+
         public Recover()
         {
             SetStyle(
@@ -40,8 +35,9 @@ namespace CricBlast_GUI.Forms
                 recoveredName.Text = Selected.UserDetails[1];
                 recoveredPassword.Text = Selected.UserDetails[3];
                 recoveredUserPicture.Image = Selected.UserImage;
-
+                SystemSounds.Asterisk.Play();
             }
+
             error.Visible = string.IsNullOrWhiteSpace(emailTextBox.Text);
         }
 

@@ -31,20 +31,20 @@ namespace CricBlast_GUI.Forms.Admin_Controls
         {
             this.adminSubPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.adminMenuPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.availabilityIcon = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.availability = new System.Windows.Forms.Label();
             this.usernameLabel = new System.Windows.Forms.Label();
-            this.userPhoto = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.manageUser = new Guna.UI2.WinForms.Guna2Button();
-            this.tournaments = new Guna.UI2.WinForms.Guna2Button();
+            this.tournament = new Guna.UI2.WinForms.Guna2Button();
             this.projectDetails = new Guna.UI2.WinForms.Guna2Button();
             this.addUser = new Guna.UI2.WinForms.Guna2Button();
             this.dashboard = new Guna.UI2.WinForms.Guna2Button();
             this.logout = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.adminMenuPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.availabilityIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,12 +63,12 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             // 
             this.adminMenuPanel.BackColor = System.Drawing.Color.Transparent;
             this.adminMenuPanel.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Home_Menu;
+            this.adminMenuPanel.Controls.Add(this.guna2CirclePictureBox1);
             this.adminMenuPanel.Controls.Add(this.availabilityIcon);
             this.adminMenuPanel.Controls.Add(this.availability);
             this.adminMenuPanel.Controls.Add(this.usernameLabel);
-            this.adminMenuPanel.Controls.Add(this.userPhoto);
             this.adminMenuPanel.Controls.Add(this.manageUser);
-            this.adminMenuPanel.Controls.Add(this.tournaments);
+            this.adminMenuPanel.Controls.Add(this.tournament);
             this.adminMenuPanel.Controls.Add(this.projectDetails);
             this.adminMenuPanel.Controls.Add(this.addUser);
             this.adminMenuPanel.Controls.Add(this.dashboard);
@@ -81,6 +81,22 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.adminMenuPanel.ShadowDecoration.Parent = this.adminMenuPanel;
             this.adminMenuPanel.Size = new System.Drawing.Size(308, 681);
             this.adminMenuPanel.TabIndex = 13;
+            // 
+            // guna2CirclePictureBox1
+            // 
+            this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2CirclePictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2CirclePictureBox1.Image = global::CricBlast_GUI.Properties.Resources.Admin_Gray_Background;
+            this.guna2CirclePictureBox1.ImageRotate = 0F;
+            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(52, 517);
+            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
+            this.guna2CirclePictureBox1.ShadowDecoration.Enabled = true;
+            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
+            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(64, 64);
+            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2CirclePictureBox1.TabIndex = 8;
+            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // availabilityIcon
             // 
@@ -120,26 +136,6 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.usernameLabel.TabIndex = 6;
             this.usernameLabel.Text = "Admin";
             // 
-            // userPhoto
-            // 
-            this.userPhoto.BackColor = System.Drawing.Color.Transparent;
-            this.userPhoto.Cursor = System.Windows.Forms.Cursors.Default;
-            this.userPhoto.FillColor = System.Drawing.Color.Transparent;
-            this.userPhoto.Image = global::CricBlast_GUI.Properties.Resources.Admin;
-            this.userPhoto.ImageRotate = 0F;
-            this.userPhoto.Location = new System.Drawing.Point(52, 517);
-            this.userPhoto.Name = "userPhoto";
-            this.userPhoto.ShadowDecoration.Color = System.Drawing.Color.Silver;
-            this.userPhoto.ShadowDecoration.Depth = 100;
-            this.userPhoto.ShadowDecoration.Enabled = true;
-            this.userPhoto.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.userPhoto.ShadowDecoration.Parent = this.userPhoto;
-            this.userPhoto.Size = new System.Drawing.Size(64, 64);
-            this.userPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.userPhoto.TabIndex = 5;
-            this.userPhoto.TabStop = false;
-            this.userPhoto.UseTransparentBackground = true;
-            // 
             // manageUser
             // 
             this.manageUser.BackColor = System.Drawing.Color.Transparent;
@@ -165,30 +161,30 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.manageUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.manageUser.Click += new System.EventHandler(this.manageUser_Click);
             // 
-            // tournaments
+            // tournament
             // 
-            this.tournaments.BackColor = System.Drawing.Color.Transparent;
-            this.tournaments.BorderRadius = 10;
-            this.tournaments.CheckedState.Parent = this.tournaments;
-            this.tournaments.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tournaments.CustomImages.Parent = this.tournaments;
-            this.tournaments.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.tournaments.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.tournaments.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.tournaments.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.tournaments.DisabledState.Parent = this.tournaments;
-            this.tournaments.FillColor = System.Drawing.Color.Transparent;
-            this.tournaments.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.tournaments.ForeColor = System.Drawing.Color.White;
-            this.tournaments.HoverState.Parent = this.tournaments;
-            this.tournaments.Location = new System.Drawing.Point(45, 208);
-            this.tournaments.Name = "tournaments";
-            this.tournaments.ShadowDecoration.Parent = this.tournaments;
-            this.tournaments.Size = new System.Drawing.Size(198, 45);
-            this.tournaments.TabIndex = 1;
-            this.tournaments.Text = "Tournaments";
-            this.tournaments.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.tournaments.Click += new System.EventHandler(this.tournaments_Click);
+            this.tournament.BackColor = System.Drawing.Color.Transparent;
+            this.tournament.BorderRadius = 10;
+            this.tournament.CheckedState.Parent = this.tournament;
+            this.tournament.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tournament.CustomImages.Parent = this.tournament;
+            this.tournament.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.tournament.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.tournament.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.tournament.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.tournament.DisabledState.Parent = this.tournament;
+            this.tournament.FillColor = System.Drawing.Color.Transparent;
+            this.tournament.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.tournament.ForeColor = System.Drawing.Color.White;
+            this.tournament.HoverState.Parent = this.tournament;
+            this.tournament.Location = new System.Drawing.Point(45, 208);
+            this.tournament.Name = "tournament";
+            this.tournament.ShadowDecoration.Parent = this.tournament;
+            this.tournament.Size = new System.Drawing.Size(198, 45);
+            this.tournament.TabIndex = 1;
+            this.tournament.Text = "Tournament";
+            this.tournament.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tournament.Click += new System.EventHandler(this.tournaments_Click);
             // 
             // projectDetails
             // 
@@ -272,7 +268,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.logout.BackColor = System.Drawing.Color.Transparent;
             this.logout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logout.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logout.ForeColor = System.Drawing.Color.Firebrick;
+            this.logout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(11)))), ((int)(((byte)(11)))));
             this.logout.Location = new System.Drawing.Point(109, 594);
             this.logout.Name = "logout";
             this.logout.Size = new System.Drawing.Size(86, 30);
@@ -303,8 +299,8 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.Load += new System.EventHandler(this.AdminPanel_Load);
             this.adminMenuPanel.ResumeLayout(false);
             this.adminMenuPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.availabilityIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userPhoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -317,13 +313,13 @@ namespace CricBlast_GUI.Forms.Admin_Controls
         private Guna.UI2.WinForms.Guna2CirclePictureBox availabilityIcon;
         private System.Windows.Forms.Label availability;
         private System.Windows.Forms.Label usernameLabel;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox userPhoto;
         private Guna.UI2.WinForms.Guna2Button manageUser;
-        private Guna.UI2.WinForms.Guna2Button tournaments;
+        private Guna.UI2.WinForms.Guna2Button tournament;
         private Guna.UI2.WinForms.Guna2Button projectDetails;
         private Guna.UI2.WinForms.Guna2Button addUser;
         private Guna.UI2.WinForms.Guna2Button dashboard;
         private System.Windows.Forms.Label logout;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
     }
 }

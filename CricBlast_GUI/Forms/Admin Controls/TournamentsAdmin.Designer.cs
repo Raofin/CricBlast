@@ -57,7 +57,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.matchTitle.Name = "matchTitle";
             this.matchTitle.Size = new System.Drawing.Size(788, 66);
             this.matchTitle.TabIndex = 22;
-            this.matchTitle.Text = "CUSTOMIZE TOURNAMENT";
+            this.matchTitle.Text = "TOURNAMENT";
             this.matchTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // guna2Panel1

@@ -63,7 +63,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             if (SelectedMenu == 2) return;
             adminSubPanel.Controls.Clear();
             adminSubPanel.Controls.Add(value: new TournamentsAdmin());
-            ChangeButtonColor(tournaments, 2);
+            ChangeButtonColor(tournament, 2);
         }
 
         private void addUser_Click(object sender, System.EventArgs e)
@@ -100,7 +100,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
                     dashboard.FillColor = Color.Transparent;
                     break;
                 case 2:
-                    tournaments.FillColor = Color.Transparent;
+                    tournament.FillColor = Color.Transparent;
                     break;
                 case 3:
                     addUser.FillColor = Color.Transparent;

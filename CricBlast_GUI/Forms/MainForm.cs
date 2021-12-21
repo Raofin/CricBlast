@@ -23,8 +23,8 @@ namespace CricBlast_GUI.Forms
             //new SelectTeams().ShowDialog();
             InitializeComponent();
 
-            mainPanel.Controls.Clear();
-            mainPanel.Controls.Add(value: new Controls.Home());
+            //mainPanel.Controls.Clear();
+            //mainPanel.Controls.Add(value: new Controls.Home());
             //mainPanel.Controls.Add(value: new AdminPanel());
         }
 

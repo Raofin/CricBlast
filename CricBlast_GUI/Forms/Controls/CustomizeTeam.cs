@@ -77,7 +77,7 @@ namespace CricBlast_GUI.Forms.Controls
 
             if (SelectedEleven.Count != SelectedEleven.Distinct().Count())
             {
-                new MessageBoxOk(1, "Duplicate Found!").ShowDialog();
+                new MessageBoxOk(1, "Please check if there is a duplicate player.").ShowDialog();
                 SelectedEleven.Clear();
                 return;
             }
@@ -94,6 +94,7 @@ namespace CricBlast_GUI.Forms.Controls
             }
 
             LoadPlayers();
+            new MessageBoxOk(0, "Playing eleven has been successfully modified.").ShowDialog();
         }
 
         private void LoadPlayers()
@@ -106,6 +107,9 @@ namespace CricBlast_GUI.Forms.Controls
 
             foreach (var items in Selected.PlayingEleven)
                 wicketKeeper.Items.Add(Selected.UserTeamPlayerStats[items, Selected.Format, 0]);
+
+            captain.SelectedIndex = 5;
+            wicketKeeper.SelectedIndex = 4;
         }
 
         private void resetPlayers_Click(object sender, EventArgs e)

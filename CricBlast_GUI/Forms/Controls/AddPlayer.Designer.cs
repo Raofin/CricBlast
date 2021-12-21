@@ -34,7 +34,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.battingError = new System.Windows.Forms.Label();
             this.roleError = new System.Windows.Forms.Label();
             this.ageError = new System.Windows.Forms.Label();
-            this.usernameError = new System.Windows.Forms.Label();
+            this.playerNameError = new System.Windows.Forms.Label();
             this.bowlingComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.battingComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.roleComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -117,18 +117,18 @@ namespace CricBlast_GUI.Forms.Controls
             this.ageError.Text = "!";
             this.ageError.Visible = false;
             // 
-            // usernameError
+            // playerNameError
             // 
-            this.usernameError.AutoSize = true;
-            this.usernameError.BackColor = System.Drawing.Color.Transparent;
-            this.usernameError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usernameError.ForeColor = System.Drawing.Color.Red;
-            this.usernameError.Location = new System.Drawing.Point(876, 191);
-            this.usernameError.Name = "usernameError";
-            this.usernameError.Size = new System.Drawing.Size(22, 32);
-            this.usernameError.TabIndex = 55;
-            this.usernameError.Text = "!";
-            this.usernameError.Visible = false;
+            this.playerNameError.AutoSize = true;
+            this.playerNameError.BackColor = System.Drawing.Color.Transparent;
+            this.playerNameError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.playerNameError.ForeColor = System.Drawing.Color.Red;
+            this.playerNameError.Location = new System.Drawing.Point(876, 191);
+            this.playerNameError.Name = "playerNameError";
+            this.playerNameError.Size = new System.Drawing.Size(22, 32);
+            this.playerNameError.TabIndex = 55;
+            this.playerNameError.Text = "!";
+            this.playerNameError.Visible = false;
             // 
             // bowlingComboBox
             // 
@@ -234,6 +234,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.choosePhotoButton.Size = new System.Drawing.Size(221, 41);
             this.choosePhotoButton.TabIndex = 51;
             this.choosePhotoButton.Text = "Choose a Photo";
+            this.choosePhotoButton.Click += new System.EventHandler(this.choosePhotoButton_Click);
             // 
             // playerAge
             // 
@@ -385,13 +386,14 @@ namespace CricBlast_GUI.Forms.Controls
             this.addPlayerButton.Size = new System.Drawing.Size(233, 45);
             this.addPlayerButton.TabIndex = 41;
             this.addPlayerButton.Text = "Add Player";
+            this.addPlayerButton.Click += new System.EventHandler(this.addPlayerButton_Click);
             // 
             // playerPicture
             // 
-            this.playerPicture.BorderRadius = 4;
+            this.playerPicture.BorderRadius = 10;
             this.playerPicture.Image = global::CricBlast_GUI.Properties.Resources.User_Male_WhiteBack;
             this.playerPicture.ImageRotate = 0F;
-            this.playerPicture.Location = new System.Drawing.Point(58, 189);
+            this.playerPicture.Location = new System.Drawing.Point(61, 185);
             this.playerPicture.Name = "playerPicture";
             this.playerPicture.ShadowDecoration.Parent = this.playerPicture;
             this.playerPicture.Size = new System.Drawing.Size(300, 300);
@@ -410,7 +412,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.Controls.Add(this.battingError);
             this.Controls.Add(this.roleError);
             this.Controls.Add(this.ageError);
-            this.Controls.Add(this.usernameError);
+            this.Controls.Add(this.playerNameError);
             this.Controls.Add(this.bowlingComboBox);
             this.Controls.Add(this.battingComboBox);
             this.Controls.Add(this.roleComboBox);
@@ -440,7 +442,7 @@ namespace CricBlast_GUI.Forms.Controls
         private System.Windows.Forms.Label battingError;
         private System.Windows.Forms.Label roleError;
         private System.Windows.Forms.Label ageError;
-        private System.Windows.Forms.Label usernameError;
+        private System.Windows.Forms.Label playerNameError;
         private Guna.UI2.WinForms.Guna2ComboBox bowlingComboBox;
         private Guna.UI2.WinForms.Guna2ComboBox battingComboBox;
         private Guna.UI2.WinForms.Guna2ComboBox roleComboBox;

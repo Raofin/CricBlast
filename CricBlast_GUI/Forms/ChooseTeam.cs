@@ -7,6 +7,16 @@ namespace CricBlast_GUI.Forms
 {
     public partial class ChooseTeam : Form
     {
+        protected override CreateParams CreateParams
+        {
+            get
+            {
+                CreateParams cp = base.CreateParams;
+                cp.ExStyle |= 0x02000000; // Turn on WS_EX_COMPOSITED
+                return cp;
+            }
+        }
+
         public ChooseTeam()
         {
             InitializeComponent();
@@ -15,7 +25,6 @@ namespace CricBlast_GUI.Forms
         private void ChooseTeam_Load(object sender, EventArgs e)
         {
             teamComboBox.SelectedIndex = Selected.UserTeam == 0 ? 0 : Selected.UserTeam;
-            userCirclePicture.Image = Selected.UserImage;
         }
 
         private void okButton_Click(object sender, EventArgs e)

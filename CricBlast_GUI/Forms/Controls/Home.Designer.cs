@@ -43,6 +43,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.logout = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tournament = new Guna.UI2.WinForms.Guna2Button();
             this.menuPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.availabilityIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPhoto)).BeginInit();
@@ -64,6 +65,7 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             this.menuPanel.BackColor = System.Drawing.Color.Transparent;
             this.menuPanel.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Home_Menu;
+            this.menuPanel.Controls.Add(this.tournament);
             this.menuPanel.Controls.Add(this.availabilityIcon);
             this.menuPanel.Controls.Add(this.availability);
             this.menuPanel.Controls.Add(this.usernameLabel);
@@ -154,7 +156,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.customizeTeam.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.customizeTeam.ForeColor = System.Drawing.Color.White;
             this.customizeTeam.HoverState.Parent = this.customizeTeam;
-            this.customizeTeam.Location = new System.Drawing.Point(45, 334);
+            this.customizeTeam.Location = new System.Drawing.Point(45, 321);
             this.customizeTeam.Name = "customizeTeam";
             this.customizeTeam.ShadowDecoration.Parent = this.customizeTeam;
             this.customizeTeam.Size = new System.Drawing.Size(198, 45);
@@ -179,7 +181,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.playerStats.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.playerStats.ForeColor = System.Drawing.Color.White;
             this.playerStats.HoverState.Parent = this.playerStats;
-            this.playerStats.Location = new System.Drawing.Point(45, 208);
+            this.playerStats.Location = new System.Drawing.Point(45, 195);
             this.playerStats.Name = "playerStats";
             this.playerStats.ShadowDecoration.Parent = this.playerStats;
             this.playerStats.Size = new System.Drawing.Size(198, 45);
@@ -204,7 +206,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.playMatch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.playMatch.ForeColor = System.Drawing.Color.White;
             this.playMatch.HoverState.Parent = this.playMatch;
-            this.playMatch.Location = new System.Drawing.Point(45, 397);
+            this.playMatch.Location = new System.Drawing.Point(45, 384);
             this.playMatch.Name = "playMatch";
             this.playMatch.ShadowDecoration.Parent = this.playMatch;
             this.playMatch.Size = new System.Drawing.Size(198, 45);
@@ -229,7 +231,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.addPlayers.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.addPlayers.ForeColor = System.Drawing.Color.White;
             this.addPlayers.HoverState.Parent = this.addPlayers;
-            this.addPlayers.Location = new System.Drawing.Point(45, 271);
+            this.addPlayers.Location = new System.Drawing.Point(45, 258);
             this.addPlayers.Name = "addPlayers";
             this.addPlayers.ShadowDecoration.Parent = this.addPlayers;
             this.addPlayers.Size = new System.Drawing.Size(198, 45);
@@ -255,7 +257,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.myTeam.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.myTeam.ForeColor = System.Drawing.Color.White;
             this.myTeam.HoverState.Parent = this.myTeam;
-            this.myTeam.Location = new System.Drawing.Point(45, 145);
+            this.myTeam.Location = new System.Drawing.Point(45, 132);
             this.myTeam.Name = "myTeam";
             this.myTeam.ShadowDecoration.Parent = this.myTeam;
             this.myTeam.Size = new System.Drawing.Size(198, 45);
@@ -270,7 +272,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.logout.BackColor = System.Drawing.Color.Transparent;
             this.logout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.logout.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logout.ForeColor = System.Drawing.Color.Firebrick;
+            this.logout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(228)))), ((int)(((byte)(11)))), ((int)(((byte)(11)))));
             this.logout.Location = new System.Drawing.Point(109, 594);
             this.logout.Name = "logout";
             this.logout.Size = new System.Drawing.Size(86, 30);
@@ -284,7 +286,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(108, 50);
+            this.label1.Location = new System.Drawing.Point(103, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(165, 46);
             this.label1.TabIndex = 4;
@@ -300,6 +302,31 @@ namespace CricBlast_GUI.Forms.Controls
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // tournament
+            // 
+            this.tournament.BackColor = System.Drawing.Color.Transparent;
+            this.tournament.BorderRadius = 10;
+            this.tournament.CheckedState.Parent = this.tournament;
+            this.tournament.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.tournament.CustomImages.Parent = this.tournament;
+            this.tournament.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.tournament.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.tournament.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.tournament.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.tournament.DisabledState.Parent = this.tournament;
+            this.tournament.FillColor = System.Drawing.Color.Transparent;
+            this.tournament.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.tournament.ForeColor = System.Drawing.Color.White;
+            this.tournament.HoverState.Parent = this.tournament;
+            this.tournament.Location = new System.Drawing.Point(45, 447);
+            this.tournament.Name = "tournament";
+            this.tournament.ShadowDecoration.Parent = this.tournament;
+            this.tournament.Size = new System.Drawing.Size(198, 45);
+            this.tournament.TabIndex = 8;
+            this.tournament.Text = "Tournament";
+            this.tournament.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tournament.Click += new System.EventHandler(this.tournament_Click);
             // 
             // Home
             // 
@@ -336,5 +363,6 @@ namespace CricBlast_GUI.Forms.Controls
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Panel homeSubPanel;
         private System.Windows.Forms.Label logout;
+        private Guna.UI2.WinForms.Guna2Button tournament;
     }
 }

@@ -69,6 +69,14 @@ namespace CricBlast_GUI.Forms.Controls
             ChangeButtonColor(playMatch, 5);
         }
 
+        private void tournament_Click(object sender, EventArgs e)
+        {
+            if (SelectedMenu == 6) return;
+            homeSubPanel.Controls.Clear();
+            homeSubPanel.Controls.Add(value: new TournamentPlay());
+            ChangeButtonColor(tournament, 6);
+        }
+
         private void logout_Click(object sender, EventArgs e)
         {
             new MessageBoxYesNo(1, "Are you sure you want to log out?").ShowDialog();
@@ -113,6 +121,9 @@ namespace CricBlast_GUI.Forms.Controls
                     break;
                 case 5:
                     playMatch.FillColor = Color.Transparent;
+                    break;
+                case 6:
+                    tournament.FillColor = Color.Transparent;
                     break;
             }
 
