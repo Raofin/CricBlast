@@ -80,31 +80,25 @@ namespace CricBlast_GUI.Forms.Controls
             usernameRequired.Visible = string.IsNullOrWhiteSpace(usernameTextBox.Text);
             passwordRequired.Visible = string.IsNullOrWhiteSpace(passwordTextBox.Text);
 
-            switch (usernameRequired.Visible)
-            {
-                case false when !passwordRequired.Visible:
-                    switch (_admin)
-                    {
-                        case true when usernameTextBox.Text == "admin" && passwordTextBox.Text == "admin":
-                            new MessageBoxOk(Selected.CheckMark, "You have successfully logged in.").ShowDialog();
-                            Controls.Clear();
-                            Controls.Add(new AdminPanel());
-                            return;
-                        case false when Login.Verify(usernameTextBox.Text, passwordTextBox.Text):
-                            new MessageBoxOk(Selected.CheckMark, "You have successfully logged in.").ShowDialog();
-                            Controls.Clear();
-                            Controls.Add(new Home());
-                            return;
-                        default:
-                            new MessageBoxOk(Selected.ErrorMark, "Bad credentials. Please login again.").ShowDialog();
-                            break;
-                    }
-
-                    break;
-                default:
-                    new MessageBoxOk(Selected.WarningMark, "Please fill out all the fields properly.").ShowDialog();
-                    break;
-            }
+            if (!usernameRequired.Visible && !passwordRequired.Visible)
+                switch (_admin)
+                {
+                    case true when usernameTextBox.Text.ToLower() == "admin" && passwordTextBox.Text.ToLower() == "admin":
+                        new MessageBoxOk(Selected.CheckMark, "You have successfully logged in.").Show();
+                        Controls.Clear();
+                        Controls.Add(new AdminPanel());
+                        return;
+                    case false when Login.Verify(usernameTextBox.Text, passwordTextBox.Text):
+                        new MessageBoxOk(Selected.CheckMark, "You have successfully logged in.").Show();
+                        Controls.Clear();
+                        Controls.Add(new Home());
+                        return;
+                    default:
+                        new MessageBoxOk(Selected.ErrorMark, "Bad credentials. Please login again.").ShowDialog();
+                        break;
+                }
+            else
+                new MessageBoxOk(Selected.WarningMark, "Please fill out all the fields properly.").ShowDialog();
         }
 
         private void forgotPassword_Click(object sender, System.EventArgs e)

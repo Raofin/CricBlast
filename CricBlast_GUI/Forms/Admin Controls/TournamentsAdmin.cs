@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CricBlast_GUI.Forms.Admin_Controls
@@ -15,6 +9,30 @@ namespace CricBlast_GUI.Forms.Admin_Controls
         public TournamentsAdmin()
         {
             InitializeComponent();
+        }
+
+        private void selectTeams_Click(object sender, EventArgs e)
+        {
+            new SelectTeams().ShowDialog();
+        }
+
+        private void selectStadiums_Click(object sender, EventArgs e)
+        {
+            new SelectStadium().ShowDialog();
+        }
+
+        private void choosePhoto_Click(object sender, EventArgs e)
+        {
+            using (var openFileDialog = new OpenFileDialog { Filter = Properties.Resources.ImageFilter })
+            {
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                    trophyPictureBox.Image = new Bitmap(openFileDialog.FileName);
+            }
+        }
+
+        private void startTournament_Click(object sender, EventArgs e)
+        {
+            new MessageBoxOk(0, "The tournament has begun.").ShowDialog();
         }
     }
 }

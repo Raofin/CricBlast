@@ -3,6 +3,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using CricBlast_GUI.Database;
+using CricBlast_GUI.Home;
 
 namespace CricBlast_GUI.Forms.Admin_Controls
 {
@@ -39,6 +40,9 @@ namespace CricBlast_GUI.Forms.Admin_Controls
 
         private void delete_Click(object sender, EventArgs e)
         {
+            new MessageBoxYesNo(1, "Are you sure you want to remove this user?").ShowDialog();
+            if (!Selected.MessageBox) return;
+
             try
             {
                 Admin.DeleteRow(UserDataGridView.SelectedCells[1].Value.ToString());

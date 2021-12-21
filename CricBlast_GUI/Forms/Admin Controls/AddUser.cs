@@ -17,6 +17,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
         {
             InitializeComponent();
             allUserGridPanel.Controls.Add(new UserList());
+            allUserGridPanel.Controls["UserList"].Dock = DockStyle.Fill;
         }
 
 
@@ -54,7 +55,8 @@ namespace CricBlast_GUI.Forms.Admin_Controls
 
                     allUserGridPanel.Controls.Clear();
                     allUserGridPanel.Controls.Add(new UserList());
-                    
+                    allUserGridPanel.Controls["UserList"].Dock = DockStyle.Fill;
+
                 }
             }
         }

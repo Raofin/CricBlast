@@ -87,7 +87,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.AllUserGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.AllUserGrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.AllUserGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.AllUserGrid.Size = new System.Drawing.Size(310, 401);
+            this.AllUserGrid.Size = new System.Drawing.Size(328, 401);
             this.AllUserGrid.TabIndex = 33;
             this.AllUserGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.AllUserGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -125,7 +125,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.UserName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
             this.UserName.HeaderText = "EMAIL ADDRESS";
             this.UserName.Name = "UserName";
-            this.UserName.Width = 270;
+            this.UserName.Width = 290;
             // 
             // UserList
             // 
@@ -134,7 +134,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.Controls.Add(this.AllUserGrid);
             this.Name = "UserList";
-            this.Size = new System.Drawing.Size(310, 401);
+            this.Size = new System.Drawing.Size(328, 401);
             ((System.ComponentModel.ISupportInitialize)(this.AllUserGrid)).EndInit();
             this.ResumeLayout(false);
 

@@ -36,6 +36,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.matchTitle = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.matchPreviewPanel = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.playButton = new Guna.UI2.WinForms.Guna2Button();
             this.backButton = new Guna.UI2.WinForms.Guna2Button();
             this.playAgainButton = new Guna.UI2.WinForms.Guna2Button();
@@ -53,13 +54,12 @@ namespace CricBlast_GUI.Forms.Controls
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.opponentTeamLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userTeamLogo)).BeginInit();
             this.matchPreviewPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.gamePanel.SuspendLayout();
             this.gameSelectPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // opponentTeamLogo
@@ -155,11 +155,23 @@ namespace CricBlast_GUI.Forms.Controls
             this.matchPreviewPanel.Size = new System.Drawing.Size(956, 681);
             this.matchPreviewPanel.TabIndex = 38;
             // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.FillColor = System.Drawing.Color.DimGray;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(81, 387);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(788, 2);
+            this.guna2PictureBox1.TabIndex = 47;
+            this.guna2PictureBox1.TabStop = false;
+            // 
             // playButton
             // 
             this.playButton.BackColor = System.Drawing.Color.Transparent;
             this.playButton.BorderRadius = 4;
             this.playButton.CheckedState.Parent = this.playButton;
+            this.playButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.playButton.CustomImages.Parent = this.playButton;
             this.playButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.playButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -483,17 +495,6 @@ namespace CricBlast_GUI.Forms.Controls
             this.label9.TabIndex = 25;
             this.label9.Text = "OPPONENT";
             // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.FillColor = System.Drawing.Color.DimGray;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(81, 387);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(788, 2);
-            this.guna2PictureBox1.TabIndex = 47;
-            this.guna2PictureBox1.TabStop = false;
-            // 
             // PlayMatch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -506,10 +507,10 @@ namespace CricBlast_GUI.Forms.Controls
             ((System.ComponentModel.ISupportInitialize)(this.opponentTeamLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userTeamLogo)).EndInit();
             this.matchPreviewPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.gamePanel.ResumeLayout(false);
             this.gameSelectPanel.ResumeLayout(false);
             this.gameSelectPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }

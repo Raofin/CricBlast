@@ -11,38 +11,38 @@ namespace CricBlast_GUI.Forms.Controls
     {
         public CustomizeTeam()
         {
-            DoubleBuffered = true;
+            /*DoubleBuffered = true;
             SetStyle(ControlStyles.UserPaint |
                      ControlStyles.AllPaintingInWmPaint |
                      ControlStyles.ResizeRedraw |
                      ControlStyles.ContainerControl |
                      ControlStyles.OptimizedDoubleBuffer |
-                     ControlStyles.SupportsTransparentBackColor, true);
+                     ControlStyles.SupportsTransparentBackColor, true);*/
             InitializeComponent();
         }
 
         private void CustomizeTeam_Load(object sender, EventArgs e)
         {
-            setBestEleven();
+            SetBestEleven();
             LoadPlayers();
         }
 
-        public void setBestEleven()
+        public void SetBestEleven()
         {
-            setPlayer(_1, 0);
-            setPlayer(_2, 1);
-            setPlayer(_3, 2);
-            setPlayer(_4, 3);
-            setPlayer(_5, 4);
-            setPlayer(_6, 5);
-            setPlayer(_7, 6);
-            setPlayer(_8, 7);
-            setPlayer(_9, 8);
-            setPlayer(_10, 9);
-            setPlayer(_11, 10);
+            SetPlayer(_1, 0);
+            SetPlayer(_2, 1);
+            SetPlayer(_3, 2);
+            SetPlayer(_4, 3);
+            SetPlayer(_5, 4);
+            SetPlayer(_6, 5);
+            SetPlayer(_7, 6);
+            SetPlayer(_8, 7);
+            SetPlayer(_9, 8);
+            SetPlayer(_10, 9);
+            SetPlayer(_11, 10);
         }
 
-        private void setPlayer(Guna2ComboBox setPlayer, int player)
+        private void SetPlayer(Guna2ComboBox setPlayer, int player)
         {
             setPlayer.Items.Clear();
             setPlayer.Items.Add(GetStats(Selected.PlayingEleven[player], 0));
@@ -114,7 +114,7 @@ namespace CricBlast_GUI.Forms.Controls
             int[] defaultPlayers = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
             Selected.PlayingEleven.AddRange(defaultPlayers);
             LoadPlayers();
-            setBestEleven();
+            SetBestEleven();
         }
     }
 }

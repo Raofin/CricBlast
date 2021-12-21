@@ -1,12 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
 using System.Media;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace CricBlast_GUI.Forms
@@ -25,9 +18,8 @@ namespace CricBlast_GUI.Forms
 
         public MessageBoxOk(byte mark, string message, string buttonText = "Ok")
         {
-            DoubleBuffered = true;
             InitializeComponent();
-
+            TopMost = true;
             this.message.Text = message;
             this.okButton.Text = buttonText;
             switch (mark)

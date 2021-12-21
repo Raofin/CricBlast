@@ -29,37 +29,122 @@ namespace CricBlast_GUI.Forms.Controls
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.photoError = new System.Windows.Forms.Label();
+            this.bowlingError = new System.Windows.Forms.Label();
+            this.battingError = new System.Windows.Forms.Label();
+            this.roleError = new System.Windows.Forms.Label();
+            this.ageError = new System.Windows.Forms.Label();
+            this.usernameError = new System.Windows.Forms.Label();
+            this.bowlingComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.battingComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.roleComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.choosePhotoButton = new Guna.UI2.WinForms.Guna2Button();
+            this.playerAge = new Guna.UI2.WinForms.Guna2TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.playerName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.addPlayerButton = new Guna.UI2.WinForms.Guna2Button();
+            this.playerPicture = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.playerPicture)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2ComboBox3
+            // photoError
             // 
-            this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox3.BorderRadius = 4;
-            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.FocusedState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox3.HoverState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.Items.AddRange(new object[] {
+            this.photoError.AutoSize = true;
+            this.photoError.BackColor = System.Drawing.Color.Transparent;
+            this.photoError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.photoError.ForeColor = System.Drawing.Color.Red;
+            this.photoError.Location = new System.Drawing.Point(328, 513);
+            this.photoError.Name = "photoError";
+            this.photoError.Size = new System.Drawing.Size(22, 32);
+            this.photoError.TabIndex = 60;
+            this.photoError.Text = "!";
+            this.photoError.Visible = false;
+            // 
+            // bowlingError
+            // 
+            this.bowlingError.AutoSize = true;
+            this.bowlingError.BackColor = System.Drawing.Color.Transparent;
+            this.bowlingError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bowlingError.ForeColor = System.Drawing.Color.Red;
+            this.bowlingError.Location = new System.Drawing.Point(876, 499);
+            this.bowlingError.Name = "bowlingError";
+            this.bowlingError.Size = new System.Drawing.Size(22, 32);
+            this.bowlingError.TabIndex = 59;
+            this.bowlingError.Text = "!";
+            this.bowlingError.Visible = false;
+            // 
+            // battingError
+            // 
+            this.battingError.AutoSize = true;
+            this.battingError.BackColor = System.Drawing.Color.Transparent;
+            this.battingError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.battingError.ForeColor = System.Drawing.Color.Red;
+            this.battingError.Location = new System.Drawing.Point(876, 423);
+            this.battingError.Name = "battingError";
+            this.battingError.Size = new System.Drawing.Size(22, 32);
+            this.battingError.TabIndex = 58;
+            this.battingError.Text = "!";
+            this.battingError.Visible = false;
+            // 
+            // roleError
+            // 
+            this.roleError.AutoSize = true;
+            this.roleError.BackColor = System.Drawing.Color.Transparent;
+            this.roleError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roleError.ForeColor = System.Drawing.Color.Red;
+            this.roleError.Location = new System.Drawing.Point(876, 347);
+            this.roleError.Name = "roleError";
+            this.roleError.Size = new System.Drawing.Size(22, 32);
+            this.roleError.TabIndex = 57;
+            this.roleError.Text = "!";
+            this.roleError.Visible = false;
+            // 
+            // ageError
+            // 
+            this.ageError.AutoSize = true;
+            this.ageError.BackColor = System.Drawing.Color.Transparent;
+            this.ageError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ageError.ForeColor = System.Drawing.Color.Red;
+            this.ageError.Location = new System.Drawing.Point(876, 268);
+            this.ageError.Name = "ageError";
+            this.ageError.Size = new System.Drawing.Size(22, 32);
+            this.ageError.TabIndex = 56;
+            this.ageError.Text = "!";
+            this.ageError.Visible = false;
+            // 
+            // usernameError
+            // 
+            this.usernameError.AutoSize = true;
+            this.usernameError.BackColor = System.Drawing.Color.Transparent;
+            this.usernameError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usernameError.ForeColor = System.Drawing.Color.Red;
+            this.usernameError.Location = new System.Drawing.Point(876, 191);
+            this.usernameError.Name = "usernameError";
+            this.usernameError.Size = new System.Drawing.Size(22, 32);
+            this.usernameError.TabIndex = 55;
+            this.usernameError.Text = "!";
+            this.usernameError.Visible = false;
+            // 
+            // bowlingComboBox
+            // 
+            this.bowlingComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.bowlingComboBox.BorderRadius = 4;
+            this.bowlingComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.bowlingComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.bowlingComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.bowlingComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.bowlingComboBox.FocusedState.Parent = this.bowlingComboBox;
+            this.bowlingComboBox.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.bowlingComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.bowlingComboBox.HoverState.Parent = this.bowlingComboBox;
+            this.bowlingComboBox.ItemHeight = 30;
+            this.bowlingComboBox.Items.AddRange(new object[] {
+            "Select...",
             "Right-arm off-break spinner",
             "Right-arm leg-break spinner",
             "Left-arm orthodox spinner",
@@ -70,109 +155,113 @@ namespace CricBlast_GUI.Forms.Controls
             "Left-arm fast",
             "Left-arm medium",
             "Left-arm slow"});
-            this.guna2ComboBox3.ItemsAppearance.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(474, 497);
-            this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Size = new System.Drawing.Size(409, 36);
-            this.guna2ComboBox3.TabIndex = 24;
+            this.bowlingComboBox.ItemsAppearance.Parent = this.bowlingComboBox;
+            this.bowlingComboBox.Location = new System.Drawing.Point(459, 497);
+            this.bowlingComboBox.Name = "bowlingComboBox";
+            this.bowlingComboBox.ShadowDecoration.Parent = this.bowlingComboBox;
+            this.bowlingComboBox.Size = new System.Drawing.Size(409, 36);
+            this.bowlingComboBox.StartIndex = 0;
+            this.bowlingComboBox.TabIndex = 52;
             // 
-            // guna2ComboBox2
+            // battingComboBox
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.BorderRadius = 4;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.Items.AddRange(new object[] {
+            this.battingComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.battingComboBox.BorderRadius = 4;
+            this.battingComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.battingComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.battingComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.battingComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.battingComboBox.FocusedState.Parent = this.battingComboBox;
+            this.battingComboBox.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.battingComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.battingComboBox.HoverState.Parent = this.battingComboBox;
+            this.battingComboBox.ItemHeight = 30;
+            this.battingComboBox.Items.AddRange(new object[] {
+            "Select...",
             "Left Handed Bat",
             "Right Handed Bat"});
-            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(474, 421);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(409, 36);
-            this.guna2ComboBox2.TabIndex = 25;
+            this.battingComboBox.ItemsAppearance.Parent = this.battingComboBox;
+            this.battingComboBox.Location = new System.Drawing.Point(459, 421);
+            this.battingComboBox.Name = "battingComboBox";
+            this.battingComboBox.ShadowDecoration.Parent = this.battingComboBox;
+            this.battingComboBox.Size = new System.Drawing.Size(409, 36);
+            this.battingComboBox.StartIndex = 0;
+            this.battingComboBox.TabIndex = 53;
             // 
-            // guna2ComboBox1
+            // roleComboBox
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 4;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.roleComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.roleComboBox.BorderRadius = 4;
+            this.roleComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.roleComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.roleComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.roleComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.roleComboBox.FocusedState.Parent = this.roleComboBox;
+            this.roleComboBox.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.roleComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.roleComboBox.HoverState.Parent = this.roleComboBox;
+            this.roleComboBox.ItemHeight = 30;
+            this.roleComboBox.Items.AddRange(new object[] {
+            "Select...",
             "Batsman",
             "Bowler",
             "All-rounder"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(474, 345);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(409, 36);
-            this.guna2ComboBox1.TabIndex = 26;
+            this.roleComboBox.ItemsAppearance.Parent = this.roleComboBox;
+            this.roleComboBox.Location = new System.Drawing.Point(459, 345);
+            this.roleComboBox.Name = "roleComboBox";
+            this.roleComboBox.ShadowDecoration.Parent = this.roleComboBox;
+            this.roleComboBox.Size = new System.Drawing.Size(409, 36);
+            this.roleComboBox.StartIndex = 0;
+            this.roleComboBox.TabIndex = 54;
             // 
-            // guna2Button7
+            // choosePhotoButton
             // 
-            this.guna2Button7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button7.BorderRadius = 4;
-            this.guna2Button7.CheckedState.Parent = this.guna2Button7;
-            this.guna2Button7.CustomImages.Parent = this.guna2Button7;
-            this.guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button7.DisabledState.Parent = this.guna2Button7;
-            this.guna2Button7.FillColor = System.Drawing.Color.MediumPurple;
-            this.guna2Button7.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold);
-            this.guna2Button7.ForeColor = System.Drawing.Color.White;
-            this.guna2Button7.HoverState.Parent = this.guna2Button7;
-            this.guna2Button7.Location = new System.Drawing.Point(116, 513);
-            this.guna2Button7.Name = "guna2Button7";
-            this.guna2Button7.ShadowDecoration.Parent = this.guna2Button7;
-            this.guna2Button7.Size = new System.Drawing.Size(221, 30);
-            this.guna2Button7.TabIndex = 23;
-            this.guna2Button7.Text = "Choose a Photo";
+            this.choosePhotoButton.BackColor = System.Drawing.Color.Transparent;
+            this.choosePhotoButton.BorderRadius = 4;
+            this.choosePhotoButton.CheckedState.Parent = this.choosePhotoButton;
+            this.choosePhotoButton.CustomImages.Parent = this.choosePhotoButton;
+            this.choosePhotoButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.choosePhotoButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.choosePhotoButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.choosePhotoButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.choosePhotoButton.DisabledState.Parent = this.choosePhotoButton;
+            this.choosePhotoButton.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
+            this.choosePhotoButton.ForeColor = System.Drawing.Color.White;
+            this.choosePhotoButton.HoverState.Parent = this.choosePhotoButton;
+            this.choosePhotoButton.Location = new System.Drawing.Point(101, 509);
+            this.choosePhotoButton.Name = "choosePhotoButton";
+            this.choosePhotoButton.ShadowDecoration.Parent = this.choosePhotoButton;
+            this.choosePhotoButton.Size = new System.Drawing.Size(221, 41);
+            this.choosePhotoButton.TabIndex = 51;
+            this.choosePhotoButton.Text = "Choose a Photo";
             // 
-            // guna2TextBox2
+            // playerAge
             // 
-            this.guna2TextBox2.Animated = true;
-            this.guna2TextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox2.BorderRadius = 3;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.guna2TextBox2.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(474, 266);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(5);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(409, 36);
-            this.guna2TextBox2.TabIndex = 21;
+            this.playerAge.Animated = true;
+            this.playerAge.BackColor = System.Drawing.Color.Transparent;
+            this.playerAge.BorderRadius = 3;
+            this.playerAge.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.playerAge.DefaultText = "";
+            this.playerAge.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.playerAge.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.playerAge.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.playerAge.DisabledState.Parent = this.playerAge;
+            this.playerAge.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.playerAge.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.playerAge.FocusedState.Parent = this.playerAge;
+            this.playerAge.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.playerAge.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.playerAge.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.playerAge.HoverState.Parent = this.playerAge;
+            this.playerAge.Location = new System.Drawing.Point(459, 266);
+            this.playerAge.Margin = new System.Windows.Forms.Padding(5);
+            this.playerAge.Name = "playerAge";
+            this.playerAge.PasswordChar = '\0';
+            this.playerAge.PlaceholderText = "Enter player age...";
+            this.playerAge.SelectedText = "";
+            this.playerAge.ShadowDecoration.Parent = this.playerAge;
+            this.playerAge.Size = new System.Drawing.Size(409, 36);
+            this.playerAge.TabIndex = 49;
             // 
             // label10
             // 
@@ -180,10 +269,10 @@ namespace CricBlast_GUI.Forms.Controls
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label10.Location = new System.Drawing.Point(469, 469);
+            this.label10.Location = new System.Drawing.Point(454, 469);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(153, 25);
-            this.label10.TabIndex = 16;
+            this.label10.TabIndex = 44;
             this.label10.Text = "BOWLING STYLE";
             // 
             // label9
@@ -192,10 +281,10 @@ namespace CricBlast_GUI.Forms.Controls
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label9.Location = new System.Drawing.Point(469, 393);
+            this.label9.Location = new System.Drawing.Point(454, 393);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(144, 25);
-            this.label9.TabIndex = 17;
+            this.label9.TabIndex = 45;
             this.label9.Text = "BATTING STYLE";
             // 
             // label8
@@ -204,10 +293,10 @@ namespace CricBlast_GUI.Forms.Controls
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label8.Location = new System.Drawing.Point(469, 317);
+            this.label8.Location = new System.Drawing.Point(454, 317);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 25);
-            this.label8.TabIndex = 18;
+            this.label8.TabIndex = 46;
             this.label8.Text = "ROLE";
             // 
             // label7
@@ -216,39 +305,39 @@ namespace CricBlast_GUI.Forms.Controls
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label7.Location = new System.Drawing.Point(469, 236);
+            this.label7.Location = new System.Drawing.Point(454, 236);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 25);
-            this.label7.TabIndex = 19;
+            this.label7.TabIndex = 47;
             this.label7.Text = "AGE";
             // 
-            // guna2TextBox1
+            // playerName
             // 
-            this.guna2TextBox1.Animated = true;
-            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderRadius = 3;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.guna2TextBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(474, 189);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(5);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(409, 36);
-            this.guna2TextBox1.TabIndex = 22;
+            this.playerName.Animated = true;
+            this.playerName.BackColor = System.Drawing.Color.Transparent;
+            this.playerName.BorderRadius = 3;
+            this.playerName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.playerName.DefaultText = "";
+            this.playerName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.playerName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.playerName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.playerName.DisabledState.Parent = this.playerName;
+            this.playerName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.playerName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.playerName.FocusedState.Parent = this.playerName;
+            this.playerName.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.playerName.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.playerName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.playerName.HoverState.Parent = this.playerName;
+            this.playerName.Location = new System.Drawing.Point(459, 189);
+            this.playerName.Margin = new System.Windows.Forms.Padding(5);
+            this.playerName.Name = "playerName";
+            this.playerName.PasswordChar = '\0';
+            this.playerName.PlaceholderText = "Enter player name...";
+            this.playerName.SelectedText = "";
+            this.playerName.ShadowDecoration.Parent = this.playerName;
+            this.playerName.Size = new System.Drawing.Size(409, 36);
+            this.playerName.TabIndex = 50;
             // 
             // label6
             // 
@@ -256,10 +345,10 @@ namespace CricBlast_GUI.Forms.Controls
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label6.Location = new System.Drawing.Point(469, 159);
+            this.label6.Location = new System.Drawing.Point(454, 159);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(138, 25);
-            this.label6.TabIndex = 20;
+            this.label6.TabIndex = 48;
             this.label6.Text = "PLAYER NAME";
             // 
             // label23
@@ -268,47 +357,47 @@ namespace CricBlast_GUI.Forms.Controls
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Segoe UI Black", 30F, System.Drawing.FontStyle.Bold);
             this.label23.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label23.Location = new System.Drawing.Point(296, 69);
+            this.label23.Location = new System.Drawing.Point(280, 69);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(370, 54);
-            this.label23.TabIndex = 15;
+            this.label23.TabIndex = 43;
             this.label23.Text = "Add a New Player";
             // 
-            // guna2Button1
+            // addPlayerButton
             // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 4;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.DisabledState.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(161)))), ((int)(((byte)(92)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(412, 567);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 13;
-            this.guna2Button1.Text = "Add Player";
+            this.addPlayerButton.Animated = true;
+            this.addPlayerButton.BackColor = System.Drawing.Color.Transparent;
+            this.addPlayerButton.BorderRadius = 4;
+            this.addPlayerButton.CheckedState.Parent = this.addPlayerButton;
+            this.addPlayerButton.CustomImages.Parent = this.addPlayerButton;
+            this.addPlayerButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.addPlayerButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.addPlayerButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.addPlayerButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.addPlayerButton.DisabledState.Parent = this.addPlayerButton;
+            this.addPlayerButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(161)))), ((int)(((byte)(92)))));
+            this.addPlayerButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.addPlayerButton.ForeColor = System.Drawing.Color.White;
+            this.addPlayerButton.HoverState.Parent = this.addPlayerButton;
+            this.addPlayerButton.Location = new System.Drawing.Point(349, 567);
+            this.addPlayerButton.Name = "addPlayerButton";
+            this.addPlayerButton.ShadowDecoration.Parent = this.addPlayerButton;
+            this.addPlayerButton.Size = new System.Drawing.Size(233, 45);
+            this.addPlayerButton.TabIndex = 41;
+            this.addPlayerButton.Text = "Add Player";
             // 
-            // guna2PictureBox1
+            // playerPicture
             // 
-            this.guna2PictureBox1.BorderRadius = 4;
-            this.guna2PictureBox1.Image = global::CricBlast_GUI.Properties.Resources.User_Male_GrayBack;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(73, 189);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(300, 300);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 14;
-            this.guna2PictureBox1.TabStop = false;
+            this.playerPicture.BorderRadius = 4;
+            this.playerPicture.Image = global::CricBlast_GUI.Properties.Resources.User_Male_WhiteBack;
+            this.playerPicture.ImageRotate = 0F;
+            this.playerPicture.Location = new System.Drawing.Point(58, 189);
+            this.playerPicture.Name = "playerPicture";
+            this.playerPicture.ShadowDecoration.Parent = this.playerPicture;
+            this.playerPicture.Size = new System.Drawing.Size(300, 300);
+            this.playerPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.playerPicture.TabIndex = 42;
+            this.playerPicture.TabStop = false;
             // 
             // AddPlayer
             // 
@@ -316,23 +405,29 @@ namespace CricBlast_GUI.Forms.Controls
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.SubHome;
-            this.Controls.Add(this.guna2ComboBox3);
-            this.Controls.Add(this.guna2ComboBox2);
-            this.Controls.Add(this.guna2ComboBox1);
-            this.Controls.Add(this.guna2Button7);
-            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.photoError);
+            this.Controls.Add(this.bowlingError);
+            this.Controls.Add(this.battingError);
+            this.Controls.Add(this.roleError);
+            this.Controls.Add(this.ageError);
+            this.Controls.Add(this.usernameError);
+            this.Controls.Add(this.bowlingComboBox);
+            this.Controls.Add(this.battingComboBox);
+            this.Controls.Add(this.roleComboBox);
+            this.Controls.Add(this.choosePhotoButton);
+            this.Controls.Add(this.playerAge);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.playerName);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label23);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.addPlayerButton);
+            this.Controls.Add(this.playerPicture);
             this.Name = "AddPlayer";
             this.Size = new System.Drawing.Size(956, 681);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.playerPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -340,19 +435,25 @@ namespace CricBlast_GUI.Forms.Controls
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button7;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private System.Windows.Forms.Label photoError;
+        private System.Windows.Forms.Label bowlingError;
+        private System.Windows.Forms.Label battingError;
+        private System.Windows.Forms.Label roleError;
+        private System.Windows.Forms.Label ageError;
+        private System.Windows.Forms.Label usernameError;
+        private Guna.UI2.WinForms.Guna2ComboBox bowlingComboBox;
+        private Guna.UI2.WinForms.Guna2ComboBox battingComboBox;
+        private Guna.UI2.WinForms.Guna2ComboBox roleComboBox;
+        private Guna.UI2.WinForms.Guna2Button choosePhotoButton;
+        private Guna.UI2.WinForms.Guna2TextBox playerAge;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox playerName;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label23;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2Button addPlayerButton;
+        private Guna.UI2.WinForms.Guna2PictureBox playerPicture;
     }
 }

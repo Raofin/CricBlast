@@ -101,6 +101,12 @@
     <Compile Include="Forms\Admin Controls\ProjectDetails.Designer.cs">
       <DependentUpon>ProjectDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Admin Controls\SelectTeams.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Admin Controls\SelectTeams.Designer.cs">
+      <DependentUpon>SelectTeams.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Admin Controls\TournamentsAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -247,6 +253,12 @@
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\Selected.cs" />
+    <Compile Include="Forms\SelectStadium.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\SelectStadium.Designer.cs">
+      <DependentUpon>SelectStadium.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\Admin Controls\AddUser.resx">
@@ -260,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin Controls\ProjectDetails.resx">
       <DependentUpon>ProjectDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Admin Controls\SelectTeams.resx">
+      <DependentUpon>SelectTeams.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Admin Controls\TournamentsAdmin.resx">
       <DependentUpon>TournamentsAdmin.cs</DependentUpon>
@@ -333,6 +348,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\SelectStadium.resx">
+      <DependentUpon>SelectStadium.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -456,6 +474,7 @@
   <ItemGroup>
     <Content Include="Libraries\Players.dll" />
     <Content Include="Libraries\Teams.dll" />
+    <None Include="Resources\Trophy.png" />
     <None Include="Resources\Question_Mark.png" />
     <None Include="Resources\Project Details.png" />
     <None Include="Resources\Admin_Panel.png" />

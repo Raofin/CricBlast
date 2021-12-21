@@ -86,7 +86,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.addButton);
-            this.guna2Panel1.Location = new System.Drawing.Point(53, 80);
+            this.guna2Panel1.Location = new System.Drawing.Point(35, 88);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(516, 520);
@@ -500,10 +500,10 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             // 
             this.allUserGridPanel.BackColor = System.Drawing.Color.Transparent;
             this.allUserGridPanel.BorderRadius = 5;
-            this.allUserGridPanel.Location = new System.Drawing.Point(585, 175);
+            this.allUserGridPanel.Location = new System.Drawing.Point(562, 175);
             this.allUserGridPanel.Name = "allUserGridPanel";
             this.allUserGridPanel.ShadowDecoration.Parent = this.allUserGridPanel;
-            this.allUserGridPanel.Size = new System.Drawing.Size(310, 401);
+            this.allUserGridPanel.Size = new System.Drawing.Size(328, 401);
             this.allUserGridPanel.TabIndex = 74;
             // 
             // label4
@@ -512,7 +512,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Black", 36F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(624, 88);
+            this.label4.Location = new System.Drawing.Point(610, 88);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(232, 65);
             this.label4.TabIndex = 97;
