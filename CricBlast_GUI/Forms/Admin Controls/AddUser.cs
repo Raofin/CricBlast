@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
 using System.Windows.Forms;
 using CricBlast_GUI.Database;
@@ -15,6 +13,11 @@ namespace CricBlast_GUI.Forms.Admin_Controls
 
         public AddUser()
         {
+            SetStyle(
+                ControlStyles.UserPaint |
+                ControlStyles.AllPaintingInWmPaint |
+                ControlStyles.OptimizedDoubleBuffer,
+                true);
             InitializeComponent();
             allUserGridPanel.Controls.Add(new UserList());
             allUserGridPanel.Controls["UserList"].Dock = DockStyle.Fill;

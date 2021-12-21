@@ -19,6 +19,11 @@ namespace CricBlast_GUI.Forms
 
         public ChooseTeam()
         {
+            SetStyle(
+                ControlStyles.UserPaint |
+                ControlStyles.AllPaintingInWmPaint |
+                ControlStyles.OptimizedDoubleBuffer,
+                true);
             InitializeComponent();
         }
         

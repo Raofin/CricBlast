@@ -85,7 +85,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             // guna2CirclePictureBox1
             // 
             this.guna2CirclePictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2CirclePictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2CirclePictureBox1.Cursor = System.Windows.Forms.Cursors.Default;
             this.guna2CirclePictureBox1.Image = global::CricBlast_GUI.Properties.Resources.Admin_Gray_Background;
             this.guna2CirclePictureBox1.ImageRotate = 0F;
             this.guna2CirclePictureBox1.Location = new System.Drawing.Point(52, 517);

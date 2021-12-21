@@ -376,6 +376,7 @@ namespace CricBlast_GUI.Forms
             this.close.BackColor = System.Drawing.Color.Transparent;
             this.close.BorderRadius = 4;
             this.close.CheckedState.Parent = this.close;
+            this.close.Cursor = System.Windows.Forms.Cursors.Hand;
             this.close.CustomImages.Parent = this.close;
             this.close.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.close.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -399,6 +400,7 @@ namespace CricBlast_GUI.Forms
             this.modifyButton.BackColor = System.Drawing.Color.Transparent;
             this.modifyButton.BorderRadius = 4;
             this.modifyButton.CheckedState.Parent = this.modifyButton;
+            this.modifyButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.modifyButton.CustomImages.Parent = this.modifyButton;
             this.modifyButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.modifyButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;

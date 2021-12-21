@@ -69,7 +69,7 @@ namespace CricBlast_GUI.Forms
             this.okButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.okButton.ForeColor = System.Drawing.Color.White;
             this.okButton.HoverState.Parent = this.okButton;
-            this.okButton.Location = new System.Drawing.Point(163, 193);
+            this.okButton.Location = new System.Drawing.Point(163, 187);
             this.okButton.Name = "okButton";
             this.okButton.ShadowDecoration.Parent = this.okButton;
             this.okButton.Size = new System.Drawing.Size(180, 45);

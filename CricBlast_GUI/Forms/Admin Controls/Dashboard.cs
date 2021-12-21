@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;
 using System.Windows.Forms;
 using CricBlast_GUI.Database;
 
@@ -11,6 +9,11 @@ namespace CricBlast_GUI.Forms.Admin_Controls
     {
         public Dashboard()
         {
+            SetStyle(
+                ControlStyles.UserPaint |
+                ControlStyles.AllPaintingInWmPaint |
+                ControlStyles.OptimizedDoubleBuffer,
+                true);
             InitializeComponent();
         }
 

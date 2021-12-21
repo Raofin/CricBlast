@@ -194,6 +194,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.backButton.BackColor = System.Drawing.Color.Transparent;
             this.backButton.BorderRadius = 4;
             this.backButton.CheckedState.Parent = this.backButton;
+            this.backButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.backButton.CustomImages.Parent = this.backButton;
             this.backButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.backButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -217,6 +218,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.playAgainButton.BackColor = System.Drawing.Color.Transparent;
             this.playAgainButton.BorderRadius = 4;
             this.playAgainButton.CheckedState.Parent = this.playAgainButton;
+            this.playAgainButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.playAgainButton.CustomImages.Parent = this.playAgainButton;
             this.playAgainButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.playAgainButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;

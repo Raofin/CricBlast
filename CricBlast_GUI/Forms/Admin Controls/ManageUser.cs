@@ -11,6 +11,11 @@ namespace CricBlast_GUI.Forms.Admin_Controls
     {
         public ManageUser()
         {
+            SetStyle(
+                ControlStyles.UserPaint |
+                ControlStyles.AllPaintingInWmPaint |
+                ControlStyles.OptimizedDoubleBuffer,
+                true);
             InitializeComponent();
             LoadData();
         }
@@ -41,7 +46,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
         private void delete_Click(object sender, EventArgs e)
         {
             new MessageBoxYesNo(1, "Are you sure you want to remove this user?").ShowDialog();
-            if (!Selected.MessageBox) return;
+            if (!Selected.MessageBoxYesOrNo) return;
 
             try
             {

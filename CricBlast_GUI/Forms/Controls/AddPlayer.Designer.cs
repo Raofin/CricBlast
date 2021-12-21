@@ -219,6 +219,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.choosePhotoButton.BackColor = System.Drawing.Color.Transparent;
             this.choosePhotoButton.BorderRadius = 4;
             this.choosePhotoButton.CheckedState.Parent = this.choosePhotoButton;
+            this.choosePhotoButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.choosePhotoButton.CustomImages.Parent = this.choosePhotoButton;
             this.choosePhotoButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.choosePhotoButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -370,6 +371,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.addPlayerButton.BackColor = System.Drawing.Color.Transparent;
             this.addPlayerButton.BorderRadius = 4;
             this.addPlayerButton.CheckedState.Parent = this.addPlayerButton;
+            this.addPlayerButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addPlayerButton.CustomImages.Parent = this.addPlayerButton;
             this.addPlayerButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.addPlayerButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;

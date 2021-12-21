@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Data;
 using System.Data.SqlClient;
-using System.Windows.Forms;
-using CricBlast_GUI.Forms;
 using static CricBlast_GUI.Home.Selected;
 
 namespace CricBlast_GUI.Database

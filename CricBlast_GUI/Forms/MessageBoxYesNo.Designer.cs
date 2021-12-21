@@ -53,7 +53,7 @@ namespace CricBlast_GUI.Forms
             this.message.BackColor = System.Drawing.Color.Transparent;
             this.message.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.message.ForeColor = System.Drawing.Color.White;
-            this.message.Location = new System.Drawing.Point(146, 64);
+            this.message.Location = new System.Drawing.Point(146, 60);
             this.message.Name = "message";
             this.message.Size = new System.Drawing.Size(322, 105);
             this.message.TabIndex = 32;
@@ -76,7 +76,7 @@ namespace CricBlast_GUI.Forms
             this.yes.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.yes.ForeColor = System.Drawing.Color.White;
             this.yes.HoverState.Parent = this.yes;
-            this.yes.Location = new System.Drawing.Point(282, 193);
+            this.yes.Location = new System.Drawing.Point(282, 187);
             this.yes.Name = "yes";
             this.yes.ShadowDecoration.Parent = this.yes;
             this.yes.Size = new System.Drawing.Size(153, 45);
@@ -88,7 +88,7 @@ namespace CricBlast_GUI.Forms
             // 
             this.messageMark.Image = global::CricBlast_GUI.Properties.Resources.Warning_Mark;
             this.messageMark.ImageRotate = 0F;
-            this.messageMark.Location = new System.Drawing.Point(43, 76);
+            this.messageMark.Location = new System.Drawing.Point(43, 72);
             this.messageMark.Name = "messageMark";
             this.messageMark.ShadowDecoration.Parent = this.messageMark;
             this.messageMark.Size = new System.Drawing.Size(80, 80);
@@ -112,7 +112,7 @@ namespace CricBlast_GUI.Forms
             this.no.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.no.ForeColor = System.Drawing.Color.White;
             this.no.HoverState.Parent = this.no;
-            this.no.Location = new System.Drawing.Point(93, 193);
+            this.no.Location = new System.Drawing.Point(93, 187);
             this.no.Name = "no";
             this.no.ShadowDecoration.Parent = this.no;
             this.no.Size = new System.Drawing.Size(153, 45);

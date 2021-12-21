@@ -19,7 +19,11 @@ namespace CricBlast_GUI.Forms
 
         public MessageBoxYesNo(byte mark, string message)
         {
-            DoubleBuffered = true;
+            SetStyle(
+                ControlStyles.UserPaint |
+                ControlStyles.AllPaintingInWmPaint |
+                ControlStyles.OptimizedDoubleBuffer,
+                true);
             InitializeComponent();
 
             this.message.Text = message;
@@ -42,13 +46,13 @@ namespace CricBlast_GUI.Forms
 
         private void yes_Click(object sender, EventArgs e)
         {
-            Selected.MessageBox = true;
+            Selected.MessageBoxYesOrNo = true;
             Close();
         }
 
         private void no_Click(object sender, EventArgs e)
         {
-            Selected.MessageBox = false;
+            Selected.MessageBoxYesOrNo = false;
             Close();
         }
     }

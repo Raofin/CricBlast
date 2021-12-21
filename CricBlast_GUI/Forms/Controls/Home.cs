@@ -81,7 +81,7 @@ namespace CricBlast_GUI.Forms.Controls
         {
             new MessageBoxYesNo(1, "Are you sure you want to log out?").ShowDialog();
 
-            if (!Selected.MessageBox) return;
+            if (!Selected.MessageBoxYesOrNo) return;
 
             clearUserDetails();
             Controls.Clear();

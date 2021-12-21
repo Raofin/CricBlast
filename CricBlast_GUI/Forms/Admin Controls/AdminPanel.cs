@@ -11,6 +11,11 @@ namespace CricBlast_GUI.Forms.Admin_Controls
     {
         public AdminPanel()
         {
+            SetStyle(
+                ControlStyles.UserPaint |
+                ControlStyles.AllPaintingInWmPaint |
+                ControlStyles.OptimizedDoubleBuffer,
+                true);
             InitializeComponent();
         }
 
@@ -26,7 +31,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
         {
             new MessageBoxYesNo(1, "Are you sure you want to log out?").ShowDialog();
 
-            if (!Selected.MessageBox) return;
+            if (!Selected.MessageBoxYesOrNo) return;
 
             Controls.Clear();
             Controls.Add(new Welcome {welcomeLabel = {Text = "Welcome Back!"}});

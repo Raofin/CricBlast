@@ -18,6 +18,10 @@ namespace CricBlast_GUI.Forms
             }
         }
 
+        private bool _modify;
+        private bool _modifyPhoto;
+        private Image _userNewImage = UserImage;
+
         public Profile()
         {
             SetStyle(
@@ -28,10 +32,6 @@ namespace CricBlast_GUI.Forms
             InitializeComponent();
             LoadProfile();
         }
-
-        private bool _modify;
-        private bool _modifyPhoto;
-        private Image _userNewImage = UserImage;
 
         private void modify_Click(object sender, EventArgs e)
         {

@@ -60,6 +60,7 @@ namespace CricBlast_GUI.Forms.Controls
             this.changeTeam.BackColor = System.Drawing.Color.Transparent;
             this.changeTeam.BorderRadius = 4;
             this.changeTeam.CheckedState.Parent = this.changeTeam;
+            this.changeTeam.Cursor = System.Windows.Forms.Cursors.Hand;
             this.changeTeam.CustomImages.Parent = this.changeTeam;
             this.changeTeam.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.changeTeam.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;

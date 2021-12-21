@@ -473,7 +473,6 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             // 
             // addButton
             // 
-            this.addButton.Animated = true;
             this.addButton.BackColor = System.Drawing.Color.Transparent;
             this.addButton.BorderRadius = 4;
             this.addButton.CheckedState.Parent = this.addButton;

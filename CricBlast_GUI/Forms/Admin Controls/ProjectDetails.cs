@@ -7,6 +7,11 @@ namespace CricBlast_GUI.Forms.Admin_Controls
     {
         public ProjectDetails()
         {
+            SetStyle(
+                ControlStyles.UserPaint |
+                ControlStyles.AllPaintingInWmPaint |
+                ControlStyles.OptimizedDoubleBuffer,
+                true);
             InitializeComponent();
         }
 

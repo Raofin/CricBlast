@@ -8,6 +8,11 @@ namespace CricBlast_GUI.Forms.Admin_Controls
     {
         public TournamentsAdmin()
         {
+            SetStyle(
+                ControlStyles.UserPaint |
+                ControlStyles.AllPaintingInWmPaint |
+                ControlStyles.OptimizedDoubleBuffer,
+                true);
             InitializeComponent();
         }
 
