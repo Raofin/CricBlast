@@ -77,251 +77,251 @@
     <Compile Include="Database\ConvertImage.cs" />
     <Compile Include="Database\Account.cs" />
     <Compile Include="Database\Login.cs" />
-    <Compile Include="Forms\Admin Controls\AddUser.cs">
+    <Compile Include="UI\Admin Controls\AddUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Admin Controls\AddUser.Designer.cs">
+    <Compile Include="UI\Admin Controls\AddUser.Designer.cs">
       <DependentUpon>AddUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Admin Controls\Dashboard.cs">
+    <Compile Include="UI\Admin Controls\Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Admin Controls\Dashboard.Designer.cs">
+    <Compile Include="UI\Admin Controls\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Admin Controls\ManageUser.cs">
+    <Compile Include="UI\Admin Controls\ManageUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Admin Controls\ManageUser.Designer.cs">
+    <Compile Include="UI\Admin Controls\ManageUser.Designer.cs">
       <DependentUpon>ManageUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Admin Controls\ProjectDetails.cs">
+    <Compile Include="UI\Admin Controls\ProjectDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Admin Controls\ProjectDetails.Designer.cs">
+    <Compile Include="UI\Admin Controls\ProjectDetails.Designer.cs">
       <DependentUpon>ProjectDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Admin Controls\SelectTeams.cs">
+    <Compile Include="UI\SelectTeams.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Admin Controls\SelectTeams.Designer.cs">
+    <Compile Include="UI\SelectTeams.Designer.cs">
       <DependentUpon>SelectTeams.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Admin Controls\TournamentsAdmin.cs">
+    <Compile Include="UI\Admin Controls\TournamentsAdmin.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Admin Controls\TournamentsAdmin.Designer.cs">
+    <Compile Include="UI\Admin Controls\TournamentsAdmin.Designer.cs">
       <DependentUpon>TournamentsAdmin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Admin Controls\UserList.cs">
+    <Compile Include="UI\Admin Controls\UserList.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Admin Controls\UserList.Designer.cs">
+    <Compile Include="UI\Admin Controls\UserList.Designer.cs">
       <DependentUpon>UserList.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Controls\CreateAccount.cs">
+    <Compile Include="UI\User Controls\CreateAccount.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Controls\CreateAccount.Designer.cs">
+    <Compile Include="UI\User Controls\CreateAccount.Designer.cs">
       <DependentUpon>CreateAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Controls\GamePlayPanel.cs">
+    <Compile Include="UI\User Controls\GamePlayPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Controls\GamePlayPanel.Designer.cs">
+    <Compile Include="UI\User Controls\GamePlayPanel.Designer.cs">
       <DependentUpon>GamePlayPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Controls\Home.cs">
+    <Compile Include="UI\User Controls\Home.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Controls\Home.Designer.cs">
+    <Compile Include="UI\User Controls\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Controls\PlayerStats.cs">
+    <Compile Include="UI\User Controls\PlayerStats.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Controls\PlayerStats.Designer.cs">
+    <Compile Include="UI\User Controls\PlayerStats.Designer.cs">
       <DependentUpon>PlayerStats.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Controls\MyTeam.cs">
+    <Compile Include="UI\User Controls\MyTeam.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Controls\MyTeam.Designer.cs">
+    <Compile Include="UI\User Controls\MyTeam.Designer.cs">
       <DependentUpon>MyTeam.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Controls\CustomizeTeam.cs">
+    <Compile Include="UI\User Controls\CustomizeTeam.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Controls\CustomizeTeam.Designer.cs">
+    <Compile Include="UI\User Controls\CustomizeTeam.Designer.cs">
       <DependentUpon>CustomizeTeam.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Controls\AddPlayer.cs">
+    <Compile Include="UI\User Controls\AddPlayer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Controls\AddPlayer.Designer.cs">
+    <Compile Include="UI\User Controls\AddPlayer.Designer.cs">
       <DependentUpon>AddPlayer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Controls\PlayMatch.cs">
+    <Compile Include="UI\User Controls\PlayMatch.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Controls\PlayMatch.Designer.cs">
+    <Compile Include="UI\User Controls\PlayMatch.Designer.cs">
       <DependentUpon>PlayMatch.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Admin Controls\AdminPanel.cs">
+    <Compile Include="UI\Admin Controls\AdminPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Admin Controls\AdminPanel.Designer.cs">
+    <Compile Include="UI\Admin Controls\AdminPanel.Designer.cs">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Controls\TournamentPlay.cs">
+    <Compile Include="UI\User Controls\TournamentPlay.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Controls\TournamentPlay.Designer.cs">
+    <Compile Include="UI\User Controls\TournamentPlay.Designer.cs">
       <DependentUpon>TournamentPlay.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Controls\Welcome.cs">
+    <Compile Include="UI\User Controls\Welcome.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\Controls\Welcome.Designer.cs">
+    <Compile Include="UI\User Controls\Welcome.Designer.cs">
       <DependentUpon>Welcome.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\ChooseTeam.cs">
+    <Compile Include="UI\ChooseTeam.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\ChooseTeam.Designer.cs">
+    <Compile Include="UI\ChooseTeam.Designer.cs">
       <DependentUpon>ChooseTeam.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\AdminView.cs">
+    <Compile Include="UI\AdminView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\AdminView.Designer.cs">
+    <Compile Include="UI\AdminView.Designer.cs">
       <DependentUpon>AdminView.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Info.cs">
+    <Compile Include="UI\Info.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Info.Designer.cs">
+    <Compile Include="UI\Info.Designer.cs">
       <DependentUpon>Info.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MessageBoxYesNo.cs">
+    <Compile Include="UI\MessageBoxYesNo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MessageBoxYesNo.Designer.cs">
+    <Compile Include="UI\MessageBoxYesNo.Designer.cs">
       <DependentUpon>MessageBoxYesNo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MessageBoxOk.cs">
+    <Compile Include="UI\MessageBoxOk.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MessageBoxOk.Designer.cs">
+    <Compile Include="UI\MessageBoxOk.Designer.cs">
       <DependentUpon>MessageBoxOk.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Profile.cs">
+    <Compile Include="UI\Profile.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Profile.Designer.cs">
+    <Compile Include="UI\Profile.Designer.cs">
       <DependentUpon>Profile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Recover.cs">
+    <Compile Include="UI\Recover.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Recover.Designer.cs">
+    <Compile Include="UI\Recover.Designer.cs">
       <DependentUpon>Recover.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\MainForm.cs">
+    <Compile Include="UI\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\MainForm.Designer.cs">
+    <Compile Include="UI\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Selected.cs" />
-    <Compile Include="Forms\SelectStadium.cs">
+    <Compile Include="UI\Selected.cs" />
+    <Compile Include="UI\SelectStadium.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\SelectStadium.Designer.cs">
+    <Compile Include="UI\SelectStadium.Designer.cs">
       <DependentUpon>SelectStadium.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Forms\Admin Controls\AddUser.resx">
+    <EmbeddedResource Include="UI\Admin Controls\AddUser.resx">
       <DependentUpon>AddUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Admin Controls\Dashboard.resx">
+    <EmbeddedResource Include="UI\Admin Controls\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Admin Controls\ManageUser.resx">
+    <EmbeddedResource Include="UI\Admin Controls\ManageUser.resx">
       <DependentUpon>ManageUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Admin Controls\ProjectDetails.resx">
+    <EmbeddedResource Include="UI\Admin Controls\ProjectDetails.resx">
       <DependentUpon>ProjectDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Admin Controls\SelectTeams.resx">
+    <EmbeddedResource Include="UI\SelectTeams.resx">
       <DependentUpon>SelectTeams.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Admin Controls\TournamentsAdmin.resx">
+    <EmbeddedResource Include="UI\Admin Controls\TournamentsAdmin.resx">
       <DependentUpon>TournamentsAdmin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Admin Controls\UserList.resx">
+    <EmbeddedResource Include="UI\Admin Controls\UserList.resx">
       <DependentUpon>UserList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\ChooseTeam.resx">
+    <EmbeddedResource Include="UI\ChooseTeam.resx">
       <DependentUpon>ChooseTeam.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Controls\CreateAccount.resx">
+    <EmbeddedResource Include="UI\User Controls\CreateAccount.resx">
       <DependentUpon>CreateAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Controls\GamePlayPanel.resx">
+    <EmbeddedResource Include="UI\User Controls\GamePlayPanel.resx">
       <DependentUpon>GamePlayPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Controls\Home.resx">
+    <EmbeddedResource Include="UI\User Controls\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Controls\PlayerStats.resx">
+    <EmbeddedResource Include="UI\User Controls\PlayerStats.resx">
       <DependentUpon>PlayerStats.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Controls\MyTeam.resx">
+    <EmbeddedResource Include="UI\User Controls\MyTeam.resx">
       <DependentUpon>MyTeam.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Controls\CustomizeTeam.resx">
+    <EmbeddedResource Include="UI\User Controls\CustomizeTeam.resx">
       <DependentUpon>CustomizeTeam.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Controls\AddPlayer.resx">
+    <EmbeddedResource Include="UI\User Controls\AddPlayer.resx">
       <DependentUpon>AddPlayer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Controls\PlayMatch.resx">
+    <EmbeddedResource Include="UI\User Controls\PlayMatch.resx">
       <DependentUpon>PlayMatch.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Admin Controls\AdminPanel.resx">
+    <EmbeddedResource Include="UI\Admin Controls\AdminPanel.resx">
       <DependentUpon>AdminPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Controls\TournamentPlay.resx">
+    <EmbeddedResource Include="UI\User Controls\TournamentPlay.resx">
       <DependentUpon>TournamentPlay.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Controls\Welcome.resx">
+    <EmbeddedResource Include="UI\User Controls\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\AdminView.resx">
+    <EmbeddedResource Include="UI\AdminView.resx">
       <DependentUpon>AdminView.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Info.resx">
+    <EmbeddedResource Include="UI\Info.resx">
       <DependentUpon>Info.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MessageBoxYesNo.resx">
+    <EmbeddedResource Include="UI\MessageBoxYesNo.resx">
       <DependentUpon>MessageBoxYesNo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MessageBoxOk.resx">
+    <EmbeddedResource Include="UI\MessageBoxOk.resx">
       <DependentUpon>MessageBoxOk.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Profile.resx">
+    <EmbeddedResource Include="UI\Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Recover.resx">
+    <EmbeddedResource Include="UI\Recover.resx">
       <DependentUpon>Recover.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\MainForm.resx">
+    <EmbeddedResource Include="UI\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\SelectStadium.resx">
+    <EmbeddedResource Include="UI\SelectStadium.resx">
       <DependentUpon>SelectStadium.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

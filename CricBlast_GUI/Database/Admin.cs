@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
 using System.Drawing;
-using CricBlast_GUI.Forms;
+using CricBlast_GUI.UI;
 
 namespace CricBlast_GUI.Database
 {

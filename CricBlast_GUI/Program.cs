@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using CricBlast_GUI.Forms;
+using CricBlast_GUI.UI;
 
 namespace CricBlast_GUI
 {

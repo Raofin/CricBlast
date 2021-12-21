@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Data.SqlClient;
-using static CricBlast_GUI.Home.Selected;
+using static CricBlast_GUI.UI.Selected;
 
 namespace CricBlast_GUI.Database
 {
