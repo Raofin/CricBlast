@@ -39,6 +39,12 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.activeUsers = new System.Windows.Forms.Label();
             this.totalMatches = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.user6Email = new System.Windows.Forms.Label();
+            this.user6Name = new System.Windows.Forms.Label();
+            this.user6Picture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.user5Email = new System.Windows.Forms.Label();
+            this.user5Name = new System.Windows.Forms.Label();
+            this.user5Picture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.user4Email = new System.Windows.Forms.Label();
             this.user4Name = new System.Windows.Forms.Label();
             this.user4Picture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -51,20 +57,14 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.user1Email = new System.Windows.Forms.Label();
             this.user1Name = new System.Windows.Forms.Label();
             this.user1Picture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.user6Email = new System.Windows.Forms.Label();
-            this.user6Name = new System.Windows.Forms.Label();
-            this.user6Picture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            this.user5Email = new System.Windows.Forms.Label();
-            this.user5Name = new System.Windows.Forms.Label();
-            this.user5Picture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.guna2Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.user6Picture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.user5Picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.user4Picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.user3Picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.user2Picture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.user1Picture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.user6Picture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.user5Picture)).BeginInit();
             this.SuspendLayout();
             // 
             // logo
@@ -218,158 +218,6 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.guna2Panel1.Size = new System.Drawing.Size(956, 681);
             this.guna2Panel1.TabIndex = 35;
             // 
-            // user4Email
-            // 
-            this.user4Email.AutoSize = true;
-            this.user4Email.BackColor = System.Drawing.Color.Transparent;
-            this.user4Email.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.user4Email.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user4Email.Location = new System.Drawing.Point(596, 508);
-            this.user4Email.Name = "user4Email";
-            this.user4Email.Size = new System.Drawing.Size(145, 28);
-            this.user4Email.TabIndex = 46;
-            this.user4Email.Text = "Email Address";
-            this.user4Email.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // user4Name
-            // 
-            this.user4Name.AutoSize = true;
-            this.user4Name.BackColor = System.Drawing.Color.Transparent;
-            this.user4Name.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.user4Name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user4Name.Location = new System.Drawing.Point(593, 477);
-            this.user4Name.Name = "user4Name";
-            this.user4Name.Size = new System.Drawing.Size(158, 37);
-            this.user4Name.TabIndex = 45;
-            this.user4Name.Text = "User Name";
-            this.user4Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // user4Picture
-            // 
-            this.user4Picture.ImageRotate = 0F;
-            this.user4Picture.Location = new System.Drawing.Point(522, 478);
-            this.user4Picture.Name = "user4Picture";
-            this.user4Picture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.user4Picture.ShadowDecoration.Parent = this.user4Picture;
-            this.user4Picture.Size = new System.Drawing.Size(65, 65);
-            this.user4Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.user4Picture.TabIndex = 44;
-            this.user4Picture.TabStop = false;
-            // 
-            // user3Email
-            // 
-            this.user3Email.AutoSize = true;
-            this.user3Email.BackColor = System.Drawing.Color.Transparent;
-            this.user3Email.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.user3Email.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user3Email.Location = new System.Drawing.Point(595, 434);
-            this.user3Email.Name = "user3Email";
-            this.user3Email.Size = new System.Drawing.Size(145, 28);
-            this.user3Email.TabIndex = 43;
-            this.user3Email.Text = "Email Address";
-            this.user3Email.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // user3Name
-            // 
-            this.user3Name.AutoSize = true;
-            this.user3Name.BackColor = System.Drawing.Color.Transparent;
-            this.user3Name.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.user3Name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user3Name.Location = new System.Drawing.Point(592, 403);
-            this.user3Name.Name = "user3Name";
-            this.user3Name.Size = new System.Drawing.Size(158, 37);
-            this.user3Name.TabIndex = 42;
-            this.user3Name.Text = "User Name";
-            this.user3Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // user3Picture
-            // 
-            this.user3Picture.ImageRotate = 0F;
-            this.user3Picture.Location = new System.Drawing.Point(521, 403);
-            this.user3Picture.Name = "user3Picture";
-            this.user3Picture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.user3Picture.ShadowDecoration.Parent = this.user3Picture;
-            this.user3Picture.Size = new System.Drawing.Size(65, 65);
-            this.user3Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.user3Picture.TabIndex = 41;
-            this.user3Picture.TabStop = false;
-            // 
-            // user2Email
-            // 
-            this.user2Email.AutoSize = true;
-            this.user2Email.BackColor = System.Drawing.Color.Transparent;
-            this.user2Email.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.user2Email.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user2Email.Location = new System.Drawing.Point(172, 511);
-            this.user2Email.Name = "user2Email";
-            this.user2Email.Size = new System.Drawing.Size(145, 28);
-            this.user2Email.TabIndex = 40;
-            this.user2Email.Text = "Email Address";
-            this.user2Email.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // user2Name
-            // 
-            this.user2Name.AutoSize = true;
-            this.user2Name.BackColor = System.Drawing.Color.Transparent;
-            this.user2Name.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.user2Name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user2Name.Location = new System.Drawing.Point(169, 480);
-            this.user2Name.Name = "user2Name";
-            this.user2Name.Size = new System.Drawing.Size(158, 37);
-            this.user2Name.TabIndex = 39;
-            this.user2Name.Text = "User Name";
-            this.user2Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // user2Picture
-            // 
-            this.user2Picture.ImageRotate = 0F;
-            this.user2Picture.Location = new System.Drawing.Point(101, 478);
-            this.user2Picture.Name = "user2Picture";
-            this.user2Picture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.user2Picture.ShadowDecoration.Parent = this.user2Picture;
-            this.user2Picture.Size = new System.Drawing.Size(65, 65);
-            this.user2Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.user2Picture.TabIndex = 38;
-            this.user2Picture.TabStop = false;
-            // 
-            // user1Email
-            // 
-            this.user1Email.AutoSize = true;
-            this.user1Email.BackColor = System.Drawing.Color.Transparent;
-            this.user1Email.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.user1Email.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user1Email.Location = new System.Drawing.Point(171, 434);
-            this.user1Email.Name = "user1Email";
-            this.user1Email.Size = new System.Drawing.Size(145, 28);
-            this.user1Email.TabIndex = 37;
-            this.user1Email.Text = "Email Address";
-            this.user1Email.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // user1Name
-            // 
-            this.user1Name.AutoSize = true;
-            this.user1Name.BackColor = System.Drawing.Color.Transparent;
-            this.user1Name.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
-            this.user1Name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user1Name.Location = new System.Drawing.Point(168, 403);
-            this.user1Name.Name = "user1Name";
-            this.user1Name.Size = new System.Drawing.Size(158, 37);
-            this.user1Name.TabIndex = 36;
-            this.user1Name.Text = "User Name";
-            this.user1Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // user1Picture
-            // 
-            this.user1Picture.ImageRotate = 0F;
-            this.user1Picture.Location = new System.Drawing.Point(101, 403);
-            this.user1Picture.Name = "user1Picture";
-            this.user1Picture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.user1Picture.ShadowDecoration.Parent = this.user1Picture;
-            this.user1Picture.Size = new System.Drawing.Size(65, 65);
-            this.user1Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.user1Picture.TabIndex = 35;
-            this.user1Picture.TabStop = false;
-            // 
             // user6Email
             // 
             this.user6Email.AutoSize = true;
@@ -446,6 +294,158 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.user5Picture.TabIndex = 47;
             this.user5Picture.TabStop = false;
             // 
+            // user4Email
+            // 
+            this.user4Email.AutoSize = true;
+            this.user4Email.BackColor = System.Drawing.Color.Transparent;
+            this.user4Email.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.user4Email.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.user4Email.Location = new System.Drawing.Point(596, 508);
+            this.user4Email.Name = "user4Email";
+            this.user4Email.Size = new System.Drawing.Size(145, 28);
+            this.user4Email.TabIndex = 46;
+            this.user4Email.Text = "Email Address";
+            this.user4Email.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // user4Name
+            // 
+            this.user4Name.AutoSize = true;
+            this.user4Name.BackColor = System.Drawing.Color.Transparent;
+            this.user4Name.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.user4Name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.user4Name.Location = new System.Drawing.Point(593, 477);
+            this.user4Name.Name = "user4Name";
+            this.user4Name.Size = new System.Drawing.Size(158, 37);
+            this.user4Name.TabIndex = 45;
+            this.user4Name.Text = "User Name";
+            this.user4Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // user4Picture
+            // 
+            this.user4Picture.ImageRotate = 0F;
+            this.user4Picture.Location = new System.Drawing.Point(522, 478);
+            this.user4Picture.Name = "user4Picture";
+            this.user4Picture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.user4Picture.ShadowDecoration.Parent = this.user4Picture;
+            this.user4Picture.Size = new System.Drawing.Size(65, 65);
+            this.user4Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.user4Picture.TabIndex = 44;
+            this.user4Picture.TabStop = false;
+            // 
+            // user3Email
+            // 
+            this.user3Email.AutoSize = true;
+            this.user3Email.BackColor = System.Drawing.Color.Transparent;
+            this.user3Email.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.user3Email.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.user3Email.Location = new System.Drawing.Point(175, 509);
+            this.user3Email.Name = "user3Email";
+            this.user3Email.Size = new System.Drawing.Size(145, 28);
+            this.user3Email.TabIndex = 43;
+            this.user3Email.Text = "Email Address";
+            this.user3Email.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // user3Name
+            // 
+            this.user3Name.AutoSize = true;
+            this.user3Name.BackColor = System.Drawing.Color.Transparent;
+            this.user3Name.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.user3Name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.user3Name.Location = new System.Drawing.Point(172, 478);
+            this.user3Name.Name = "user3Name";
+            this.user3Name.Size = new System.Drawing.Size(158, 37);
+            this.user3Name.TabIndex = 42;
+            this.user3Name.Text = "User Name";
+            this.user3Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // user3Picture
+            // 
+            this.user3Picture.ImageRotate = 0F;
+            this.user3Picture.Location = new System.Drawing.Point(101, 478);
+            this.user3Picture.Name = "user3Picture";
+            this.user3Picture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.user3Picture.ShadowDecoration.Parent = this.user3Picture;
+            this.user3Picture.Size = new System.Drawing.Size(65, 65);
+            this.user3Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.user3Picture.TabIndex = 41;
+            this.user3Picture.TabStop = false;
+            // 
+            // user2Email
+            // 
+            this.user2Email.AutoSize = true;
+            this.user2Email.BackColor = System.Drawing.Color.Transparent;
+            this.user2Email.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.user2Email.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.user2Email.Location = new System.Drawing.Point(593, 436);
+            this.user2Email.Name = "user2Email";
+            this.user2Email.Size = new System.Drawing.Size(145, 28);
+            this.user2Email.TabIndex = 40;
+            this.user2Email.Text = "Email Address";
+            this.user2Email.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // user2Name
+            // 
+            this.user2Name.AutoSize = true;
+            this.user2Name.BackColor = System.Drawing.Color.Transparent;
+            this.user2Name.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.user2Name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.user2Name.Location = new System.Drawing.Point(590, 405);
+            this.user2Name.Name = "user2Name";
+            this.user2Name.Size = new System.Drawing.Size(158, 37);
+            this.user2Name.TabIndex = 39;
+            this.user2Name.Text = "User Name";
+            this.user2Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // user2Picture
+            // 
+            this.user2Picture.ImageRotate = 0F;
+            this.user2Picture.Location = new System.Drawing.Point(522, 403);
+            this.user2Picture.Name = "user2Picture";
+            this.user2Picture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.user2Picture.ShadowDecoration.Parent = this.user2Picture;
+            this.user2Picture.Size = new System.Drawing.Size(65, 65);
+            this.user2Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.user2Picture.TabIndex = 38;
+            this.user2Picture.TabStop = false;
+            // 
+            // user1Email
+            // 
+            this.user1Email.AutoSize = true;
+            this.user1Email.BackColor = System.Drawing.Color.Transparent;
+            this.user1Email.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.user1Email.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.user1Email.Location = new System.Drawing.Point(171, 434);
+            this.user1Email.Name = "user1Email";
+            this.user1Email.Size = new System.Drawing.Size(145, 28);
+            this.user1Email.TabIndex = 37;
+            this.user1Email.Text = "Email Address";
+            this.user1Email.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // user1Name
+            // 
+            this.user1Name.AutoSize = true;
+            this.user1Name.BackColor = System.Drawing.Color.Transparent;
+            this.user1Name.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.user1Name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.user1Name.Location = new System.Drawing.Point(168, 403);
+            this.user1Name.Name = "user1Name";
+            this.user1Name.Size = new System.Drawing.Size(158, 37);
+            this.user1Name.TabIndex = 36;
+            this.user1Name.Text = "User Name";
+            this.user1Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // user1Picture
+            // 
+            this.user1Picture.ImageRotate = 0F;
+            this.user1Picture.Location = new System.Drawing.Point(101, 403);
+            this.user1Picture.Name = "user1Picture";
+            this.user1Picture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.user1Picture.ShadowDecoration.Parent = this.user1Picture;
+            this.user1Picture.Size = new System.Drawing.Size(65, 65);
+            this.user1Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.user1Picture.TabIndex = 35;
+            this.user1Picture.TabStop = false;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -459,12 +459,12 @@ namespace CricBlast_GUI.UI.Admin_Controls
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.user6Picture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.user5Picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.user4Picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.user3Picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.user2Picture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.user1Picture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.user6Picture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.user5Picture)).EndInit();
             this.ResumeLayout(false);
 
         }
