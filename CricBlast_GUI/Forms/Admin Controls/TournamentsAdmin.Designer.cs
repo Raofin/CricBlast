@@ -156,7 +156,6 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             // 
             // startTournament
             // 
-            this.startTournament.Animated = true;
             this.startTournament.BackColor = System.Drawing.Color.Transparent;
             this.startTournament.BorderRadius = 4;
             this.startTournament.CheckedState.Parent = this.startTournament;
@@ -300,7 +299,6 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.Animated = true;
             this.usernameTextBox.BackColor = System.Drawing.Color.Transparent;
             this.usernameTextBox.BorderRadius = 3;
             this.usernameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;

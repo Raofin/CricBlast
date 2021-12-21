@@ -56,7 +56,6 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             // changeTeam
             // 
-            this.changeTeam.Animated = true;
             this.changeTeam.BackColor = System.Drawing.Color.Transparent;
             this.changeTeam.BorderRadius = 4;
             this.changeTeam.CheckedState.Parent = this.changeTeam;

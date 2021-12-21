@@ -102,7 +102,6 @@ namespace CricBlast_GUI.Forms
             // 
             // recoverButton
             // 
-            this.recoverButton.Animated = true;
             this.recoverButton.BackColor = System.Drawing.Color.Transparent;
             this.recoverButton.BorderRadius = 4;
             this.recoverButton.CheckedState.Parent = this.recoverButton;

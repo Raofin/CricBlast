@@ -94,7 +94,6 @@ namespace CricBlast_GUI.Forms
             // 
             // getStarted
             // 
-            this.getStarted.Animated = true;
             this.getStarted.BackColor = System.Drawing.Color.Transparent;
             this.getStarted.BorderRadius = 4;
             this.getStarted.CheckedState.Parent = this.getStarted;

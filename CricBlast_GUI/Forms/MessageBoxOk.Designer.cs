@@ -55,7 +55,6 @@ namespace CricBlast_GUI.Forms
             // 
             // okButton
             // 
-            this.okButton.Animated = true;
             this.okButton.BackColor = System.Drawing.Color.Transparent;
             this.okButton.BorderRadius = 4;
             this.okButton.CheckedState.Parent = this.okButton;

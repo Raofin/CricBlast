@@ -503,7 +503,6 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             // modify
             // 
-            this.modify.Animated = true;
             this.modify.BackColor = System.Drawing.Color.Transparent;
             this.modify.BorderRadius = 4;
             this.modify.CheckedState.Parent = this.modify;
@@ -528,7 +527,6 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             // resetPlayers
             // 
-            this.resetPlayers.Animated = true;
             this.resetPlayers.BackColor = System.Drawing.Color.Transparent;
             this.resetPlayers.BorderRadius = 4;
             this.resetPlayers.CheckedState.Parent = this.resetPlayers;

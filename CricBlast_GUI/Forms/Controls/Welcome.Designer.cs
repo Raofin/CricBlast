@@ -54,7 +54,6 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             // login
             // 
-            this.login.Animated = true;
             this.login.BackColor = System.Drawing.Color.Transparent;
             this.login.BorderRadius = 4;
             this.login.CheckedState.Parent = this.login;

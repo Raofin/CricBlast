@@ -194,7 +194,6 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Animated = true;
             this.passwordTextBox.BackColor = System.Drawing.Color.Transparent;
             this.passwordTextBox.BorderRadius = 3;
             this.passwordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -272,7 +271,6 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             // emailTextBox
             // 
-            this.emailTextBox.Animated = true;
             this.emailTextBox.BackColor = System.Drawing.Color.Transparent;
             this.emailTextBox.BorderRadius = 3;
             this.emailTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -313,7 +311,6 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.Animated = true;
             this.usernameTextBox.BackColor = System.Drawing.Color.Transparent;
             this.usernameTextBox.BorderRadius = 3;
             this.usernameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -366,7 +363,6 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             // register
             // 
-            this.register.Animated = true;
             this.register.BackColor = System.Drawing.Color.Transparent;
             this.register.BorderRadius = 4;
             this.register.CheckedState.Parent = this.register;
@@ -626,7 +622,6 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             // captchaTextBox
             // 
-            this.captchaTextBox.Animated = true;
             this.captchaTextBox.BackColor = System.Drawing.Color.LightGray;
             this.captchaTextBox.BorderThickness = 0;
             this.captchaTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -658,7 +653,6 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             // mobileTextBox
             // 
-            this.mobileTextBox.Animated = true;
             this.mobileTextBox.BackColor = System.Drawing.Color.Transparent;
             this.mobileTextBox.BorderRadius = 3;
             this.mobileTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;

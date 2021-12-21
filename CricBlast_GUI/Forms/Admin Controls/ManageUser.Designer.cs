@@ -226,7 +226,6 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             // 
             // viewDetails
             // 
-            this.viewDetails.Animated = true;
             this.viewDetails.BackColor = System.Drawing.Color.Transparent;
             this.viewDetails.BorderRadius = 4;
             this.viewDetails.CheckedState.Parent = this.viewDetails;
@@ -250,7 +249,6 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             // 
             // modify
             // 
-            this.modify.Animated = true;
             this.modify.BackColor = System.Drawing.Color.Transparent;
             this.modify.BorderRadius = 4;
             this.modify.CheckedState.Parent = this.modify;
@@ -274,7 +272,6 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             // 
             // delete
             // 
-            this.delete.Animated = true;
             this.delete.BackColor = System.Drawing.Color.Transparent;
             this.delete.BorderRadius = 4;
             this.delete.CheckedState.Parent = this.delete;

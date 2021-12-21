@@ -296,7 +296,6 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             // 
             // passwordTextBox
             // 
-            this.passwordTextBox.Animated = true;
             this.passwordTextBox.BackColor = System.Drawing.Color.Transparent;
             this.passwordTextBox.BorderRadius = 3;
             this.passwordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -338,7 +337,6 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             // 
             // mobileTextBox
             // 
-            this.mobileTextBox.Animated = true;
             this.mobileTextBox.BackColor = System.Drawing.Color.Transparent;
             this.mobileTextBox.BorderRadius = 3;
             this.mobileTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -379,7 +377,6 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             // 
             // emailTextBox
             // 
-            this.emailTextBox.Animated = true;
             this.emailTextBox.BackColor = System.Drawing.Color.Transparent;
             this.emailTextBox.BorderRadius = 3;
             this.emailTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -420,7 +417,6 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             // 
             // usernameTextBox
             // 
-            this.usernameTextBox.Animated = true;
             this.usernameTextBox.BackColor = System.Drawing.Color.Transparent;
             this.usernameTextBox.BorderRadius = 3;
             this.usernameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;

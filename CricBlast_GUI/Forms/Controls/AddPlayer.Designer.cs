@@ -367,7 +367,6 @@ namespace CricBlast_GUI.Forms.Controls
             // 
             // addPlayerButton
             // 
-            this.addPlayerButton.Animated = true;
             this.addPlayerButton.BackColor = System.Drawing.Color.Transparent;
             this.addPlayerButton.BorderRadius = 4;
             this.addPlayerButton.CheckedState.Parent = this.addPlayerButton;

@@ -372,7 +372,6 @@ namespace CricBlast_GUI.Forms
             // 
             // close
             // 
-            this.close.Animated = true;
             this.close.BackColor = System.Drawing.Color.Transparent;
             this.close.BorderRadius = 4;
             this.close.CheckedState.Parent = this.close;
@@ -396,7 +395,6 @@ namespace CricBlast_GUI.Forms
             // 
             // modifyButton
             // 
-            this.modifyButton.Animated = true;
             this.modifyButton.BackColor = System.Drawing.Color.Transparent;
             this.modifyButton.BorderRadius = 4;
             this.modifyButton.CheckedState.Parent = this.modifyButton;
