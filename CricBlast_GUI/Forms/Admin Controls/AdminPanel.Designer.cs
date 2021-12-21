@@ -41,11 +41,11 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.addUser = new Guna.UI2.WinForms.Guna2Button();
             this.dashboard = new Guna.UI2.WinForms.Guna2Button();
             this.logout = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.logoPicture = new System.Windows.Forms.PictureBox();
             this.adminMenuPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.availabilityIcon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).BeginInit();
             this.SuspendLayout();
             // 
             // adminSubPanel
@@ -73,7 +73,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.adminMenuPanel.Controls.Add(this.addUser);
             this.adminMenuPanel.Controls.Add(this.dashboard);
             this.adminMenuPanel.Controls.Add(this.logout);
-            this.adminMenuPanel.Controls.Add(this.pictureBox1);
+            this.adminMenuPanel.Controls.Add(this.logoPicture);
             this.adminMenuPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.adminMenuPanel.Location = new System.Drawing.Point(0, 0);
             this.adminMenuPanel.Name = "adminMenuPanel";
@@ -276,16 +276,18 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.logout.Text = "Logout";
             this.logout.Click += new System.EventHandler(this.logout_Click);
             // 
-            // pictureBox1
+            // logoPicture
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::CricBlast_GUI.Properties.Resources.Admin_Panel;
-            this.pictureBox1.Location = new System.Drawing.Point(50, 52);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(188, 69);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.logoPicture.BackColor = System.Drawing.Color.Transparent;
+            this.logoPicture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.logoPicture.Image = global::CricBlast_GUI.Properties.Resources.Admin_Panel;
+            this.logoPicture.Location = new System.Drawing.Point(50, 52);
+            this.logoPicture.Name = "logoPicture";
+            this.logoPicture.Size = new System.Drawing.Size(188, 69);
+            this.logoPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logoPicture.TabIndex = 0;
+            this.logoPicture.TabStop = false;
+            this.logoPicture.Click += new System.EventHandler(this.logoPicture_Click);
             // 
             // AdminPanel
             // 
@@ -301,7 +303,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.adminMenuPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.availabilityIcon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -319,7 +321,7 @@ namespace CricBlast_GUI.Forms.Admin_Controls
         private Guna.UI2.WinForms.Guna2Button addUser;
         private Guna.UI2.WinForms.Guna2Button dashboard;
         private System.Windows.Forms.Label logout;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox logoPicture;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
     }
 }

@@ -86,7 +86,7 @@ namespace CricBlast_GUI.Forms
             this.usernameTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.usernameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTextBox.HoverState.Parent = this.usernameTextBox;
-            this.usernameTextBox.Location = new System.Drawing.Point(226, 252);
+            this.usernameTextBox.Location = new System.Drawing.Point(226, 251);
             this.usernameTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.PasswordChar = '\0';
@@ -133,7 +133,7 @@ namespace CricBlast_GUI.Forms
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(89, 253);
+            this.label2.Location = new System.Drawing.Point(89, 252);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(129, 32);
             this.label2.TabIndex = 28;
@@ -145,7 +145,7 @@ namespace CricBlast_GUI.Forms
             this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
             this.usernameLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.usernameLabel.ForeColor = System.Drawing.Color.White;
-            this.usernameLabel.Location = new System.Drawing.Point(224, 253);
+            this.usernameLabel.Location = new System.Drawing.Point(226, 252);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(129, 32);
             this.usernameLabel.TabIndex = 28;
@@ -193,7 +193,7 @@ namespace CricBlast_GUI.Forms
             this.passwordLabel.BackColor = System.Drawing.Color.Transparent;
             this.passwordLabel.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.passwordLabel.ForeColor = System.Drawing.Color.White;
-            this.passwordLabel.Location = new System.Drawing.Point(216, 339);
+            this.passwordLabel.Location = new System.Drawing.Point(219, 339);
             this.passwordLabel.Name = "passwordLabel";
             this.passwordLabel.Size = new System.Drawing.Size(123, 32);
             this.passwordLabel.TabIndex = 31;
@@ -205,7 +205,7 @@ namespace CricBlast_GUI.Forms
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.label12.ForeColor = System.Drawing.Color.Silver;
-            this.label12.Location = new System.Drawing.Point(89, 425);
+            this.label12.Location = new System.Drawing.Point(89, 424);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(98, 32);
             this.label12.TabIndex = 32;
@@ -534,17 +534,25 @@ namespace CricBlast_GUI.Forms
             // 
             // guna2Panel1
             // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel1.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
             this.guna2Panel1.Controls.Add(this.phoneLabel);
             this.guna2Panel1.Controls.Add(this.emailLabel);
             this.guna2Panel1.Controls.Add(this.changeProfilePicture);
             this.guna2Panel1.Controls.Add(this.won);
+            this.guna2Panel1.Controls.Add(this.passwordLabel);
+            this.guna2Panel1.Controls.Add(this.label12);
+            this.guna2Panel1.Controls.Add(this.usernameLabel);
             this.guna2Panel1.Controls.Add(this.genderPicture);
+            this.guna2Panel1.Controls.Add(this.usernameTextBox);
             this.guna2Panel1.Controls.Add(this.genderLabel);
             this.guna2Panel1.Controls.Add(this.played);
+            this.guna2Panel1.Controls.Add(this.passwordTextBox);
+            this.guna2Panel1.Controls.Add(this.label8);
             this.guna2Panel1.Controls.Add(this.label6);
             this.guna2Panel1.Controls.Add(this.label5);
             this.guna2Panel1.Controls.Add(this.modifyButton);
+            this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.close);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.accountCreated);
@@ -568,15 +576,8 @@ namespace CricBlast_GUI.Forms
             this.Controls.Add(this.passwordError);
             this.Controls.Add(this.emailError);
             this.Controls.Add(this.usernameError);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.passwordLabel);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.usernameLabel);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.passwordTextBox);
-            this.Controls.Add(this.usernameTextBox);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Profile";

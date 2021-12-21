@@ -152,5 +152,15 @@ namespace CricBlast_GUI.Forms.Controls
                 _isAvailable = true;
             }
         }
+
+        private void logoPicture_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Raofin/CricBlast");
+        }
+
+        private void cricBlastLabel_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Raofin/CricBlast");
+        }
     }
 }

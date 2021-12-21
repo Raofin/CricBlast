@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 using System.Windows.Forms;
-using CricBlast_GUI.Forms.Admin_Controls;
 using CricBlast_GUI.Forms.Controls;
 
 namespace CricBlast_GUI.Forms
@@ -20,12 +18,7 @@ namespace CricBlast_GUI.Forms
 
         public MainForm()
         {
-            //new SelectTeams().ShowDialog();
             InitializeComponent();
-
-            //mainPanel.Controls.Clear();
-            //mainPanel.Controls.Add(value: new Controls.Home());
-            //mainPanel.Controls.Add(value: new AdminPanel());
         }
 
         private void GetStarted_Click(object sender, EventArgs e)
@@ -34,20 +27,9 @@ namespace CricBlast_GUI.Forms
             mainPanel.Controls.Add(value: new Welcome());
         }
 
-        // Drag form
-        [System.Runtime.InteropServices.DllImport("user32.dll")]
-        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-
-        [System.Runtime.InteropServices.DllImport("user32.dll")]
-        public static extern bool ReleaseCapture();
-
-        private void dragPanel_MouseDown(object sender, MouseEventArgs e)
+        private void infoButton_Click(object sender, EventArgs e)
         {
-            if (e.Button == MouseButtons.Left)
-            {
-                ReleaseCapture();
-                SendMessage(Handle, 0xA1, 0x2, 0);
-            }
+            new Info().ShowDialog();
         }
     }
 }

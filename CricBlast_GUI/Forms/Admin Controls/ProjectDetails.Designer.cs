@@ -29,21 +29,23 @@ namespace CricBlast_GUI.Forms.Admin_Controls
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.infoPicture = new Guna.UI2.WinForms.Guna2PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.infoPicture)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2PictureBox1
+            // infoPicture
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::CricBlast_GUI.Properties.Resources.Project_Details;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(36, 56);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(901, 607);
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
+            this.infoPicture.BackColor = System.Drawing.Color.Transparent;
+            this.infoPicture.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.infoPicture.Image = global::CricBlast_GUI.Properties.Resources.Project_Details;
+            this.infoPicture.ImageRotate = 0F;
+            this.infoPicture.Location = new System.Drawing.Point(36, 56);
+            this.infoPicture.Name = "infoPicture";
+            this.infoPicture.ShadowDecoration.Parent = this.infoPicture;
+            this.infoPicture.Size = new System.Drawing.Size(901, 607);
+            this.infoPicture.TabIndex = 0;
+            this.infoPicture.TabStop = false;
+            this.infoPicture.Click += new System.EventHandler(this.infoPicture_Click);
             // 
             // ProjectDetails
             // 
@@ -51,16 +53,16 @@ namespace CricBlast_GUI.Forms.Admin_Controls
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.SubHome;
-            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.infoPicture);
             this.Name = "ProjectDetails";
             this.Size = new System.Drawing.Size(956, 681);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.infoPicture)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox infoPicture;
     }
 }

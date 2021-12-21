@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace CricBlast_GUI.Forms.Admin_Controls
+namespace CricBlast_GUI.Forms
 {
-    public partial class ProjectDetails : UserControl
+    public partial class Info : Form
     {
-        public ProjectDetails()
+        public Info()
         {
             InitializeComponent();
         }
 
-        private void infoPicture_Click(object sender, EventArgs e)
+        private void infoPictureBox_Click(object sender, EventArgs e)
         {
             System.Diagnostics.Process.Start("https://github.com/Raofin/CricBlast");
         }

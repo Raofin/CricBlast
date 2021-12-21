@@ -65,10 +65,10 @@ namespace CricBlast_GUI.Forms
             "Sri Lanka",
             "West Indies"});
             this.teamComboBox.ItemsAppearance.Parent = this.teamComboBox;
-            this.teamComboBox.Location = new System.Drawing.Point(88, 90);
+            this.teamComboBox.Location = new System.Drawing.Point(90, 90);
             this.teamComboBox.Name = "teamComboBox";
             this.teamComboBox.ShadowDecoration.Parent = this.teamComboBox;
-            this.teamComboBox.Size = new System.Drawing.Size(279, 36);
+            this.teamComboBox.Size = new System.Drawing.Size(293, 36);
             this.teamComboBox.StartIndex = 0;
             this.teamComboBox.TabIndex = 23;
             this.teamComboBox.SelectedIndexChanged += new System.EventHandler(this.teamComboBox_SelectedIndexChanged);
@@ -79,7 +79,7 @@ namespace CricBlast_GUI.Forms
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(86, 62);
+            this.label1.Location = new System.Drawing.Point(88, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(197, 25);
             this.label1.TabIndex = 22;
@@ -121,7 +121,7 @@ namespace CricBlast_GUI.Forms
             this.teamSelectError.BackColor = System.Drawing.Color.Transparent;
             this.teamSelectError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.teamSelectError.ForeColor = System.Drawing.Color.Red;
-            this.teamSelectError.Location = new System.Drawing.Point(373, 92);
+            this.teamSelectError.Location = new System.Drawing.Point(387, 92);
             this.teamSelectError.Name = "teamSelectError";
             this.teamSelectError.Size = new System.Drawing.Size(22, 32);
             this.teamSelectError.TabIndex = 35;
@@ -156,11 +156,12 @@ namespace CricBlast_GUI.Forms
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox1.Animated = true;
             this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.No;
             this.guna2ControlBox1.Enabled = false;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(427, 2);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(427, 0);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);

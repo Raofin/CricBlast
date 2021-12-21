@@ -115,5 +115,10 @@ namespace CricBlast_GUI.Forms.Admin_Controls
 
             SelectedMenu = changeMenu;
         }
+
+        private void logoPicture_Click(object sender, System.EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/Raofin/CricBlast");
+        }
     }
 }
