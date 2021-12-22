@@ -83,7 +83,7 @@ namespace CricBlast_GUI.UI
             this.message.ForeColor = System.Drawing.Color.White;
             this.message.Location = new System.Drawing.Point(147, 59);
             this.message.Name = "message";
-            this.message.Size = new System.Drawing.Size(322, 105);
+            this.message.Size = new System.Drawing.Size(339, 105);
             this.message.TabIndex = 29;
             this.message.Text = "Message";
             this.message.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

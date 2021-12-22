@@ -45,19 +45,24 @@ namespace CricBlast_GUI.UI.User_Controls
             var overMin = 40;
             var overMax = 50;
 
+            /*runsMin = 120;
+            runsMax = 200;
+            overMin = 18;
+            overMax = 20;*/
+
             switch (format)
             {
                 case 1:
-                    runsMin = 80;
-                    runsMax = 130;
-                    overMin = 9;
-                    overMax = 10;
-                    break;
-                case 2:
                     runsMin = 120;
                     runsMax = 200;
                     overMin = 18;
                     overMax = 20;
+                    break;
+                case 2:
+                    runsMin = 250;
+                    runsMax = 350;
+                    overMin = 40;
+                    overMax = 50;
                     break;
             }
 

@@ -115,7 +115,7 @@ namespace CricBlast_GUI.UI
             if (_modifyPhoto) Account.ModifyPhoto(_userNewImage, TempUserDetails[0]);
             SetEmailFont();
 
-            new MessageBoxOk(0, "Account information has been successfully updated :)").ShowDialog();
+            new MessageBoxOk(0, "Account information has been successfully updated.").ShowDialog();
         }
 
         private void HideModify()

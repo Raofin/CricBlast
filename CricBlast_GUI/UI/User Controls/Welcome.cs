@@ -83,8 +83,8 @@ namespace CricBlast_GUI.UI.User_Controls
                 switch (_admin)
                 {
                     case true when usernameTextBox.Text.ToLower() == "admin" && passwordTextBox.Text.ToLower() == "admin":
-                        new MessageBoxOk(Selected.CheckMark, "You have successfully logged in.").Show();
                         Controls.Clear();
+                        new MessageBoxOk(Selected.CheckMark, "You have successfully logged in.").Show();
                         Controls.Add(new AdminPanel());
                         return;
                     case false when Login.Verify(usernameTextBox.Text, passwordTextBox.Text):
