@@ -7,6 +7,7 @@ namespace CricBlast_GUI.UI.User_Controls
     public partial class GamePlayPanel : UserControl
     {
         public static int MatchFormat { get; set; }
+        public static int Pitch { get; set; }
         private string MatchResult { get; set; }
         private int Team1Runs { get; set; }
         private int Team1Wickets { get; set; }
@@ -20,7 +21,7 @@ namespace CricBlast_GUI.UI.User_Controls
         public GamePlayPanel()
         {
             InitializeComponent();
-            GenerateGame(MatchFormat);
+            GenerateGame(MatchFormat, Pitch);
             SetGame();
         }
 
@@ -34,35 +35,61 @@ namespace CricBlast_GUI.UI.User_Controls
             matchResult.ForeColor = Won ? Color.FromArgb(59, 226, 55) : Color.Tomato;
         }
 
-        public void GenerateGame(int format)
+        public void GenerateGame(int format, int pitch = 2)
         {
-            // format 1 = T10
-            // format 2 = T20
-            // format 3 = ODI
+            // format 1 = T20I
+            // format 2 = ODI
+            // pitch 1 = 1
+            // pitch 2 = 2
+            // pitch 3 = 3
 
-            var runsMin = 250;
-            var runsMax = 350;
-            var overMin = 40;
-            var overMax = 50;
-
-            /*runsMin = 120;
-            runsMax = 200;
-            overMin = 18;
-            overMax = 20;*/
+            int runsMin;
+            int runsMax;
+            int overMin;
+            int overMax;
 
             switch (format)
             {
                 case 1:
-                    runsMin = 120;
-                    runsMax = 200;
                     overMin = 18;
                     overMax = 20;
+
+                    switch (pitch)
+                    {
+                        case 1:
+                            runsMin = 90;
+                            runsMax = 130;
+                            break;
+                        case 2:
+                            runsMin = 130;
+                            runsMax = 160;
+                            break;
+                        case 3:
+                            runsMin = 150;
+                            runsMax = 210;
+                            break;
+                    }
+
                     break;
-                case 2:
-                    runsMin = 250;
-                    runsMax = 350;
+                default:
                     overMin = 40;
                     overMax = 50;
+
+                    switch (pitch)
+                    {
+                        case 1:
+                            runsMin = 260;
+                            runsMax = 300;
+                            break;
+                        case 2:
+                            runsMin = 280;
+                            runsMax = 320;
+                            break;
+                        case 3:
+                            runsMin = 150;
+                            runsMax = 210;
+                            break;
+                    }
                     break;
             }
 

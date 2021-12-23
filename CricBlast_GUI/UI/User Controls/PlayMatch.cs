@@ -79,6 +79,7 @@ namespace CricBlast_GUI.UI.User_Controls
         private void formatComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             formatSelectError.Visible = formatComboBox.SelectedIndex == 0 || formatComboBox.SelectedIndex == 3;
+
             switch (formatComboBox.SelectedIndex)
             {
                 case 1:
@@ -104,6 +105,22 @@ namespace CricBlast_GUI.UI.User_Controls
         private void pitchComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             pitchSelectError.Visible = pitchComboBox.SelectedIndex == 0;
+
+            switch (pitchComboBox.SelectedIndex)
+            {
+                case 1:
+                    GamePlayPanel.Pitch = 1;
+                    break;
+                case 2: 
+                    GamePlayPanel.Pitch = 2;
+                    break;
+                case 3:
+                    GamePlayPanel.Pitch = 3;
+                    break;
+                default:
+                    pitchSelectError.Visible = true;
+                    break;
+            }
         }
 
         private void stadiumComboBox_SelectedIndexChanged(object sender, EventArgs e)
