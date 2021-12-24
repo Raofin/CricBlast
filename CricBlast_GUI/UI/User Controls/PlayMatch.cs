@@ -35,6 +35,7 @@ namespace CricBlast_GUI.UI.User_Controls
             }
 
             Selected.OpponentTeam = ChooseTeam.TeamNumber(opponentComboBox);
+            Selected.OpponentTeamName = opponentComboBox.SelectedItem.ToString();
             Selected.OpponentTeamLogo = (Bitmap) (opponentTeamLogo.Image = Teams.Team.GetLogo(Selected.OpponentTeam));
             opponentTeamLabel.Text = Teams.Team.GetStats(Selected.OpponentTeam, Teams.Team.TeamName);
             Selected.OpponentTeamPlayerStats = Players.Player.GetTeamPlayers(Selected.OpponentTeam);

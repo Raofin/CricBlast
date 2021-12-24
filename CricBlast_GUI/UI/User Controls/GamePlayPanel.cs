@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using CricBlast_GUI.Database;
 
 namespace CricBlast_GUI.UI.User_Controls
 {
@@ -15,7 +16,6 @@ namespace CricBlast_GUI.UI.User_Controls
         private int Team2Runs { get; set; }
         private int Team2Wickets { get; set; }
         private int Team2Over { get; set; }
-
         private bool Won { get; set; }
 
         public GamePlayPanel()
@@ -23,6 +23,8 @@ namespace CricBlast_GUI.UI.User_Controls
             InitializeComponent();
             GenerateGame(MatchFormat, Pitch);
             SetGame();
+            GamePlay.Played(Won);
+            GamePlay.Result(MatchResult);
         }
 
         public void SetGame()
@@ -31,11 +33,11 @@ namespace CricBlast_GUI.UI.User_Controls
             opponentTeamLogo.Image = Selected.OpponentTeamLogo;
             userTeamScore.Text = $"{Team1Runs}/{Team1Wickets} ({Team1Over})";
             opponentTeamScore.Text = $"{Team2Runs}/{Team2Wickets} ({Team2Over})";
-            matchResult.Text = $"{Selected.UserTeamName} {MatchResult}";
+            matchResult.Text = $"{Selected.UserTeamName} {MatchResult}.";
             matchResult.ForeColor = Won ? Color.FromArgb(59, 226, 55) : Color.Tomato;
         }
 
-        public void GenerateGame(int format, int pitch = 2)
+        public void GenerateGame(int format, int pitch)
         {
             // format 1 = T20I
             // format 2 = ODI
@@ -64,12 +66,11 @@ namespace CricBlast_GUI.UI.User_Controls
                             runsMin = 130;
                             runsMax = 160;
                             break;
-                        case 3:
+                        default:
                             runsMin = 150;
                             runsMax = 210;
                             break;
                     }
-
                     break;
                 default:
                     overMin = 40;
@@ -85,7 +86,7 @@ namespace CricBlast_GUI.UI.User_Controls
                             runsMin = 280;
                             runsMax = 320;
                             break;
-                        case 3:
+                        default:
                             runsMin = 150;
                             runsMax = 210;
                             break;
@@ -111,7 +112,7 @@ namespace CricBlast_GUI.UI.User_Controls
                         Team2Wickets = random.Next(5, 11);
                         Team1Over = Team1Wickets == 10 ? random.Next(overMin, overMax) : overMax;
                         Team2Over = Team2Wickets == 10 ? random.Next(overMin, overMax - 1) : overMax;
-                        MatchResult = $"Won by {Team1Runs - Team2Runs} Runs.";
+                        MatchResult = $"Won by {Team1Runs - Team2Runs} Runs";
                         Won = true;
                         break;
                     case false:
@@ -119,7 +120,7 @@ namespace CricBlast_GUI.UI.User_Controls
                         Team2Wickets = random.Next(0, 9);
                         Team1Over = Team1Wickets == 10 ? random.Next(overMin, overMax) : overMax;
                         Team2Over = Team2Wickets == 10 ? random.Next(overMin, overMax - 1) : overMax;
-                        MatchResult = $"Lost by {Team2Runs - Team1Runs} Runs.";
+                        MatchResult = $"Lost by {Team2Runs - Team1Runs} Runs";
                         Won = false;
                         break;
                 }
@@ -135,7 +136,7 @@ namespace CricBlast_GUI.UI.User_Controls
                         Team1Over = random.Next(overMin, overMax - 1);
                         Team2Wickets = random.Next(2, 11);
                         Team2Over = Team2Wickets == 10 ? random.Next(overMin, overMax) : overMax;
-                        MatchResult = $"Won by {10 - Team1Wickets} Wickets.";
+                        MatchResult = $"Won by {10 - Team1Wickets} Wickets";
                         Won = true;
                         break;
                     case false:
@@ -144,7 +145,7 @@ namespace CricBlast_GUI.UI.User_Controls
                         Team2Over = random.Next(overMin, overMax - 1);
                         Team1Wickets = random.Next(2, 11);
                         Team1Over = Team1Wickets == 10 ? random.Next(overMin, overMax) : overMax;
-                        MatchResult = $"Lost by {10 - Team2Wickets} Wickets.";
+                        MatchResult = $"Lost by {10 - Team2Wickets} Wickets";
                         Won = false;
                         break;
                 }

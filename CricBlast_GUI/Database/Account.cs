@@ -28,7 +28,6 @@ namespace CricBlast_GUI.Database
 
             using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
-
                 using (var sqlCommand = new SqlCommand(query, connection))
                 {
                     sqlCommand.Parameters.AddWithValue("@image", ConvertImage.ToBytes(image));

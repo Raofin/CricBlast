@@ -15,6 +15,7 @@ namespace CricBlast_GUI.UI
         public static string[,,] UserTeamPlayerStats { get; set; }
 
         public static int OpponentTeam { get; set; }
+        public static string OpponentTeamName { get; set; }
         public static Bitmap OpponentTeamLogo { get; set; }
         public static string[,,] OpponentTeamPlayerStats { get; set; }
 

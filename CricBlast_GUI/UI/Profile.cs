@@ -85,8 +85,6 @@ namespace CricBlast_GUI.UI
             UserDetails[2] = emailLabel.Text = emailTextBox.Text;
             UserDetails[3] = passwordLabel.Text = passwordTextBox.Text;
             UserDetails[4] = phoneLabel.Text = phoneTextBox.Text;
-
-
             UserImage = userCirclePicture.Image = _userNewImage;
 
             usernameLabel.Visible = emailLabel.Visible =
@@ -102,7 +100,6 @@ namespace CricBlast_GUI.UI
             SetEmailFont();
 
             new MessageBoxOk(0, "Your account information has been successfully updated.").ShowDialog();
-            
         }
 
         private void HideModify()
