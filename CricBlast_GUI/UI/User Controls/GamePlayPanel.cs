@@ -23,8 +23,8 @@ namespace CricBlast_GUI.UI.User_Controls
             InitializeComponent();
             GenerateGame(MatchFormat, Pitch);
             SetGame();
-            GamePlay.Played(Won);
-            GamePlay.Result(MatchResult);
+            MatchResults.Played(Won);
+            MatchResults.Result(MatchResult);
         }
 
         public void SetGame()

@@ -106,7 +106,7 @@ namespace CricBlast_GUI.UI.User_Controls
                     break;
                 case 3:
                     new MessageBoxOk(Selected.WarningMark, "This feature is not currently available.").ShowDialog();
-                    matchTitle.Text = "Play Match";
+                    matchTitle.Text = "Play A Match";
                     formatComboBox.SelectedIndex = 0;
                     break;
                 default:

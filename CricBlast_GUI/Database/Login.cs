@@ -8,13 +8,15 @@ namespace CricBlast_GUI.Database
     {
         public static bool Verify(string nameOrEmail, string password)
         {
-            var query = $"SELECT * FROM Users WHERE (Username = '{nameOrEmail}' OR Email = '{nameOrEmail}') AND Password = '{password}'";
+            var query = $"SELECT * FROM Users " +
+                        $"WHERE (Username = '{nameOrEmail}' OR Email = '{nameOrEmail}') " +
+                        $"AND Password = '{password}'";
 
-            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection= new SqlConnection(ConnectionString.CrikBlastDB))
             {
-                using (var sqlCommand = new SqlCommand(query, connection))
+                using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {
-                    connection.Open();
+                    sqlConnection.Open();
                     var sqlDataReader = sqlCommand.ExecuteReader();
 
                     if (!sqlDataReader.HasRows) return false;
@@ -26,13 +28,15 @@ namespace CricBlast_GUI.Database
 
         public static bool Recover(string email)
         {
-            var query = $"SELECT * FROM Users WHERE Email = '{email}'";
+            var query = $"SELECT * " +
+                        $"FROM Users " +
+                        $"WHERE Email = '{email}'";
 
-            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
-                using (var sqlCommand = new SqlCommand(query, connection))
+                using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {
-                    connection.Open();
+                    sqlConnection.Open();
                     var sqlDataReader = sqlCommand.ExecuteReader();
 
                     if (!sqlDataReader.HasRows) return false;

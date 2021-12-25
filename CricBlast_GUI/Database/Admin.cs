@@ -9,17 +9,18 @@ namespace CricBlast_GUI.Database
     {
         public static string[] TempUserDetails = new string[10];
         public static Image TempUserImage { get; set; }
-
-
+        
         public static bool LoadTempProfile(string email)
         {
-            var query = $"SELECT * FROM Users WHERE Email = '{email}'";
+            var query = $"SELECT * " +
+                        $"FROM Users " +
+                        $"WHERE Email = '{email}'";
 
-            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection= new SqlConnection(ConnectionString.CrikBlastDB))
             {
-                using (var sqlCommand = new SqlCommand(query, connection))
+                using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {
-                    connection.Open();
+                    sqlConnection.Open();
                     var sqlDataReader = sqlCommand.ExecuteReader();
 
                     if (!sqlDataReader.HasRows) return false;
@@ -54,17 +55,17 @@ namespace CricBlast_GUI.Database
 
         public static void DeleteRow(string email)
         {
-            var query = $"DELETE FROM Users WHERE Email = '{email}'";
+            var query = $"DELETE FROM Users " +
+                        $"WHERE Email = '{email}'";
 
-            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
-                using (var sqlCommand = new SqlCommand(query, connection))
+                using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {
-                    connection.Open();
+                    sqlConnection.Open();
                     sqlCommand.ExecuteReader();
                 }
             }
         }
-
     }
 }
