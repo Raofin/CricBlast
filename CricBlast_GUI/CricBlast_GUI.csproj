@@ -186,6 +186,12 @@
     <Compile Include="UI\User Controls\TournamentPlay.Designer.cs">
       <DependentUpon>TournamentPlay.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\User Controls\TournamentPlayError.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\User Controls\TournamentPlayError.Designer.cs">
+      <DependentUpon>TournamentPlayError.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\User Controls\Welcome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -306,6 +312,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\User Controls\TournamentPlay.resx">
       <DependentUpon>TournamentPlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\User Controls\TournamentPlayError.resx">
+      <DependentUpon>TournamentPlayError.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\User Controls\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>

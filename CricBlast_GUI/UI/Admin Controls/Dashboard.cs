@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using CricBlast_GUI.Database;
@@ -15,16 +16,21 @@ namespace CricBlast_GUI.UI.Admin_Controls
                 ControlStyles.OptimizedDoubleBuffer,
                 true);
             InitializeComponent();
+            LoadServerStats();
+            LoadRecentlyJoined();
         }
 
-        private void Dashboard_Load(object sender, System.EventArgs e)
+        private void LoadServerStats()
         {
             var random = new Random();
             activeUsers.Text = random.Next(3, 7).ToString();
 
+            var query = "SELECT COUNT(id), SUM(Played) " +
+                        "FROM Users";
+
             using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
-                using (var sqlCommand = new SqlCommand("SELECT COUNT(id) FROM Users", connection))
+                using (var sqlCommand = new SqlCommand(query, connection))
                 {
                     connection.Open();
                     var sqlDataReader = sqlCommand.ExecuteReader();
@@ -32,117 +38,51 @@ namespace CricBlast_GUI.UI.Admin_Controls
                     while (sqlDataReader.Read())
                     {
                         totalUsers.Text = sqlDataReader[0].ToString();
+                        totalMatches.Text = sqlDataReader[1].ToString();
                     }
                 }
             }
+        }
 
-            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
+        private void LoadRecentlyJoined()
+        {
+            using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
-                using (var sqlCommand = new SqlCommand("SELECT SUM(Played) FROM Users", connection))
+                var query = "SELECT TOP 6 Username, Email, Image " +
+                            "FROM Users " +
+                            "ORDER BY ID DESC";
+
+                using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {
-                    connection.Open();
+                    sqlConnection.Open();
                     var sqlDataReader = sqlCommand.ExecuteReader();
 
-                    while (sqlDataReader.Read())
-                    {
-                        totalMatches.Text = sqlDataReader[0].ToString();
-                    }
-                }
-            }
+                    var dataTable = new DataTable();
+                    dataTable.Load(sqlDataReader);
 
-            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
-            {
-                using (var sqlCommand = new SqlCommand("SELECT TOP 1 * FROM Users ORDER BY ID DESC", connection))
-                {
-                    connection.Open();
-                    var sqlDataReader = sqlCommand.ExecuteReader();
+                    user1Name.Text = dataTable.Rows[0]["UserName"].ToString();
+                    user1Email.Text = dataTable.Rows[0]["Email"].ToString();
+                    user1Picture.Image = ConvertImage.ToImage((byte[]) dataTable.Rows[0]["Image"]);
 
-                    while (sqlDataReader.Read())
-                    {
-                        user1Name.Text = sqlDataReader["UserName"].ToString();
-                        user1Email.Text = sqlDataReader["Email"].ToString();
-                        user1Picture.Image = ConvertImage.ToImage((byte[])sqlDataReader["Image"]);
-                    }
-                }
-            }
+                    user2Name.Text = dataTable.Rows[1]["UserName"].ToString();
+                    user2Email.Text = dataTable.Rows[1]["Email"].ToString();
+                    user2Picture.Image = ConvertImage.ToImage((byte[]) dataTable.Rows[1]["Image"]);
 
-            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
-            {
-                using (var sqlCommand = new SqlCommand("SELECT TOP 2 * FROM Users ORDER BY ID DESC", connection))
-                {
-                    connection.Open();
-                    var sqlDataReader = sqlCommand.ExecuteReader();
+                    user3Name.Text = dataTable.Rows[2]["UserName"].ToString();
+                    user3Email.Text = dataTable.Rows[2]["Email"].ToString();
+                    user3Picture.Image = ConvertImage.ToImage((byte[]) dataTable.Rows[2]["Image"]);
 
-                    while (sqlDataReader.Read())
-                    {
-                        user2Name.Text = sqlDataReader["UserName"].ToString();
-                        user2Email.Text = sqlDataReader["Email"].ToString();
-                        user2Picture.Image = ConvertImage.ToImage((byte[])sqlDataReader["Image"]);
-                    }
-                }
-            }
+                    user4Name.Text = dataTable.Rows[3]["UserName"].ToString();
+                    user4Email.Text = dataTable.Rows[3]["Email"].ToString();
+                    user4Picture.Image = ConvertImage.ToImage((byte[]) dataTable.Rows[3]["Image"]);
 
-            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
-            {
-                using (var sqlCommand = new SqlCommand("SELECT TOP 3 * FROM Users ORDER BY ID DESC", connection))
-                {
-                    connection.Open();
-                    var sqlDataReader = sqlCommand.ExecuteReader();
+                    user5Name.Text = dataTable.Rows[4]["UserName"].ToString();
+                    user5Email.Text = dataTable.Rows[4]["Email"].ToString();
+                    user5Picture.Image = ConvertImage.ToImage((byte[]) dataTable.Rows[4]["Image"]);
 
-                    while (sqlDataReader.Read())
-                    {
-                        user3Name.Text = sqlDataReader["UserName"].ToString();
-                        user3Email.Text = sqlDataReader["Email"].ToString();
-                        user3Picture.Image = ConvertImage.ToImage((byte[])sqlDataReader["Image"]);
-                    }
-                }
-            }
-
-            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
-            {
-                using (var sqlCommand = new SqlCommand("SELECT TOP 4 * FROM Users ORDER BY ID DESC", connection))
-                {
-                    connection.Open();
-                    var sqlDataReader = sqlCommand.ExecuteReader();
-
-                    while (sqlDataReader.Read())
-                    {
-                        user4Name.Text = sqlDataReader["UserName"].ToString();
-                        user4Email.Text = sqlDataReader["Email"].ToString();
-                        user4Picture.Image = ConvertImage.ToImage((byte[])sqlDataReader["Image"]);
-                    }
-                }
-            }
-
-            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
-            {
-                using (var sqlCommand = new SqlCommand("SELECT TOP 5 * FROM Users ORDER BY ID DESC", connection))
-                {
-                    connection.Open();
-                    var sqlDataReader = sqlCommand.ExecuteReader();
-
-                    while (sqlDataReader.Read())
-                    {
-                        user5Name.Text = sqlDataReader["UserName"].ToString();
-                        user5Email.Text = sqlDataReader["Email"].ToString();
-                        user5Picture.Image = ConvertImage.ToImage((byte[])sqlDataReader["Image"]);
-                    }
-                }
-            }
-
-            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
-            {
-                using (var sqlCommand = new SqlCommand("SELECT TOP 6 * FROM Users ORDER BY ID DESC", connection))
-                {
-                    connection.Open();
-                    var sqlDataReader = sqlCommand.ExecuteReader();
-
-                    while (sqlDataReader.Read())
-                    {
-                        user6Name.Text = sqlDataReader["UserName"].ToString();
-                        user6Email.Text = sqlDataReader["Email"].ToString();
-                        user6Picture.Image = ConvertImage.ToImage((byte[])sqlDataReader["Image"]);
-                    }
+                    user6Name.Text = dataTable.Rows[5]["UserName"].ToString();
+                    user6Email.Text = dataTable.Rows[5]["Email"].ToString();
+                    user6Picture.Image = ConvertImage.ToImage((byte[]) dataTable.Rows[5]["Image"]);
                 }
             }
         }

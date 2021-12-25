@@ -455,7 +455,6 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.Controls.Add(this.guna2Panel1);
             this.Name = "Dashboard";
             this.Size = new System.Drawing.Size(956, 681);
-            this.Load += new System.EventHandler(this.Dashboard_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
@@ -483,21 +482,21 @@ namespace CricBlast_GUI.UI.Admin_Controls
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         public System.Windows.Forms.Label user4Email;
         public System.Windows.Forms.Label user4Name;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox user4Picture;
         public System.Windows.Forms.Label user3Email;
         public System.Windows.Forms.Label user3Name;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox user3Picture;
         public System.Windows.Forms.Label user2Email;
         public System.Windows.Forms.Label user2Name;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox user2Picture;
         public System.Windows.Forms.Label user1Email;
         public System.Windows.Forms.Label user1Name;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox user1Picture;
         public System.Windows.Forms.Label user6Email;
         public System.Windows.Forms.Label user6Name;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox user6Picture;
         public System.Windows.Forms.Label user5Email;
         public System.Windows.Forms.Label user5Name;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox user5Picture;
+        public Guna.UI2.WinForms.Guna2CirclePictureBox user4Picture;
+        public Guna.UI2.WinForms.Guna2CirclePictureBox user3Picture;
+        public Guna.UI2.WinForms.Guna2CirclePictureBox user2Picture;
+        public Guna.UI2.WinForms.Guna2CirclePictureBox user1Picture;
+        public Guna.UI2.WinForms.Guna2CirclePictureBox user6Picture;
+        public Guna.UI2.WinForms.Guna2CirclePictureBox user5Picture;
     }
 }

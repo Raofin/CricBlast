@@ -72,7 +72,7 @@ namespace CricBlast_GUI.UI.User_Controls
         {
             if (SelectedMenu == 6) return;
             homeSubPanel.Controls.Clear();
-            homeSubPanel.Controls.Add(value: new TournamentPlay());
+            homeSubPanel.Controls.Add(value: new TournamentPlayError());
             ChangeButtonColor(tournament, 6);
         }
 
