@@ -11,12 +11,15 @@ namespace CricBlast_GUI.UI.User_Controls
         public MatchHistory()
         {
             InitializeComponent();
+            LoadUserData();
             LoadMatchHistory();
         }
 
         private void LoadMatchHistory()
         {
-            var query = $"SELECT UserTeam, Result FROM Matches WHERE UserId = {Selected.UserDetails[0]} ORDER BY MatchId DESC";
+            var query = $"SELECT UserTeam, Result FROM Matches " +
+                        $"WHERE UserId = {Selected.UserDetails[0]} " +
+                        $"ORDER BY MatchId DESC";
 
             using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
@@ -28,6 +31,29 @@ namespace CricBlast_GUI.UI.User_Controls
                 MatchHistoryGrid.Columns[0].DataPropertyName = "UserTeam";
                 MatchHistoryGrid.Columns[1].DataPropertyName = "Result";
                 MatchHistoryGrid.DataSource = dataTable;
+            }
+        }
+
+        public void LoadUserData()
+        {
+            var query = $"SELECT Image, Won, Played " +
+                        $"FROM Users " +
+                        $"WHERE Id = {Selected.UserDetails[0]}";
+
+            using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
+            {
+                using (var sqlCommand = new SqlCommand(query, sqlConnection))
+                {
+                    sqlConnection.Open();
+                    var sqlDataReader = sqlCommand.ExecuteReader();
+
+                    while (sqlDataReader.Read())
+                    {
+                        userPhoto.Image = ConvertImage.ToImage((byte[])sqlDataReader["Image"]);
+                        won.Text = sqlDataReader["Won"].ToString();
+                        played.Text = sqlDataReader["Played"].ToString();
+                    }
+                }
             }
         }
 

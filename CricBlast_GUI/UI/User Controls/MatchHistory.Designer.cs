@@ -42,13 +42,24 @@ namespace CricBlast_GUI.UI.User_Controls
             this.UserTeam = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MatchResult = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.userPhoto = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.played = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.won = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MatchHistoryGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userPhoto)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.Controls.Add(this.won);
+            this.guna2Panel1.Controls.Add(this.label6);
+            this.guna2Panel1.Controls.Add(this.played);
+            this.guna2Panel1.Controls.Add(this.label5);
+            this.guna2Panel1.Controls.Add(this.userPhoto);
             this.guna2Panel1.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel1.Controls.Add(this.close);
             this.guna2Panel1.Controls.Add(this.MatchHistoryGrid);
@@ -120,7 +131,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.MatchHistoryGrid.DefaultCellStyle = dataGridViewCellStyle4;
             this.MatchHistoryGrid.EnableHeadersVisualStyles = false;
             this.MatchHistoryGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.MatchHistoryGrid.Location = new System.Drawing.Point(75, 133);
+            this.MatchHistoryGrid.Location = new System.Drawing.Point(75, 185);
             this.MatchHistoryGrid.MultiSelect = false;
             this.MatchHistoryGrid.Name = "MatchHistoryGrid";
             this.MatchHistoryGrid.ReadOnly = true;
@@ -131,7 +142,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.MatchHistoryGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.MatchHistoryGrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.MatchHistoryGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.MatchHistoryGrid.Size = new System.Drawing.Size(526, 363);
+            this.MatchHistoryGrid.Size = new System.Drawing.Size(526, 326);
             this.MatchHistoryGrid.TabIndex = 47;
             this.MatchHistoryGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.MatchHistoryGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -157,12 +168,13 @@ namespace CricBlast_GUI.UI.User_Controls
             // 
             // welcomeLabel
             // 
+            this.welcomeLabel.AutoSize = true;
             this.welcomeLabel.BackColor = System.Drawing.Color.Transparent;
-            this.welcomeLabel.Font = new System.Drawing.Font("Segoe UI Black", 36F, System.Drawing.FontStyle.Bold);
+            this.welcomeLabel.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
             this.welcomeLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.welcomeLabel.Location = new System.Drawing.Point(109, 38);
+            this.welcomeLabel.Location = new System.Drawing.Point(191, 127);
             this.welcomeLabel.Name = "welcomeLabel";
-            this.welcomeLabel.Size = new System.Drawing.Size(459, 65);
+            this.welcomeLabel.Size = new System.Drawing.Size(294, 46);
             this.welcomeLabel.TabIndex = 48;
             this.welcomeLabel.Text = "MATCH HISTORY";
             this.welcomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -208,6 +220,70 @@ namespace CricBlast_GUI.UI.User_Controls
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
+            // userPhoto
+            // 
+            this.userPhoto.BackColor = System.Drawing.Color.Transparent;
+            this.userPhoto.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.userPhoto.Image = global::CricBlast_GUI.Properties.Resources.User_Male_GrayBack;
+            this.userPhoto.ImageRotate = 0F;
+            this.userPhoto.Location = new System.Drawing.Point(248, 43);
+            this.userPhoto.Name = "userPhoto";
+            this.userPhoto.ShadowDecoration.Enabled = true;
+            this.userPhoto.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.userPhoto.ShadowDecoration.Parent = this.userPhoto;
+            this.userPhoto.Size = new System.Drawing.Size(64, 64);
+            this.userPhoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.userPhoto.TabIndex = 51;
+            this.userPhoto.TabStop = false;
+            // 
+            // played
+            // 
+            this.played.AutoSize = true;
+            this.played.BackColor = System.Drawing.Color.Transparent;
+            this.played.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.played.ForeColor = System.Drawing.Color.White;
+            this.played.Location = new System.Drawing.Point(398, 73);
+            this.played.Name = "played";
+            this.played.Size = new System.Drawing.Size(24, 28);
+            this.played.TabIndex = 52;
+            this.played.Text = "0";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.Silver;
+            this.label5.Location = new System.Drawing.Point(327, 73);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(75, 28);
+            this.label5.TabIndex = 53;
+            this.label5.Text = "Played";
+            // 
+            // won
+            // 
+            this.won.AutoSize = true;
+            this.won.BackColor = System.Drawing.Color.Transparent;
+            this.won.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.won.ForeColor = System.Drawing.Color.White;
+            this.won.Location = new System.Drawing.Point(378, 45);
+            this.won.Name = "won";
+            this.won.Size = new System.Drawing.Size(24, 28);
+            this.won.TabIndex = 55;
+            this.won.Text = "0";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.Silver;
+            this.label6.Location = new System.Drawing.Point(327, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(55, 28);
+            this.label6.TabIndex = 54;
+            this.label6.Text = "Won";
+            // 
             // MatchHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -223,7 +299,9 @@ namespace CricBlast_GUI.UI.User_Controls
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.guna2Panel1.ResumeLayout(false);
+            this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MatchHistoryGrid)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.userPhoto)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -238,5 +316,10 @@ namespace CricBlast_GUI.UI.User_Controls
         private System.Windows.Forms.DataGridViewTextBoxColumn UserTeam;
         private System.Windows.Forms.DataGridViewTextBoxColumn MatchResult;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox userPhoto;
+        private System.Windows.Forms.Label played;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label won;
+        private System.Windows.Forms.Label label6;
     }
 }
