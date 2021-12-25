@@ -21,24 +21,27 @@ namespace CricBlast_GUI.UI.Admin_Controls
 
         private void LoadData()
         {
+            var query = "SELECT Username, Email, Password, PhoneNumber, Image, " +
+                        "FORMAT (getdate(), 'dd/MM/yyyy') as Joined, Played, Won " +
+                        "FROM Users";
+
             using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
-                sqlConnection.Open();
-                var sqlDataAdapter =
-                    new SqlDataAdapter(
-                        "SELECT Username, Email, Password, PhoneNumber, Image, " +
-                        "FORMAT (getdate(), 'dd/MM/yyyy') as Joined, Played, Won FROM Users",
-                        sqlConnection);
-                var dataTable = new DataTable();
-                sqlDataAdapter.Fill(dataTable);
-                UserDataGridView.Columns[0].DataPropertyName = "Image";
-                UserDataGridView.Columns[1].DataPropertyName = "Username";
-                UserDataGridView.Columns[2].DataPropertyName = "Email";
-                UserDataGridView.Columns[3].DataPropertyName = "Password";
-                UserDataGridView.Columns[4].DataPropertyName = "Joined";
-                UserDataGridView.Columns[5].DataPropertyName = "Played";
-                UserDataGridView.Columns[6].DataPropertyName = "Won";
-                UserDataGridView.DataSource = dataTable;
+                using (var sqlDataAdapter = new SqlDataAdapter(query, sqlConnection))
+                {
+                    sqlConnection.Open();
+                    var dataTable = new DataTable();
+                    sqlDataAdapter.Fill(dataTable);
+
+                    UserGrid.Columns[0].DataPropertyName = "Image";
+                    UserGrid.Columns[1].DataPropertyName = "Username";
+                    UserGrid.Columns[2].DataPropertyName = "Email";
+                    UserGrid.Columns[3].DataPropertyName = "Password";
+                    UserGrid.Columns[4].DataPropertyName = "Joined";
+                    UserGrid.Columns[5].DataPropertyName = "Played";
+                    UserGrid.Columns[6].DataPropertyName = "Won";
+                    UserGrid.DataSource = dataTable;
+                }
             }
         }
 
@@ -49,7 +52,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
 
             try
             {
-                Admin.DeleteRow(UserDataGridView.SelectedCells[1].Value.ToString());
+                Admin.DeleteRow(UserGrid.SelectedCells[1].Value.ToString());
                 Controls.Clear();
                 Controls.Add(new ManageUser());
             }
@@ -63,7 +66,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
         {
             try
             {
-                Admin.LoadTempProfile(UserDataGridView.SelectedCells[1].Value.ToString());
+                Admin.LoadTempProfile(UserGrid.SelectedCells[1].Value.ToString());
                 new AdminView(2).ShowDialog();
                 Controls.Clear();
                 Controls.Add(new ManageUser());
@@ -78,7 +81,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
         {
             try
             {
-                Admin.LoadTempProfile(UserDataGridView.SelectedCells[1].Value.ToString());
+                Admin.LoadTempProfile(UserGrid.SelectedCells[1].Value.ToString());
                 new AdminView(1).ShowDialog();
             }
             catch

@@ -126,10 +126,10 @@
     <Compile Include="UI\User Controls\CreateAccount.Designer.cs">
       <DependentUpon>CreateAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\User Controls\MatchHistory.cs">
+    <Compile Include="UI\MatchHistory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\User Controls\MatchHistory.Designer.cs">
+    <Compile Include="UI\MatchHistory.Designer.cs">
       <DependentUpon>MatchHistory.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\User Controls\GamePlayPanel.cs">
@@ -289,7 +289,7 @@
     <EmbeddedResource Include="UI\User Controls\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\User Controls\MatchHistory.resx">
+    <EmbeddedResource Include="UI\MatchHistory.resx">
       <DependentUpon>MatchHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\User Controls\PlayerStats.resx">

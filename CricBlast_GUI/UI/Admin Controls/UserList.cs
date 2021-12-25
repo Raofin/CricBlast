@@ -15,15 +15,20 @@ namespace CricBlast_GUI.UI.Admin_Controls
 
         private void LoadAllUser()
         {
+            var query = "SELECT Email, Image " +
+                        "FROM Users";
+
             using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
-                sqlConnection.Open();
-                var sqlDataAdapter = new SqlDataAdapter("SELECT Email, Image FROM Users", sqlConnection);
-                var dataTable = new DataTable();
-                sqlDataAdapter.Fill(dataTable);
-                AllUserGrid.Columns[0].DataPropertyName = "Image";
-                AllUserGrid.Columns[1].DataPropertyName = "Email";
-                AllUserGrid.DataSource = dataTable;
+                using (var sqlDataAdapter = new SqlDataAdapter(query, sqlConnection))
+                {
+                    sqlConnection.Open();
+                    var dataTable = new DataTable();
+                    sqlDataAdapter.Fill(dataTable);
+                    UserPreviewGrid.Columns[0].DataPropertyName = "Image";
+                    UserPreviewGrid.Columns[1].DataPropertyName = "Email";
+                    UserPreviewGrid.DataSource = dataTable;
+                }
             }
         }
     }

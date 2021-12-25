@@ -37,7 +37,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dbPanel = new Guna.UI2.WinForms.Guna2Panel();
-            this.UserDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.UserGrid = new Guna.UI2.WinForms.Guna2DataGridView();
             this.User = new System.Windows.Forms.DataGridViewImageColumn();
             this.UserName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,7 +50,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.modify = new Guna.UI2.WinForms.Guna2Button();
             this.delete = new Guna.UI2.WinForms.Guna2Button();
             this.dbPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UserDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserGrid)).BeginInit();
             this.SuspendLayout();
             // 
             // dbPanel
@@ -60,7 +60,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.dbPanel.BorderRadius = 206;
             this.dbPanel.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.dbPanel.BorderThickness = 5;
-            this.dbPanel.Controls.Add(this.UserDataGridView);
+            this.dbPanel.Controls.Add(this.UserGrid);
             this.dbPanel.CustomBorderThickness = new System.Windows.Forms.Padding(5);
             this.dbPanel.Location = new System.Drawing.Point(59, 126);
             this.dbPanel.Name = "dbPanel";
@@ -68,21 +68,21 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.dbPanel.Size = new System.Drawing.Size(839, 415);
             this.dbPanel.TabIndex = 38;
             // 
-            // UserDataGridView
+            // UserGrid
             // 
-            this.UserDataGridView.AllowUserToAddRows = false;
-            this.UserDataGridView.AllowUserToDeleteRows = false;
-            this.UserDataGridView.AllowUserToOrderColumns = true;
-            this.UserDataGridView.AllowUserToResizeColumns = false;
-            this.UserDataGridView.AllowUserToResizeRows = false;
+            this.UserGrid.AllowUserToAddRows = false;
+            this.UserGrid.AllowUserToDeleteRows = false;
+            this.UserGrid.AllowUserToOrderColumns = true;
+            this.UserGrid.AllowUserToResizeColumns = false;
+            this.UserGrid.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.UserDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.UserDataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.UserDataGridView.BackgroundColor = System.Drawing.Color.White;
-            this.UserDataGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.UserDataGridView.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.UserDataGridView.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
-            this.UserDataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.UserGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.UserGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.UserGrid.BackgroundColor = System.Drawing.Color.White;
+            this.UserGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UserGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.UserGrid.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
+            this.UserGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -90,9 +90,9 @@ namespace CricBlast_GUI.UI.Admin_Controls
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.UserDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.UserDataGridView.ColumnHeadersHeight = 40;
-            this.UserDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.UserGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.UserGrid.ColumnHeadersHeight = 40;
+            this.UserGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.User,
             this.UserName,
             this.Email,
@@ -107,44 +107,44 @@ namespace CricBlast_GUI.UI.Admin_Controls
             dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(214)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.UserDataGridView.DefaultCellStyle = dataGridViewCellStyle7;
-            this.UserDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.UserDataGridView.EnableHeadersVisualStyles = false;
-            this.UserDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.UserDataGridView.Location = new System.Drawing.Point(0, 0);
-            this.UserDataGridView.MultiSelect = false;
-            this.UserDataGridView.Name = "UserDataGridView";
-            this.UserDataGridView.ReadOnly = true;
-            this.UserDataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.UserDataGridView.RowHeadersVisible = false;
-            this.UserDataGridView.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            this.UserDataGridView.RowTemplate.Height = 30;
-            this.UserDataGridView.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.UserDataGridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.UserDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.UserDataGridView.Size = new System.Drawing.Size(839, 415);
-            this.UserDataGridView.TabIndex = 31;
-            this.UserDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.UserDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.UserDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.UserDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.UserDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.UserDataGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.UserDataGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.UserDataGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.UserDataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.UserDataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
-            this.UserDataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.UserDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.UserDataGridView.ThemeStyle.HeaderStyle.Height = 40;
-            this.UserDataGridView.ThemeStyle.ReadOnly = true;
-            this.UserDataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.UserDataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.UserDataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.UserDataGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.UserDataGridView.ThemeStyle.RowsStyle.Height = 30;
-            this.UserDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.UserDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.UserGrid.DefaultCellStyle = dataGridViewCellStyle7;
+            this.UserGrid.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.UserGrid.EnableHeadersVisualStyles = false;
+            this.UserGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.UserGrid.Location = new System.Drawing.Point(0, 0);
+            this.UserGrid.MultiSelect = false;
+            this.UserGrid.Name = "UserGrid";
+            this.UserGrid.ReadOnly = true;
+            this.UserGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.UserGrid.RowHeadersVisible = false;
+            this.UserGrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.UserGrid.RowTemplate.Height = 30;
+            this.UserGrid.RowTemplate.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.UserGrid.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.UserGrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.UserGrid.Size = new System.Drawing.Size(839, 415);
+            this.UserGrid.TabIndex = 31;
+            this.UserGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.UserGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.UserGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.UserGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.UserGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.UserGrid.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.UserGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.UserGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.UserGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.UserGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
+            this.UserGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.UserGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.UserGrid.ThemeStyle.HeaderStyle.Height = 40;
+            this.UserGrid.ThemeStyle.ReadOnly = true;
+            this.UserGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.UserGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.UserGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.UserGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.UserGrid.ThemeStyle.RowsStyle.Height = 30;
+            this.UserGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.UserGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // User
             // 
@@ -309,7 +309,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.Name = "ManageUser";
             this.Size = new System.Drawing.Size(956, 681);
             this.dbPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.UserDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserGrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -317,7 +317,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel dbPanel;
-        private Guna.UI2.WinForms.Guna2DataGridView UserDataGridView;
+        private Guna.UI2.WinForms.Guna2DataGridView UserGrid;
         public System.Windows.Forms.Label welcomeLabel;
         private Guna.UI2.WinForms.Guna2Button viewDetails;
         private Guna.UI2.WinForms.Guna2Button modify;

@@ -28,11 +28,11 @@ namespace CricBlast_GUI.UI.Admin_Controls
             var query = "SELECT COUNT(id), SUM(Played) " +
                         "FROM Users";
 
-            using (var connection = new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
             {
-                using (var sqlCommand = new SqlCommand(query, connection))
+                using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {
-                    connection.Open();
+                    sqlConnection.Open();
                     var sqlDataReader = sqlCommand.ExecuteReader();
 
                     while (sqlDataReader.Read())

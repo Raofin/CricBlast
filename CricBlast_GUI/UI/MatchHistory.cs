@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 using System.Windows.Forms;
 using CricBlast_GUI.Database;
 
-namespace CricBlast_GUI.UI.User_Controls
+namespace CricBlast_GUI.UI
 {
     public partial class MatchHistory : Form
     {

@@ -1,5 +1,5 @@
 ﻿
-namespace CricBlast_GUI.UI.User_Controls
+namespace CricBlast_GUI.UI
 {
     partial class MatchHistory
     {
