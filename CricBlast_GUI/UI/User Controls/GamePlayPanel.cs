@@ -96,7 +96,7 @@ namespace CricBlast_GUI.UI.User_Controls
 
             var random = new Random();
 
-            Team1Runs = random.Next(runsMin, runsMax);
+            Team1Runs = (int) (random.Next(runsMin, runsMax) * 1.03);
             Team2Runs = random.Next(runsMin, runsMax);
 
             var temp = random.Next(2);

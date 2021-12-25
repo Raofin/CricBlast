@@ -42,39 +42,52 @@ namespace CricBlast_GUI.UI.User_Controls
             opponentSelectError.Visible = false;
         }
 
+        private bool _playMode;
+
         private void playButton_Click(object sender, EventArgs e)
         {
-            formatSelectError.Visible = formatComboBox.SelectedIndex == 0;
-            pitchSelectError.Visible = pitchComboBox.SelectedIndex == 0;
-            stadiumSelectError.Visible = stadiumComboBox.SelectedIndex == 0;
-            
-            if (opponentSelectError.Visible || formatSelectError.Visible || pitchSelectError.Visible ||
-                stadiumSelectError.Visible)
+            switch (_playMode)
             {
-                new MessageBoxOk(Selected.WarningMark, "Please select the fields properly.").ShowDialog();
-                return;
+                case true:
+                    gamePanel.Controls.RemoveByKey("GamePlayPanel");
+                    gamePanel.Controls.Add(new GamePlayPanel());
+                    gamePanel.Controls["GamePlayPanel"].BringToFront();
+                    break;
+                case false:
+                    formatSelectError.Visible = formatComboBox.SelectedIndex == 0;
+                    pitchSelectError.Visible = pitchComboBox.SelectedIndex == 0;
+                    stadiumSelectError.Visible = stadiumComboBox.SelectedIndex == 0;
+
+                    if (opponentSelectError.Visible || formatSelectError.Visible || pitchSelectError.Visible ||
+                        stadiumSelectError.Visible)
+                    {
+                        new MessageBoxOk(Selected.WarningMark, "Please select the fields properly.").ShowDialog();
+                        return;
+                    }
+                    gamePanel.Controls.Add(new GamePlayPanel());
+                    gamePanel.Controls["GamePlayPanel"].BringToFront();
+
+                    playButton.Text = "Play Again";
+                    matchHistoryButton.Text = "Back";
+                    _playMode = true;
+                    break;
             }
-
-            playButton.Visible = false;
-            playAgainButton.Visible = true;
-            backButton.Visible = true;
-            gamePanel.Controls.Add(new GamePlayPanel());
-            gamePanel.Controls["GamePlayPanel"].BringToFront();
         }
 
-        private void playAgainButton_Click(object sender, EventArgs e)
+        private void matchHistoryButton_Click(object sender, EventArgs e)
         {
-            gamePanel.Controls.RemoveByKey("GamePlayPanel");
-            gamePanel.Controls.Add(new GamePlayPanel());
-            gamePanel.Controls["GamePlayPanel"].BringToFront();
-        }
-
-        private void backButton_Click(object sender, EventArgs e)
-        {
-            playButton.Visible = true;
-            playAgainButton.Visible = false;
-            backButton.Visible = false;
-            gamePanel.Controls.RemoveByKey("GamePlayPanel");
+            switch (_playMode)
+            {
+                case true:
+                    gamePanel.Controls.RemoveByKey("GamePlayPanel");
+                    playButton.Text = "Play";
+                    matchHistoryButton.Text = "View History";
+                    _playMode = false;
+                    break;
+                case false:
+                    new MatchHistory().ShowDialog();
+                    break;
+            }
         }
 
         private void formatComboBox_SelectedIndexChanged(object sender, EventArgs e)
@@ -95,7 +108,6 @@ namespace CricBlast_GUI.UI.User_Controls
                     new MessageBoxOk(Selected.WarningMark, "This feature is not currently available.").ShowDialog();
                     matchTitle.Text = "Play Match";
                     formatComboBox.SelectedIndex = 0;
-                    //formatSelectError.Visible = true;
                     break;
                 default:
                     formatSelectError.Visible = true;

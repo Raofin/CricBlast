@@ -37,9 +37,8 @@ namespace CricBlast_GUI.UI.User_Controls
             this.label11 = new System.Windows.Forms.Label();
             this.matchPreviewPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.matchHistoryButton = new Guna.UI2.WinForms.Guna2Button();
             this.playButton = new Guna.UI2.WinForms.Guna2Button();
-            this.backButton = new Guna.UI2.WinForms.Guna2Button();
-            this.playAgainButton = new Guna.UI2.WinForms.Guna2Button();
             this.gamePanel = new Guna.UI2.WinForms.Guna2Panel();
             this.gameSelectPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.stadiumSelectError = new System.Windows.Forms.Label();
@@ -138,9 +137,8 @@ namespace CricBlast_GUI.UI.User_Controls
             // 
             this.matchPreviewPanel.BackColor = System.Drawing.Color.Transparent;
             this.matchPreviewPanel.Controls.Add(this.guna2PictureBox1);
+            this.matchPreviewPanel.Controls.Add(this.matchHistoryButton);
             this.matchPreviewPanel.Controls.Add(this.playButton);
-            this.matchPreviewPanel.Controls.Add(this.backButton);
-            this.matchPreviewPanel.Controls.Add(this.playAgainButton);
             this.matchPreviewPanel.Controls.Add(this.gamePanel);
             this.matchPreviewPanel.Controls.Add(this.opponentTeamLogo);
             this.matchPreviewPanel.Controls.Add(this.opponentTeamLabel);
@@ -166,6 +164,29 @@ namespace CricBlast_GUI.UI.User_Controls
             this.guna2PictureBox1.TabIndex = 47;
             this.guna2PictureBox1.TabStop = false;
             // 
+            // matchHistoryButton
+            // 
+            this.matchHistoryButton.BackColor = System.Drawing.Color.Transparent;
+            this.matchHistoryButton.BorderRadius = 4;
+            this.matchHistoryButton.CheckedState.Parent = this.matchHistoryButton;
+            this.matchHistoryButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.matchHistoryButton.CustomImages.Parent = this.matchHistoryButton;
+            this.matchHistoryButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.matchHistoryButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.matchHistoryButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.matchHistoryButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.matchHistoryButton.DisabledState.Parent = this.matchHistoryButton;
+            this.matchHistoryButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.matchHistoryButton.ForeColor = System.Drawing.Color.White;
+            this.matchHistoryButton.HoverState.Parent = this.matchHistoryButton;
+            this.matchHistoryButton.Location = new System.Drawing.Point(262, 571);
+            this.matchHistoryButton.Name = "matchHistoryButton";
+            this.matchHistoryButton.ShadowDecoration.Parent = this.matchHistoryButton;
+            this.matchHistoryButton.Size = new System.Drawing.Size(194, 45);
+            this.matchHistoryButton.TabIndex = 46;
+            this.matchHistoryButton.Text = "View History";
+            this.matchHistoryButton.Click += new System.EventHandler(this.matchHistoryButton_Click);
+            // 
             // playButton
             // 
             this.playButton.BackColor = System.Drawing.Color.Transparent;
@@ -181,61 +202,13 @@ namespace CricBlast_GUI.UI.User_Controls
             this.playButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.playButton.ForeColor = System.Drawing.Color.White;
             this.playButton.HoverState.Parent = this.playButton;
-            this.playButton.Location = new System.Drawing.Point(388, 571);
+            this.playButton.Location = new System.Drawing.Point(491, 571);
             this.playButton.Name = "playButton";
             this.playButton.ShadowDecoration.Parent = this.playButton;
-            this.playButton.Size = new System.Drawing.Size(180, 45);
-            this.playButton.TabIndex = 44;
+            this.playButton.Size = new System.Drawing.Size(194, 45);
+            this.playButton.TabIndex = 45;
             this.playButton.Text = "Play";
             this.playButton.Click += new System.EventHandler(this.playButton_Click);
-            // 
-            // backButton
-            // 
-            this.backButton.BackColor = System.Drawing.Color.Transparent;
-            this.backButton.BorderRadius = 4;
-            this.backButton.CheckedState.Parent = this.backButton;
-            this.backButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.backButton.CustomImages.Parent = this.backButton;
-            this.backButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.backButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.backButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.backButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.backButton.DisabledState.Parent = this.backButton;
-            this.backButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.backButton.ForeColor = System.Drawing.Color.White;
-            this.backButton.HoverState.Parent = this.backButton;
-            this.backButton.Location = new System.Drawing.Point(265, 571);
-            this.backButton.Name = "backButton";
-            this.backButton.ShadowDecoration.Parent = this.backButton;
-            this.backButton.Size = new System.Drawing.Size(180, 45);
-            this.backButton.TabIndex = 46;
-            this.backButton.Text = "Back";
-            this.backButton.Visible = false;
-            this.backButton.Click += new System.EventHandler(this.backButton_Click);
-            // 
-            // playAgainButton
-            // 
-            this.playAgainButton.BackColor = System.Drawing.Color.Transparent;
-            this.playAgainButton.BorderRadius = 4;
-            this.playAgainButton.CheckedState.Parent = this.playAgainButton;
-            this.playAgainButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.playAgainButton.CustomImages.Parent = this.playAgainButton;
-            this.playAgainButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.playAgainButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.playAgainButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.playAgainButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.playAgainButton.DisabledState.Parent = this.playAgainButton;
-            this.playAgainButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.playAgainButton.ForeColor = System.Drawing.Color.White;
-            this.playAgainButton.HoverState.Parent = this.playAgainButton;
-            this.playAgainButton.Location = new System.Drawing.Point(505, 571);
-            this.playAgainButton.Name = "playAgainButton";
-            this.playAgainButton.ShadowDecoration.Parent = this.playAgainButton;
-            this.playAgainButton.Size = new System.Drawing.Size(180, 45);
-            this.playAgainButton.TabIndex = 45;
-            this.playAgainButton.Text = "Play Again";
-            this.playAgainButton.Visible = false;
-            this.playAgainButton.Click += new System.EventHandler(this.playAgainButton_Click);
             // 
             // gamePanel
             // 
@@ -525,9 +498,8 @@ namespace CricBlast_GUI.UI.User_Controls
         public Guna.UI2.WinForms.Guna2PictureBox userTeamLogo;
         public System.Windows.Forms.Label userTeamLabel;
         public Guna.UI2.WinForms.Guna2Panel matchPreviewPanel;
+        private Guna.UI2.WinForms.Guna2Button matchHistoryButton;
         private Guna.UI2.WinForms.Guna2Button playButton;
-        private Guna.UI2.WinForms.Guna2Button backButton;
-        private Guna.UI2.WinForms.Guna2Button playAgainButton;
         private Guna.UI2.WinForms.Guna2Panel gamePanel;
         public Guna.UI2.WinForms.Guna2Panel gameSelectPanel;
         private System.Windows.Forms.Label opponentSelectError;
