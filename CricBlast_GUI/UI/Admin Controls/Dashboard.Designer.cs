@@ -71,7 +71,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             // 
             this.logo.BackColor = System.Drawing.Color.Transparent;
             this.logo.Image = global::CricBlast_GUI.Properties.Resources.Logo;
-            this.logo.Location = new System.Drawing.Point(205, 136);
+            this.logo.Location = new System.Drawing.Point(223, 150);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(192, 159);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -83,7 +83,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.welcomeLabel.BackColor = System.Drawing.Color.Transparent;
             this.welcomeLabel.Font = new System.Drawing.Font("Segoe UI Black", 36F, System.Drawing.FontStyle.Bold);
             this.welcomeLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.welcomeLabel.Location = new System.Drawing.Point(259, 45);
+            this.welcomeLabel.Location = new System.Drawing.Point(276, 59);
             this.welcomeLabel.Name = "welcomeLabel";
             this.welcomeLabel.Size = new System.Drawing.Size(420, 65);
             this.welcomeLabel.TabIndex = 27;
@@ -96,7 +96,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Black", 30F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(303, 335);
+            this.label4.Location = new System.Drawing.Point(320, 353);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(332, 54);
             this.label4.TabIndex = 26;
@@ -109,7 +109,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.Silver;
-            this.label1.Location = new System.Drawing.Point(409, 145);
+            this.label1.Location = new System.Drawing.Point(427, 159);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(195, 46);
             this.label1.TabIndex = 30;
@@ -122,7 +122,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
             this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(409, 192);
+            this.label2.Location = new System.Drawing.Point(427, 206);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(215, 46);
             this.label2.TabIndex = 29;
@@ -135,7 +135,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(409, 239);
+            this.label3.Location = new System.Drawing.Point(427, 253);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(241, 46);
             this.label3.TabIndex = 28;
@@ -148,7 +148,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.totalUsers.BackColor = System.Drawing.Color.Transparent;
             this.totalUsers.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
             this.totalUsers.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.totalUsers.Location = new System.Drawing.Point(606, 145);
+            this.totalUsers.Location = new System.Drawing.Point(624, 159);
             this.totalUsers.Name = "totalUsers";
             this.totalUsers.Size = new System.Drawing.Size(40, 46);
             this.totalUsers.TabIndex = 34;
@@ -161,7 +161,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.activeUsers.BackColor = System.Drawing.Color.Transparent;
             this.activeUsers.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
             this.activeUsers.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.activeUsers.Location = new System.Drawing.Point(622, 192);
+            this.activeUsers.Location = new System.Drawing.Point(640, 206);
             this.activeUsers.Name = "activeUsers";
             this.activeUsers.Size = new System.Drawing.Size(40, 46);
             this.activeUsers.TabIndex = 33;
@@ -174,7 +174,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.totalMatches.BackColor = System.Drawing.Color.Transparent;
             this.totalMatches.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
             this.totalMatches.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.totalMatches.Location = new System.Drawing.Point(644, 239);
+            this.totalMatches.Location = new System.Drawing.Point(662, 253);
             this.totalMatches.Name = "totalMatches";
             this.totalMatches.Size = new System.Drawing.Size(40, 46);
             this.totalMatches.TabIndex = 32;
@@ -215,7 +215,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(956, 681);
+            this.guna2Panel1.Size = new System.Drawing.Size(972, 720);
             this.guna2Panel1.TabIndex = 35;
             // 
             // user6Email
@@ -224,7 +224,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.user6Email.BackColor = System.Drawing.Color.Transparent;
             this.user6Email.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.user6Email.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user6Email.Location = new System.Drawing.Point(596, 583);
+            this.user6Email.Location = new System.Drawing.Point(604, 604);
             this.user6Email.Name = "user6Email";
             this.user6Email.Size = new System.Drawing.Size(145, 28);
             this.user6Email.TabIndex = 52;
@@ -237,7 +237,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.user6Name.BackColor = System.Drawing.Color.Transparent;
             this.user6Name.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.user6Name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user6Name.Location = new System.Drawing.Point(593, 552);
+            this.user6Name.Location = new System.Drawing.Point(601, 573);
             this.user6Name.Name = "user6Name";
             this.user6Name.Size = new System.Drawing.Size(158, 37);
             this.user6Name.TabIndex = 51;
@@ -247,7 +247,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             // user6Picture
             // 
             this.user6Picture.ImageRotate = 0F;
-            this.user6Picture.Location = new System.Drawing.Point(522, 553);
+            this.user6Picture.Location = new System.Drawing.Point(530, 574);
             this.user6Picture.Name = "user6Picture";
             this.user6Picture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.user6Picture.ShadowDecoration.Parent = this.user6Picture;
@@ -262,7 +262,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.user5Email.BackColor = System.Drawing.Color.Transparent;
             this.user5Email.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.user5Email.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user5Email.Location = new System.Drawing.Point(172, 586);
+            this.user5Email.Location = new System.Drawing.Point(180, 607);
             this.user5Email.Name = "user5Email";
             this.user5Email.Size = new System.Drawing.Size(145, 28);
             this.user5Email.TabIndex = 49;
@@ -275,7 +275,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.user5Name.BackColor = System.Drawing.Color.Transparent;
             this.user5Name.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.user5Name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user5Name.Location = new System.Drawing.Point(169, 555);
+            this.user5Name.Location = new System.Drawing.Point(177, 576);
             this.user5Name.Name = "user5Name";
             this.user5Name.Size = new System.Drawing.Size(158, 37);
             this.user5Name.TabIndex = 48;
@@ -285,7 +285,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             // user5Picture
             // 
             this.user5Picture.ImageRotate = 0F;
-            this.user5Picture.Location = new System.Drawing.Point(101, 553);
+            this.user5Picture.Location = new System.Drawing.Point(109, 574);
             this.user5Picture.Name = "user5Picture";
             this.user5Picture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.user5Picture.ShadowDecoration.Parent = this.user5Picture;
@@ -300,7 +300,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.user4Email.BackColor = System.Drawing.Color.Transparent;
             this.user4Email.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.user4Email.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user4Email.Location = new System.Drawing.Point(596, 508);
+            this.user4Email.Location = new System.Drawing.Point(604, 529);
             this.user4Email.Name = "user4Email";
             this.user4Email.Size = new System.Drawing.Size(145, 28);
             this.user4Email.TabIndex = 46;
@@ -313,7 +313,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.user4Name.BackColor = System.Drawing.Color.Transparent;
             this.user4Name.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.user4Name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user4Name.Location = new System.Drawing.Point(593, 477);
+            this.user4Name.Location = new System.Drawing.Point(601, 498);
             this.user4Name.Name = "user4Name";
             this.user4Name.Size = new System.Drawing.Size(158, 37);
             this.user4Name.TabIndex = 45;
@@ -323,7 +323,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             // user4Picture
             // 
             this.user4Picture.ImageRotate = 0F;
-            this.user4Picture.Location = new System.Drawing.Point(522, 478);
+            this.user4Picture.Location = new System.Drawing.Point(530, 499);
             this.user4Picture.Name = "user4Picture";
             this.user4Picture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.user4Picture.ShadowDecoration.Parent = this.user4Picture;
@@ -338,7 +338,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.user3Email.BackColor = System.Drawing.Color.Transparent;
             this.user3Email.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.user3Email.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user3Email.Location = new System.Drawing.Point(175, 509);
+            this.user3Email.Location = new System.Drawing.Point(183, 530);
             this.user3Email.Name = "user3Email";
             this.user3Email.Size = new System.Drawing.Size(145, 28);
             this.user3Email.TabIndex = 43;
@@ -351,7 +351,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.user3Name.BackColor = System.Drawing.Color.Transparent;
             this.user3Name.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.user3Name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user3Name.Location = new System.Drawing.Point(172, 478);
+            this.user3Name.Location = new System.Drawing.Point(180, 499);
             this.user3Name.Name = "user3Name";
             this.user3Name.Size = new System.Drawing.Size(158, 37);
             this.user3Name.TabIndex = 42;
@@ -361,7 +361,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             // user3Picture
             // 
             this.user3Picture.ImageRotate = 0F;
-            this.user3Picture.Location = new System.Drawing.Point(101, 478);
+            this.user3Picture.Location = new System.Drawing.Point(109, 499);
             this.user3Picture.Name = "user3Picture";
             this.user3Picture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.user3Picture.ShadowDecoration.Parent = this.user3Picture;
@@ -376,7 +376,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.user2Email.BackColor = System.Drawing.Color.Transparent;
             this.user2Email.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.user2Email.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user2Email.Location = new System.Drawing.Point(593, 436);
+            this.user2Email.Location = new System.Drawing.Point(601, 457);
             this.user2Email.Name = "user2Email";
             this.user2Email.Size = new System.Drawing.Size(145, 28);
             this.user2Email.TabIndex = 40;
@@ -389,7 +389,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.user2Name.BackColor = System.Drawing.Color.Transparent;
             this.user2Name.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.user2Name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user2Name.Location = new System.Drawing.Point(590, 405);
+            this.user2Name.Location = new System.Drawing.Point(598, 426);
             this.user2Name.Name = "user2Name";
             this.user2Name.Size = new System.Drawing.Size(158, 37);
             this.user2Name.TabIndex = 39;
@@ -399,7 +399,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             // user2Picture
             // 
             this.user2Picture.ImageRotate = 0F;
-            this.user2Picture.Location = new System.Drawing.Point(522, 403);
+            this.user2Picture.Location = new System.Drawing.Point(530, 424);
             this.user2Picture.Name = "user2Picture";
             this.user2Picture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.user2Picture.ShadowDecoration.Parent = this.user2Picture;
@@ -414,7 +414,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.user1Email.BackColor = System.Drawing.Color.Transparent;
             this.user1Email.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
             this.user1Email.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user1Email.Location = new System.Drawing.Point(171, 434);
+            this.user1Email.Location = new System.Drawing.Point(179, 455);
             this.user1Email.Name = "user1Email";
             this.user1Email.Size = new System.Drawing.Size(145, 28);
             this.user1Email.TabIndex = 37;
@@ -427,7 +427,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.user1Name.BackColor = System.Drawing.Color.Transparent;
             this.user1Name.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
             this.user1Name.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.user1Name.Location = new System.Drawing.Point(168, 403);
+            this.user1Name.Location = new System.Drawing.Point(176, 424);
             this.user1Name.Name = "user1Name";
             this.user1Name.Size = new System.Drawing.Size(158, 37);
             this.user1Name.TabIndex = 36;
@@ -437,7 +437,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             // user1Picture
             // 
             this.user1Picture.ImageRotate = 0F;
-            this.user1Picture.Location = new System.Drawing.Point(101, 403);
+            this.user1Picture.Location = new System.Drawing.Point(109, 424);
             this.user1Picture.Name = "user1Picture";
             this.user1Picture.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.user1Picture.ShadowDecoration.Parent = this.user1Picture;
@@ -451,10 +451,10 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
-            this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.SubHome;
+            this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.BackgroundHome;
             this.Controls.Add(this.guna2Panel1);
             this.Name = "Dashboard";
-            this.Size = new System.Drawing.Size(956, 681);
+            this.Size = new System.Drawing.Size(972, 720);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();

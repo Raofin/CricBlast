@@ -66,7 +66,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.opponentTeamLogo.BackColor = System.Drawing.Color.Transparent;
             this.opponentTeamLogo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
             this.opponentTeamLogo.ImageRotate = 0F;
-            this.opponentTeamLogo.Location = new System.Drawing.Point(639, 131);
+            this.opponentTeamLogo.Location = new System.Drawing.Point(643, 141);
             this.opponentTeamLogo.Name = "opponentTeamLogo";
             this.opponentTeamLogo.ShadowDecoration.Parent = this.opponentTeamLogo;
             this.opponentTeamLogo.Size = new System.Drawing.Size(185, 185);
@@ -79,7 +79,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.opponentTeamLabel.BackColor = System.Drawing.Color.Transparent;
             this.opponentTeamLabel.Font = new System.Drawing.Font("Segoe UI Black", 25F, System.Drawing.FontStyle.Bold);
             this.opponentTeamLabel.ForeColor = System.Drawing.Color.AliceBlue;
-            this.opponentTeamLabel.Location = new System.Drawing.Point(551, 321);
+            this.opponentTeamLabel.Location = new System.Drawing.Point(555, 331);
             this.opponentTeamLabel.Name = "opponentTeamLabel";
             this.opponentTeamLabel.Size = new System.Drawing.Size(340, 46);
             this.opponentTeamLabel.TabIndex = 17;
@@ -90,7 +90,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.userTeamLogo.BackColor = System.Drawing.Color.Transparent;
             this.userTeamLogo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
             this.userTeamLogo.ImageRotate = 0F;
-            this.userTeamLogo.Location = new System.Drawing.Point(133, 131);
+            this.userTeamLogo.Location = new System.Drawing.Point(137, 141);
             this.userTeamLogo.Name = "userTeamLogo";
             this.userTeamLogo.ShadowDecoration.Parent = this.userTeamLogo;
             this.userTeamLogo.Size = new System.Drawing.Size(185, 185);
@@ -103,7 +103,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.userTeamLabel.BackColor = System.Drawing.Color.Transparent;
             this.userTeamLabel.Font = new System.Drawing.Font("Segoe UI Black", 25F, System.Drawing.FontStyle.Bold);
             this.userTeamLabel.ForeColor = System.Drawing.Color.AliceBlue;
-            this.userTeamLabel.Location = new System.Drawing.Point(51, 321);
+            this.userTeamLabel.Location = new System.Drawing.Point(55, 331);
             this.userTeamLabel.Name = "userTeamLabel";
             this.userTeamLabel.Size = new System.Drawing.Size(340, 46);
             this.userTeamLabel.TabIndex = 18;
@@ -114,7 +114,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.matchTitle.BackColor = System.Drawing.Color.Transparent;
             this.matchTitle.Font = new System.Drawing.Font("Segoe UI Black", 30F, System.Drawing.FontStyle.Bold);
             this.matchTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.matchTitle.Location = new System.Drawing.Point(84, 57);
+            this.matchTitle.Location = new System.Drawing.Point(88, 67);
             this.matchTitle.Name = "matchTitle";
             this.matchTitle.Size = new System.Drawing.Size(788, 66);
             this.matchTitle.TabIndex = 21;
@@ -126,7 +126,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.label11.BackColor = System.Drawing.Color.Transparent;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 100F, System.Drawing.FontStyle.Bold);
             this.label11.ForeColor = System.Drawing.Color.AliceBlue;
-            this.label11.Location = new System.Drawing.Point(324, 139);
+            this.label11.Location = new System.Drawing.Point(328, 149);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(309, 177);
             this.label11.TabIndex = 16;
@@ -150,14 +150,14 @@ namespace CricBlast_GUI.UI.User_Controls
             this.matchPreviewPanel.Location = new System.Drawing.Point(0, 0);
             this.matchPreviewPanel.Name = "matchPreviewPanel";
             this.matchPreviewPanel.ShadowDecoration.Parent = this.matchPreviewPanel;
-            this.matchPreviewPanel.Size = new System.Drawing.Size(956, 681);
+            this.matchPreviewPanel.Size = new System.Drawing.Size(972, 720);
             this.matchPreviewPanel.TabIndex = 38;
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.FillColor = System.Drawing.Color.DimGray;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(81, 387);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(85, 397);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(788, 2);
@@ -179,7 +179,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.matchHistoryButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.matchHistoryButton.ForeColor = System.Drawing.Color.White;
             this.matchHistoryButton.HoverState.Parent = this.matchHistoryButton;
-            this.matchHistoryButton.Location = new System.Drawing.Point(262, 571);
+            this.matchHistoryButton.Location = new System.Drawing.Point(266, 585);
             this.matchHistoryButton.Name = "matchHistoryButton";
             this.matchHistoryButton.ShadowDecoration.Parent = this.matchHistoryButton;
             this.matchHistoryButton.Size = new System.Drawing.Size(194, 45);
@@ -202,7 +202,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.playButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.playButton.ForeColor = System.Drawing.Color.White;
             this.playButton.HoverState.Parent = this.playButton;
-            this.playButton.Location = new System.Drawing.Point(491, 571);
+            this.playButton.Location = new System.Drawing.Point(495, 585);
             this.playButton.Name = "playButton";
             this.playButton.ShadowDecoration.Parent = this.playButton;
             this.playButton.Size = new System.Drawing.Size(194, 45);
@@ -214,7 +214,7 @@ namespace CricBlast_GUI.UI.User_Controls
             // 
             this.gamePanel.BackColor = System.Drawing.Color.Transparent;
             this.gamePanel.Controls.Add(this.gameSelectPanel);
-            this.gamePanel.Location = new System.Drawing.Point(56, 400);
+            this.gamePanel.Location = new System.Drawing.Point(60, 410);
             this.gamePanel.Name = "gamePanel";
             this.gamePanel.ShadowDecoration.Parent = this.gamePanel;
             this.gamePanel.Size = new System.Drawing.Size(838, 161);
@@ -475,10 +475,10 @@ namespace CricBlast_GUI.UI.User_Controls
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
-            this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.SubHome;
+            this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.BackgroundHome;
             this.Controls.Add(this.matchPreviewPanel);
             this.Name = "PlayMatch";
-            this.Size = new System.Drawing.Size(956, 681);
+            this.Size = new System.Drawing.Size(972, 720);
             ((System.ComponentModel.ISupportInitialize)(this.opponentTeamLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userTeamLogo)).EndInit();
             this.matchPreviewPanel.ResumeLayout(false);

@@ -51,7 +51,7 @@ namespace CricBlast_GUI.UI
             this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox2.HoverState.Parent = this.guna2ControlBox2;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1173, 0);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1189, 0);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.ShadowDecoration.Parent = this.guna2ControlBox2;
             this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
@@ -66,7 +66,7 @@ namespace CricBlast_GUI.UI
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1219, 0);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1235, 0);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
@@ -84,7 +84,7 @@ namespace CricBlast_GUI.UI
             this.logo.FillColor = System.Drawing.Color.Transparent;
             this.logo.Image = global::CricBlast_GUI.Properties.Resources.Logo;
             this.logo.ImageRotate = 0F;
-            this.logo.Location = new System.Drawing.Point(346, 86);
+            this.logo.Location = new System.Drawing.Point(354, 103);
             this.logo.Name = "logo";
             this.logo.ShadowDecoration.Parent = this.logo;
             this.logo.Size = new System.Drawing.Size(572, 459);
@@ -108,7 +108,7 @@ namespace CricBlast_GUI.UI
             this.getStarted.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.getStarted.ForeColor = System.Drawing.Color.White;
             this.getStarted.HoverState.Parent = this.getStarted;
-            this.getStarted.Location = new System.Drawing.Point(542, 573);
+            this.getStarted.Location = new System.Drawing.Point(550, 590);
             this.getStarted.Name = "getStarted";
             this.getStarted.ShadowDecoration.Parent = this.getStarted;
             this.getStarted.Size = new System.Drawing.Size(180, 45);
@@ -126,7 +126,7 @@ namespace CricBlast_GUI.UI
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.ShadowDecoration.Parent = this.mainPanel;
-            this.mainPanel.Size = new System.Drawing.Size(1264, 681);
+            this.mainPanel.Size = new System.Drawing.Size(1280, 720);
             this.mainPanel.TabIndex = 0;
             // 
             // infoButton
@@ -144,7 +144,7 @@ namespace CricBlast_GUI.UI
             this.infoButton.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.infoButton.ForeColor = System.Drawing.Color.White;
             this.infoButton.HoverState.Parent = this.infoButton;
-            this.infoButton.Location = new System.Drawing.Point(1139, 0);
+            this.infoButton.Location = new System.Drawing.Point(1153, 0);
             this.infoButton.Name = "infoButton";
             this.infoButton.ShadowDecoration.Parent = this.infoButton;
             this.infoButton.Size = new System.Drawing.Size(32, 29);
@@ -158,7 +158,7 @@ namespace CricBlast_GUI.UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.infoButton);
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2ControlBox1);

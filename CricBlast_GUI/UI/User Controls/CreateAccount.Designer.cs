@@ -83,7 +83,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.genderRadioFemale.CheckedState.InnerOffset = -4;
             this.genderRadioFemale.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
             this.genderRadioFemale.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.genderRadioFemale.Location = new System.Drawing.Point(954, 377);
+            this.genderRadioFemale.Location = new System.Drawing.Point(954, 391);
             this.genderRadioFemale.Name = "genderRadioFemale";
             this.genderRadioFemale.Size = new System.Drawing.Size(111, 36);
             this.genderRadioFemale.TabIndex = 32;
@@ -106,7 +106,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.genderRadioMale.CheckedState.InnerOffset = -4;
             this.genderRadioMale.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold);
             this.genderRadioMale.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.genderRadioMale.Location = new System.Drawing.Point(844, 377);
+            this.genderRadioMale.Location = new System.Drawing.Point(844, 391);
             this.genderRadioMale.Name = "genderRadioMale";
             this.genderRadioMale.Size = new System.Drawing.Size(87, 36);
             this.genderRadioMale.TabIndex = 31;
@@ -134,7 +134,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.choosePhoto.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
             this.choosePhoto.ForeColor = System.Drawing.Color.White;
             this.choosePhoto.HoverState.Parent = this.choosePhoto;
-            this.choosePhoto.Location = new System.Drawing.Point(905, 429);
+            this.choosePhoto.Location = new System.Drawing.Point(905, 443);
             this.choosePhoto.Name = "choosePhoto";
             this.choosePhoto.ShadowDecoration.Parent = this.choosePhoto;
             this.choosePhoto.Size = new System.Drawing.Size(260, 46);
@@ -149,7 +149,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.login.Cursor = System.Windows.Forms.Cursors.Hand;
             this.login.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(164)))), ((int)(((byte)(255)))));
-            this.login.Location = new System.Drawing.Point(1024, 596);
+            this.login.Location = new System.Drawing.Point(1024, 610);
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(51, 21);
             this.login.TabIndex = 22;
@@ -162,7 +162,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label5.Location = new System.Drawing.Point(837, 596);
+            this.label5.Location = new System.Drawing.Point(837, 610);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(193, 21);
             this.label5.TabIndex = 21;
@@ -174,7 +174,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label9.Location = new System.Drawing.Point(700, 436);
+            this.label9.Location = new System.Drawing.Point(700, 450);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(80, 32);
             this.label9.TabIndex = 20;
@@ -186,7 +186,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label12.Location = new System.Drawing.Point(700, 379);
+            this.label12.Location = new System.Drawing.Point(700, 393);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(95, 32);
             this.label12.TabIndex = 23;
@@ -209,7 +209,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.passwordTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.passwordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.passwordTextBox.HoverState.Parent = this.passwordTextBox;
-            this.passwordTextBox.Location = new System.Drawing.Point(842, 258);
+            this.passwordTextBox.Location = new System.Drawing.Point(842, 272);
             this.passwordTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.passwordTextBox.Name = "passwordTextBox";
             this.passwordTextBox.PasswordChar = '\0';
@@ -227,7 +227,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label7.Location = new System.Drawing.Point(700, 265);
+            this.label7.Location = new System.Drawing.Point(700, 279);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(116, 32);
             this.label7.TabIndex = 19;
@@ -239,7 +239,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.CaptchLabel.BackColor = System.Drawing.Color.LightGray;
             this.CaptchLabel.Font = new System.Drawing.Font("Consolas", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CaptchLabel.ForeColor = System.Drawing.Color.IndianRed;
-            this.CaptchLabel.Location = new System.Drawing.Point(847, 491);
+            this.CaptchLabel.Location = new System.Drawing.Point(847, 505);
             this.CaptchLabel.Name = "CaptchLabel";
             this.CaptchLabel.Size = new System.Drawing.Size(170, 37);
             this.CaptchLabel.TabIndex = 18;
@@ -251,7 +251,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label10.Location = new System.Drawing.Point(700, 493);
+            this.label10.Location = new System.Drawing.Point(700, 507);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(104, 32);
             this.label10.TabIndex = 17;
@@ -263,7 +263,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label8.Location = new System.Drawing.Point(700, 322);
+            this.label8.Location = new System.Drawing.Point(700, 336);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(84, 32);
             this.label8.TabIndex = 16;
@@ -286,7 +286,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.emailTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.emailTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.emailTextBox.HoverState.Parent = this.emailTextBox;
-            this.emailTextBox.Location = new System.Drawing.Point(842, 201);
+            this.emailTextBox.Location = new System.Drawing.Point(842, 215);
             this.emailTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.emailTextBox.Name = "emailTextBox";
             this.emailTextBox.PasswordChar = '\0';
@@ -303,7 +303,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Location = new System.Drawing.Point(700, 208);
+            this.label3.Location = new System.Drawing.Point(700, 222);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 32);
             this.label3.TabIndex = 15;
@@ -326,7 +326,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.usernameTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.usernameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(161)))), ((int)(((byte)(92)))));
             this.usernameTextBox.HoverState.Parent = this.usernameTextBox;
-            this.usernameTextBox.Location = new System.Drawing.Point(842, 144);
+            this.usernameTextBox.Location = new System.Drawing.Point(842, 158);
             this.usernameTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.PasswordChar = '\0';
@@ -343,7 +343,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(700, 151);
+            this.label2.Location = new System.Drawing.Point(700, 165);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(125, 32);
             this.label2.TabIndex = 14;
@@ -355,7 +355,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 36F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(707, 57);
+            this.label1.Location = new System.Drawing.Point(707, 71);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(457, 65);
             this.label1.TabIndex = 13;
@@ -377,7 +377,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.register.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.register.ForeColor = System.Drawing.Color.White;
             this.register.HoverState.Parent = this.register;
-            this.register.Location = new System.Drawing.Point(706, 546);
+            this.register.Location = new System.Drawing.Point(706, 560);
             this.register.Name = "register";
             this.register.ShadowDecoration.Parent = this.register;
             this.register.Size = new System.Drawing.Size(459, 44);
@@ -391,7 +391,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.usernameError.BackColor = System.Drawing.Color.Transparent;
             this.usernameError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameError.ForeColor = System.Drawing.Color.Red;
-            this.usernameError.Location = new System.Drawing.Point(1173, 151);
+            this.usernameError.Location = new System.Drawing.Point(1173, 165);
             this.usernameError.Name = "usernameError";
             this.usernameError.Size = new System.Drawing.Size(22, 32);
             this.usernameError.TabIndex = 34;
@@ -404,7 +404,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.emailError.BackColor = System.Drawing.Color.Transparent;
             this.emailError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailError.ForeColor = System.Drawing.Color.Red;
-            this.emailError.Location = new System.Drawing.Point(1173, 208);
+            this.emailError.Location = new System.Drawing.Point(1173, 222);
             this.emailError.Name = "emailError";
             this.emailError.Size = new System.Drawing.Size(22, 32);
             this.emailError.TabIndex = 34;
@@ -417,7 +417,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.passwordError.BackColor = System.Drawing.Color.Transparent;
             this.passwordError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.passwordError.ForeColor = System.Drawing.Color.Red;
-            this.passwordError.Location = new System.Drawing.Point(1173, 265);
+            this.passwordError.Location = new System.Drawing.Point(1173, 279);
             this.passwordError.Name = "passwordError";
             this.passwordError.Size = new System.Drawing.Size(22, 32);
             this.passwordError.TabIndex = 34;
@@ -430,7 +430,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.mobileError.BackColor = System.Drawing.Color.Transparent;
             this.mobileError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mobileError.ForeColor = System.Drawing.Color.Red;
-            this.mobileError.Location = new System.Drawing.Point(1173, 322);
+            this.mobileError.Location = new System.Drawing.Point(1173, 336);
             this.mobileError.Name = "mobileError";
             this.mobileError.Size = new System.Drawing.Size(22, 32);
             this.mobileError.TabIndex = 34;
@@ -443,7 +443,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.genderError.BackColor = System.Drawing.Color.Transparent;
             this.genderError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.genderError.ForeColor = System.Drawing.Color.Red;
-            this.genderError.Location = new System.Drawing.Point(1062, 379);
+            this.genderError.Location = new System.Drawing.Point(1062, 393);
             this.genderError.Name = "genderError";
             this.genderError.Size = new System.Drawing.Size(22, 32);
             this.genderError.TabIndex = 34;
@@ -454,7 +454,7 @@ namespace CricBlast_GUI.UI.User_Controls
             // 
             this.guna2PictureBox3.FillColor = System.Drawing.Color.Black;
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(641, 65);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(639, 85);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
             this.guna2PictureBox3.Size = new System.Drawing.Size(2, 551);
@@ -467,7 +467,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.eyePicture.Cursor = System.Windows.Forms.Cursors.Hand;
             this.eyePicture.Image = global::CricBlast_GUI.Properties.Resources.Eye_Close;
             this.eyePicture.ImageRotate = 0F;
-            this.eyePicture.Location = new System.Drawing.Point(1124, 264);
+            this.eyePicture.Location = new System.Drawing.Point(1124, 278);
             this.eyePicture.Name = "eyePicture";
             this.eyePicture.ShadowDecoration.Parent = this.eyePicture;
             this.eyePicture.Size = new System.Drawing.Size(32, 33);
@@ -483,7 +483,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.userPictureBox.BorderRadius = 4;
             this.userPictureBox.Image = global::CricBlast_GUI.Properties.Resources.Unknown_User;
             this.userPictureBox.ImageRotate = 0F;
-            this.userPictureBox.Location = new System.Drawing.Point(844, 429);
+            this.userPictureBox.Location = new System.Drawing.Point(844, 443);
             this.userPictureBox.Name = "userPictureBox";
             this.userPictureBox.ShadowDecoration.Parent = this.userPictureBox;
             this.userPictureBox.Size = new System.Drawing.Size(55, 46);
@@ -495,7 +495,7 @@ namespace CricBlast_GUI.UI.User_Controls
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::CricBlast_GUI.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(118, 139);
+            this.pictureBox1.Location = new System.Drawing.Point(118, 159);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(446, 402);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -508,7 +508,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.captchaError.BackColor = System.Drawing.Color.Transparent;
             this.captchaError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.captchaError.ForeColor = System.Drawing.Color.Red;
-            this.captchaError.Location = new System.Drawing.Point(1173, 493);
+            this.captchaError.Location = new System.Drawing.Point(1173, 507);
             this.captchaError.Name = "captchaError";
             this.captchaError.Size = new System.Drawing.Size(22, 32);
             this.captchaError.TabIndex = 34;
@@ -521,7 +521,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.roundedShape.BorderColor = System.Drawing.Color.LightGray;
             this.roundedShape.BorderThickness = 0;
             this.roundedShape.FillColor = System.Drawing.Color.LightGray;
-            this.roundedShape.Location = new System.Drawing.Point(841, 486);
+            this.roundedShape.Location = new System.Drawing.Point(841, 500);
             this.roundedShape.Name = "roundedShape";
             this.roundedShape.PolygonSkip = 1;
             this.roundedShape.Rotate = 0F;
@@ -534,10 +534,11 @@ namespace CricBlast_GUI.UI.User_Controls
             // 
             // refreshCaptchaPicture
             // 
+            this.refreshCaptchaPicture.BackColor = System.Drawing.Color.Transparent;
             this.refreshCaptchaPicture.Cursor = System.Windows.Forms.Cursors.Hand;
             this.refreshCaptchaPicture.Image = global::CricBlast_GUI.Properties.Resources.Refresh_Colored;
             this.refreshCaptchaPicture.ImageRotate = 0F;
-            this.refreshCaptchaPicture.Location = new System.Drawing.Point(1126, 496);
+            this.refreshCaptchaPicture.Location = new System.Drawing.Point(1126, 510);
             this.refreshCaptchaPicture.Name = "refreshCaptchaPicture";
             this.refreshCaptchaPicture.ShadowDecoration.Parent = this.refreshCaptchaPicture;
             this.refreshCaptchaPicture.Size = new System.Drawing.Size(28, 28);
@@ -638,7 +639,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.captchaTextBox.ForeColor = System.Drawing.Color.IndianRed;
             this.captchaTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.captchaTextBox.HoverState.Parent = this.captchaTextBox;
-            this.captchaTextBox.Location = new System.Drawing.Point(1011, 492);
+            this.captchaTextBox.Location = new System.Drawing.Point(1011, 506);
             this.captchaTextBox.Margin = new System.Windows.Forms.Padding(7, 7, 7, 7);
             this.captchaTextBox.MaxLength = 4;
             this.captchaTextBox.Name = "captchaTextBox";
@@ -668,7 +669,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.mobileTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.mobileTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.mobileTextBox.HoverState.Parent = this.mobileTextBox;
-            this.mobileTextBox.Location = new System.Drawing.Point(842, 315);
+            this.mobileTextBox.Location = new System.Drawing.Point(842, 329);
             this.mobileTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.mobileTextBox.Name = "mobileTextBox";
             this.mobileTextBox.PasswordChar = '\0';
@@ -685,7 +686,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.photoError.BackColor = System.Drawing.Color.Transparent;
             this.photoError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.photoError.ForeColor = System.Drawing.Color.Red;
-            this.photoError.Location = new System.Drawing.Point(1171, 436);
+            this.photoError.Location = new System.Drawing.Point(1171, 450);
             this.photoError.Name = "photoError";
             this.photoError.Size = new System.Drawing.Size(22, 32);
             this.photoError.TabIndex = 41;
@@ -696,7 +697,8 @@ namespace CricBlast_GUI.UI.User_Controls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Transparent;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
+            this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
             this.Controls.Add(this.photoError);
             this.Controls.Add(this.captchaTextBox);
             this.Controls.Add(this.guna2TextBox3);
@@ -734,7 +736,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.Controls.Add(this.register);
             this.Controls.Add(this.pictureBox1);
             this.Name = "CreateAccount";
-            this.Size = new System.Drawing.Size(1264, 681);
+            this.Size = new System.Drawing.Size(1280, 720);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eyePicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).EndInit();

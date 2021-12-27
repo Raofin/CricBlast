@@ -51,9 +51,9 @@ namespace CricBlast_GUI.UI.Admin_Controls
             // matchTitle
             // 
             this.matchTitle.BackColor = System.Drawing.Color.Transparent;
-            this.matchTitle.Font = new System.Drawing.Font("Segoe UI Black", 30F, System.Drawing.FontStyle.Bold);
+            this.matchTitle.Font = new System.Drawing.Font("Segoe UI Black", 36F, System.Drawing.FontStyle.Bold);
             this.matchTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.matchTitle.Location = new System.Drawing.Point(84, 38);
+            this.matchTitle.Location = new System.Drawing.Point(92, 60);
             this.matchTitle.Name = "matchTitle";
             this.matchTitle.Size = new System.Drawing.Size(788, 66);
             this.matchTitle.TabIndex = 22;
@@ -81,7 +81,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(956, 681);
+            this.guna2Panel1.Size = new System.Drawing.Size(972, 720);
             this.guna2Panel1.TabIndex = 23;
             // 
             // selectStadiums
@@ -99,7 +99,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.selectStadiums.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
             this.selectStadiums.ForeColor = System.Drawing.Color.White;
             this.selectStadiums.HoverState.Parent = this.selectStadiums;
-            this.selectStadiums.Location = new System.Drawing.Point(435, 516);
+            this.selectStadiums.Location = new System.Drawing.Point(443, 538);
             this.selectStadiums.Name = "selectStadiums";
             this.selectStadiums.ShadowDecoration.Parent = this.selectStadiums;
             this.selectStadiums.Size = new System.Drawing.Size(409, 43);
@@ -113,7 +113,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label4.Location = new System.Drawing.Point(430, 489);
+            this.label4.Location = new System.Drawing.Point(438, 511);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(105, 25);
             this.label4.TabIndex = 39;
@@ -134,7 +134,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.selectTeams.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
             this.selectTeams.ForeColor = System.Drawing.Color.White;
             this.selectTeams.HoverState.Parent = this.selectTeams;
-            this.selectTeams.Location = new System.Drawing.Point(435, 423);
+            this.selectTeams.Location = new System.Drawing.Point(443, 445);
             this.selectTeams.Name = "selectTeams";
             this.selectTeams.ShadowDecoration.Parent = this.selectTeams;
             this.selectTeams.Size = new System.Drawing.Size(409, 43);
@@ -148,7 +148,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Location = new System.Drawing.Point(430, 397);
+            this.label3.Location = new System.Drawing.Point(438, 419);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(73, 25);
             this.label3.TabIndex = 36;
@@ -170,7 +170,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.startTournament.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.startTournament.ForeColor = System.Drawing.Color.White;
             this.startTournament.HoverState.Parent = this.startTournament;
-            this.startTournament.Location = new System.Drawing.Point(307, 584);
+            this.startTournament.Location = new System.Drawing.Point(315, 611);
             this.startTournament.Name = "startTournament";
             this.startTournament.ShadowDecoration.Parent = this.startTournament;
             this.startTournament.Size = new System.Drawing.Size(314, 44);
@@ -198,7 +198,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             "6",
             "8"});
             this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(435, 337);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(443, 359);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
             this.guna2ComboBox1.Size = new System.Drawing.Size(409, 36);
@@ -211,7 +211,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(430, 310);
+            this.label2.Location = new System.Drawing.Point(438, 332);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(131, 25);
             this.label2.TabIndex = 33;
@@ -232,7 +232,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.changeTrophy.Font = new System.Drawing.Font("Segoe UI Semibold", 13F, System.Drawing.FontStyle.Bold);
             this.changeTrophy.ForeColor = System.Drawing.Color.White;
             this.changeTrophy.HoverState.Parent = this.changeTrophy;
-            this.changeTrophy.Location = new System.Drawing.Point(103, 516);
+            this.changeTrophy.Location = new System.Drawing.Point(111, 538);
             this.changeTrophy.Name = "changeTrophy";
             this.changeTrophy.ShadowDecoration.Parent = this.changeTrophy;
             this.changeTrophy.Size = new System.Drawing.Size(260, 43);
@@ -265,7 +265,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             "Sri Lanka",
             "West Indies"});
             this.formatComboBox.ItemsAppearance.Parent = this.formatComboBox;
-            this.formatComboBox.Location = new System.Drawing.Point(435, 251);
+            this.formatComboBox.Location = new System.Drawing.Point(443, 273);
             this.formatComboBox.Name = "formatComboBox";
             this.formatComboBox.ShadowDecoration.Parent = this.formatComboBox;
             this.formatComboBox.Size = new System.Drawing.Size(409, 36);
@@ -278,7 +278,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label6.Location = new System.Drawing.Point(430, 224);
+            this.label6.Location = new System.Drawing.Point(438, 246);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(186, 25);
             this.label6.TabIndex = 29;
@@ -288,7 +288,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             // 
             this.trophyPictureBox.Image = global::CricBlast_GUI.Properties.Resources.Trophy;
             this.trophyPictureBox.ImageRotate = 0F;
-            this.trophyPictureBox.Location = new System.Drawing.Point(93, 124);
+            this.trophyPictureBox.Location = new System.Drawing.Point(101, 146);
             this.trophyPictureBox.Name = "trophyPictureBox";
             this.trophyPictureBox.ShadowDecoration.Parent = this.trophyPictureBox;
             this.trophyPictureBox.Size = new System.Drawing.Size(281, 380);
@@ -314,7 +314,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.usernameTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.usernameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.usernameTextBox.HoverState.Parent = this.usernameTextBox;
-            this.usernameTextBox.Location = new System.Drawing.Point(435, 154);
+            this.usernameTextBox.Location = new System.Drawing.Point(443, 176);
             this.usernameTextBox.Margin = new System.Windows.Forms.Padding(5);
             this.usernameTextBox.Name = "usernameTextBox";
             this.usernameTextBox.PasswordChar = '\0';
@@ -330,7 +330,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.usernameLabel.BackColor = System.Drawing.Color.Transparent;
             this.usernameLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usernameLabel.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.usernameLabel.Location = new System.Drawing.Point(430, 124);
+            this.usernameLabel.Location = new System.Drawing.Point(438, 146);
             this.usernameLabel.Name = "usernameLabel";
             this.usernameLabel.Size = new System.Drawing.Size(57, 25);
             this.usernameLabel.TabIndex = 24;
@@ -341,10 +341,10 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
-            this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.SubHome;
+            this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.BackgroundHome;
             this.Controls.Add(this.guna2Panel1);
             this.Name = "TournamentsAdmin";
-            this.Size = new System.Drawing.Size(956, 681);
+            this.Size = new System.Drawing.Size(972, 720);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trophyPictureBox)).EndInit();

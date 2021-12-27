@@ -39,7 +39,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 20F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(164, 402);
+            this.label1.Location = new System.Drawing.Point(177, 415);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(628, 80);
             this.label1.TabIndex = 44;
@@ -50,7 +50,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = global::CricBlast_GUI.Properties.Resources.Warning_Mark;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(290, 170);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(303, 183);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
             this.guna2PictureBox1.Size = new System.Drawing.Size(300, 200);
@@ -58,16 +58,16 @@ namespace CricBlast_GUI.UI.User_Controls
             this.guna2PictureBox1.TabIndex = 45;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // TournamentPlay
+            // TournamentPlayError
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
-            this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.SubHome;
+            this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.BackgroundHome;
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.label1);
-            this.Name = "TournamentPlay";
-            this.Size = new System.Drawing.Size(956, 681);
+            this.Name = "TournamentPlayError";
+            this.Size = new System.Drawing.Size(972, 720);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.ResumeLayout(false);
 

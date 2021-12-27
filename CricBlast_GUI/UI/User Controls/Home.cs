@@ -25,7 +25,7 @@ namespace CricBlast_GUI.UI.User_Controls
             usernameLabel.Text = Selected.UserDetails[1];
             userPhoto.Image = Selected.UserImage;
             new ChooseTeam().ShowDialog();
-            homeSubPanel.Controls.Add(new MyTeam());
+            homeSubPanel.Controls.Add(value: new MyTeam());
         }
 
         private void myTeam_Click(object sender, EventArgs e)

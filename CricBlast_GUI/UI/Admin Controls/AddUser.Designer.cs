@@ -86,7 +86,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.addButton);
-            this.guna2Panel1.Location = new System.Drawing.Point(35, 88);
+            this.guna2Panel1.Location = new System.Drawing.Point(41, 97);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(516, 520);
@@ -495,7 +495,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             // 
             this.allUserGridPanel.BackColor = System.Drawing.Color.Transparent;
             this.allUserGridPanel.BorderRadius = 5;
-            this.allUserGridPanel.Location = new System.Drawing.Point(562, 175);
+            this.allUserGridPanel.Location = new System.Drawing.Point(568, 184);
             this.allUserGridPanel.Name = "allUserGridPanel";
             this.allUserGridPanel.ShadowDecoration.Parent = this.allUserGridPanel;
             this.allUserGridPanel.Size = new System.Drawing.Size(328, 401);
@@ -507,7 +507,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Segoe UI Black", 36F, System.Drawing.FontStyle.Bold);
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(610, 88);
+            this.label4.Location = new System.Drawing.Point(616, 97);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(232, 65);
             this.label4.TabIndex = 97;
@@ -518,12 +518,12 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
-            this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.SubHome;
+            this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.BackgroundHome;
             this.Controls.Add(this.label4);
             this.Controls.Add(this.allUserGridPanel);
             this.Controls.Add(this.guna2Panel1);
             this.Name = "AddUser";
-            this.Size = new System.Drawing.Size(956, 681);
+            this.Size = new System.Drawing.Size(972, 720);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eyePicture)).EndInit();
