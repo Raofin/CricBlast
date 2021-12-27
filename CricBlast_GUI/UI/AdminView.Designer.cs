@@ -560,6 +560,7 @@ namespace CricBlast_GUI.UI
             // guna2Panel1
             // 
             this.guna2Panel1.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
+            this.guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.guna2Panel1.Controls.Add(this.closeMiddle);
             this.guna2Panel1.Controls.Add(this.phoneLabel);
             this.guna2Panel1.Controls.Add(this.emailLabel);

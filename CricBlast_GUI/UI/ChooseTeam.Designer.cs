@@ -132,11 +132,11 @@ namespace CricBlast_GUI.UI
             // 
             this.cricBlastLabel.AutoSize = true;
             this.cricBlastLabel.BackColor = System.Drawing.Color.Transparent;
-            this.cricBlastLabel.Font = new System.Drawing.Font("Segoe UI Black", 15F, System.Drawing.FontStyle.Bold);
+            this.cricBlastLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.cricBlastLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cricBlastLabel.Location = new System.Drawing.Point(34, 6);
+            this.cricBlastLabel.Location = new System.Drawing.Point(34, 10);
             this.cricBlastLabel.Name = "cricBlastLabel";
-            this.cricBlastLabel.Size = new System.Drawing.Size(99, 28);
+            this.cricBlastLabel.Size = new System.Drawing.Size(76, 21);
             this.cricBlastLabel.TabIndex = 38;
             this.cricBlastLabel.Text = "CricBlast";
             // 
@@ -173,7 +173,7 @@ namespace CricBlast_GUI.UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(45)))), ((int)(((byte)(89)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(473, 231);
             this.Controls.Add(this.cricBlastLabel);
             this.Controls.Add(this.cricBlastPicture);

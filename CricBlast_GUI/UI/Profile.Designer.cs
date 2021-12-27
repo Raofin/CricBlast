@@ -534,8 +534,9 @@ namespace CricBlast_GUI.UI
             // 
             // guna2Panel1
             // 
-            this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.guna2Panel1.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
+            this.guna2Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.guna2Panel1.Controls.Add(this.phoneLabel);
             this.guna2Panel1.Controls.Add(this.emailLabel);
             this.guna2Panel1.Controls.Add(this.changeProfilePicture);

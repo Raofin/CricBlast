@@ -40,12 +40,14 @@ namespace CricBlast_GUI.UI
             // 
             this.infoPictureBox.BackColor = System.Drawing.Color.Transparent;
             this.infoPictureBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.infoPictureBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.infoPictureBox.Image = global::CricBlast_GUI.Properties.Resources.Project_Details;
             this.infoPictureBox.ImageRotate = 0F;
-            this.infoPictureBox.Location = new System.Drawing.Point(37, 20);
+            this.infoPictureBox.Location = new System.Drawing.Point(0, 0);
             this.infoPictureBox.Name = "infoPictureBox";
             this.infoPictureBox.ShadowDecoration.Parent = this.infoPictureBox;
-            this.infoPictureBox.Size = new System.Drawing.Size(876, 607);
+            this.infoPictureBox.Size = new System.Drawing.Size(956, 627);
+            this.infoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.infoPictureBox.TabIndex = 1;
             this.infoPictureBox.TabStop = false;
             this.infoPictureBox.Click += new System.EventHandler(this.infoPictureBox_Click);

@@ -210,6 +210,7 @@ namespace CricBlast_GUI.UI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(46)))), ((int)(((byte)(90)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(584, 561);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.recoveredPassword);
@@ -221,6 +222,7 @@ namespace CricBlast_GUI.UI
             this.Controls.Add(this.usernameLabel);
             this.Controls.Add(this.recoverButton);
             this.Controls.Add(this.recoveredUserPicture);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Recover";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

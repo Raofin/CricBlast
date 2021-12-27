@@ -35,9 +35,9 @@ namespace CricBlast_GUI.UI
             this.yes = new Guna.UI2.WinForms.Guna2Button();
             this.messageMark = new Guna.UI2.WinForms.Guna2PictureBox();
             this.no = new Guna.UI2.WinForms.Guna2Button();
-            this.cricBlastLabel = new System.Windows.Forms.Label();
             this.cricBlastPicture = new System.Windows.Forms.PictureBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.cricBlastLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.messageMark)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cricBlastPicture)).BeginInit();
             this.SuspendLayout();
@@ -75,7 +75,7 @@ namespace CricBlast_GUI.UI
             this.yes.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.yes.ForeColor = System.Drawing.Color.White;
             this.yes.HoverState.Parent = this.yes;
-            this.yes.Location = new System.Drawing.Point(282, 187);
+            this.yes.Location = new System.Drawing.Point(282, 183);
             this.yes.Name = "yes";
             this.yes.ShadowDecoration.Parent = this.yes;
             this.yes.Size = new System.Drawing.Size(153, 45);
@@ -110,7 +110,7 @@ namespace CricBlast_GUI.UI
             this.no.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.no.ForeColor = System.Drawing.Color.White;
             this.no.HoverState.Parent = this.no;
-            this.no.Location = new System.Drawing.Point(93, 187);
+            this.no.Location = new System.Drawing.Point(93, 183);
             this.no.Name = "no";
             this.no.ShadowDecoration.Parent = this.no;
             this.no.Size = new System.Drawing.Size(153, 45);
@@ -118,23 +118,11 @@ namespace CricBlast_GUI.UI
             this.no.Text = "No";
             this.no.Click += new System.EventHandler(this.no_Click);
             // 
-            // cricBlastLabel
-            // 
-            this.cricBlastLabel.AutoSize = true;
-            this.cricBlastLabel.BackColor = System.Drawing.Color.Transparent;
-            this.cricBlastLabel.Font = new System.Drawing.Font("Segoe UI Black", 15F, System.Drawing.FontStyle.Bold);
-            this.cricBlastLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cricBlastLabel.Location = new System.Drawing.Point(43, 10);
-            this.cricBlastLabel.Name = "cricBlastLabel";
-            this.cricBlastLabel.Size = new System.Drawing.Size(99, 28);
-            this.cricBlastLabel.TabIndex = 42;
-            this.cricBlastLabel.Text = "CricBlast";
-            // 
             // cricBlastPicture
             // 
             this.cricBlastPicture.BackColor = System.Drawing.Color.Transparent;
             this.cricBlastPicture.Image = global::CricBlast_GUI.Properties.Resources.Logo;
-            this.cricBlastPicture.Location = new System.Drawing.Point(12, 12);
+            this.cricBlastPicture.Location = new System.Drawing.Point(8, 8);
             this.cricBlastPicture.Name = "cricBlastPicture";
             this.cricBlastPicture.Size = new System.Drawing.Size(25, 25);
             this.cricBlastPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -156,20 +144,34 @@ namespace CricBlast_GUI.UI
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 43;
             // 
+            // cricBlastLabel
+            // 
+            this.cricBlastLabel.AutoSize = true;
+            this.cricBlastLabel.BackColor = System.Drawing.Color.Transparent;
+            this.cricBlastLabel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.cricBlastLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.cricBlastLabel.Location = new System.Drawing.Point(34, 10);
+            this.cricBlastLabel.Name = "cricBlastLabel";
+            this.cricBlastLabel.Size = new System.Drawing.Size(76, 21);
+            this.cricBlastLabel.TabIndex = 44;
+            this.cricBlastLabel.Text = "CricBlast";
+            // 
             // MessageBoxYesNo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(518, 265);
-            this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.cricBlastLabel);
+            this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.cricBlastPicture);
             this.Controls.Add(this.message);
             this.Controls.Add(this.no);
             this.Controls.Add(this.yes);
             this.Controls.Add(this.messageMark);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MessageBoxYesNo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -188,8 +190,8 @@ namespace CricBlast_GUI.UI
         private Guna.UI2.WinForms.Guna2Button no;
         private Guna.UI2.WinForms.Guna2Button yes;
         private Guna.UI2.WinForms.Guna2PictureBox messageMark;
-        private System.Windows.Forms.Label cricBlastLabel;
         private System.Windows.Forms.PictureBox cricBlastPicture;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private System.Windows.Forms.Label cricBlastLabel;
     }
 }
