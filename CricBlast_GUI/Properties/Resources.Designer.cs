@@ -133,26 +133,6 @@ namespace CricBlast_GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Bangladesh1 {
-            get {
-                object obj = ResourceManager.GetObject("Bangladesh1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Blank {
-            get {
-                object obj = ResourceManager.GetObject("Blank", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Check_Mark {
             get {
                 object obj = ResourceManager.GetObject("Check_Mark", resourceCulture);
@@ -206,16 +186,6 @@ namespace CricBlast_GUI.Properties {
         internal static string ImageFilter {
             get {
                 return ResourceManager.GetString("ImageFilter", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap India {
-            get {
-                object obj = ResourceManager.GetObject("India", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
         
@@ -282,16 +252,6 @@ namespace CricBlast_GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Shakib {
-            get {
-                object obj = ResourceManager.GetObject("Shakib", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap Trophy {
             get {
                 object obj = ResourceManager.GetObject("Trophy", resourceCulture);
@@ -305,16 +265,6 @@ namespace CricBlast_GUI.Properties {
         internal static System.Drawing.Bitmap Unknown_User {
             get {
                 object obj = ResourceManager.GetObject("Unknown_User", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Unknown_User_Gray {
-            get {
-                object obj = ResourceManager.GetObject("Unknown_User_Gray", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
