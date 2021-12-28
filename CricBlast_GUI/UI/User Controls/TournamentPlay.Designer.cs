@@ -30,122 +30,170 @@ namespace CricBlast_GUI.UI.User_Controls
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.winnerLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.okButton = new Guna.UI2.WinForms.Guna2Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.guna2PictureBox12 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox13 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.group32Logo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.group31Logo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.guna2PictureBox8 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox9 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox10 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox11 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.group24Logo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.group23Logo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.group22Logo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.group21Logo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.guna2PictureBox6 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox7 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.userTeamLogo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.group18Logo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.group17Logo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.group16Logo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.group15Logo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.group14Logo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.group13Logo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.group12Logo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.group11Logo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.matchTitle = new System.Windows.Forms.Label();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.winnerLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group32Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group31Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group24Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group23Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group22Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group21Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group18Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group17Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group16Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group15Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group14Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group13Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group12Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group11Logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userTeamLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.Controls.Add(this.winnerLogo);
+            this.guna2Panel1.Controls.Add(this.okButton);
             this.guna2Panel1.Controls.Add(this.label7);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox12);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox13);
+            this.guna2Panel1.Controls.Add(this.group32Logo);
+            this.guna2Panel1.Controls.Add(this.group31Logo);
             this.guna2Panel1.Controls.Add(this.label4);
             this.guna2Panel1.Controls.Add(this.label5);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox8);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox9);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox10);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox11);
+            this.guna2Panel1.Controls.Add(this.group24Logo);
+            this.guna2Panel1.Controls.Add(this.group23Logo);
+            this.guna2Panel1.Controls.Add(this.group22Logo);
+            this.guna2Panel1.Controls.Add(this.group21Logo);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.label6);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox6);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox7);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox4);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox5);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox2);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox3);
-            this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel1.Controls.Add(this.userTeamLogo);
+            this.guna2Panel1.Controls.Add(this.group18Logo);
+            this.guna2Panel1.Controls.Add(this.group17Logo);
+            this.guna2Panel1.Controls.Add(this.group16Logo);
+            this.guna2Panel1.Controls.Add(this.group15Logo);
+            this.guna2Panel1.Controls.Add(this.group14Logo);
+            this.guna2Panel1.Controls.Add(this.group13Logo);
+            this.guna2Panel1.Controls.Add(this.group12Logo);
+            this.guna2Panel1.Controls.Add(this.group11Logo);
             this.guna2Panel1.Controls.Add(this.matchTitle);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel1.Controls.Add(this.guna2Panel2);
+            this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(972, 720);
             this.guna2Panel1.TabIndex = 0;
             // 
+            // winnerLogo
+            // 
+            this.winnerLogo.BackColor = System.Drawing.Color.Transparent;
+            this.winnerLogo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
+            this.winnerLogo.ImageRotate = 0F;
+            this.winnerLogo.Location = new System.Drawing.Point(462, 542);
+            this.winnerLogo.Name = "winnerLogo";
+            this.winnerLogo.ShadowDecoration.Parent = this.winnerLogo;
+            this.winnerLogo.Size = new System.Drawing.Size(50, 50);
+            this.winnerLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.winnerLogo.TabIndex = 46;
+            this.winnerLogo.TabStop = false;
+            this.winnerLogo.UseTransparentBackground = true;
+            // 
+            // okButton
+            // 
+            this.okButton.BackColor = System.Drawing.Color.Transparent;
+            this.okButton.BorderRadius = 4;
+            this.okButton.CheckedState.Parent = this.okButton;
+            this.okButton.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.okButton.CustomImages.Parent = this.okButton;
+            this.okButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.okButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.okButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.okButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.okButton.DisabledState.Parent = this.okButton;
+            this.okButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.okButton.ForeColor = System.Drawing.Color.White;
+            this.okButton.HoverState.Parent = this.okButton;
+            this.okButton.Location = new System.Drawing.Point(396, 629);
+            this.okButton.Name = "okButton";
+            this.okButton.ShadowDecoration.Parent = this.okButton;
+            this.okButton.Size = new System.Drawing.Size(180, 45);
+            this.okButton.TabIndex = 45;
+            this.okButton.Text = "OK";
+            this.okButton.Click += new System.EventHandler(this.okButton_Click);
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(98)))), ((int)(((byte)(160)))));
             this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label7.Location = new System.Drawing.Point(458, 508);
+            this.label7.Location = new System.Drawing.Point(472, 416);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(30, 25);
             this.label7.TabIndex = 44;
             this.label7.Text = "vs";
             // 
-            // guna2PictureBox12
+            // group32Logo
             // 
-            this.guna2PictureBox12.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox12.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
-            this.guna2PictureBox12.ImageRotate = 0F;
-            this.guna2PictureBox12.Location = new System.Drawing.Point(509, 495);
-            this.guna2PictureBox12.Name = "guna2PictureBox12";
-            this.guna2PictureBox12.ShadowDecoration.Parent = this.guna2PictureBox12;
-            this.guna2PictureBox12.Size = new System.Drawing.Size(50, 50);
-            this.guna2PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox12.TabIndex = 43;
-            this.guna2PictureBox12.TabStop = false;
+            this.group32Logo.BackColor = System.Drawing.Color.Transparent;
+            this.group32Logo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
+            this.group32Logo.ImageRotate = 0F;
+            this.group32Logo.Location = new System.Drawing.Point(514, 403);
+            this.group32Logo.Name = "group32Logo";
+            this.group32Logo.ShadowDecoration.Parent = this.group32Logo;
+            this.group32Logo.Size = new System.Drawing.Size(50, 50);
+            this.group32Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.group32Logo.TabIndex = 43;
+            this.group32Logo.TabStop = false;
+            this.group32Logo.UseTransparentBackground = true;
             // 
-            // guna2PictureBox13
+            // group31Logo
             // 
-            this.guna2PictureBox13.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox13.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
-            this.guna2PictureBox13.ImageRotate = 0F;
-            this.guna2PictureBox13.Location = new System.Drawing.Point(399, 495);
-            this.guna2PictureBox13.Name = "guna2PictureBox13";
-            this.guna2PictureBox13.ShadowDecoration.Parent = this.guna2PictureBox13;
-            this.guna2PictureBox13.Size = new System.Drawing.Size(50, 50);
-            this.guna2PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox13.TabIndex = 42;
-            this.guna2PictureBox13.TabStop = false;
+            this.group31Logo.BackColor = System.Drawing.Color.Transparent;
+            this.group31Logo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
+            this.group31Logo.ImageRotate = 0F;
+            this.group31Logo.Location = new System.Drawing.Point(410, 403);
+            this.group31Logo.Name = "group31Logo";
+            this.group31Logo.ShadowDecoration.Parent = this.group31Logo;
+            this.group31Logo.Size = new System.Drawing.Size(50, 50);
+            this.group31Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.group31Logo.TabIndex = 42;
+            this.group31Logo.TabStop = false;
+            this.group31Logo.UseTransparentBackground = true;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(98)))), ((int)(((byte)(160)))));
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label4.Location = new System.Drawing.Point(668, 357);
+            this.label4.Location = new System.Drawing.Point(686, 298);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(30, 25);
             this.label4.TabIndex = 41;
@@ -154,74 +202,78 @@ namespace CricBlast_GUI.UI.User_Controls
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(98)))), ((int)(((byte)(160)))));
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label5.Location = new System.Drawing.Point(283, 357);
+            this.label5.Location = new System.Drawing.Point(252, 298);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 25);
             this.label5.TabIndex = 40;
             this.label5.Text = "vs";
             // 
-            // guna2PictureBox8
+            // group24Logo
             // 
-            this.guna2PictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox8.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
-            this.guna2PictureBox8.ImageRotate = 0F;
-            this.guna2PictureBox8.Location = new System.Drawing.Point(717, 344);
-            this.guna2PictureBox8.Name = "guna2PictureBox8";
-            this.guna2PictureBox8.ShadowDecoration.Parent = this.guna2PictureBox8;
-            this.guna2PictureBox8.Size = new System.Drawing.Size(50, 50);
-            this.guna2PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox8.TabIndex = 39;
-            this.guna2PictureBox8.TabStop = false;
+            this.group24Logo.BackColor = System.Drawing.Color.Transparent;
+            this.group24Logo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
+            this.group24Logo.ImageRotate = 0F;
+            this.group24Logo.Location = new System.Drawing.Point(735, 285);
+            this.group24Logo.Name = "group24Logo";
+            this.group24Logo.ShadowDecoration.Parent = this.group24Logo;
+            this.group24Logo.Size = new System.Drawing.Size(50, 50);
+            this.group24Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.group24Logo.TabIndex = 39;
+            this.group24Logo.TabStop = false;
+            this.group24Logo.UseTransparentBackground = true;
             // 
-            // guna2PictureBox9
+            // group23Logo
             // 
-            this.guna2PictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox9.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
-            this.guna2PictureBox9.ImageRotate = 0F;
-            this.guna2PictureBox9.Location = new System.Drawing.Point(607, 344);
-            this.guna2PictureBox9.Name = "guna2PictureBox9";
-            this.guna2PictureBox9.ShadowDecoration.Parent = this.guna2PictureBox9;
-            this.guna2PictureBox9.Size = new System.Drawing.Size(50, 50);
-            this.guna2PictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox9.TabIndex = 38;
-            this.guna2PictureBox9.TabStop = false;
+            this.group23Logo.BackColor = System.Drawing.Color.Transparent;
+            this.group23Logo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
+            this.group23Logo.ImageRotate = 0F;
+            this.group23Logo.Location = new System.Drawing.Point(625, 285);
+            this.group23Logo.Name = "group23Logo";
+            this.group23Logo.ShadowDecoration.Parent = this.group23Logo;
+            this.group23Logo.Size = new System.Drawing.Size(50, 50);
+            this.group23Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.group23Logo.TabIndex = 38;
+            this.group23Logo.TabStop = false;
+            this.group23Logo.UseTransparentBackground = true;
             // 
-            // guna2PictureBox10
+            // group22Logo
             // 
-            this.guna2PictureBox10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox10.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
-            this.guna2PictureBox10.ImageRotate = 0F;
-            this.guna2PictureBox10.Location = new System.Drawing.Point(334, 344);
-            this.guna2PictureBox10.Name = "guna2PictureBox10";
-            this.guna2PictureBox10.ShadowDecoration.Parent = this.guna2PictureBox10;
-            this.guna2PictureBox10.Size = new System.Drawing.Size(50, 50);
-            this.guna2PictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox10.TabIndex = 37;
-            this.guna2PictureBox10.TabStop = false;
+            this.group22Logo.BackColor = System.Drawing.Color.Transparent;
+            this.group22Logo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
+            this.group22Logo.ImageRotate = 0F;
+            this.group22Logo.Location = new System.Drawing.Point(294, 284);
+            this.group22Logo.Name = "group22Logo";
+            this.group22Logo.ShadowDecoration.Parent = this.group22Logo;
+            this.group22Logo.Size = new System.Drawing.Size(50, 50);
+            this.group22Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.group22Logo.TabIndex = 37;
+            this.group22Logo.TabStop = false;
+            this.group22Logo.UseTransparentBackground = true;
             // 
-            // guna2PictureBox11
+            // group21Logo
             // 
-            this.guna2PictureBox11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox11.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
-            this.guna2PictureBox11.ImageRotate = 0F;
-            this.guna2PictureBox11.Location = new System.Drawing.Point(224, 344);
-            this.guna2PictureBox11.Name = "guna2PictureBox11";
-            this.guna2PictureBox11.ShadowDecoration.Parent = this.guna2PictureBox11;
-            this.guna2PictureBox11.Size = new System.Drawing.Size(50, 50);
-            this.guna2PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox11.TabIndex = 36;
-            this.guna2PictureBox11.TabStop = false;
+            this.group21Logo.BackColor = System.Drawing.Color.Transparent;
+            this.group21Logo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
+            this.group21Logo.ImageRotate = 0F;
+            this.group21Logo.Location = new System.Drawing.Point(190, 284);
+            this.group21Logo.Name = "group21Logo";
+            this.group21Logo.ShadowDecoration.Parent = this.group21Logo;
+            this.group21Logo.Size = new System.Drawing.Size(50, 50);
+            this.group21Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.group21Logo.TabIndex = 36;
+            this.group21Logo.TabStop = false;
+            this.group21Logo.UseTransparentBackground = true;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(98)))), ((int)(((byte)(160)))));
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label3.Location = new System.Drawing.Point(804, 181);
+            this.label3.Location = new System.Drawing.Point(798, 162);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 25);
             this.label3.TabIndex = 35;
@@ -230,10 +282,10 @@ namespace CricBlast_GUI.UI.User_Controls
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(98)))), ((int)(((byte)(160)))));
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label2.Location = new System.Drawing.Point(582, 181);
+            this.label2.Location = new System.Drawing.Point(582, 162);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(30, 25);
             this.label2.TabIndex = 34;
@@ -242,10 +294,10 @@ namespace CricBlast_GUI.UI.User_Controls
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(98)))), ((int)(((byte)(160)))));
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Location = new System.Drawing.Point(360, 181);
+            this.label1.Location = new System.Drawing.Point(364, 162);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(30, 25);
             this.label1.TabIndex = 33;
@@ -254,156 +306,187 @@ namespace CricBlast_GUI.UI.User_Controls
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(67)))), ((int)(((byte)(98)))), ((int)(((byte)(160)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.ControlLight;
-            this.label6.Location = new System.Drawing.Point(138, 181);
+            this.label6.Location = new System.Drawing.Point(144, 162);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(30, 25);
             this.label6.TabIndex = 32;
             this.label6.Text = "vs";
             // 
-            // guna2PictureBox6
+            // group18Logo
             // 
-            this.guna2PictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox6.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
-            this.guna2PictureBox6.ImageRotate = 0F;
-            this.guna2PictureBox6.Location = new System.Drawing.Point(849, 168);
-            this.guna2PictureBox6.Name = "guna2PictureBox6";
-            this.guna2PictureBox6.ShadowDecoration.Parent = this.guna2PictureBox6;
-            this.guna2PictureBox6.Size = new System.Drawing.Size(50, 50);
-            this.guna2PictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox6.TabIndex = 31;
-            this.guna2PictureBox6.TabStop = false;
+            this.group18Logo.BackColor = System.Drawing.Color.Transparent;
+            this.group18Logo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
+            this.group18Logo.ImageRotate = 0F;
+            this.group18Logo.Location = new System.Drawing.Point(843, 149);
+            this.group18Logo.Name = "group18Logo";
+            this.group18Logo.ShadowDecoration.Parent = this.group18Logo;
+            this.group18Logo.Size = new System.Drawing.Size(50, 50);
+            this.group18Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.group18Logo.TabIndex = 31;
+            this.group18Logo.TabStop = false;
+            this.group18Logo.UseTransparentBackground = true;
             // 
-            // guna2PictureBox7
+            // group17Logo
             // 
-            this.guna2PictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox7.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
-            this.guna2PictureBox7.ImageRotate = 0F;
-            this.guna2PictureBox7.Location = new System.Drawing.Point(739, 168);
-            this.guna2PictureBox7.Name = "guna2PictureBox7";
-            this.guna2PictureBox7.ShadowDecoration.Parent = this.guna2PictureBox7;
-            this.guna2PictureBox7.Size = new System.Drawing.Size(50, 50);
-            this.guna2PictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox7.TabIndex = 30;
-            this.guna2PictureBox7.TabStop = false;
+            this.group17Logo.BackColor = System.Drawing.Color.Transparent;
+            this.group17Logo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
+            this.group17Logo.ImageRotate = 0F;
+            this.group17Logo.Location = new System.Drawing.Point(733, 149);
+            this.group17Logo.Name = "group17Logo";
+            this.group17Logo.ShadowDecoration.Parent = this.group17Logo;
+            this.group17Logo.Size = new System.Drawing.Size(50, 50);
+            this.group17Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.group17Logo.TabIndex = 30;
+            this.group17Logo.TabStop = false;
+            this.group17Logo.UseTransparentBackground = true;
             // 
-            // guna2PictureBox4
+            // group16Logo
             // 
-            this.guna2PictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox4.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
-            this.guna2PictureBox4.ImageRotate = 0F;
-            this.guna2PictureBox4.Location = new System.Drawing.Point(629, 168);
-            this.guna2PictureBox4.Name = "guna2PictureBox4";
-            this.guna2PictureBox4.ShadowDecoration.Parent = this.guna2PictureBox4;
-            this.guna2PictureBox4.Size = new System.Drawing.Size(50, 50);
-            this.guna2PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox4.TabIndex = 29;
-            this.guna2PictureBox4.TabStop = false;
+            this.group16Logo.BackColor = System.Drawing.Color.Transparent;
+            this.group16Logo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
+            this.group16Logo.ImageRotate = 0F;
+            this.group16Logo.Location = new System.Drawing.Point(627, 149);
+            this.group16Logo.Name = "group16Logo";
+            this.group16Logo.ShadowDecoration.Parent = this.group16Logo;
+            this.group16Logo.Size = new System.Drawing.Size(50, 50);
+            this.group16Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.group16Logo.TabIndex = 29;
+            this.group16Logo.TabStop = false;
+            this.group16Logo.UseTransparentBackground = true;
             // 
-            // guna2PictureBox5
+            // group15Logo
             // 
-            this.guna2PictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox5.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
-            this.guna2PictureBox5.ImageRotate = 0F;
-            this.guna2PictureBox5.Location = new System.Drawing.Point(519, 168);
-            this.guna2PictureBox5.Name = "guna2PictureBox5";
-            this.guna2PictureBox5.ShadowDecoration.Parent = this.guna2PictureBox5;
-            this.guna2PictureBox5.Size = new System.Drawing.Size(50, 50);
-            this.guna2PictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox5.TabIndex = 28;
-            this.guna2PictureBox5.TabStop = false;
+            this.group15Logo.BackColor = System.Drawing.Color.Transparent;
+            this.group15Logo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
+            this.group15Logo.ImageRotate = 0F;
+            this.group15Logo.Location = new System.Drawing.Point(517, 149);
+            this.group15Logo.Name = "group15Logo";
+            this.group15Logo.ShadowDecoration.Parent = this.group15Logo;
+            this.group15Logo.Size = new System.Drawing.Size(50, 50);
+            this.group15Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.group15Logo.TabIndex = 28;
+            this.group15Logo.TabStop = false;
+            this.group15Logo.UseTransparentBackground = true;
             // 
-            // guna2PictureBox2
+            // group14Logo
             // 
-            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(409, 168);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.ShadowDecoration.Parent = this.guna2PictureBox2;
-            this.guna2PictureBox2.Size = new System.Drawing.Size(50, 50);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox2.TabIndex = 27;
-            this.guna2PictureBox2.TabStop = false;
+            this.group14Logo.BackColor = System.Drawing.Color.Transparent;
+            this.group14Logo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
+            this.group14Logo.ImageRotate = 0F;
+            this.group14Logo.Location = new System.Drawing.Point(409, 149);
+            this.group14Logo.Name = "group14Logo";
+            this.group14Logo.ShadowDecoration.Parent = this.group14Logo;
+            this.group14Logo.Size = new System.Drawing.Size(50, 50);
+            this.group14Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.group14Logo.TabIndex = 27;
+            this.group14Logo.TabStop = false;
+            this.group14Logo.UseTransparentBackground = true;
             // 
-            // guna2PictureBox3
+            // group13Logo
             // 
-            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox3.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(299, 168);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
-            this.guna2PictureBox3.Size = new System.Drawing.Size(50, 50);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox3.TabIndex = 26;
-            this.guna2PictureBox3.TabStop = false;
+            this.group13Logo.BackColor = System.Drawing.Color.Transparent;
+            this.group13Logo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
+            this.group13Logo.ImageRotate = 0F;
+            this.group13Logo.Location = new System.Drawing.Point(299, 149);
+            this.group13Logo.Name = "group13Logo";
+            this.group13Logo.ShadowDecoration.Parent = this.group13Logo;
+            this.group13Logo.Size = new System.Drawing.Size(50, 50);
+            this.group13Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.group13Logo.TabIndex = 26;
+            this.group13Logo.TabStop = false;
+            this.group13Logo.UseTransparentBackground = true;
             // 
-            // guna2PictureBox1
+            // group12Logo
             // 
-            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(189, 168);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(50, 50);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 25;
-            this.guna2PictureBox1.TabStop = false;
+            this.group12Logo.BackColor = System.Drawing.Color.Transparent;
+            this.group12Logo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
+            this.group12Logo.ImageRotate = 0F;
+            this.group12Logo.Location = new System.Drawing.Point(189, 149);
+            this.group12Logo.Name = "group12Logo";
+            this.group12Logo.ShadowDecoration.Parent = this.group12Logo;
+            this.group12Logo.Size = new System.Drawing.Size(50, 50);
+            this.group12Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.group12Logo.TabIndex = 25;
+            this.group12Logo.TabStop = false;
+            this.group12Logo.UseTransparentBackground = true;
             // 
-            // userTeamLogo
+            // group11Logo
             // 
-            this.userTeamLogo.BackColor = System.Drawing.Color.Transparent;
-            this.userTeamLogo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
-            this.userTeamLogo.ImageRotate = 0F;
-            this.userTeamLogo.Location = new System.Drawing.Point(79, 168);
-            this.userTeamLogo.Name = "userTeamLogo";
-            this.userTeamLogo.ShadowDecoration.Parent = this.userTeamLogo;
-            this.userTeamLogo.Size = new System.Drawing.Size(50, 50);
-            this.userTeamLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.userTeamLogo.TabIndex = 24;
-            this.userTeamLogo.TabStop = false;
+            this.group11Logo.BackColor = System.Drawing.Color.Transparent;
+            this.group11Logo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
+            this.group11Logo.ImageRotate = 0F;
+            this.group11Logo.Location = new System.Drawing.Point(79, 149);
+            this.group11Logo.Name = "group11Logo";
+            this.group11Logo.ShadowDecoration.Parent = this.group11Logo;
+            this.group11Logo.Size = new System.Drawing.Size(50, 50);
+            this.group11Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.group11Logo.TabIndex = 24;
+            this.group11Logo.TabStop = false;
+            this.group11Logo.UseTransparentBackground = true;
             // 
             // matchTitle
             // 
             this.matchTitle.BackColor = System.Drawing.Color.Transparent;
             this.matchTitle.Font = new System.Drawing.Font("Segoe UI Black", 30F, System.Drawing.FontStyle.Bold);
             this.matchTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.matchTitle.Location = new System.Drawing.Point(94, 76);
+            this.matchTitle.Location = new System.Drawing.Point(92, 54);
             this.matchTitle.Name = "matchTitle";
             this.matchTitle.Size = new System.Drawing.Size(788, 66);
             this.matchTitle.TabIndex = 23;
             this.matchTitle.Text = "PLAY A MATCH";
             this.matchTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // guna2Panel2
+            // 
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel2.Location = new System.Drawing.Point(0, 680);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(972, 40);
+            this.guna2Panel2.TabIndex = 48;
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::CricBlast_GUI.Properties.Resources.Tournament;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(56, 125);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
+            this.guna2PictureBox1.Size = new System.Drawing.Size(860, 494);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.guna2PictureBox1.TabIndex = 47;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
+            // 
             // TournamentPlay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
-            this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.BackgroundHome;
             this.Controls.Add(this.guna2Panel1);
             this.Name = "TournamentPlay";
             this.Size = new System.Drawing.Size(972, 720);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.winnerLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group32Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group31Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group24Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group23Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group22Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group21Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group18Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group17Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group16Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group15Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group14Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group13Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group12Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.group11Logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.userTeamLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -412,26 +495,30 @@ namespace CricBlast_GUI.UI.User_Controls
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label matchTitle;
-        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox6;
-        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox7;
-        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
-        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
-        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
-        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        public Guna.UI2.WinForms.Guna2PictureBox userTeamLogo;
+        public Guna.UI2.WinForms.Guna2PictureBox group18Logo;
+        public Guna.UI2.WinForms.Guna2PictureBox group17Logo;
+        public Guna.UI2.WinForms.Guna2PictureBox group16Logo;
+        public Guna.UI2.WinForms.Guna2PictureBox group15Logo;
+        public Guna.UI2.WinForms.Guna2PictureBox group14Logo;
+        public Guna.UI2.WinForms.Guna2PictureBox group13Logo;
+        public Guna.UI2.WinForms.Guna2PictureBox group12Logo;
+        public Guna.UI2.WinForms.Guna2PictureBox group11Logo;
         private System.Windows.Forms.Label label7;
-        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox12;
-        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox13;
+        public Guna.UI2.WinForms.Guna2PictureBox group32Logo;
+        public Guna.UI2.WinForms.Guna2PictureBox group31Logo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox8;
-        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox9;
-        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox10;
-        public Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox11;
+        public Guna.UI2.WinForms.Guna2PictureBox group24Logo;
+        public Guna.UI2.WinForms.Guna2PictureBox group23Logo;
+        public Guna.UI2.WinForms.Guna2PictureBox group22Logo;
+        public Guna.UI2.WinForms.Guna2PictureBox group21Logo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2Button okButton;
+        public Guna.UI2.WinForms.Guna2PictureBox winnerLogo;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
     }
 }

@@ -465,8 +465,8 @@
   <ItemGroup>
     <Content Include="Libraries\Players.dll" />
     <Content Include="Libraries\Teams.dll" />
+    <None Include="Resources\Tournament.png" />
     <None Include="Resources\Admin_Gray_Background.png" />
-    <None Include="Resources\Admin_White_Background.png" />
     <None Include="Resources\Trophy.png" />
     <None Include="Resources\Question_Mark.png" />
     <None Include="Resources\Project Details.png" />
