@@ -23,8 +23,6 @@ namespace CricBlast_GUI.UI.User_Controls
             InitializeComponent();
             GenerateGame(MatchFormat, Pitch);
             SetGame();
-            MatchResults.Played(Won);
-            MatchResults.Result(MatchResult);
         }
 
         public void SetGame()
@@ -35,6 +33,8 @@ namespace CricBlast_GUI.UI.User_Controls
             opponentTeamScore.Text = $"{Team2Runs}/{Team2Wickets} ({Team2Over})";
             matchResult.Text = $"{Selected.UserTeamName} {MatchResult}.";
             matchResult.ForeColor = Won ? Color.FromArgb(59, 226, 55) : Color.Tomato;
+
+            Match.Play(Won, MatchResult);
         }
 
         public void GenerateGame(int format, int pitch)
@@ -96,7 +96,7 @@ namespace CricBlast_GUI.UI.User_Controls
 
             var random = new Random();
 
-            Team1Runs = (int) (random.Next(runsMin, runsMax) * 1.03);
+            Team1Runs = (int)(random.Next(runsMin, runsMax) * 1.03);
             Team2Runs = random.Next(runsMin, runsMax);
 
             var temp = random.Next(2);

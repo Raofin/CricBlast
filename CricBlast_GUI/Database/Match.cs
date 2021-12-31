@@ -1,13 +1,28 @@
-﻿using System.Data.SqlClient;
+﻿using System;
+using System.Data.SqlClient;
 using CricBlast_GUI.UI;
 
 namespace CricBlast_GUI.Database
 {
-    public class MatchResults
+    public class Match
     {
-        public static void Played(bool won)
+        public static void Play(bool won, string result)
         {
-            var win = won ? ", Won = Won + 1" : null;
+            Played(won);
+            Result(result);
+        }
+
+        private static void Played(bool won)
+        {
+            string win;
+            if (won)
+            {
+                win = ", Won = Won + 1";
+                Selected.UserDetails[7] = (int.Parse(Selected.UserDetails[7]) + 1).ToString();
+            }
+            else win = null;
+
+            Selected.UserDetails[8] = (int.Parse(Selected.UserDetails[8]) + 1).ToString();
 
             var query = $"UPDATE Users " +
                         $"SET Played = Played + 1 {win} " +

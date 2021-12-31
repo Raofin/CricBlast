@@ -77,7 +77,7 @@
     <Compile Include="Database\ConvertImage.cs" />
     <Compile Include="Database\Account.cs" />
     <Compile Include="Database\Login.cs" />
-    <Compile Include="Database\MatchResults.cs" />
+    <Compile Include="Database\Match.cs" />
     <Compile Include="UI\Admin Controls\AddUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
