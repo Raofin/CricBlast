@@ -19,8 +19,6 @@ namespace CricBlast_GUI.UI
         public MainForm()
         {
             InitializeComponent();
-            mainPanel.Controls.Clear();
-            mainPanel.Controls.Add(value: new TournamentPlay());
         }
 
         private void GetStarted_Click(object sender, EventArgs e)

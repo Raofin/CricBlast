@@ -31,18 +31,23 @@ namespace CricBlast_GUI.UI.Admin_Controls
         {
             this.matchTitle = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.teamsError = new System.Windows.Forms.Label();
+            this.countryError = new System.Windows.Forms.Label();
+            this.titleError = new System.Windows.Forms.Label();
             this.selectStadiums = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.selectTeams = new Guna.UI2.WinForms.Guna2Button();
             this.label3 = new System.Windows.Forms.Label();
             this.startTournament = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.teamsComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.changeTrophy = new Guna.UI2.WinForms.Guna2Button();
-            this.formatComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.hostingCountryComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.trophyPictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.usernameTextBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.titleTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.usernameLabel = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trophyPictureBox)).BeginInit();
@@ -63,18 +68,23 @@ namespace CricBlast_GUI.UI.Admin_Controls
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.Controls.Add(this.label8);
+            this.guna2Panel1.Controls.Add(this.label7);
+            this.guna2Panel1.Controls.Add(this.teamsError);
+            this.guna2Panel1.Controls.Add(this.countryError);
+            this.guna2Panel1.Controls.Add(this.titleError);
             this.guna2Panel1.Controls.Add(this.selectStadiums);
             this.guna2Panel1.Controls.Add(this.label4);
             this.guna2Panel1.Controls.Add(this.selectTeams);
             this.guna2Panel1.Controls.Add(this.label3);
             this.guna2Panel1.Controls.Add(this.startTournament);
-            this.guna2Panel1.Controls.Add(this.guna2ComboBox1);
+            this.guna2Panel1.Controls.Add(this.teamsComboBox);
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Controls.Add(this.changeTrophy);
-            this.guna2Panel1.Controls.Add(this.formatComboBox);
+            this.guna2Panel1.Controls.Add(this.hostingCountryComboBox);
             this.guna2Panel1.Controls.Add(this.label6);
             this.guna2Panel1.Controls.Add(this.trophyPictureBox);
-            this.guna2Panel1.Controls.Add(this.usernameTextBox);
+            this.guna2Panel1.Controls.Add(this.titleTextBox);
             this.guna2Panel1.Controls.Add(this.usernameLabel);
             this.guna2Panel1.Controls.Add(this.matchTitle);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -83,6 +93,71 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(972, 720);
             this.guna2Panel1.TabIndex = 23;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Red;
+            this.label8.Location = new System.Drawing.Point(860, 543);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(22, 32);
+            this.label8.TabIndex = 45;
+            this.label8.Text = "!";
+            this.label8.Visible = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Red;
+            this.label7.Location = new System.Drawing.Point(860, 450);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(22, 32);
+            this.label7.TabIndex = 44;
+            this.label7.Text = "!";
+            this.label7.Visible = false;
+            // 
+            // teamsError
+            // 
+            this.teamsError.AutoSize = true;
+            this.teamsError.BackColor = System.Drawing.Color.Transparent;
+            this.teamsError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.teamsError.ForeColor = System.Drawing.Color.Red;
+            this.teamsError.Location = new System.Drawing.Point(858, 361);
+            this.teamsError.Name = "teamsError";
+            this.teamsError.Size = new System.Drawing.Size(22, 32);
+            this.teamsError.TabIndex = 43;
+            this.teamsError.Text = "!";
+            this.teamsError.Visible = false;
+            // 
+            // countryError
+            // 
+            this.countryError.AutoSize = true;
+            this.countryError.BackColor = System.Drawing.Color.Transparent;
+            this.countryError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.countryError.ForeColor = System.Drawing.Color.Red;
+            this.countryError.Location = new System.Drawing.Point(858, 275);
+            this.countryError.Name = "countryError";
+            this.countryError.Size = new System.Drawing.Size(22, 32);
+            this.countryError.TabIndex = 42;
+            this.countryError.Text = "!";
+            this.countryError.Visible = false;
+            // 
+            // titleError
+            // 
+            this.titleError.AutoSize = true;
+            this.titleError.BackColor = System.Drawing.Color.Transparent;
+            this.titleError.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleError.ForeColor = System.Drawing.Color.Red;
+            this.titleError.Location = new System.Drawing.Point(860, 183);
+            this.titleError.Name = "titleError";
+            this.titleError.Size = new System.Drawing.Size(22, 32);
+            this.titleError.TabIndex = 41;
+            this.titleError.Text = "!";
+            this.titleError.Visible = false;
             // 
             // selectStadiums
             // 
@@ -178,32 +253,30 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.startTournament.Text = "Start Tournament";
             this.startTournament.Click += new System.EventHandler(this.startTournament_Click);
             // 
-            // guna2ComboBox1
+            // teamsComboBox
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.BorderRadius = 4;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.Items.AddRange(new object[] {
+            this.teamsComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.teamsComboBox.BorderRadius = 4;
+            this.teamsComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.teamsComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.teamsComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.teamsComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.teamsComboBox.FocusedState.Parent = this.teamsComboBox;
+            this.teamsComboBox.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.teamsComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.teamsComboBox.HoverState.Parent = this.teamsComboBox;
+            this.teamsComboBox.ItemHeight = 30;
+            this.teamsComboBox.Items.AddRange(new object[] {
             "Select...",
-            "3",
-            "4",
-            "6",
             "8"});
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(443, 359);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(409, 36);
-            this.guna2ComboBox1.StartIndex = 0;
-            this.guna2ComboBox1.TabIndex = 34;
+            this.teamsComboBox.ItemsAppearance.Parent = this.teamsComboBox;
+            this.teamsComboBox.Location = new System.Drawing.Point(443, 359);
+            this.teamsComboBox.Name = "teamsComboBox";
+            this.teamsComboBox.ShadowDecoration.Parent = this.teamsComboBox;
+            this.teamsComboBox.Size = new System.Drawing.Size(409, 36);
+            this.teamsComboBox.StartIndex = 0;
+            this.teamsComboBox.TabIndex = 34;
+            this.teamsComboBox.SelectedIndexChanged += new System.EventHandler(this.teamsComboBox_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -240,20 +313,20 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.changeTrophy.Text = "Change Trophy";
             this.changeTrophy.Click += new System.EventHandler(this.choosePhoto_Click);
             // 
-            // formatComboBox
+            // hostingCountryComboBox
             // 
-            this.formatComboBox.BackColor = System.Drawing.Color.Transparent;
-            this.formatComboBox.BorderRadius = 4;
-            this.formatComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.formatComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.formatComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.formatComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.formatComboBox.FocusedState.Parent = this.formatComboBox;
-            this.formatComboBox.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.formatComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.formatComboBox.HoverState.Parent = this.formatComboBox;
-            this.formatComboBox.ItemHeight = 30;
-            this.formatComboBox.Items.AddRange(new object[] {
+            this.hostingCountryComboBox.BackColor = System.Drawing.Color.Transparent;
+            this.hostingCountryComboBox.BorderRadius = 4;
+            this.hostingCountryComboBox.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.hostingCountryComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.hostingCountryComboBox.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.hostingCountryComboBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.hostingCountryComboBox.FocusedState.Parent = this.hostingCountryComboBox;
+            this.hostingCountryComboBox.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.hostingCountryComboBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.hostingCountryComboBox.HoverState.Parent = this.hostingCountryComboBox;
+            this.hostingCountryComboBox.ItemHeight = 30;
+            this.hostingCountryComboBox.Items.AddRange(new object[] {
             "Select...",
             "Australia",
             "Bangladesh",
@@ -264,13 +337,14 @@ namespace CricBlast_GUI.UI.Admin_Controls
             "South Africa",
             "Sri Lanka",
             "West Indies"});
-            this.formatComboBox.ItemsAppearance.Parent = this.formatComboBox;
-            this.formatComboBox.Location = new System.Drawing.Point(443, 273);
-            this.formatComboBox.Name = "formatComboBox";
-            this.formatComboBox.ShadowDecoration.Parent = this.formatComboBox;
-            this.formatComboBox.Size = new System.Drawing.Size(409, 36);
-            this.formatComboBox.StartIndex = 0;
-            this.formatComboBox.TabIndex = 30;
+            this.hostingCountryComboBox.ItemsAppearance.Parent = this.hostingCountryComboBox;
+            this.hostingCountryComboBox.Location = new System.Drawing.Point(443, 273);
+            this.hostingCountryComboBox.Name = "hostingCountryComboBox";
+            this.hostingCountryComboBox.ShadowDecoration.Parent = this.hostingCountryComboBox;
+            this.hostingCountryComboBox.Size = new System.Drawing.Size(409, 36);
+            this.hostingCountryComboBox.StartIndex = 0;
+            this.hostingCountryComboBox.TabIndex = 30;
+            this.hostingCountryComboBox.SelectedIndexChanged += new System.EventHandler(this.hostingCountryComboBox_SelectedIndexChanged);
             // 
             // label6
             // 
@@ -297,32 +371,33 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.trophyPictureBox.TabStop = false;
             this.trophyPictureBox.UseTransparentBackground = true;
             // 
-            // usernameTextBox
+            // titleTextBox
             // 
-            this.usernameTextBox.BackColor = System.Drawing.Color.Transparent;
-            this.usernameTextBox.BorderRadius = 3;
-            this.usernameTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.usernameTextBox.DefaultText = "";
-            this.usernameTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.usernameTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.usernameTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.usernameTextBox.DisabledState.Parent = this.usernameTextBox;
-            this.usernameTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.usernameTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.usernameTextBox.FocusedState.Parent = this.usernameTextBox;
-            this.usernameTextBox.Font = new System.Drawing.Font("Segoe UI", 16F);
-            this.usernameTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.usernameTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.usernameTextBox.HoverState.Parent = this.usernameTextBox;
-            this.usernameTextBox.Location = new System.Drawing.Point(443, 176);
-            this.usernameTextBox.Margin = new System.Windows.Forms.Padding(5);
-            this.usernameTextBox.Name = "usernameTextBox";
-            this.usernameTextBox.PasswordChar = '\0';
-            this.usernameTextBox.PlaceholderText = "Enter tournament title...";
-            this.usernameTextBox.SelectedText = "";
-            this.usernameTextBox.ShadowDecoration.Parent = this.usernameTextBox;
-            this.usernameTextBox.Size = new System.Drawing.Size(409, 47);
-            this.usernameTextBox.TabIndex = 23;
+            this.titleTextBox.BackColor = System.Drawing.Color.Transparent;
+            this.titleTextBox.BorderRadius = 3;
+            this.titleTextBox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.titleTextBox.DefaultText = "";
+            this.titleTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.titleTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.titleTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.titleTextBox.DisabledState.Parent = this.titleTextBox;
+            this.titleTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.titleTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.titleTextBox.FocusedState.Parent = this.titleTextBox;
+            this.titleTextBox.Font = new System.Drawing.Font("Segoe UI", 16F);
+            this.titleTextBox.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.titleTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.titleTextBox.HoverState.Parent = this.titleTextBox;
+            this.titleTextBox.Location = new System.Drawing.Point(443, 176);
+            this.titleTextBox.Margin = new System.Windows.Forms.Padding(5);
+            this.titleTextBox.Name = "titleTextBox";
+            this.titleTextBox.PasswordChar = '\0';
+            this.titleTextBox.PlaceholderText = "Enter tournament title...";
+            this.titleTextBox.SelectedText = "";
+            this.titleTextBox.ShadowDecoration.Parent = this.titleTextBox;
+            this.titleTextBox.Size = new System.Drawing.Size(409, 47);
+            this.titleTextBox.TabIndex = 23;
+            this.titleTextBox.TextChanged += new System.EventHandler(this.titleTextBox_TextChanged);
             // 
             // usernameLabel
             // 
@@ -357,17 +432,22 @@ namespace CricBlast_GUI.UI.Admin_Controls
         private System.Windows.Forms.Label matchTitle;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2PictureBox trophyPictureBox;
-        private Guna.UI2.WinForms.Guna2TextBox usernameTextBox;
+        private Guna.UI2.WinForms.Guna2TextBox titleTextBox;
         private System.Windows.Forms.Label usernameLabel;
-        private Guna.UI2.WinForms.Guna2ComboBox formatComboBox;
+        private Guna.UI2.WinForms.Guna2ComboBox hostingCountryComboBox;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Button changeTrophy;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
+        private Guna.UI2.WinForms.Guna2ComboBox teamsComboBox;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button selectStadiums;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2Button selectTeams;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Button startTournament;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label teamsError;
+        private System.Windows.Forms.Label countryError;
+        private System.Windows.Forms.Label titleError;
     }
 }

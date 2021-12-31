@@ -37,7 +37,34 @@ namespace CricBlast_GUI.UI.Admin_Controls
 
         private void startTournament_Click(object sender, EventArgs e)
         {
-            new MessageBoxOk(0, "The tournament has begun.").ShowDialog();
+            titleError.Visible = string.IsNullOrWhiteSpace(titleTextBox.Text);
+            countryError.Visible = hostingCountryComboBox.SelectedIndex == 0;
+            teamsError.Visible = teamsComboBox.SelectedIndex == 0;
+
+            if (titleError.Visible || countryError.Visible || teamsError.Visible)
+                new MessageBoxOk(Selected.WarningMark, "Please fill out all the fields properly.").ShowDialog();
+            else
+            {
+                Selected.TournamentTitle = titleTextBox.Text.ToUpper();
+                Selected.TrophyImage = trophyPictureBox.Image;
+                Selected.Tournament = true;
+                new MessageBoxOk(0, "The tournament has begun.").ShowDialog();
+            }
+        }
+
+        private void titleTextBox_TextChanged(object sender, EventArgs e)
+        {
+            titleError.Visible = string.IsNullOrWhiteSpace(titleTextBox.Text);
+        }
+
+        private void hostingCountryComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            countryError.Visible = hostingCountryComboBox.SelectedIndex == 0;
+        }
+
+        private void teamsComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            teamsError.Visible = teamsComboBox.SelectedIndex == 0;
         }
     }
 }

@@ -72,7 +72,11 @@ namespace CricBlast_GUI.UI.User_Controls
         {
             if (SelectedMenu == 6) return;
             homeSubPanel.Controls.Clear();
-            homeSubPanel.Controls.Add(value: new TournamentPlayError());
+            if (Selected.Tournament)
+                homeSubPanel.Controls.Add(value: new TournamentPlay());
+            else
+                homeSubPanel.Controls.Add(value: new TournamentPlayError());
+
             ChangeButtonColor(tournament, 6);
         }
 
@@ -84,7 +88,7 @@ namespace CricBlast_GUI.UI.User_Controls
 
             clearUserDetails();
             Controls.Clear();
-            Controls.Add(new Welcome {welcomeLabel = {Text = "Welcome Back!"}});
+            Controls.Add(new Welcome { welcomeLabel = { Text = "Welcome Back!" } });
         }
 
         private void clearUserDetails()

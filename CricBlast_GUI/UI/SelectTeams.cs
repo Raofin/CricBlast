@@ -30,6 +30,14 @@ namespace CricBlast_GUI.UI
 
         private void doneButton_Click(object sender, EventArgs e)
         {
+            if (!australiaCheckBox.Checked || !bangladeshCheckBox.Checked || !indiaCheckBox.Checked ||
+                !newzealandCheckBox.Checked || !pakistanCheckBox.Checked || !southafricaCheckBox.Checked ||
+                !srilankaCheckBox.Checked || !westindiesCheckBox.Checked)
+            {
+                new MessageBoxOk(1, "Please select teams properly.").ShowDialog();
+                return;
+            }
+
             Close();
         }
 
