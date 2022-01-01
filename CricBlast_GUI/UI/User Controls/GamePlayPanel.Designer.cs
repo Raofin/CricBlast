@@ -108,6 +108,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.Controls.Add(this.opponentTeamScore);
             this.Controls.Add(this.userTeamLogo);
             this.Controls.Add(this.userTeamScore);
+            this.DoubleBuffered = true;
             this.Name = "GamePlayPanel";
             this.Size = new System.Drawing.Size(838, 161);
             ((System.ComponentModel.ISupportInitialize)(this.userTeamLogo)).EndInit();

@@ -6,11 +6,6 @@ namespace CricBlast_GUI.UI.User_Controls
     {
         public TournamentPlayError()
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
             InitializeComponent();
         }
     }

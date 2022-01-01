@@ -183,7 +183,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.matchHistoryButton.Name = "matchHistoryButton";
             this.matchHistoryButton.ShadowDecoration.Parent = this.matchHistoryButton;
             this.matchHistoryButton.Size = new System.Drawing.Size(194, 45);
-            this.matchHistoryButton.TabIndex = 46;
+            this.matchHistoryButton.TabIndex = 6;
             this.matchHistoryButton.Text = "View History";
             this.matchHistoryButton.Click += new System.EventHandler(this.matchHistoryButton_Click);
             // 
@@ -206,7 +206,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.playButton.Name = "playButton";
             this.playButton.ShadowDecoration.Parent = this.playButton;
             this.playButton.Size = new System.Drawing.Size(194, 45);
-            this.playButton.TabIndex = 45;
+            this.playButton.TabIndex = 5;
             this.playButton.Text = "Play";
             this.playButton.Click += new System.EventHandler(this.playButton_Click);
             // 
@@ -318,7 +318,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.pitchComboBox.ShadowDecoration.Parent = this.pitchComboBox;
             this.pitchComboBox.Size = new System.Drawing.Size(364, 36);
             this.pitchComboBox.StartIndex = 0;
-            this.pitchComboBox.TabIndex = 26;
+            this.pitchComboBox.TabIndex = 3;
             this.pitchComboBox.SelectedIndexChanged += new System.EventHandler(this.pitchComboBox_SelectedIndexChanged);
             // 
             // stadiumComboBox
@@ -360,7 +360,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.stadiumComboBox.ShadowDecoration.Parent = this.stadiumComboBox;
             this.stadiumComboBox.Size = new System.Drawing.Size(364, 36);
             this.stadiumComboBox.StartIndex = 0;
-            this.stadiumComboBox.TabIndex = 27;
+            this.stadiumComboBox.TabIndex = 4;
             this.stadiumComboBox.SelectedIndexChanged += new System.EventHandler(this.stadiumComboBox_SelectedIndexChanged);
             // 
             // formatComboBox
@@ -387,7 +387,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.formatComboBox.ShadowDecoration.Parent = this.formatComboBox;
             this.formatComboBox.Size = new System.Drawing.Size(364, 36);
             this.formatComboBox.StartIndex = 0;
-            this.formatComboBox.TabIndex = 28;
+            this.formatComboBox.TabIndex = 2;
             this.formatComboBox.SelectedIndexChanged += new System.EventHandler(this.formatComboBox_SelectedIndexChanged);
             // 
             // opponentComboBox
@@ -419,7 +419,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.opponentComboBox.ShadowDecoration.Parent = this.opponentComboBox;
             this.opponentComboBox.Size = new System.Drawing.Size(364, 36);
             this.opponentComboBox.StartIndex = 0;
-            this.opponentComboBox.TabIndex = 29;
+            this.opponentComboBox.TabIndex = 1;
             this.opponentComboBox.SelectedIndexChanged += new System.EventHandler(this.opponentComboBox_SelectedIndexChanged);
             // 
             // label8
@@ -477,6 +477,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.BackgroundHome;
             this.Controls.Add(this.matchPreviewPanel);
+            this.DoubleBuffered = true;
             this.Name = "PlayMatch";
             this.Size = new System.Drawing.Size(972, 720);
             ((System.ComponentModel.ISupportInitialize)(this.opponentTeamLogo)).EndInit();

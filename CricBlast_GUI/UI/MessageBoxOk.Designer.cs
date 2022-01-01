@@ -72,7 +72,7 @@ namespace CricBlast_GUI.UI
             this.okButton.Name = "okButton";
             this.okButton.ShadowDecoration.Parent = this.okButton;
             this.okButton.Size = new System.Drawing.Size(180, 45);
-            this.okButton.TabIndex = 28;
+            this.okButton.TabIndex = 1;
             this.okButton.Text = "OK";
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 

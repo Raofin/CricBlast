@@ -138,7 +138,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.choosePhoto.Name = "choosePhoto";
             this.choosePhoto.ShadowDecoration.Parent = this.choosePhoto;
             this.choosePhoto.Size = new System.Drawing.Size(260, 46);
-            this.choosePhoto.TabIndex = 29;
+            this.choosePhoto.TabIndex = 8;
             this.choosePhoto.Text = "Choose a Photo";
             this.choosePhoto.Click += new System.EventHandler(this.choosePhoto_Click);
             // 
@@ -381,7 +381,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.register.Name = "register";
             this.register.ShadowDecoration.Parent = this.register;
             this.register.Size = new System.Drawing.Size(459, 44);
-            this.register.TabIndex = 6;
+            this.register.TabIndex = 7;
             this.register.Text = "Register";
             this.register.Click += new System.EventHandler(this.register_Click);
             // 
@@ -649,7 +649,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.captchaTextBox.SelectedText = "";
             this.captchaTextBox.ShadowDecoration.Parent = this.captchaTextBox;
             this.captchaTextBox.Size = new System.Drawing.Size(109, 35);
-            this.captchaTextBox.TabIndex = 5;
+            this.captchaTextBox.TabIndex = 6;
             this.captchaTextBox.TextChanged += new System.EventHandler(this.captchaTextBox_TextChanged);
             // 
             // mobileTextBox
@@ -735,6 +735,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.Controls.Add(this.label1);
             this.Controls.Add(this.register);
             this.Controls.Add(this.pictureBox1);
+            this.DoubleBuffered = true;
             this.Name = "CreateAccount";
             this.Size = new System.Drawing.Size(1280, 720);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();

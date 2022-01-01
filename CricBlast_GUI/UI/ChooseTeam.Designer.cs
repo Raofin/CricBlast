@@ -70,7 +70,7 @@ namespace CricBlast_GUI.UI
             this.teamComboBox.ShadowDecoration.Parent = this.teamComboBox;
             this.teamComboBox.Size = new System.Drawing.Size(293, 36);
             this.teamComboBox.StartIndex = 0;
-            this.teamComboBox.TabIndex = 23;
+            this.teamComboBox.TabIndex = 1;
             this.teamComboBox.SelectedIndexChanged += new System.EventHandler(this.teamComboBox_SelectedIndexChanged);
             // 
             // label1
@@ -104,7 +104,7 @@ namespace CricBlast_GUI.UI
             this.okButton.Name = "okButton";
             this.okButton.ShadowDecoration.Parent = this.okButton;
             this.okButton.Size = new System.Drawing.Size(180, 45);
-            this.okButton.TabIndex = 24;
+            this.okButton.TabIndex = 2;
             this.okButton.Text = "OK";
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 

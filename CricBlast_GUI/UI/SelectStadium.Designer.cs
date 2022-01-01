@@ -100,7 +100,7 @@ namespace CricBlast_GUI.UI
             this.doneButton.Name = "doneButton";
             this.doneButton.ShadowDecoration.Parent = this.doneButton;
             this.doneButton.Size = new System.Drawing.Size(180, 45);
-            this.doneButton.TabIndex = 45;
+            this.doneButton.TabIndex = 1;
             this.doneButton.Text = "Done";
             this.doneButton.Click += new System.EventHandler(this.doneButton_Click);
             // 
@@ -451,6 +451,7 @@ namespace CricBlast_GUI.UI
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(984, 517);
             this.Controls.Add(this.guna2Panel1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SelectStadium";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -18,14 +18,9 @@ namespace CricBlast_GUI.UI
 
         public ChooseTeam()
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
             InitializeComponent();
         }
-        
+
         private void ChooseTeam_Load(object sender, EventArgs e)
         {
             teamComboBox.SelectedIndex = Selected.UserTeam == 0 ? 0 : Selected.UserTeam;

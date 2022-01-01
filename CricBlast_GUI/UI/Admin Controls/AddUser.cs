@@ -12,11 +12,6 @@ namespace CricBlast_GUI.UI.Admin_Controls
 
         public AddUser()
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
             InitializeComponent();
             allUserGridPanel.Controls.Add(new UserList());
             allUserGridPanel.Controls["UserList"].Dock = DockStyle.Fill;
@@ -42,7 +37,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
                         .ShowDialog();
                 else
                 {
-                    Account.Create(usernameTextBox.Text, emailTextBox.Text, passwordTextBox.Text, 
+                    Account.Create(usernameTextBox.Text, emailTextBox.Text, passwordTextBox.Text,
                         mobileTextBox.Text, Gender, UserPicture);
                     new MessageBoxOk(Selected.CheckMark, "The user has been added successfully.")
                         .ShowDialog();

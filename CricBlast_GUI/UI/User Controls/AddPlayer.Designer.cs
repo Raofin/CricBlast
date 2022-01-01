@@ -161,7 +161,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.bowlingComboBox.ShadowDecoration.Parent = this.bowlingComboBox;
             this.bowlingComboBox.Size = new System.Drawing.Size(409, 36);
             this.bowlingComboBox.StartIndex = 0;
-            this.bowlingComboBox.TabIndex = 52;
+            this.bowlingComboBox.TabIndex = 5;
             // 
             // battingComboBox
             // 
@@ -186,7 +186,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.battingComboBox.ShadowDecoration.Parent = this.battingComboBox;
             this.battingComboBox.Size = new System.Drawing.Size(409, 36);
             this.battingComboBox.StartIndex = 0;
-            this.battingComboBox.TabIndex = 53;
+            this.battingComboBox.TabIndex = 4;
             // 
             // roleComboBox
             // 
@@ -212,7 +212,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.roleComboBox.ShadowDecoration.Parent = this.roleComboBox;
             this.roleComboBox.Size = new System.Drawing.Size(409, 36);
             this.roleComboBox.StartIndex = 0;
-            this.roleComboBox.TabIndex = 54;
+            this.roleComboBox.TabIndex = 3;
             // 
             // choosePhotoButton
             // 
@@ -233,7 +233,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.choosePhotoButton.Name = "choosePhotoButton";
             this.choosePhotoButton.ShadowDecoration.Parent = this.choosePhotoButton;
             this.choosePhotoButton.Size = new System.Drawing.Size(221, 41);
-            this.choosePhotoButton.TabIndex = 51;
+            this.choosePhotoButton.TabIndex = 6;
             this.choosePhotoButton.Text = "Choose a Photo";
             this.choosePhotoButton.Click += new System.EventHandler(this.choosePhotoButton_Click);
             // 
@@ -263,7 +263,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.playerAge.SelectedText = "";
             this.playerAge.ShadowDecoration.Parent = this.playerAge;
             this.playerAge.Size = new System.Drawing.Size(409, 36);
-            this.playerAge.TabIndex = 49;
+            this.playerAge.TabIndex = 2;
             // 
             // label10
             // 
@@ -339,7 +339,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.playerName.SelectedText = "";
             this.playerName.ShadowDecoration.Parent = this.playerName;
             this.playerName.Size = new System.Drawing.Size(409, 36);
-            this.playerName.TabIndex = 50;
+            this.playerName.TabIndex = 1;
             // 
             // label6
             // 
@@ -385,7 +385,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.addPlayerButton.Name = "addPlayerButton";
             this.addPlayerButton.ShadowDecoration.Parent = this.addPlayerButton;
             this.addPlayerButton.Size = new System.Drawing.Size(233, 45);
-            this.addPlayerButton.TabIndex = 41;
+            this.addPlayerButton.TabIndex = 7;
             this.addPlayerButton.Text = "Add Player";
             this.addPlayerButton.Click += new System.EventHandler(this.addPlayerButton_Click);
             // 
@@ -428,6 +428,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.Controls.Add(this.label23);
             this.Controls.Add(this.addPlayerButton);
             this.Controls.Add(this.playerPicture);
+            this.DoubleBuffered = true;
             this.Name = "AddPlayer";
             this.Size = new System.Drawing.Size(972, 720);
             ((System.ComponentModel.ISupportInitialize)(this.playerPicture)).EndInit();

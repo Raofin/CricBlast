@@ -85,7 +85,7 @@ namespace CricBlast_GUI.UI
             this.emailTextBox.SelectedText = "";
             this.emailTextBox.ShadowDecoration.Parent = this.emailTextBox;
             this.emailTextBox.Size = new System.Drawing.Size(409, 47);
-            this.emailTextBox.TabIndex = 24;
+            this.emailTextBox.TabIndex = 1;
             this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
             // 
             // usernameLabel
@@ -120,7 +120,7 @@ namespace CricBlast_GUI.UI
             this.recoverButton.Name = "recoverButton";
             this.recoverButton.ShadowDecoration.Parent = this.recoverButton;
             this.recoverButton.Size = new System.Drawing.Size(242, 45);
-            this.recoverButton.TabIndex = 22;
+            this.recoverButton.TabIndex = 2;
             this.recoverButton.Text = "Recover";
             this.recoverButton.Click += new System.EventHandler(this.recoverButton_Click);
             // 

@@ -297,6 +297,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
             this.Controls.Add(this.adminSubPanel);
             this.Controls.Add(this.adminMenuPanel);
+            this.DoubleBuffered = true;
             this.Name = "AdminPanel";
             this.Size = new System.Drawing.Size(1280, 720);
             this.Load += new System.EventHandler(this.AdminPanel_Load);

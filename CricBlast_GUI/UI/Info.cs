@@ -7,11 +7,6 @@ namespace CricBlast_GUI.UI
     {
         public Info()
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
             InitializeComponent();
         }
 

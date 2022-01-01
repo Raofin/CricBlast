@@ -141,7 +141,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.play.Name = "play";
             this.play.ShadowDecoration.Parent = this.play;
             this.play.Size = new System.Drawing.Size(180, 45);
-            this.play.TabIndex = 45;
+            this.play.TabIndex = 1;
             this.play.Text = "Play";
             this.play.Click += new System.EventHandler(this.play_Click);
             // 
@@ -457,6 +457,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.BackgroundHome;
             this.Controls.Add(this.guna2Panel1);
+            this.DoubleBuffered = true;
             this.Name = "TournamentPlay";
             this.Size = new System.Drawing.Size(972, 720);
             this.guna2Panel1.ResumeLayout(false);

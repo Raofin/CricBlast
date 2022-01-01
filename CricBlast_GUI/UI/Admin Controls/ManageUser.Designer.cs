@@ -306,6 +306,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.Controls.Add(this.dbPanel);
             this.Controls.Add(this.welcomeLabel);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+            this.DoubleBuffered = true;
             this.Name = "ManageUser";
             this.Size = new System.Drawing.Size(972, 720);
             this.dbPanel.ResumeLayout(false);

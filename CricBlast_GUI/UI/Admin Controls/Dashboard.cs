@@ -10,11 +10,6 @@ namespace CricBlast_GUI.UI.Admin_Controls
     {
         public Dashboard()
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
             InitializeComponent();
             LoadServerStats();
             LoadRecentlyJoined();
@@ -62,27 +57,27 @@ namespace CricBlast_GUI.UI.Admin_Controls
 
                     user1Name.Text = dataTable.Rows[0]["UserName"].ToString();
                     user1Email.Text = dataTable.Rows[0]["Email"].ToString();
-                    user1Picture.Image = ConvertImage.ToImage((byte[]) dataTable.Rows[0]["Image"]);
+                    user1Picture.Image = ConvertImage.ToImage((byte[])dataTable.Rows[0]["Image"]);
 
                     user2Name.Text = dataTable.Rows[1]["UserName"].ToString();
                     user2Email.Text = dataTable.Rows[1]["Email"].ToString();
-                    user2Picture.Image = ConvertImage.ToImage((byte[]) dataTable.Rows[1]["Image"]);
+                    user2Picture.Image = ConvertImage.ToImage((byte[])dataTable.Rows[1]["Image"]);
 
                     user3Name.Text = dataTable.Rows[2]["UserName"].ToString();
                     user3Email.Text = dataTable.Rows[2]["Email"].ToString();
-                    user3Picture.Image = ConvertImage.ToImage((byte[]) dataTable.Rows[2]["Image"]);
+                    user3Picture.Image = ConvertImage.ToImage((byte[])dataTable.Rows[2]["Image"]);
 
                     user4Name.Text = dataTable.Rows[3]["UserName"].ToString();
                     user4Email.Text = dataTable.Rows[3]["Email"].ToString();
-                    user4Picture.Image = ConvertImage.ToImage((byte[]) dataTable.Rows[3]["Image"]);
+                    user4Picture.Image = ConvertImage.ToImage((byte[])dataTable.Rows[3]["Image"]);
 
                     user5Name.Text = dataTable.Rows[4]["UserName"].ToString();
                     user5Email.Text = dataTable.Rows[4]["Email"].ToString();
-                    user5Picture.Image = ConvertImage.ToImage((byte[]) dataTable.Rows[4]["Image"]);
+                    user5Picture.Image = ConvertImage.ToImage((byte[])dataTable.Rows[4]["Image"]);
 
                     user6Name.Text = dataTable.Rows[5]["UserName"].ToString();
                     user6Email.Text = dataTable.Rows[5]["Email"].ToString();
-                    user6Picture.Image = ConvertImage.ToImage((byte[]) dataTable.Rows[5]["Image"]);
+                    user6Picture.Image = ConvertImage.ToImage((byte[])dataTable.Rows[5]["Image"]);
                 }
             }
         }

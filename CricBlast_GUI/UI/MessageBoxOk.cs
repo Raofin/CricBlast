@@ -18,11 +18,6 @@ namespace CricBlast_GUI.UI
 
         public MessageBoxOk(byte mark, string message, string buttonText = "Ok")
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
             InitializeComponent();
             TopMost = true;
             this.message.Text = message;

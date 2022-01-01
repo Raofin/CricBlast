@@ -66,6 +66,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.BackgroundHome;
             this.Controls.Add(this.guna2PictureBox1);
             this.Controls.Add(this.label1);
+            this.DoubleBuffered = true;
             this.Name = "TournamentPlayError";
             this.Size = new System.Drawing.Size(972, 720);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();

@@ -133,6 +133,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.Controls.Add(this.UserPreviewGrid);
+            this.DoubleBuffered = true;
             this.Name = "UserList";
             this.Size = new System.Drawing.Size(328, 401);
             ((System.ComponentModel.ISupportInitialize)(this.UserPreviewGrid)).EndInit();

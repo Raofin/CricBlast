@@ -266,7 +266,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.choosePhoto.Name = "choosePhoto";
             this.choosePhoto.ShadowDecoration.Parent = this.choosePhoto;
             this.choosePhoto.Size = new System.Drawing.Size(260, 46);
-            this.choosePhoto.TabIndex = 86;
+            this.choosePhoto.TabIndex = 5;
             this.choosePhoto.Text = "Choose a Photo";
             this.choosePhoto.Click += new System.EventHandler(this.choosePhoto_Click);
             // 
@@ -319,7 +319,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.passwordTextBox.SelectedText = "";
             this.passwordTextBox.ShadowDecoration.Parent = this.passwordTextBox;
             this.passwordTextBox.Size = new System.Drawing.Size(323, 46);
-            this.passwordTextBox.TabIndex = 75;
+            this.passwordTextBox.TabIndex = 3;
             this.passwordTextBox.UseSystemPasswordChar = true;
             this.passwordTextBox.TextChanged += new System.EventHandler(this.passwordTextBox_TextChanged);
             // 
@@ -360,7 +360,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.mobileTextBox.SelectedText = "";
             this.mobileTextBox.ShadowDecoration.Parent = this.mobileTextBox;
             this.mobileTextBox.Size = new System.Drawing.Size(323, 46);
-            this.mobileTextBox.TabIndex = 76;
+            this.mobileTextBox.TabIndex = 4;
             this.mobileTextBox.TextChanged += new System.EventHandler(this.mobileTextBox_TextChanged);
             // 
             // label8
@@ -400,7 +400,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.emailTextBox.SelectedText = "";
             this.emailTextBox.ShadowDecoration.Parent = this.emailTextBox;
             this.emailTextBox.Size = new System.Drawing.Size(323, 46);
-            this.emailTextBox.TabIndex = 74;
+            this.emailTextBox.TabIndex = 2;
             this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
             // 
             // label3
@@ -440,7 +440,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.usernameTextBox.SelectedText = "";
             this.usernameTextBox.ShadowDecoration.Parent = this.usernameTextBox;
             this.usernameTextBox.Size = new System.Drawing.Size(323, 46);
-            this.usernameTextBox.TabIndex = 73;
+            this.usernameTextBox.TabIndex = 1;
             this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
             // 
             // label2
@@ -487,7 +487,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.addButton.Name = "addButton";
             this.addButton.ShadowDecoration.Parent = this.addButton;
             this.addButton.Size = new System.Drawing.Size(223, 44);
-            this.addButton.TabIndex = 77;
+            this.addButton.TabIndex = 6;
             this.addButton.Text = "Add";
             this.addButton.Click += new System.EventHandler(this.addButton_Click);
             // 
@@ -522,6 +522,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.Controls.Add(this.label4);
             this.Controls.Add(this.allUserGridPanel);
             this.Controls.Add(this.guna2Panel1);
+            this.DoubleBuffered = true;
             this.Name = "AddUser";
             this.Size = new System.Drawing.Size(972, 720);
             this.guna2Panel1.ResumeLayout(false);

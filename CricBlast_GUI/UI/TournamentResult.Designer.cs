@@ -63,7 +63,7 @@ namespace CricBlast_GUI.UI
             this.close.Name = "close";
             this.close.ShadowDecoration.Parent = this.close;
             this.close.Size = new System.Drawing.Size(200, 43);
-            this.close.TabIndex = 34;
+            this.close.TabIndex = 1;
             this.close.Text = "Close";
             this.close.Click += new System.EventHandler(this.close_Click);
             // 

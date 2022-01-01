@@ -453,6 +453,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.BackgroundHome;
             this.Controls.Add(this.guna2Panel1);
+            this.DoubleBuffered = true;
             this.Name = "Dashboard";
             this.Size = new System.Drawing.Size(972, 720);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();

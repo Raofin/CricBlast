@@ -124,7 +124,7 @@ namespace CricBlast_GUI.UI
             this.doneButton.Name = "doneButton";
             this.doneButton.ShadowDecoration.Parent = this.doneButton;
             this.doneButton.Size = new System.Drawing.Size(180, 45);
-            this.doneButton.TabIndex = 48;
+            this.doneButton.TabIndex = 1;
             this.doneButton.Text = "Done";
             this.doneButton.Click += new System.EventHandler(this.doneButton_Click);
             // 

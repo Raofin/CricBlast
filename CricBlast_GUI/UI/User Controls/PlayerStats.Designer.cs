@@ -73,7 +73,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.changeFormatComboBox.Name = "changeFormatComboBox";
             this.changeFormatComboBox.ShadowDecoration.Parent = this.changeFormatComboBox;
             this.changeFormatComboBox.Size = new System.Drawing.Size(260, 36);
-            this.changeFormatComboBox.TabIndex = 37;
+            this.changeFormatComboBox.TabIndex = 2;
             this.changeFormatComboBox.SelectedIndexChanged += new System.EventHandler(this.changeFormatComboBox_SelectedIndexChanged);
             // 
             // label12
@@ -106,7 +106,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.changePlayerComboBox.Name = "changePlayerComboBox";
             this.changePlayerComboBox.ShadowDecoration.Parent = this.changePlayerComboBox;
             this.changePlayerComboBox.Size = new System.Drawing.Size(260, 36);
-            this.changePlayerComboBox.TabIndex = 38;
+            this.changePlayerComboBox.TabIndex = 1;
             this.changePlayerComboBox.SelectedIndexChanged += new System.EventHandler(this.changePlayer_SelectedIndexChanged);
             // 
             // label10

@@ -9,11 +9,6 @@ namespace CricBlast_GUI.UI.User_Controls
     {
         public PlayerStats()
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
             InitializeComponent();
         }
 

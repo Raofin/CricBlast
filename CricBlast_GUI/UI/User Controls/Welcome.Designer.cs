@@ -326,6 +326,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.login);
             this.Controls.Add(this.logo);
+            this.DoubleBuffered = true;
             this.Name = "Welcome";
             this.Size = new System.Drawing.Size(1280, 720);
             this.Load += new System.EventHandler(this.Welcome_Load);

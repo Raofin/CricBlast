@@ -10,11 +10,6 @@ namespace CricBlast_GUI.UI.Admin_Controls
     {
         public ManageUser()
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
             InitializeComponent();
             LoadData();
         }

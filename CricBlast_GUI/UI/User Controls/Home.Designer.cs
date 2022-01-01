@@ -340,6 +340,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
             this.Controls.Add(this.homeSubPanel);
             this.Controls.Add(this.menuPanel);
+            this.DoubleBuffered = true;
             this.Name = "Home";
             this.Size = new System.Drawing.Size(1280, 720);
             this.Load += new System.EventHandler(this.Home_Load);

@@ -24,11 +24,6 @@ namespace CricBlast_GUI.UI
 
         public Profile()
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
             InitializeComponent();
             LoadProfile();
         }
@@ -123,7 +118,7 @@ namespace CricBlast_GUI.UI
 
         private void changeProfilePicture_Click(object sender, EventArgs e)
         {
-            using (var openFileDialog = new OpenFileDialog {Filter = Properties.Resources.ImageFilter})
+            using (var openFileDialog = new OpenFileDialog { Filter = Properties.Resources.ImageFilter })
             {
                 if (openFileDialog.ShowDialog() != DialogResult.OK) return;
                 _userNewImage = userCirclePicture.Image = new Bitmap(openFileDialog.FileName);

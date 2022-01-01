@@ -8,11 +8,6 @@ namespace CricBlast_GUI.UI.User_Controls
     {
         public PlayMatch()
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
             InitializeComponent();
             userTeamLabel.Text = Teams.Team.GetStats(Selected.UserTeam, Teams.Team.TeamName);
             userTeamLogo.Image = Selected.UserTeamLogo;

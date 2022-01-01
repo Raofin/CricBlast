@@ -17,11 +17,6 @@ namespace CricBlast_GUI.UI
 
         public SelectStadium()
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
             InitializeComponent();
         }
 

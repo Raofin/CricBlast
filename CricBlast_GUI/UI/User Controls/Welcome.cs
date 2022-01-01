@@ -21,11 +21,6 @@ namespace CricBlast_GUI.UI.User_Controls
 
         public Welcome()
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
             InitializeComponent();
         }
 

@@ -585,6 +585,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label8);
+            this.DoubleBuffered = true;
             this.Name = "CustomizeTeam";
             this.Size = new System.Drawing.Size(972, 720);
             this.Load += new System.EventHandler(this.CustomizeTeam_Load);

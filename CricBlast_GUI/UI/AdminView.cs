@@ -20,11 +20,6 @@ namespace CricBlast_GUI.UI
 
         public AdminView()
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
             InitializeComponent();
             LoadProfile();
         }
@@ -57,7 +52,7 @@ namespace CricBlast_GUI.UI
         private bool _modify;
         private bool _modifyPhoto;
         private Image _userNewImage = TempUserImage;
-        
+
 
         private void LoadProfile()
         {

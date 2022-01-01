@@ -13,11 +13,6 @@ namespace CricBlast_GUI.UI.User_Controls
 
         public CreateAccount()
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
             InitializeComponent();
             GenerateCaptcha();
         }
@@ -49,7 +44,7 @@ namespace CricBlast_GUI.UI.User_Controls
                         .ShowDialog();
                 else
                 {
-                    Account.Create(usernameTextBox.Text, emailTextBox.Text, passwordTextBox.Text, 
+                    Account.Create(usernameTextBox.Text, emailTextBox.Text, passwordTextBox.Text,
                         mobileTextBox.Text, Gender, UserPicture);
                     new MessageBoxOk(Selected.CheckMark, "Your registration has been successfully completed.")
                         .ShowDialog();

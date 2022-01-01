@@ -9,11 +9,6 @@ namespace CricBlast_GUI.UI.Admin_Controls
     {
         public AdminPanel()
         {
-            SetStyle(
-                ControlStyles.UserPaint |
-                ControlStyles.AllPaintingInWmPaint |
-                ControlStyles.OptimizedDoubleBuffer,
-                true);
             InitializeComponent();
         }
 
@@ -32,7 +27,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             if (!Selected.MessageBoxYesOrNo) return;
 
             Controls.Clear();
-            Controls.Add(new Welcome {welcomeLabel = {Text = "Welcome Back!"}});
+            Controls.Add(new Welcome { welcomeLabel = { Text = "Welcome Back!" } });
         }
 
         private bool _isAvailable = true;

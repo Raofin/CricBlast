@@ -79,7 +79,7 @@ namespace CricBlast_GUI.UI
             this.yes.Name = "yes";
             this.yes.ShadowDecoration.Parent = this.yes;
             this.yes.Size = new System.Drawing.Size(153, 45);
-            this.yes.TabIndex = 31;
+            this.yes.TabIndex = 1;
             this.yes.Text = "Yes";
             this.yes.Click += new System.EventHandler(this.yes_Click);
             // 
@@ -114,7 +114,7 @@ namespace CricBlast_GUI.UI
             this.no.Name = "no";
             this.no.ShadowDecoration.Parent = this.no;
             this.no.Size = new System.Drawing.Size(153, 45);
-            this.no.TabIndex = 31;
+            this.no.TabIndex = 2;
             this.no.Text = "No";
             this.no.Click += new System.EventHandler(this.no_Click);
             // 

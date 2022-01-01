@@ -178,7 +178,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.selectStadiums.Name = "selectStadiums";
             this.selectStadiums.ShadowDecoration.Parent = this.selectStadiums;
             this.selectStadiums.Size = new System.Drawing.Size(409, 43);
-            this.selectStadiums.TabIndex = 40;
+            this.selectStadiums.TabIndex = 5;
             this.selectStadiums.Text = "Select Stadiums ";
             this.selectStadiums.Click += new System.EventHandler(this.selectStadiums_Click);
             // 
@@ -213,7 +213,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.selectTeams.Name = "selectTeams";
             this.selectTeams.ShadowDecoration.Parent = this.selectTeams;
             this.selectTeams.Size = new System.Drawing.Size(409, 43);
-            this.selectTeams.TabIndex = 38;
+            this.selectTeams.TabIndex = 4;
             this.selectTeams.Text = "Select Teams";
             this.selectTeams.Click += new System.EventHandler(this.selectTeams_Click);
             // 
@@ -249,7 +249,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.startTournament.Name = "startTournament";
             this.startTournament.ShadowDecoration.Parent = this.startTournament;
             this.startTournament.Size = new System.Drawing.Size(314, 44);
-            this.startTournament.TabIndex = 35;
+            this.startTournament.TabIndex = 6;
             this.startTournament.Text = "Start Tournament";
             this.startTournament.Click += new System.EventHandler(this.startTournament_Click);
             // 
@@ -275,7 +275,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.teamsComboBox.ShadowDecoration.Parent = this.teamsComboBox;
             this.teamsComboBox.Size = new System.Drawing.Size(409, 36);
             this.teamsComboBox.StartIndex = 0;
-            this.teamsComboBox.TabIndex = 34;
+            this.teamsComboBox.TabIndex = 3;
             this.teamsComboBox.SelectedIndexChanged += new System.EventHandler(this.teamsComboBox_SelectedIndexChanged);
             // 
             // label2
@@ -343,7 +343,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.hostingCountryComboBox.ShadowDecoration.Parent = this.hostingCountryComboBox;
             this.hostingCountryComboBox.Size = new System.Drawing.Size(409, 36);
             this.hostingCountryComboBox.StartIndex = 0;
-            this.hostingCountryComboBox.TabIndex = 30;
+            this.hostingCountryComboBox.TabIndex = 2;
             this.hostingCountryComboBox.SelectedIndexChanged += new System.EventHandler(this.hostingCountryComboBox_SelectedIndexChanged);
             // 
             // label6
@@ -396,7 +396,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.titleTextBox.SelectedText = "";
             this.titleTextBox.ShadowDecoration.Parent = this.titleTextBox;
             this.titleTextBox.Size = new System.Drawing.Size(409, 47);
-            this.titleTextBox.TabIndex = 23;
+            this.titleTextBox.TabIndex = 1;
             this.titleTextBox.TextChanged += new System.EventHandler(this.titleTextBox_TextChanged);
             // 
             // usernameLabel
@@ -418,6 +418,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.BackgroundHome;
             this.Controls.Add(this.guna2Panel1);
+            this.DoubleBuffered = true;
             this.Name = "TournamentsAdmin";
             this.Size = new System.Drawing.Size(972, 720);
             this.guna2Panel1.ResumeLayout(false);

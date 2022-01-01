@@ -349,6 +349,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.Controls.Add(this.teamLogo);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.teamName);
+            this.DoubleBuffered = true;
             this.Name = "MyTeam";
             this.Size = new System.Drawing.Size(972, 720);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
