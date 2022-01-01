@@ -29,6 +29,7 @@ namespace CricBlast_GUI.UI.User_Controls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.opponentTeamLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.opponentTeamLabel = new System.Windows.Forms.Label();
             this.userTeamLogo = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -53,6 +54,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.opponentTeamLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userTeamLogo)).BeginInit();
             this.matchPreviewPanel.SuspendLayout();
@@ -470,6 +472,12 @@ namespace CricBlast_GUI.UI.User_Controls
             this.label9.TabIndex = 25;
             this.label9.Text = "OPPONENT";
             // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this.matchPreviewPanel;
+            this.DragControl.TransparentWhileDrag = false;
+            // 
             // PlayMatch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -516,5 +524,6 @@ namespace CricBlast_GUI.UI.User_Controls
         private System.Windows.Forms.Label stadiumSelectError;
         private System.Windows.Forms.Label pitchSelectError;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
     }
 }

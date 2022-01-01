@@ -29,6 +29,7 @@ namespace CricBlast_GUI.UI.User_Controls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.photoError = new System.Windows.Forms.Label();
             this.bowlingError = new System.Windows.Forms.Label();
             this.battingError = new System.Windows.Forms.Label();
@@ -49,6 +50,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.label23 = new System.Windows.Forms.Label();
             this.addPlayerButton = new Guna.UI2.WinForms.Guna2Button();
             this.playerPicture = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.playerPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -402,6 +404,12 @@ namespace CricBlast_GUI.UI.User_Controls
             this.playerPicture.TabIndex = 42;
             this.playerPicture.TabStop = false;
             // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this;
+            this.DragControl.TransparentWhileDrag = false;
+            // 
             // AddPlayer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -459,5 +467,6 @@ namespace CricBlast_GUI.UI.User_Controls
         private System.Windows.Forms.Label label23;
         private Guna.UI2.WinForms.Guna2Button addPlayerButton;
         private Guna.UI2.WinForms.Guna2PictureBox playerPicture;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
     }
 }

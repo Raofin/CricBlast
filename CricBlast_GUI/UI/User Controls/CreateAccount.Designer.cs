@@ -29,6 +29,7 @@ namespace CricBlast_GUI.UI.User_Controls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.genderRadioFemale = new Guna.UI2.WinForms.Guna2RadioButton();
             this.genderRadioMale = new Guna.UI2.WinForms.Guna2RadioButton();
             this.choosePhoto = new Guna.UI2.WinForms.Guna2Button();
@@ -65,6 +66,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.captchaTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.mobileTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.photoError = new System.Windows.Forms.Label();
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eyePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).BeginInit();
@@ -693,6 +695,12 @@ namespace CricBlast_GUI.UI.User_Controls
             this.photoError.Text = "!";
             this.photoError.Visible = false;
             // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this;
+            this.DragControl.TransparentWhileDrag = false;
+            // 
             // CreateAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -786,5 +794,6 @@ namespace CricBlast_GUI.UI.User_Controls
         private Guna.UI2.WinForms.Guna2TextBox captchaTextBox;
         private Guna.UI2.WinForms.Guna2TextBox mobileTextBox;
         private System.Windows.Forms.Label photoError;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
     }
 }

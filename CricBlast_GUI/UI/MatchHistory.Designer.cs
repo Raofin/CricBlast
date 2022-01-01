@@ -46,7 +46,8 @@ namespace CricBlast_GUI.UI
             this.UserTeam = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MatchResult = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.welcomeLabel = new System.Windows.Forms.Label();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.BorderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MatchHistoryGrid)).BeginInit();
@@ -278,11 +279,17 @@ namespace CricBlast_GUI.UI
             this.welcomeLabel.Text = "MATCH HISTORY";
             this.welcomeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2BorderlessForm1
+            // BorderlessForm
             // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            this.BorderlessForm.ContainerControl = this;
+            this.BorderlessForm.DockIndicatorTransparencyValue = 0.6D;
+            this.BorderlessForm.TransparentWhileDrag = true;
+            // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this.guna2Panel1;
+            this.DragControl.TransparentWhileDrag = false;
             // 
             // MatchHistory
             // 
@@ -315,11 +322,12 @@ namespace CricBlast_GUI.UI
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn UserTeam;
         private System.Windows.Forms.DataGridViewTextBoxColumn MatchResult;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2BorderlessForm BorderlessForm;
         private Guna.UI2.WinForms.Guna2CirclePictureBox userPhoto;
         private System.Windows.Forms.Label played;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label won;
         private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
     }
 }

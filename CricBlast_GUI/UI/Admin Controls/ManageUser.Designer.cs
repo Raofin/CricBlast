@@ -29,6 +29,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -49,6 +50,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.viewDetails = new Guna.UI2.WinForms.Guna2Button();
             this.modify = new Guna.UI2.WinForms.Guna2Button();
             this.delete = new Guna.UI2.WinForms.Guna2Button();
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.dbPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UserGrid)).BeginInit();
             this.SuspendLayout();
@@ -294,6 +296,12 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.delete.Text = "Delete";
             this.delete.Click += new System.EventHandler(this.delete_Click);
             // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this;
+            this.DragControl.TransparentWhileDrag = false;
+            // 
             // ManageUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -330,5 +338,6 @@ namespace CricBlast_GUI.UI.Admin_Controls
         private System.Windows.Forms.DataGridViewTextBoxColumn Joined;
         private System.Windows.Forms.DataGridViewTextBoxColumn Played;
         private System.Windows.Forms.DataGridViewTextBoxColumn Won;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
     }
 }

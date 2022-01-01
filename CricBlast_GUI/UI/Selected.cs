@@ -13,6 +13,8 @@ namespace CricBlast_GUI.UI
         public static Bitmap UserTeamLogo { get; set; }
         public static string[] UserTeamStats { get; set; }
         public static string[,,] UserTeamPlayerStats { get; set; }
+        public static int Captain { get; set; }
+        public static int WicketKeeper { get; set; }
 
         public static int OpponentTeam { get; set; }
         public static string OpponentTeamName { get; set; }
@@ -22,7 +24,6 @@ namespace CricBlast_GUI.UI
         public static bool Tournament { get; set; }
 
         public static string TournamentTitle { get; set; }
-        public static string TournamentChampion { get; set; }
         public static Image TrophyImage { get; set; }
 
         public static int Player { get; set; }

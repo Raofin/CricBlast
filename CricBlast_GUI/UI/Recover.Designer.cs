@@ -38,7 +38,7 @@ namespace CricBlast_GUI.UI
             this.label2 = new System.Windows.Forms.Label();
             this.recoveredName = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.recoveredPassword = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.BorderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.error = new System.Windows.Forms.Label();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             ((System.ComponentModel.ISupportInitialize)(this.recoveredUserPicture)).BeginInit();
@@ -170,12 +170,12 @@ namespace CricBlast_GUI.UI
             this.recoveredPassword.TabIndex = 25;
             this.recoveredPassword.Text = "...";
             // 
-            // guna2BorderlessForm1
+            // BorderlessForm
             // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.ResizeForm = false;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            this.BorderlessForm.ContainerControl = this;
+            this.BorderlessForm.DockIndicatorTransparencyValue = 0.6D;
+            this.BorderlessForm.ResizeForm = false;
+            this.BorderlessForm.TransparentWhileDrag = true;
             // 
             // error
             // 
@@ -243,7 +243,7 @@ namespace CricBlast_GUI.UI
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2HtmlLabel recoveredName;
         private Guna.UI2.WinForms.Guna2HtmlLabel recoveredPassword;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2BorderlessForm BorderlessForm;
         private System.Windows.Forms.Label error;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
     }

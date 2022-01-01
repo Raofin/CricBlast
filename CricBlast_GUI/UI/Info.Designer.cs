@@ -32,7 +32,8 @@ namespace CricBlast_GUI.UI
             this.components = new System.ComponentModel.Container();
             this.infoPictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.BorderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.infoPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,11 +68,17 @@ namespace CricBlast_GUI.UI
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 22;
             // 
-            // guna2BorderlessForm1
+            // BorderlessForm
             // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            this.BorderlessForm.ContainerControl = this;
+            this.BorderlessForm.DockIndicatorTransparencyValue = 0.6D;
+            this.BorderlessForm.TransparentWhileDrag = true;
+            // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this.infoPictureBox;
+            this.DragControl.TransparentWhileDrag = false;
             // 
             // Info
             // 
@@ -97,6 +104,7 @@ namespace CricBlast_GUI.UI
 
         private Guna.UI2.WinForms.Guna2PictureBox infoPictureBox;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2BorderlessForm BorderlessForm;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
     }
 }

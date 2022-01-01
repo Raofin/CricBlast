@@ -40,7 +40,7 @@ namespace CricBlast_GUI.UI
             this.label7 = new System.Windows.Forms.Label();
             this.passwordLabel = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.BorderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.usernameError = new System.Windows.Forms.Label();
             this.emailError = new System.Windows.Forms.Label();
             this.passwordError = new System.Windows.Forms.Label();
@@ -62,6 +62,7 @@ namespace CricBlast_GUI.UI
             this.emailLabel = new System.Windows.Forms.Label();
             this.phoneLabel = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.userCirclePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.genderPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.changeProfilePicture)).BeginInit();
@@ -211,11 +212,11 @@ namespace CricBlast_GUI.UI
             this.label12.TabIndex = 32;
             this.label12.Text = "Gender";
             // 
-            // guna2BorderlessForm1
+            // BorderlessForm
             // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            this.BorderlessForm.ContainerControl = this;
+            this.BorderlessForm.DockIndicatorTransparencyValue = 0.6D;
+            this.BorderlessForm.TransparentWhileDrag = true;
             // 
             // usernameError
             // 
@@ -567,6 +568,12 @@ namespace CricBlast_GUI.UI
             this.guna2Panel1.Size = new System.Drawing.Size(534, 646);
             this.guna2Panel1.TabIndex = 40;
             // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this.guna2Panel1;
+            this.DragControl.TransparentWhileDrag = false;
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -605,7 +612,7 @@ namespace CricBlast_GUI.UI
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label passwordLabel;
         private System.Windows.Forms.Label label12;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2BorderlessForm BorderlessForm;
         private System.Windows.Forms.Label mobileError;
         private System.Windows.Forms.Label passwordError;
         private System.Windows.Forms.Label emailError;
@@ -627,5 +634,6 @@ namespace CricBlast_GUI.UI
         private Guna.UI2.WinForms.Guna2CirclePictureBox userCirclePicture;
         private Guna.UI2.WinForms.Guna2TextBox emailTextBox;
         private Guna.UI2.WinForms.Guna2TextBox phoneTextBox;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
     }
 }

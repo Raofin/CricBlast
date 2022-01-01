@@ -29,7 +29,9 @@ namespace CricBlast_GUI.UI.Admin_Controls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.infoPicture = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.infoPicture)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,6 +50,12 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.infoPicture.TabIndex = 0;
             this.infoPicture.TabStop = false;
             this.infoPicture.Click += new System.EventHandler(this.infoPicture_Click);
+            // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this.infoPicture;
+            this.DragControl.TransparentWhileDrag = false;
             // 
             // ProjectDetails
             // 
@@ -68,5 +76,6 @@ namespace CricBlast_GUI.UI.Admin_Controls
         #endregion
 
         private Guna.UI2.WinForms.Guna2PictureBox infoPicture;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
     }
 }

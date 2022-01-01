@@ -29,6 +29,7 @@ namespace CricBlast_GUI.UI.User_Controls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label8 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -59,6 +60,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.wicketKeeper = new Guna.UI2.WinForms.Guna2ComboBox();
             this.modify = new Guna.UI2.WinForms.Guna2Button();
             this.resetPlayers = new Guna.UI2.WinForms.Guna2Button();
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.SuspendLayout();
             // 
             // label8
@@ -128,6 +130,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.captain.ShadowDecoration.Parent = this.captain;
             this.captain.Size = new System.Drawing.Size(260, 36);
             this.captain.TabIndex = 33;
+            this.captain.SelectedIndexChanged += new System.EventHandler(this.captain_SelectedIndexChanged);
             // 
             // label15
             // 
@@ -500,6 +503,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.wicketKeeper.ShadowDecoration.Parent = this.wicketKeeper;
             this.wicketKeeper.Size = new System.Drawing.Size(260, 36);
             this.wicketKeeper.TabIndex = 37;
+            this.wicketKeeper.SelectedIndexChanged += new System.EventHandler(this.wicketKeeper_SelectedIndexChanged);
             // 
             // modify
             // 
@@ -548,6 +552,12 @@ namespace CricBlast_GUI.UI.User_Controls
             this.resetPlayers.TabIndex = 46;
             this.resetPlayers.Text = "Reset";
             this.resetPlayers.Click += new System.EventHandler(this.resetPlayers_Click);
+            // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this;
+            this.DragControl.TransparentWhileDrag = false;
             // 
             // CustomizeTeam
             // 
@@ -625,5 +635,6 @@ namespace CricBlast_GUI.UI.User_Controls
         private Guna.UI2.WinForms.Guna2ComboBox wicketKeeper;
         private Guna.UI2.WinForms.Guna2Button modify;
         private Guna.UI2.WinForms.Guna2Button resetPlayers;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
     }
 }

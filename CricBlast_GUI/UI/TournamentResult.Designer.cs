@@ -38,7 +38,8 @@ namespace CricBlast_GUI.UI
             this.label1 = new System.Windows.Forms.Label();
             this.championTeamName = new System.Windows.Forms.Label();
             this.trophyPicture = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.BorderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.championTeamLogo)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trophyPicture)).BeginInit();
@@ -167,11 +168,17 @@ namespace CricBlast_GUI.UI
             this.trophyPicture.TabStop = false;
             this.trophyPicture.UseTransparentBackground = true;
             // 
-            // guna2BorderlessForm1
+            // BorderlessForm
             // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            this.BorderlessForm.ContainerControl = this;
+            this.BorderlessForm.DockIndicatorTransparencyValue = 0.6D;
+            this.BorderlessForm.TransparentWhileDrag = true;
+            // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this.guna2Panel1;
+            this.DragControl.TransparentWhileDrag = false;
             // 
             // TournamentResult
             // 
@@ -205,6 +212,7 @@ namespace CricBlast_GUI.UI
         private Guna.UI2.WinForms.Guna2PictureBox trophyPicture;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2BorderlessForm BorderlessForm;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
     }
 }

@@ -85,7 +85,6 @@ namespace CricBlast_GUI.UI.User_Controls
                 }
             }
 
-            LoadPlayers();
             new MessageBoxOk(0, "Playing eleven has been successfully modified.").ShowDialog();
         }
 
@@ -100,8 +99,8 @@ namespace CricBlast_GUI.UI.User_Controls
             foreach (var items in Selected.PlayingEleven)
                 wicketKeeper.Items.Add(Selected.UserTeamPlayerStats[items, Selected.Format, 0]);
 
-            captain.SelectedIndex = 5;
-            wicketKeeper.SelectedIndex = 4;
+            captain.SelectedIndex = Selected.Captain == 0 ? 5 : Selected.Captain;
+            wicketKeeper.SelectedIndex = Selected.WicketKeeper == 0 ? 4 : Selected.WicketKeeper;
         }
 
         private void resetPlayers_Click(object sender, EventArgs e)
@@ -109,8 +108,19 @@ namespace CricBlast_GUI.UI.User_Controls
             Selected.PlayingEleven.Clear();
             int[] defaultPlayers = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             Selected.PlayingEleven.AddRange(defaultPlayers);
+            Selected.Captain = Selected.WicketKeeper = 0;
             LoadPlayers();
             SetBestEleven();
+        }
+
+        private void captain_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Selected.Captain = captain.SelectedIndex;
+        }
+
+        private void wicketKeeper_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Selected.WicketKeeper = wicketKeeper.SelectedIndex;
         }
     }
 }

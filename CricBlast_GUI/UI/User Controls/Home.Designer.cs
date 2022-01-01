@@ -29,6 +29,7 @@ namespace CricBlast_GUI.UI.User_Controls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.homeSubPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.menuPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.tournament = new Guna.UI2.WinForms.Guna2Button();
@@ -44,6 +45,8 @@ namespace CricBlast_GUI.UI.User_Controls
             this.logout = new System.Windows.Forms.Label();
             this.cricBlastLabel = new System.Windows.Forms.Label();
             this.logoPicture = new System.Windows.Forms.PictureBox();
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.menuPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.availabilityIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPhoto)).BeginInit();
@@ -332,6 +335,18 @@ namespace CricBlast_GUI.UI.User_Controls
             this.logoPicture.TabStop = false;
             this.logoPicture.Click += new System.EventHandler(this.logoPicture_Click);
             // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this.menuPanel;
+            this.DragControl.TransparentWhileDrag = false;
+            // 
+            // DragControl2
+            // 
+            this.DragControl2.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl2.TargetControl = this.homeSubPanel;
+            this.DragControl2.TransparentWhileDrag = false;
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -369,5 +384,7 @@ namespace CricBlast_GUI.UI.User_Controls
         private Guna.UI2.WinForms.Guna2Panel homeSubPanel;
         private System.Windows.Forms.Label logout;
         private Guna.UI2.WinForms.Guna2Button tournament;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl2;
     }
 }

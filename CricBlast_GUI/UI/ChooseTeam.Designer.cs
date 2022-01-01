@@ -33,7 +33,7 @@ namespace CricBlast_GUI.UI
             this.teamComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.okButton = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.BorderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.teamSelectError = new System.Windows.Forms.Label();
             this.cricBlastLabel = new System.Windows.Forms.Label();
             this.cricBlastPicture = new System.Windows.Forms.PictureBox();
@@ -108,12 +108,12 @@ namespace CricBlast_GUI.UI
             this.okButton.Text = "OK";
             this.okButton.Click += new System.EventHandler(this.okButton_Click);
             // 
-            // guna2BorderlessForm1
+            // BorderlessForm
             // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.ResizeForm = false;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            this.BorderlessForm.ContainerControl = this;
+            this.BorderlessForm.DockIndicatorTransparencyValue = 0.6D;
+            this.BorderlessForm.ResizeForm = false;
+            this.BorderlessForm.TransparentWhileDrag = true;
             // 
             // teamSelectError
             // 
@@ -157,11 +157,11 @@ namespace CricBlast_GUI.UI
             this.guna2ControlBox1.Animated = true;
             this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.No;
-            this.guna2ControlBox1.Enabled = false;
+            this.guna2ControlBox1.CustomClick = true;
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(427, 0);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(429, 0);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
@@ -198,7 +198,7 @@ namespace CricBlast_GUI.UI
         private Guna.UI2.WinForms.Guna2ComboBox teamComboBox;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button okButton;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2BorderlessForm BorderlessForm;
         private System.Windows.Forms.Label teamSelectError;
         private System.Windows.Forms.Label cricBlastLabel;
         private System.Windows.Forms.PictureBox cricBlastPicture;

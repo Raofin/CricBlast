@@ -30,7 +30,7 @@ namespace CricBlast_GUI.UI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.BorderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.message = new System.Windows.Forms.Label();
             this.yes = new Guna.UI2.WinForms.Guna2Button();
             this.messageMark = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -42,18 +42,18 @@ namespace CricBlast_GUI.UI
             ((System.ComponentModel.ISupportInitialize)(this.cricBlastPicture)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2BorderlessForm1
+            // BorderlessForm
             // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            this.BorderlessForm.ContainerControl = this;
+            this.BorderlessForm.DockIndicatorTransparencyValue = 0.6D;
+            this.BorderlessForm.TransparentWhileDrag = true;
             // 
             // message
             // 
             this.message.BackColor = System.Drawing.Color.Transparent;
             this.message.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.message.ForeColor = System.Drawing.Color.White;
-            this.message.Location = new System.Drawing.Point(146, 60);
+            this.message.Location = new System.Drawing.Point(146, 56);
             this.message.Name = "message";
             this.message.Size = new System.Drawing.Size(322, 105);
             this.message.TabIndex = 32;
@@ -75,7 +75,7 @@ namespace CricBlast_GUI.UI
             this.yes.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.yes.ForeColor = System.Drawing.Color.White;
             this.yes.HoverState.Parent = this.yes;
-            this.yes.Location = new System.Drawing.Point(282, 183);
+            this.yes.Location = new System.Drawing.Point(282, 179);
             this.yes.Name = "yes";
             this.yes.ShadowDecoration.Parent = this.yes;
             this.yes.Size = new System.Drawing.Size(153, 45);
@@ -87,7 +87,7 @@ namespace CricBlast_GUI.UI
             // 
             this.messageMark.Image = global::CricBlast_GUI.Properties.Resources.Warning_Mark;
             this.messageMark.ImageRotate = 0F;
-            this.messageMark.Location = new System.Drawing.Point(43, 72);
+            this.messageMark.Location = new System.Drawing.Point(43, 68);
             this.messageMark.Name = "messageMark";
             this.messageMark.ShadowDecoration.Parent = this.messageMark;
             this.messageMark.Size = new System.Drawing.Size(80, 80);
@@ -110,7 +110,7 @@ namespace CricBlast_GUI.UI
             this.no.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.no.ForeColor = System.Drawing.Color.White;
             this.no.HoverState.Parent = this.no;
-            this.no.Location = new System.Drawing.Point(93, 183);
+            this.no.Location = new System.Drawing.Point(93, 179);
             this.no.Name = "no";
             this.no.ShadowDecoration.Parent = this.no;
             this.no.Size = new System.Drawing.Size(153, 45);
@@ -185,7 +185,7 @@ namespace CricBlast_GUI.UI
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2BorderlessForm BorderlessForm;
         private System.Windows.Forms.Label message;
         private Guna.UI2.WinForms.Guna2Button no;
         private Guna.UI2.WinForms.Guna2Button yes;

@@ -29,6 +29,7 @@ namespace CricBlast_GUI.UI.User_Controls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.login = new Guna.UI2.WinForms.Guna2Button();
             this.welcomeLabel = new System.Windows.Forms.Label();
             this.usernameLabel = new System.Windows.Forms.Label();
@@ -45,6 +46,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.eyePicture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.logo = new System.Windows.Forms.PictureBox();
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.refreshPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginAsPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
@@ -304,6 +306,12 @@ namespace CricBlast_GUI.UI.User_Controls
             this.logo.TabIndex = 12;
             this.logo.TabStop = false;
             // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this;
+            this.DragControl.TransparentWhileDrag = false;
+            // 
             // Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -357,5 +365,6 @@ namespace CricBlast_GUI.UI.User_Controls
         private System.Windows.Forms.Label passwordRequired;
         public System.Windows.Forms.Label welcomeLabel;
         private System.Windows.Forms.PictureBox logo;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
     }
 }

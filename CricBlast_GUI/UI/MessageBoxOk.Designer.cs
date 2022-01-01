@@ -33,7 +33,7 @@ namespace CricBlast_GUI.UI
             this.messageMark = new Guna.UI2.WinForms.Guna2PictureBox();
             this.okButton = new Guna.UI2.WinForms.Guna2Button();
             this.message = new System.Windows.Forms.Label();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.BorderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.cricBlastPicture = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -88,11 +88,11 @@ namespace CricBlast_GUI.UI
             this.message.Text = "Message";
             this.message.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // guna2BorderlessForm1
+            // BorderlessForm
             // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            this.BorderlessForm.ContainerControl = this;
+            this.BorderlessForm.DockIndicatorTransparencyValue = 0.6D;
+            this.BorderlessForm.TransparentWhileDrag = true;
             // 
             // guna2ControlBox1
             // 
@@ -163,7 +163,7 @@ namespace CricBlast_GUI.UI
         private Guna.UI2.WinForms.Guna2PictureBox messageMark;
         private Guna.UI2.WinForms.Guna2Button okButton;
         private System.Windows.Forms.Label message;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2BorderlessForm BorderlessForm;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox cricBlastPicture;

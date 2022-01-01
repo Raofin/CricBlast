@@ -29,6 +29,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.matchTitle = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label8 = new System.Windows.Forms.Label();
@@ -49,6 +50,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.trophyPictureBox = new Guna.UI2.WinForms.Guna2PictureBox();
             this.titleTextBox = new Guna.UI2.WinForms.Guna2TextBox();
             this.usernameLabel = new System.Windows.Forms.Label();
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trophyPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -411,6 +413,12 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.usernameLabel.TabIndex = 24;
             this.usernameLabel.Text = "TITLE";
             // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this.guna2Panel1;
+            this.DragControl.TransparentWhileDrag = false;
+            // 
             // TournamentsAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -450,5 +458,6 @@ namespace CricBlast_GUI.UI.Admin_Controls
         private System.Windows.Forms.Label teamsError;
         private System.Windows.Forms.Label countryError;
         private System.Windows.Forms.Label titleError;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
     }
 }

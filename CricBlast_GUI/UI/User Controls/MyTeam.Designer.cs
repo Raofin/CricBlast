@@ -29,6 +29,7 @@ namespace CricBlast_GUI.UI.User_Controls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.changeTeam = new Guna.UI2.WinForms.Guna2Button();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -50,6 +51,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.testLost = new System.Windows.Forms.Label();
             this.odiLost = new System.Windows.Forms.Label();
             this.t20iLost = new System.Windows.Forms.Label();
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.teamLogo)).BeginInit();
             this.SuspendLayout();
@@ -195,7 +197,6 @@ namespace CricBlast_GUI.UI.User_Controls
             this.teamName.Name = "teamName";
             this.teamName.Size = new System.Drawing.Size(347, 46);
             this.teamName.TabIndex = 68;
-            this.teamName.Text = "Team Name";
             this.teamName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.teamName.Visible = false;
             // 
@@ -216,6 +217,7 @@ namespace CricBlast_GUI.UI.User_Controls
             // 
             this.teamLogo.BackColor = System.Drawing.Color.Transparent;
             this.teamLogo.FillColor = System.Drawing.Color.Transparent;
+            this.teamLogo.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
             this.teamLogo.ImageRotate = 0F;
             this.teamLogo.Location = new System.Drawing.Point(79, 172);
             this.teamLogo.Name = "teamLogo";
@@ -322,6 +324,12 @@ namespace CricBlast_GUI.UI.User_Controls
             this.t20iLost.Text = "0";
             this.t20iLost.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this;
+            this.DragControl.TransparentWhileDrag = false;
+            // 
             // MyTeam
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -382,5 +390,6 @@ namespace CricBlast_GUI.UI.User_Controls
         private System.Windows.Forms.Label testLost;
         private System.Windows.Forms.Label odiLost;
         private System.Windows.Forms.Label t20iLost;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
     }
 }

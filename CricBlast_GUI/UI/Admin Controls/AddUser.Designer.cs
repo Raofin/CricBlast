@@ -29,6 +29,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.photoError = new System.Windows.Forms.Label();
             this.genderError = new System.Windows.Forms.Label();
@@ -55,6 +56,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.addButton = new Guna.UI2.WinForms.Guna2Button();
             this.allUserGridPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.label4 = new System.Windows.Forms.Label();
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.eyePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPictureBox)).BeginInit();
@@ -513,6 +515,12 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.label4.TabIndex = 97;
             this.label4.Text = "User List";
             // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this;
+            this.DragControl.TransparentWhileDrag = false;
+            // 
             // AddUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -561,5 +569,6 @@ namespace CricBlast_GUI.UI.Admin_Controls
         private Guna.UI2.WinForms.Guna2Button addButton;
         private Guna.UI2.WinForms.Guna2Panel allUserGridPanel;
         private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
     }
 }

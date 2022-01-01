@@ -29,6 +29,7 @@ namespace CricBlast_GUI.UI.User_Controls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.winnerLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.play = new Guna.UI2.WinForms.Guna2Button();
@@ -55,6 +56,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.group11Logo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.tournamentTitle = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.winnerLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.group32Logo)).BeginInit();
@@ -450,6 +452,12 @@ namespace CricBlast_GUI.UI.User_Controls
             this.guna2PictureBox1.TabStop = false;
             this.guna2PictureBox1.UseTransparentBackground = true;
             // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this.guna2Panel1;
+            this.DragControl.TransparentWhileDrag = false;
+            // 
             // TournamentPlay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -510,5 +518,6 @@ namespace CricBlast_GUI.UI.User_Controls
         private Guna.UI2.WinForms.Guna2Button play;
         public Guna.UI2.WinForms.Guna2PictureBox winnerLogo;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
     }
 }

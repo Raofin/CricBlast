@@ -32,11 +32,13 @@ namespace CricBlast_GUI.UI
             this.components = new System.ComponentModel.Container();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.BorderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.logo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.getStarted = new Guna.UI2.WinForms.Guna2Button();
             this.mainPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.infoButton = new Guna.UI2.WinForms.Guna2Button();
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.mainPanel.SuspendLayout();
             this.SuspendLayout();
@@ -72,11 +74,11 @@ namespace CricBlast_GUI.UI
             this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox1.TabIndex = 20;
             // 
-            // guna2BorderlessForm1
+            // BorderlessForm
             // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            this.BorderlessForm.ContainerControl = this;
+            this.BorderlessForm.DockIndicatorTransparencyValue = 0.6D;
+            this.BorderlessForm.TransparentWhileDrag = true;
             // 
             // logo
             // 
@@ -152,6 +154,18 @@ namespace CricBlast_GUI.UI
             this.infoButton.Text = "!";
             this.infoButton.Click += new System.EventHandler(this.infoButton_Click);
             // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this.mainPanel;
+            this.DragControl.TransparentWhileDrag = false;
+            // 
+            // DragControl2
+            // 
+            this.DragControl2.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl2.TargetControl = this.logo;
+            this.DragControl2.TransparentWhileDrag = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -177,10 +191,12 @@ namespace CricBlast_GUI.UI
         #endregion
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2BorderlessForm BorderlessForm;
         public Guna.UI2.WinForms.Guna2Panel mainPanel;
         private Guna.UI2.WinForms.Guna2Button getStarted;
         private Guna.UI2.WinForms.Guna2PictureBox logo;
         private Guna.UI2.WinForms.Guna2Button infoButton;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl2;
     }
 }

@@ -29,6 +29,7 @@ namespace CricBlast_GUI.UI.User_Controls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.changeFormatComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.changePlayerComboBox = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -51,6 +52,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.average = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.playerPhoto)).BeginInit();
             this.SuspendLayout();
@@ -341,6 +343,12 @@ namespace CricBlast_GUI.UI.User_Controls
             this.label16.TabIndex = 29;
             this.label16.Text = "Average";
             // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this;
+            this.DragControl.TransparentWhileDrag = false;
+            // 
             // PlayerStats
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -405,5 +413,6 @@ namespace CricBlast_GUI.UI.User_Controls
         private System.Windows.Forms.Label average;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label16;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
     }
 }

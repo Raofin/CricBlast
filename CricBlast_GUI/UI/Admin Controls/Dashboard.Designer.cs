@@ -29,6 +29,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.logo = new System.Windows.Forms.PictureBox();
             this.welcomeLabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -57,6 +58,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.user1Email = new System.Windows.Forms.Label();
             this.user1Name = new System.Windows.Forms.Label();
             this.user1Picture = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.user6Picture)).BeginInit();
@@ -446,6 +448,12 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.user1Picture.TabIndex = 35;
             this.user1Picture.TabStop = false;
             // 
+            // DragControl
+            // 
+            this.DragControl.DockIndicatorTransparencyValue = 0.6D;
+            this.DragControl.TargetControl = this.guna2Panel1;
+            this.DragControl.TransparentWhileDrag = false;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -499,5 +507,6 @@ namespace CricBlast_GUI.UI.Admin_Controls
         public Guna.UI2.WinForms.Guna2CirclePictureBox user1Picture;
         public Guna.UI2.WinForms.Guna2CirclePictureBox user6Picture;
         public Guna.UI2.WinForms.Guna2CirclePictureBox user5Picture;
+        private Guna.UI2.WinForms.Guna2DragControl DragControl;
     }
 }
