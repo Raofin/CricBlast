@@ -102,6 +102,12 @@
     <Compile Include="UI\Admin Controls\ProjectDetails.Designer.cs">
       <DependentUpon>ProjectDetails.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\ExitMessage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ExitMessage.Designer.cs">
+      <DependentUpon>ExitMessage.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\SelectTeams.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,6 +278,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Admin Controls\ProjectDetails.resx">
       <DependentUpon>ProjectDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ExitMessage.resx">
+      <DependentUpon>ExitMessage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\SelectTeams.resx">
       <DependentUpon>SelectTeams.cs</DependentUpon>

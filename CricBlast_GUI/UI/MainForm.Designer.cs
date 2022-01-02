@@ -31,7 +31,7 @@ namespace CricBlast_GUI.UI
         {
             this.components = new System.ComponentModel.Container();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.closeBox = new Guna.UI2.WinForms.Guna2ControlBox();
             this.BorderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.logo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.getStarted = new Guna.UI2.WinForms.Guna2Button();
@@ -59,23 +59,26 @@ namespace CricBlast_GUI.UI
             this.guna2ControlBox2.Size = new System.Drawing.Size(45, 29);
             this.guna2ControlBox2.TabIndex = 19;
             // 
-            // guna2ControlBox1
+            // closeBox
             // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.Animated = true;
-            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1235, 0);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox1.TabIndex = 20;
+            this.closeBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeBox.Animated = true;
+            this.closeBox.BackColor = System.Drawing.Color.Transparent;
+            this.closeBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.closeBox.CustomClick = true;
+            this.closeBox.FillColor = System.Drawing.Color.Transparent;
+            this.closeBox.HoverState.Parent = this.closeBox;
+            this.closeBox.IconColor = System.Drawing.Color.White;
+            this.closeBox.Location = new System.Drawing.Point(1235, 0);
+            this.closeBox.Name = "closeBox";
+            this.closeBox.ShadowDecoration.Parent = this.closeBox;
+            this.closeBox.Size = new System.Drawing.Size(45, 29);
+            this.closeBox.TabIndex = 20;
+            this.closeBox.Click += new System.EventHandler(this.closeBox_Click);
             // 
             // BorderlessForm
             // 
+            this.BorderlessForm.AnimateWindow = true;
             this.BorderlessForm.ContainerControl = this;
             this.BorderlessForm.DockIndicatorTransparencyValue = 0.6D;
             this.BorderlessForm.TransparentWhileDrag = true;
@@ -175,7 +178,7 @@ namespace CricBlast_GUI.UI
             this.ClientSize = new System.Drawing.Size(1280, 720);
             this.Controls.Add(this.infoButton);
             this.Controls.Add(this.guna2ControlBox2);
-            this.Controls.Add(this.guna2ControlBox1);
+            this.Controls.Add(this.closeBox);
             this.Controls.Add(this.mainPanel);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -190,7 +193,7 @@ namespace CricBlast_GUI.UI
 
         #endregion
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2ControlBox closeBox;
         private Guna.UI2.WinForms.Guna2BorderlessForm BorderlessForm;
         public Guna.UI2.WinForms.Guna2Panel mainPanel;
         private Guna.UI2.WinForms.Guna2Button getStarted;

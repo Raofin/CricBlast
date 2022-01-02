@@ -17,7 +17,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
         private void LoadData()
         {
             var query = "SELECT Username, Email, Password, PhoneNumber, Image, " +
-                        "FORMAT (getdate(), 'dd/MM/yyyy') as Joined, Played, Won " +
+                        "FORMAT (Joined, 'dd/MM/yyyy') as Joined, Played, Won " +
                         "FROM Users";
 
             using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))

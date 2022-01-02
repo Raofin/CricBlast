@@ -99,10 +99,10 @@ namespace CricBlast_GUI.UI
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Panel1.Controls.Add(this.trophyPicture);
             this.guna2Panel1.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel1.Controls.Add(this.label1);
             this.guna2Panel1.Controls.Add(this.championTeamName);
-            this.guna2Panel1.Controls.Add(this.trophyPicture);
             this.guna2Panel1.Controls.Add(this.close);
             this.guna2Panel1.Controls.Add(this.tournamentTitle);
             this.guna2Panel1.Controls.Add(this.championTeamLogo);

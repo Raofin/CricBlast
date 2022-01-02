@@ -31,15 +31,18 @@ namespace CricBlast_GUI.UI.User_Controls
             bowlingError.Visible = bowlingComboBox.SelectedIndex == 0;
             photoError.Visible = PlayerImage == null;
 
-            if (!playerNameError.Visible && !ageError.Visible && !roleError.Visible && !battingError.Visible &&
-                !bowlingError.Visible && !photoError.Visible)
+            if (!playerNameError.Visible && !ageError.Visible && !roleError.Visible &&
+                !battingError.Visible && !bowlingError.Visible && !photoError.Visible)
             {
                 new MessageBoxOk(0, "The player has been added successfully.").ShowDialog();
+                playerName.Text = null;
+                playerAge.Text = null;
+                roleComboBox.SelectedIndex = 0;
+                battingComboBox.SelectedIndex = 0;
+                bowlingComboBox.SelectedIndex = 0;
+                playerPicture.Image = Properties.Resources.User_Male_WhiteBack;
             }
-            else
-            {
-                new MessageBoxOk(2, "Please fill out all the fields properly.").ShowDialog();
-            }
+            else new MessageBoxOk(2, "Please fill out all the fields properly.").ShowDialog();
         }
     }
 }

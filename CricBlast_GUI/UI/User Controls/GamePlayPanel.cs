@@ -87,8 +87,8 @@ namespace CricBlast_GUI.UI.User_Controls
                             runsMax = 320;
                             break;
                         default:
-                            runsMin = 150;
-                            runsMax = 210;
+                            runsMin = 320;
+                            runsMax = 380;
                             break;
                     }
                     break;
