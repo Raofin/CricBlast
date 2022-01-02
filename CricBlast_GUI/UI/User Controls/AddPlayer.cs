@@ -13,6 +13,11 @@ namespace CricBlast_GUI.UI.User_Controls
             InitializeComponent();
         }
 
+        private void AddPlayer_Load(object sender, EventArgs e)
+        {
+            playerName.Focus();
+        }
+
         private void choosePhotoButton_Click(object sender, EventArgs e)
         {
             using (var openFileDialog = new OpenFileDialog { Filter = Properties.Resources.ImageFilter })

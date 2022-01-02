@@ -61,5 +61,10 @@ namespace CricBlast_GUI.UI.Admin_Controls
         {
             teamsError.Visible = teamsComboBox.SelectedIndex == 0;
         }
+
+        private void titleTextBox_Load(object sender, EventArgs e)
+        {
+            titleTextBox.Focus();
+        }
     }
 }

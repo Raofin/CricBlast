@@ -439,6 +439,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.DoubleBuffered = true;
             this.Name = "AddPlayer";
             this.Size = new System.Drawing.Size(972, 720);
+            this.Load += new System.EventHandler(this.AddPlayer_Load);
             ((System.ComponentModel.ISupportInitialize)(this.playerPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

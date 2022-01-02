@@ -10,11 +10,13 @@ namespace CricBlast_GUI.UI.User_Controls
         private string CaptchaResult { get; set; }
         private int Gender { get; set; }
         private Image UserPicture { get; set; }
+        private bool _eye;
 
         public CreateAccount()
         {
             InitializeComponent();
             GenerateCaptcha();
+            usernameTextBox.Select();
         }
 
         private void login_Click(object sender, EventArgs e)
@@ -59,7 +61,7 @@ namespace CricBlast_GUI.UI.User_Controls
             captchaTextBox.Text = null;
             captchaError.Visible = false;
             GenerateCaptcha();
-            captchaTextBox.Select();
+            captchaTextBox.Focus();
         }
 
         private void GenerateCaptcha()
@@ -70,8 +72,6 @@ namespace CricBlast_GUI.UI.User_Controls
             CaptchaResult = (number1 + number2).ToString();
             CaptchLabel.Text = $"{number1} + {number2} =";
         }
-
-        private bool _eye;
 
         private void eyePicture_Click(object sender, System.EventArgs e)
         {
@@ -138,6 +138,16 @@ namespace CricBlast_GUI.UI.User_Controls
         private void captchaTextBox_TextChanged(object sender, EventArgs e)
         {
             captchaError.Visible = !captchaTextBox.Text.Trim().Equals(CaptchaResult);
+        }
+
+        private void captchaTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) register.PerformClick();
+        }
+
+        private void usernameTextBox_Load(object sender, EventArgs e)
+        {
+            usernameTextBox.Focus();
         }
     }
 }

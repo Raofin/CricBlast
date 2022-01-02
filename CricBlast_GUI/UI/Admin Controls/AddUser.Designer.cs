@@ -444,6 +444,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.usernameTextBox.Size = new System.Drawing.Size(323, 46);
             this.usernameTextBox.TabIndex = 1;
             this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
+            this.usernameTextBox.Load += new System.EventHandler(this.usernameTextBox_Load);
             // 
             // label2
             // 

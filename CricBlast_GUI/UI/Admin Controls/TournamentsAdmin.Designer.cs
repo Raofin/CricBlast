@@ -400,6 +400,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.titleTextBox.Size = new System.Drawing.Size(409, 47);
             this.titleTextBox.TabIndex = 1;
             this.titleTextBox.TextChanged += new System.EventHandler(this.titleTextBox_TextChanged);
+            this.titleTextBox.Load += new System.EventHandler(this.titleTextBox_Load);
             // 
             // usernameLabel
             // 

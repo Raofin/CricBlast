@@ -1,5 +1,4 @@
-﻿using System;
-using System.Data.SqlClient;
+﻿using System.Data.SqlClient;
 using CricBlast_GUI.UI;
 
 namespace CricBlast_GUI.Database

@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 using CricBlast_GUI.Database;
 using CricBlast_GUI.UI.Admin_Controls;
 
@@ -24,6 +25,12 @@ namespace CricBlast_GUI.UI.User_Controls
             InitializeComponent();
         }
 
+        private void Welcome_Load(object sender, System.EventArgs e)
+        {
+            usernameTextBox.Text = Selected.UserDetails[2];
+            passwordTextBox.Text = Selected.UserDetails[3];
+        }
+
         private void eyePicture_Click(object sender, System.EventArgs e)
         {
             switch (_eye)
@@ -41,7 +48,6 @@ namespace CricBlast_GUI.UI.User_Controls
             }
         }
 
-
         private void refreshPicture_Click(object sender, System.EventArgs e)
         {
             switch (_admin)
@@ -55,6 +61,7 @@ namespace CricBlast_GUI.UI.User_Controls
                     passwordTextBox.Text = "";
                     createAccountLabel.Visible = true;
                     label5.Visible = true;
+                    usernameTextBox.Focus();
                     return;
                 case false:
                     loginAsPicture.Image = Properties.Resources.Admin_Colored;
@@ -65,6 +72,7 @@ namespace CricBlast_GUI.UI.User_Controls
                     passwordTextBox.Text = "";
                     createAccountLabel.Visible = false;
                     label5.Visible = false;
+                    usernameTextBox.Focus();
                     break;
             }
         }
@@ -117,12 +125,6 @@ namespace CricBlast_GUI.UI.User_Controls
             Controls.Add(value: new CreateAccount());
         }
 
-        private void Welcome_Load(object sender, System.EventArgs e)
-        {
-            usernameTextBox.Text = Selected.UserDetails[2];
-            passwordTextBox.Text = Selected.UserDetails[3];
-        }
-
         private void usernameTextBox_TextChanged(object sender, System.EventArgs e)
         {
             usernameRequired.Visible = false;
@@ -131,6 +133,16 @@ namespace CricBlast_GUI.UI.User_Controls
         private void passwordTextBox_TextChanged(object sender, System.EventArgs e)
         {
             passwordRequired.Visible = false;
+        }
+
+        private void passwordTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) login.PerformClick();
+        }
+
+        private void usernameTextBox_Load(object sender, EventArgs e)
+        {
+            usernameTextBox.Focus();
         }
     }
 }

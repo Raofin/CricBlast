@@ -9,6 +9,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
     {
         private int Gender { get; set; }
         private Image UserPicture { get; set; }
+        private bool _eye;
 
         public AddUser()
         {
@@ -16,7 +17,6 @@ namespace CricBlast_GUI.UI.Admin_Controls
             allUserGridPanel.Controls.Add(new UserList());
             allUserGridPanel.Controls["UserList"].Dock = DockStyle.Fill;
         }
-
 
         private void addButton_Click(object sender, EventArgs e)
         {
@@ -57,8 +57,6 @@ namespace CricBlast_GUI.UI.Admin_Controls
                 }
             }
         }
-
-        private bool _eye;
 
         private void eyePicture_Click(object sender, EventArgs e)
         {
@@ -120,6 +118,11 @@ namespace CricBlast_GUI.UI.Admin_Controls
         private void mobileTextBox_TextChanged(object sender, EventArgs e)
         {
             mobileError.Visible = false;
+        }
+
+        private void usernameTextBox_Load(object sender, EventArgs e)
+        {
+            usernameTextBox.Focus();
         }
     }
 }

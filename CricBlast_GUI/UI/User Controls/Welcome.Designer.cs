@@ -130,6 +130,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.usernameTextBox.Size = new System.Drawing.Size(409, 47);
             this.usernameTextBox.TabIndex = 1;
             this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
+            this.usernameTextBox.Load += new System.EventHandler(this.usernameTextBox_Load);
             // 
             // label3
             // 
@@ -199,6 +200,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.passwordTextBox.TabIndex = 2;
             this.passwordTextBox.UseSystemPasswordChar = true;
             this.passwordTextBox.TextChanged += new System.EventHandler(this.passwordTextBox_TextChanged);
+            this.passwordTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.passwordTextBox_KeyDown);
             // 
             // label5
             // 

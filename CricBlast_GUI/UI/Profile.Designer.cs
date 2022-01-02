@@ -98,6 +98,7 @@ namespace CricBlast_GUI.UI
             this.usernameTextBox.TabIndex = 1;
             this.usernameTextBox.Visible = false;
             this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
+            this.usernameTextBox.Load += new System.EventHandler(this.usernameTextBox_Load);
             // 
             // passwordTextBox
             // 
@@ -301,6 +302,7 @@ namespace CricBlast_GUI.UI
             this.phoneTextBox.Size = new System.Drawing.Size(265, 35);
             this.phoneTextBox.TabIndex = 4;
             this.phoneTextBox.Visible = false;
+            this.phoneTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.phoneTextBox_KeyDown);
             // 
             // emailTextBox
             // 

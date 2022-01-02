@@ -18,6 +18,10 @@ namespace CricBlast_GUI.UI
             }
         }
 
+        private bool _modify;
+        private bool _modifyPhoto;
+        private Image _userNewImage = TempUserImage;
+
         public AdminView()
         {
             InitializeComponent();
@@ -45,14 +49,7 @@ namespace CricBlast_GUI.UI
                 _modify = true;
                 HideModify();
             }
-
-
         }
-
-        private bool _modify;
-        private bool _modifyPhoto;
-        private Image _userNewImage = TempUserImage;
-
 
         private void LoadProfile()
         {
@@ -195,6 +192,11 @@ namespace CricBlast_GUI.UI
         private void phoneTextBox_TextChanged(object sender, EventArgs e)
         {
             mobileError.Visible = false;
+        }
+
+        private void usernameTextBox_Load(object sender, EventArgs e)
+        {
+            usernameTextBox.Focus();
         }
     }
 }

@@ -557,6 +557,7 @@ namespace CricBlast_GUI.UI
             this.usernameTextBox.TabIndex = 1;
             this.usernameTextBox.Visible = false;
             this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
+            this.usernameTextBox.Load += new System.EventHandler(this.usernameTextBox_Load);
             // 
             // guna2Panel1
             // 

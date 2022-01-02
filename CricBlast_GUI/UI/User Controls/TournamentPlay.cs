@@ -9,6 +9,9 @@ namespace CricBlast_GUI.UI.User_Controls
 {
     public partial class TournamentPlay : UserControl
     {
+        private List<int> Teams { get; set; }
+        private bool PlayAgain { get; set; }
+
         public TournamentPlay()
         {
             InitializeComponent();
@@ -21,9 +24,6 @@ namespace CricBlast_GUI.UI.User_Controls
             if (PlayAgain) GenerateTeams();
             GenerateTournament();
         }
-
-        private List<int> Teams { get; set; }
-        private bool PlayAgain { get; set; }
 
         private void GenerateTeams()
         {

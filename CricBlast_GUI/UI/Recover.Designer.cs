@@ -87,6 +87,8 @@ namespace CricBlast_GUI.UI
             this.emailTextBox.Size = new System.Drawing.Size(409, 47);
             this.emailTextBox.TabIndex = 1;
             this.emailTextBox.TextChanged += new System.EventHandler(this.emailTextBox_TextChanged);
+            this.emailTextBox.Load += new System.EventHandler(this.emailTextBox_Load);
+            this.emailTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.emailTextBox_KeyDown);
             // 
             // usernameLabel
             // 

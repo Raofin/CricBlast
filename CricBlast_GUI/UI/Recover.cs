@@ -52,5 +52,15 @@ namespace CricBlast_GUI.UI
         {
             error.Visible = string.IsNullOrWhiteSpace(emailTextBox.Text);
         }
+
+        private void emailTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) recoverButton.PerformClick();
+        }
+
+        private void emailTextBox_Load(object sender, EventArgs e)
+        {
+            emailTextBox.Focus();
+        }
     }
 }

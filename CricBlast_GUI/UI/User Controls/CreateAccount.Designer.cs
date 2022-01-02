@@ -338,6 +338,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.usernameTextBox.Size = new System.Drawing.Size(323, 46);
             this.usernameTextBox.TabIndex = 1;
             this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
+            this.usernameTextBox.Load += new System.EventHandler(this.usernameTextBox_Load);
             // 
             // label2
             // 
@@ -653,6 +654,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.captchaTextBox.Size = new System.Drawing.Size(109, 35);
             this.captchaTextBox.TabIndex = 6;
             this.captchaTextBox.TextChanged += new System.EventHandler(this.captchaTextBox_TextChanged);
+            this.captchaTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.captchaTextBox_KeyDown);
             // 
             // mobileTextBox
             // 

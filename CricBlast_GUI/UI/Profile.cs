@@ -33,6 +33,7 @@ namespace CricBlast_GUI.UI
             if (_modify)
             {
                 ShowModify();
+                usernameTextBox.Focus();
                 return;
             }
 
@@ -163,6 +164,16 @@ namespace CricBlast_GUI.UI
                 emailLabel.Font = new Font("Arial Narrow", emailLabel.Font.Size, FontStyle.Bold);
                 emailLabel.Location = new Point(172, 298);
             }
+        }
+
+        private void phoneTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) modifyButton.PerformClick();
+        }
+
+        private void usernameTextBox_Load(object sender, EventArgs e)
+        {
+            usernameTextBox.Focus();
         }
     }
 }
