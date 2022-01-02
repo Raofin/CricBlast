@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace CricBlast_GUI.UI.Admin_Controls
 {
-    public partial class ProjectDetails : UserControl
+    public partial class ProjectInfo : UserControl
     {
-        public ProjectDetails()
+        public ProjectInfo()
         {
             InitializeComponent();
         }

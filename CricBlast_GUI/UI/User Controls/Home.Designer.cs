@@ -30,7 +30,6 @@ namespace CricBlast_GUI.UI.User_Controls
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.homeSubPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.menuPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.tournament = new Guna.UI2.WinForms.Guna2Button();
@@ -68,7 +67,7 @@ namespace CricBlast_GUI.UI.User_Controls
             // menuPanel
             // 
             this.menuPanel.BackColor = System.Drawing.Color.Transparent;
-            this.menuPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("menuPanel.BackgroundImage")));
+            this.menuPanel.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Home_Menu;
             this.menuPanel.Controls.Add(this.tournament);
             this.menuPanel.Controls.Add(this.availabilityIcon);
             this.menuPanel.Controls.Add(this.availability);

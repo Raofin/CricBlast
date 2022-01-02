@@ -30,63 +30,26 @@ namespace CricBlast_GUI.UI
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.cricBlastPicture = new System.Windows.Forms.PictureBox();
             this.message = new System.Windows.Forms.Label();
             this.exitButton = new Guna.UI2.WinForms.Guna2Button();
             this.contributionsButton = new Guna.UI2.WinForms.Guna2Button();
             this.BorderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.cricBlastPicture = new System.Windows.Forms.PictureBox();
+            this.messageMark = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.cricBlastPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.messageMark)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 50F, System.Drawing.FontStyle.Bold);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(157, 41);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 89);
-            this.label1.TabIndex = 48;
-            this.label1.Text = "CricBlast";
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.Animated = true;
-            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(477, 0);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
-            this.guna2ControlBox1.TabIndex = 47;
-            // 
-            // cricBlastPicture
-            // 
-            this.cricBlastPicture.BackColor = System.Drawing.Color.Transparent;
-            this.cricBlastPicture.Image = global::CricBlast_GUI.Properties.Resources.Logo;
-            this.cricBlastPicture.Location = new System.Drawing.Point(54, 35);
-            this.cricBlastPicture.Name = "cricBlastPicture";
-            this.cricBlastPicture.Size = new System.Drawing.Size(100, 100);
-            this.cricBlastPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.cricBlastPicture.TabIndex = 46;
-            this.cricBlastPicture.TabStop = false;
             // 
             // message
             // 
-            this.message.AutoSize = true;
             this.message.BackColor = System.Drawing.Color.Transparent;
             this.message.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.message.ForeColor = System.Drawing.Color.White;
-            this.message.Location = new System.Drawing.Point(100, 146);
+            this.message.Location = new System.Drawing.Point(183, 68);
             this.message.Name = "message";
-            this.message.Size = new System.Drawing.Size(321, 32);
+            this.message.Size = new System.Drawing.Size(254, 69);
             this.message.TabIndex = 45;
             this.message.Text = "Do you really want to exit?";
             this.message.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -107,12 +70,12 @@ namespace CricBlast_GUI.UI
             this.exitButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.exitButton.ForeColor = System.Drawing.Color.White;
             this.exitButton.HoverState.Parent = this.exitButton;
-            this.exitButton.Location = new System.Drawing.Point(331, 216);
+            this.exitButton.Location = new System.Drawing.Point(333, 176);
             this.exitButton.Name = "exitButton";
             this.exitButton.ShadowDecoration.Parent = this.exitButton;
             this.exitButton.Size = new System.Drawing.Size(110, 45);
             this.exitButton.TabIndex = 44;
-            this.exitButton.Text = "Exit";
+            this.exitButton.Text = "Yes";
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
             // contributionsButton
@@ -130,12 +93,12 @@ namespace CricBlast_GUI.UI
             this.contributionsButton.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.contributionsButton.ForeColor = System.Drawing.Color.White;
             this.contributionsButton.HoverState.Parent = this.contributionsButton;
-            this.contributionsButton.Location = new System.Drawing.Point(67, 216);
+            this.contributionsButton.Location = new System.Drawing.Point(69, 176);
             this.contributionsButton.Name = "contributionsButton";
             this.contributionsButton.ShadowDecoration.Parent = this.contributionsButton;
             this.contributionsButton.Size = new System.Drawing.Size(232, 45);
             this.contributionsButton.TabIndex = 50;
-            this.contributionsButton.Text = "View Contributions";
+            this.contributionsButton.Text = "View Project Info";
             this.contributionsButton.Click += new System.EventHandler(this.contributionsButton_Click);
             // 
             // BorderlessForm
@@ -144,6 +107,56 @@ namespace CricBlast_GUI.UI
             this.BorderlessForm.DockIndicatorTransparencyValue = 0.6D;
             this.BorderlessForm.TransparentWhileDrag = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label1.Location = new System.Drawing.Point(35, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 21);
+            this.label1.TabIndex = 54;
+            this.label1.Text = "CricBlast";
+            // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.Animated = true;
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(474, 0);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
+            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.TabIndex = 53;
+            // 
+            // cricBlastPicture
+            // 
+            this.cricBlastPicture.BackColor = System.Drawing.Color.Transparent;
+            this.cricBlastPicture.Image = global::CricBlast_GUI.Properties.Resources.Logo;
+            this.cricBlastPicture.Location = new System.Drawing.Point(8, 8);
+            this.cricBlastPicture.Name = "cricBlastPicture";
+            this.cricBlastPicture.Size = new System.Drawing.Size(25, 25);
+            this.cricBlastPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.cricBlastPicture.TabIndex = 52;
+            this.cricBlastPicture.TabStop = false;
+            // 
+            // messageMark
+            // 
+            this.messageMark.Image = global::CricBlast_GUI.Properties.Resources.Error_Mark;
+            this.messageMark.ImageRotate = 0F;
+            this.messageMark.Location = new System.Drawing.Point(90, 62);
+            this.messageMark.Name = "messageMark";
+            this.messageMark.ShadowDecoration.Parent = this.messageMark;
+            this.messageMark.Size = new System.Drawing.Size(80, 80);
+            this.messageMark.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.messageMark.TabIndex = 51;
+            this.messageMark.TabStop = false;
+            // 
             // ExitMessage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -151,11 +164,12 @@ namespace CricBlast_GUI.UI
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(520, 308);
-            this.Controls.Add(this.contributionsButton);
+            this.ClientSize = new System.Drawing.Size(518, 265);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.cricBlastPicture);
+            this.Controls.Add(this.messageMark);
+            this.Controls.Add(this.contributionsButton);
             this.Controls.Add(this.message);
             this.Controls.Add(this.exitButton);
             this.DoubleBuffered = true;
@@ -164,19 +178,20 @@ namespace CricBlast_GUI.UI
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ExitMessage";
             ((System.ComponentModel.ISupportInitialize)(this.cricBlastPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.messageMark)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private System.Windows.Forms.PictureBox cricBlastPicture;
         private System.Windows.Forms.Label message;
         private Guna.UI2.WinForms.Guna2Button exitButton;
         private Guna.UI2.WinForms.Guna2Button contributionsButton;
         private Guna.UI2.WinForms.Guna2BorderlessForm BorderlessForm;
+        private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private System.Windows.Forms.PictureBox cricBlastPicture;
+        private Guna.UI2.WinForms.Guna2PictureBox messageMark;
     }
 }

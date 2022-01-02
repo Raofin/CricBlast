@@ -30,6 +30,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminPanel));
             this.adminSubPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.adminMenuPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
@@ -65,7 +66,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             // adminMenuPanel
             // 
             this.adminMenuPanel.BackColor = System.Drawing.Color.Transparent;
-            this.adminMenuPanel.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Home_Menu;
+            this.adminMenuPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("adminMenuPanel.BackgroundImage")));
             this.adminMenuPanel.Controls.Add(this.guna2CirclePictureBox1);
             this.adminMenuPanel.Controls.Add(this.availabilityIcon);
             this.adminMenuPanel.Controls.Add(this.availability);
@@ -211,7 +212,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.projectDetails.ShadowDecoration.Parent = this.projectDetails;
             this.projectDetails.Size = new System.Drawing.Size(198, 45);
             this.projectDetails.TabIndex = 1;
-            this.projectDetails.Text = "Project Details";
+            this.projectDetails.Text = "Project Info";
             this.projectDetails.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.projectDetails.Click += new System.EventHandler(this.projectDetails_Click);
             // 

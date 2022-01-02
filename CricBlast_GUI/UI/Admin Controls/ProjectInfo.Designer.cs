@@ -1,7 +1,7 @@
 ﻿
 namespace CricBlast_GUI.UI.Admin_Controls
 {
-    partial class ProjectDetails
+    partial class ProjectInfo
     {
         /// <summary> 
         /// Required designer variable.

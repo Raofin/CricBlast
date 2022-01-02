@@ -101,11 +101,11 @@
     <Compile Include="UI\Admin Controls\ManageUser.Designer.cs">
       <DependentUpon>ManageUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\Admin Controls\ProjectDetails.cs">
+    <Compile Include="UI\Admin Controls\ProjectInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI\Admin Controls\ProjectDetails.Designer.cs">
-      <DependentUpon>ProjectDetails.cs</DependentUpon>
+    <Compile Include="UI\Admin Controls\ProjectInfo.Designer.cs">
+      <DependentUpon>ProjectInfo.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\ExitMessage.cs">
       <SubType>Form</SubType>
@@ -281,8 +281,8 @@
     <EmbeddedResource Include="UI\Admin Controls\ManageUser.resx">
       <DependentUpon>ManageUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\Admin Controls\ProjectDetails.resx">
-      <DependentUpon>ProjectDetails.cs</DependentUpon>
+    <EmbeddedResource Include="UI\Admin Controls\ProjectInfo.resx">
+      <DependentUpon>ProjectInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\ExitMessage.resx">
       <DependentUpon>ExitMessage.cs</DependentUpon>

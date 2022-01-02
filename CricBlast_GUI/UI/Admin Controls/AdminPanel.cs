@@ -84,7 +84,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
         {
             if (SelectedMenu == 5) return;
             adminSubPanel.Controls.Clear();
-            adminSubPanel.Controls.Add(value: new ProjectDetails());
+            adminSubPanel.Controls.Add(value: new ProjectInfo());
             ChangeButtonColor(projectDetails, 5);
         }
 
