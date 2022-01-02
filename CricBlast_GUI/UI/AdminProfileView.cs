@@ -6,7 +6,7 @@ using static CricBlast_GUI.Database.Admin;
 
 namespace CricBlast_GUI.UI
 {
-    public partial class AdminView : Form
+    public partial class AdminProfileView : Form
     {
         protected override CreateParams CreateParams
         {
@@ -22,13 +22,13 @@ namespace CricBlast_GUI.UI
         private bool _modifyPhoto;
         private Image _userNewImage = TempUserImage;
 
-        public AdminView()
+        public AdminProfileView()
         {
             InitializeComponent();
             LoadProfile();
         }
 
-        public AdminView(int viewOrModify)
+        public AdminProfileView(int viewOrModify)
         {
             SetStyle(
                 ControlStyles.UserPaint |

@@ -203,7 +203,7 @@ namespace CricBlast_GUI.UI.User_Controls
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = global::CricBlast_GUI.Properties.Resources.PlayingRecords1;
+            this.guna2PictureBox2.Image = global::CricBlast_GUI.Properties.Resources.PlayingRecords;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(459, 245);
             this.guna2PictureBox2.Name = "guna2PictureBox2";

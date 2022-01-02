@@ -62,7 +62,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             try
             {
                 Admin.LoadTempProfile(UserGrid.SelectedCells[1].Value.ToString());
-                new AdminView(2).ShowDialog();
+                new AdminProfileView(2).ShowDialog();
                 Controls.Clear();
                 Controls.Add(new ManageUser());
             }
@@ -77,7 +77,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             try
             {
                 Admin.LoadTempProfile(UserGrid.SelectedCells[1].Value.ToString());
-                new AdminView(1).ShowDialog();
+                new AdminProfileView(1).ShowDialog();
             }
             catch
             {

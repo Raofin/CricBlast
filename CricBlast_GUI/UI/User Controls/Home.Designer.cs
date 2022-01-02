@@ -30,6 +30,7 @@ namespace CricBlast_GUI.UI.User_Controls
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.homeSubPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.menuPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.tournament = new Guna.UI2.WinForms.Guna2Button();
@@ -67,7 +68,7 @@ namespace CricBlast_GUI.UI.User_Controls
             // menuPanel
             // 
             this.menuPanel.BackColor = System.Drawing.Color.Transparent;
-            this.menuPanel.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Home_Menu;
+            this.menuPanel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("menuPanel.BackgroundImage")));
             this.menuPanel.Controls.Add(this.tournament);
             this.menuPanel.Controls.Add(this.availabilityIcon);
             this.menuPanel.Controls.Add(this.availability);
@@ -155,7 +156,7 @@ namespace CricBlast_GUI.UI.User_Controls
             // 
             this.userPhoto.BackColor = System.Drawing.Color.Transparent;
             this.userPhoto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.userPhoto.Image = global::CricBlast_GUI.Properties.Resources.User_Male_GrayBack;
+            this.userPhoto.Image = global::CricBlast_GUI.Properties.Resources.User_Male_WhiteBack;
             this.userPhoto.ImageRotate = 0F;
             this.userPhoto.Location = new System.Drawing.Point(49, 563);
             this.userPhoto.Name = "userPhoto";

@@ -124,7 +124,7 @@ namespace CricBlast_GUI.UI
             // 
             this.userPhoto.BackColor = System.Drawing.Color.Transparent;
             this.userPhoto.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.userPhoto.Image = global::CricBlast_GUI.Properties.Resources.User_Male_GrayBack;
+            this.userPhoto.Image = global::CricBlast_GUI.Properties.Resources.User_Male_WhiteBack;
             this.userPhoto.ImageRotate = 0F;
             this.userPhoto.Location = new System.Drawing.Point(248, 43);
             this.userPhoto.Name = "userPhoto";

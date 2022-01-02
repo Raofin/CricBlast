@@ -202,9 +202,9 @@ namespace CricBlast_GUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap PlayingRecords1 {
+        internal static System.Drawing.Bitmap PlayingRecords {
             get {
-                object obj = ResourceManager.GetObject("PlayingRecords1", resourceCulture);
+                object obj = ResourceManager.GetObject("PlayingRecords", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -295,16 +295,6 @@ namespace CricBlast_GUI.Properties {
         internal static System.Drawing.Bitmap User_Male {
             get {
                 object obj = ResourceManager.GetObject("User_Male", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap User_Male_GrayBack {
-            get {
-                object obj = ResourceManager.GetObject("User_Male_GrayBack", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

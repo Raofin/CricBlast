@@ -78,6 +78,11 @@
     <Compile Include="Database\Account.cs" />
     <Compile Include="Database\Login.cs" />
     <Compile Include="Database\Match.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="UI\Admin Controls\AddUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -216,11 +221,11 @@
     <Compile Include="UI\ChooseTeam.Designer.cs">
       <DependentUpon>ChooseTeam.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\AdminView.cs">
+    <Compile Include="UI\AdminProfileView.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\AdminView.Designer.cs">
-      <DependentUpon>AdminView.cs</DependentUpon>
+    <Compile Include="UI\AdminProfileView.Designer.cs">
+      <DependentUpon>AdminProfileView.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\Info.cs">
       <SubType>Form</SubType>
@@ -337,8 +342,8 @@
     <EmbeddedResource Include="UI\User Controls\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\AdminView.resx">
-      <DependentUpon>AdminView.cs</DependentUpon>
+    <EmbeddedResource Include="UI\AdminProfileView.resx">
+      <DependentUpon>AdminProfileView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\Info.resx">
       <DependentUpon>Info.cs</DependentUpon>
@@ -363,14 +368,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -389,31 +389,7 @@
     <None Include="Resources\User_Male_WhiteBack.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\User_Male_GrayBack.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Bangladesh.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Bangladesh.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\PlayingRecords.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\PlayingRecords1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Shakib.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\India.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Admin.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Logo1.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Logo.png" />
@@ -443,19 +419,7 @@
     <None Include="Resources\User_Female.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Unknown_User_Gray.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Unknown_User_Gray1.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Home_Menu.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Home_Menu1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Blank.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\SubHome.png" />
@@ -483,6 +447,7 @@
   <ItemGroup>
     <Content Include="Libraries\Players.dll" />
     <Content Include="Libraries\Teams.dll" />
+    <None Include="Resources\PlayingRecords.png" />
     <None Include="Resources\Tournament.png" />
     <None Include="Resources\Admin_Gray_Background.png" />
     <None Include="Resources\Trophy.png" />
