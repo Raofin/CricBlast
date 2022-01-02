@@ -16,7 +16,7 @@ namespace CricBlast_GUI.Database
                         $"FROM Users " +
                         $"WHERE Email = '{email}'";
 
-            using (var sqlConnection= new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection= new SqlConnection(ConnectionString.CricBlastDB))
             {
                 using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {
@@ -58,7 +58,7 @@ namespace CricBlast_GUI.Database
             var query = $"DELETE FROM Users " +
                         $"WHERE Email = '{email}'";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
             {
                 using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {

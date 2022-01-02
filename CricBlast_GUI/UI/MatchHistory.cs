@@ -21,7 +21,7 @@ namespace CricBlast_GUI.UI
                         $"WHERE UserId = {Selected.UserDetails[0]} " +
                         $"ORDER BY MatchId DESC";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
             {
                 var sqlDataAdapter = new SqlDataAdapter(query, sqlConnection);
                 var dataTable = new DataTable();
@@ -40,7 +40,7 @@ namespace CricBlast_GUI.UI
                         $"FROM Users " +
                         $"WHERE Id = {Selected.UserDetails[0]}";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
             {
                 using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {

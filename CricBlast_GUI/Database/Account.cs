@@ -12,7 +12,7 @@ namespace CricBlast_GUI.Database
                         $"FROM Users " +
                         $"WHERE Email = '{email}'";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
             {
                 using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {
@@ -28,7 +28,7 @@ namespace CricBlast_GUI.Database
             var query = "INSERT INTO Users (Username, Email, Password, PhoneNumber, Gender, Image, Joined, Played, Won) " +
                         $"VALUES ('{username}', '{email}', '{password}', '{phoneNumber}', '{gender}', @image, '{DateTime.Now}', '0', '0')";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
             {
                 using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {
@@ -45,7 +45,7 @@ namespace CricBlast_GUI.Database
                         $"SET Username = '{username}', Email = '{email}', Password = '{password}', " +
                             $"PhoneNumber = '{phoneNumber}' WHERE Id = '{id}'";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
             {
                 using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {
@@ -64,7 +64,7 @@ namespace CricBlast_GUI.Database
                         $"SET Image = @image " +
                         $"WHERE Id = '{id}'";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
             {
                 using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {

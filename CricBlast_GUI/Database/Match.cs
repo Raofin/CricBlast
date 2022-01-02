@@ -27,7 +27,7 @@ namespace CricBlast_GUI.Database
                         $"SET Played = Played + 1 {win} " +
                         $"WHERE ID = '{Selected.UserDetails[0]}'";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
             {
                 using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {
@@ -44,7 +44,7 @@ namespace CricBlast_GUI.Database
             var query = "INSERT INTO Matches (UserId, UserTeam, Result) " +
                         $"VALUES ('{Selected.UserDetails[0]}', '{Selected.UserTeamName}', '{result}')";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
             {
                 using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {

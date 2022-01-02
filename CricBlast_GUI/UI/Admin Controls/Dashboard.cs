@@ -23,7 +23,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             var query = "SELECT COUNT(id), SUM(Played) " +
                         "FROM Users";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
             {
                 using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {
@@ -41,7 +41,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
 
         private void LoadRecentlyJoined()
         {
-            using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
             {
                 var query = "SELECT TOP 6 Username, Email, Image " +
                             "FROM Users " +

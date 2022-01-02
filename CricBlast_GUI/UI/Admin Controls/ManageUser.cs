@@ -20,7 +20,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
                         "FORMAT (Joined, 'dd/MM/yyyy') as Joined, Played, Won " +
                         "FROM Users";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CrikBlastDB))
+            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
             {
                 using (var sqlDataAdapter = new SqlDataAdapter(query, sqlConnection))
                 {
