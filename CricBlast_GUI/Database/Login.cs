@@ -6,13 +6,33 @@ namespace CricBlast_GUI.Database
 {
     public static class Login
     {
+        public static bool IsDatabaseConnected()
+        {
+            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            {
+                using (var sqlCommand = new SqlCommand("SELECT * FROM Users", sqlConnection))
+                {
+                    try
+                    {
+                        sqlConnection.Open();
+                        sqlCommand.ExecuteReader();
+                        return true;
+                    }
+                    catch
+                    {
+                        return false;
+                    }
+                }
+            }
+        }
+
         public static bool Verify(string nameOrEmail, string password)
         {
             var query = $"SELECT * FROM Users " +
                         $"WHERE (Username = '{nameOrEmail}' OR Email = '{nameOrEmail}') " +
                         $"AND Password = '{password}'";
 
-            using (var sqlConnection= new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
             {
                 using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {
@@ -62,7 +82,7 @@ namespace CricBlast_GUI.Database
 
                 try
                 {
-                    UserImage = ConvertImage.ToImage((byte[]) sqlDataReader["Image"]);
+                    UserImage = ConvertImage.ToImage((byte[])sqlDataReader["Image"]);
                 }
                 catch
                 {

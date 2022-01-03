@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace CricBlast_GUI.UI
 {
-    class Selected
+    public static class Selected
     {
         public static string[] UserDetails = new string[10];
         public static Image UserImage { get; set; }

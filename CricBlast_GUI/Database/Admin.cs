@@ -5,18 +5,18 @@ using CricBlast_GUI.UI;
 
 namespace CricBlast_GUI.Database
 {
-    class Admin
+    public static class Admin
     {
         public static string[] TempUserDetails = new string[10];
         public static Image TempUserImage { get; set; }
-        
+
         public static bool LoadTempProfile(string email)
         {
             var query = $"SELECT * " +
                         $"FROM Users " +
                         $"WHERE Email = '{email}'";
 
-            using (var sqlConnection= new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
             {
                 using (var sqlCommand = new SqlCommand(query, sqlConnection))
                 {

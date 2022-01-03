@@ -3,7 +3,7 @@ using CricBlast_GUI.UI;
 
 namespace CricBlast_GUI.Database
 {
-    public class Match
+    public static class Match
     {
         public static void Play(bool won, string result)
         {

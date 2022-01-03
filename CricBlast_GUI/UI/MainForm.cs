@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using CricBlast_GUI.Database;
 using CricBlast_GUI.UI.User_Controls;
 
 namespace CricBlast_GUI.UI
@@ -13,8 +14,16 @@ namespace CricBlast_GUI.UI
 
         private void GetStarted_Click(object sender, EventArgs e)
         {
-            mainPanel.Controls.Clear();
-            mainPanel.Controls.Add(value: new Welcome());
+            if (Login.IsDatabaseConnected())
+            {
+                mainPanel.Controls.Clear();
+                mainPanel.Controls.Add(value: new Welcome());
+            }
+            else
+            {
+                new MessageBoxOk(2, "The database is not properly connected. Please fix that and try again.")
+                    .ShowDialog();
+            }
         }
 
         private void infoButton_Click(object sender, EventArgs e)
