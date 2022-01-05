@@ -9,6 +9,7 @@ namespace CricBlast_GUI.UI
         public TournamentResult(Image championTeamLogo, string championTeamName)
         {
             InitializeComponent();
+            Icon = Properties.Resources.CricBlast;
             tournamentTitle.Text = Selected.TournamentTitle;
             trophyPicture.Image = Selected.TrophyImage;
             this.championTeamLogo.Image = championTeamLogo;

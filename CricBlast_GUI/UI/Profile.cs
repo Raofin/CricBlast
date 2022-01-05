@@ -25,6 +25,7 @@ namespace CricBlast_GUI.UI
         public Profile()
         {
             InitializeComponent();
+            Icon = Properties.Resources.CricBlast;
             LoadProfile();
         }
 

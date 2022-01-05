@@ -176,7 +176,7 @@ namespace CricBlast_GUI.UI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ExitMessage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ExitMessage";
+            this.Text = "CricBlast";
             ((System.ComponentModel.ISupportInitialize)(this.cricBlastPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.messageMark)).EndInit();
             this.ResumeLayout(false);

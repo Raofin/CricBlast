@@ -21,6 +21,7 @@ namespace CricBlast_GUI.UI
         public Recover()
         {
             InitializeComponent();
+            Icon = Properties.Resources.CricBlast;
         }
 
         private bool _recovered;

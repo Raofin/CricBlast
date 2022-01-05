@@ -13,6 +13,7 @@ namespace CricBlast_GUI.UI
             InitializeComponent();
             LoadUserData();
             LoadMatchHistory();
+            Icon = Properties.Resources.CricBlast;
         }
 
         private void LoadMatchHistory()

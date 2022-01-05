@@ -94,7 +94,7 @@ namespace CricBlast_GUI.UI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Info";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Info";
+            this.Text = "CricBlast";
             ((System.ComponentModel.ISupportInitialize)(this.infoPictureBox)).EndInit();
             this.ResumeLayout(false);
 

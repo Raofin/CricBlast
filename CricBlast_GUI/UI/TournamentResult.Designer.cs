@@ -34,10 +34,10 @@ namespace CricBlast_GUI.UI
             this.championTeamLogo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.tournamentTitle = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.trophyPicture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.label1 = new System.Windows.Forms.Label();
             this.championTeamName = new System.Windows.Forms.Label();
-            this.trophyPicture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.BorderlessForm = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.championTeamLogo)).BeginInit();
@@ -113,6 +113,20 @@ namespace CricBlast_GUI.UI
             this.guna2Panel1.Size = new System.Drawing.Size(523, 656);
             this.guna2Panel1.TabIndex = 35;
             // 
+            // trophyPicture
+            // 
+            this.trophyPicture.BackColor = System.Drawing.Color.Transparent;
+            this.trophyPicture.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
+            this.trophyPicture.ImageRotate = 0F;
+            this.trophyPicture.Location = new System.Drawing.Point(119, 443);
+            this.trophyPicture.Name = "trophyPicture";
+            this.trophyPicture.ShadowDecoration.Parent = this.trophyPicture;
+            this.trophyPicture.Size = new System.Drawing.Size(75, 93);
+            this.trophyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.trophyPicture.TabIndex = 36;
+            this.trophyPicture.TabStop = false;
+            this.trophyPicture.UseTransparentBackground = true;
+            // 
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -154,20 +168,6 @@ namespace CricBlast_GUI.UI
             this.championTeamName.Text = "TEAM NAME";
             this.championTeamName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // trophyPicture
-            // 
-            this.trophyPicture.BackColor = System.Drawing.Color.Transparent;
-            this.trophyPicture.Image = global::CricBlast_GUI.Properties.Resources.Question_Mark;
-            this.trophyPicture.ImageRotate = 0F;
-            this.trophyPicture.Location = new System.Drawing.Point(119, 443);
-            this.trophyPicture.Name = "trophyPicture";
-            this.trophyPicture.ShadowDecoration.Parent = this.trophyPicture;
-            this.trophyPicture.Size = new System.Drawing.Size(75, 93);
-            this.trophyPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.trophyPicture.TabIndex = 36;
-            this.trophyPicture.TabStop = false;
-            this.trophyPicture.UseTransparentBackground = true;
-            // 
             // BorderlessForm
             // 
             this.BorderlessForm.ContainerControl = this;
@@ -193,7 +193,7 @@ namespace CricBlast_GUI.UI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TournamentResult";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TournamentResult";
+            this.Text = "CricBlast";
             ((System.ComponentModel.ISupportInitialize)(this.championTeamLogo)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();

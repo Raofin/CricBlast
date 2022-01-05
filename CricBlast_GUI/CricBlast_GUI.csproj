@@ -46,6 +46,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>CricBlast.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Guna.UI2, Version=2.0.2.5, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.2.5\lib\net40\Guna.UI2.dll</HintPath>
@@ -445,8 +448,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="CricBlast.ico" />
     <Content Include="Libraries\Players.dll" />
     <Content Include="Libraries\Teams.dll" />
+    <None Include="Resources\CricBlast.ico" />
     <None Include="Resources\PlayingRecords.png" />
     <None Include="Resources\Tournament.png" />
     <None Include="Resources\Admin_Gray_Background.png" />

@@ -593,7 +593,7 @@ namespace CricBlast_GUI.UI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Profile";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "CricBlast";
             ((System.ComponentModel.ISupportInitialize)(this.userCirclePicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.genderPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.changeProfilePicture)).EndInit();

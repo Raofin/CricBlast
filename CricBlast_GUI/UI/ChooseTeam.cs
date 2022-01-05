@@ -19,6 +19,7 @@ namespace CricBlast_GUI.UI
         public ChooseTeam()
         {
             InitializeComponent();
+            Icon = Properties.Resources.CricBlast;
         }
 
         private void ChooseTeam_Load(object sender, EventArgs e)

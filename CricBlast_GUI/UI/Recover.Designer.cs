@@ -228,7 +228,7 @@ namespace CricBlast_GUI.UI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Recover";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "CricBlast";
             ((System.ComponentModel.ISupportInitialize)(this.recoveredUserPicture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

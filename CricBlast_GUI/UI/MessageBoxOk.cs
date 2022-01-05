@@ -19,6 +19,7 @@ namespace CricBlast_GUI.UI
         public MessageBoxOk(byte mark, string message, string buttonText = "Ok")
         {
             InitializeComponent();
+            Icon = Properties.Resources.CricBlast;
             TopMost = true;
             this.message.Text = message;
             okButton.Text = buttonText;

@@ -8,6 +8,7 @@ namespace CricBlast_GUI.UI
         public Info()
         {
             InitializeComponent();
+            Icon = Properties.Resources.CricBlast;
         }
 
         private void infoPictureBox_Click(object sender, EventArgs e)

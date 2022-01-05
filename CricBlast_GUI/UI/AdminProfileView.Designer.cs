@@ -593,7 +593,7 @@ namespace CricBlast_GUI.UI
             this.DragControl.TargetControl = this.guna2Panel1;
             this.DragControl.TransparentWhileDrag = false;
             // 
-            // AdminView
+            // AdminProfileView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -617,9 +617,9 @@ namespace CricBlast_GUI.UI
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "AdminView";
+            this.Name = "AdminProfileView";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "CricBlast";
             ((System.ComponentModel.ISupportInitialize)(this.changeProfilePicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.genderPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.userCirclePicture)).EndInit();

@@ -175,7 +175,7 @@ namespace CricBlast_GUI.UI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "MessageBoxYesNo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "CricBlast";
             ((System.ComponentModel.ISupportInitialize)(this.messageMark)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cricBlastPicture)).EndInit();
             this.ResumeLayout(false);

@@ -186,7 +186,7 @@ namespace CricBlast_GUI.UI
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ChooseTeam";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "CricBlast";
             this.Load += new System.EventHandler(this.ChooseTeam_Load);
             ((System.ComponentModel.ISupportInitialize)(this.cricBlastPicture)).EndInit();
             this.ResumeLayout(false);
