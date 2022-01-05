@@ -104,6 +104,9 @@ namespace CricBlast_GUI.UI.User_Controls
             this.tournament.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.tournament.ForeColor = System.Drawing.Color.White;
             this.tournament.HoverState.Parent = this.tournament;
+            this.tournament.Image = global::CricBlast_GUI.Properties.Resources.Icon_Tournament;
+            this.tournament.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tournament.ImageOffset = new System.Drawing.Point(3, 2);
             this.tournament.Location = new System.Drawing.Point(45, 482);
             this.tournament.Name = "tournament";
             this.tournament.ShadowDecoration.Parent = this.tournament;
@@ -111,6 +114,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.tournament.TabIndex = 8;
             this.tournament.Text = "Tournament";
             this.tournament.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tournament.TextOffset = new System.Drawing.Point(2, 0);
             this.tournament.Click += new System.EventHandler(this.tournament_Click);
             // 
             // availabilityIcon
@@ -184,13 +188,17 @@ namespace CricBlast_GUI.UI.User_Controls
             this.customizeTeam.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.customizeTeam.ForeColor = System.Drawing.Color.White;
             this.customizeTeam.HoverState.Parent = this.customizeTeam;
+            this.customizeTeam.Image = global::CricBlast_GUI.Properties.Resources.Icon_CustomizeTeam;
+            this.customizeTeam.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.customizeTeam.ImageOffset = new System.Drawing.Point(3, 1);
             this.customizeTeam.Location = new System.Drawing.Point(45, 342);
             this.customizeTeam.Name = "customizeTeam";
             this.customizeTeam.ShadowDecoration.Parent = this.customizeTeam;
-            this.customizeTeam.Size = new System.Drawing.Size(198, 45);
+            this.customizeTeam.Size = new System.Drawing.Size(215, 45);
             this.customizeTeam.TabIndex = 1;
             this.customizeTeam.Text = "Customize Team";
             this.customizeTeam.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.customizeTeam.TextOffset = new System.Drawing.Point(2, 0);
             this.customizeTeam.Click += new System.EventHandler(this.customizeTeam_Click);
             // 
             // playerStats
@@ -209,6 +217,9 @@ namespace CricBlast_GUI.UI.User_Controls
             this.playerStats.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.playerStats.ForeColor = System.Drawing.Color.White;
             this.playerStats.HoverState.Parent = this.playerStats;
+            this.playerStats.Image = global::CricBlast_GUI.Properties.Resources.Icon_PlayerStats;
+            this.playerStats.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.playerStats.ImageOffset = new System.Drawing.Point(3, 0);
             this.playerStats.Location = new System.Drawing.Point(45, 202);
             this.playerStats.Name = "playerStats";
             this.playerStats.ShadowDecoration.Parent = this.playerStats;
@@ -216,6 +227,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.playerStats.TabIndex = 1;
             this.playerStats.Text = "Player Stats";
             this.playerStats.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.playerStats.TextOffset = new System.Drawing.Point(2, 0);
             this.playerStats.Click += new System.EventHandler(this.playerStats_Click);
             // 
             // playMatch
@@ -234,6 +246,9 @@ namespace CricBlast_GUI.UI.User_Controls
             this.playMatch.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.playMatch.ForeColor = System.Drawing.Color.White;
             this.playMatch.HoverState.Parent = this.playMatch;
+            this.playMatch.Image = global::CricBlast_GUI.Properties.Resources.Icon_Play;
+            this.playMatch.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.playMatch.ImageOffset = new System.Drawing.Point(3, 1);
             this.playMatch.Location = new System.Drawing.Point(45, 412);
             this.playMatch.Name = "playMatch";
             this.playMatch.ShadowDecoration.Parent = this.playMatch;
@@ -241,6 +256,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.playMatch.TabIndex = 1;
             this.playMatch.Text = "Play a Match";
             this.playMatch.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.playMatch.TextOffset = new System.Drawing.Point(2, 0);
             this.playMatch.Click += new System.EventHandler(this.playMatch_Click);
             // 
             // addPlayers
@@ -259,6 +275,9 @@ namespace CricBlast_GUI.UI.User_Controls
             this.addPlayers.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.addPlayers.ForeColor = System.Drawing.Color.White;
             this.addPlayers.HoverState.Parent = this.addPlayers;
+            this.addPlayers.Image = global::CricBlast_GUI.Properties.Resources.Icon_AddUser;
+            this.addPlayers.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.addPlayers.ImageOffset = new System.Drawing.Point(3, 1);
             this.addPlayers.Location = new System.Drawing.Point(45, 272);
             this.addPlayers.Name = "addPlayers";
             this.addPlayers.ShadowDecoration.Parent = this.addPlayers;
@@ -266,6 +285,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.addPlayers.TabIndex = 1;
             this.addPlayers.Text = "Add Players";
             this.addPlayers.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.addPlayers.TextOffset = new System.Drawing.Point(2, 0);
             this.addPlayers.Click += new System.EventHandler(this.addPlayers_Click);
             // 
             // myTeam
@@ -285,6 +305,9 @@ namespace CricBlast_GUI.UI.User_Controls
             this.myTeam.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.myTeam.ForeColor = System.Drawing.Color.White;
             this.myTeam.HoverState.Parent = this.myTeam;
+            this.myTeam.Image = global::CricBlast_GUI.Properties.Resources.Icon_MyTeam;
+            this.myTeam.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.myTeam.ImageOffset = new System.Drawing.Point(3, 1);
             this.myTeam.Location = new System.Drawing.Point(45, 132);
             this.myTeam.Name = "myTeam";
             this.myTeam.ShadowDecoration.Parent = this.myTeam;
@@ -292,6 +315,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.myTeam.TabIndex = 1;
             this.myTeam.Text = "My Team";
             this.myTeam.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.myTeam.TextOffset = new System.Drawing.Point(2, 0);
             this.myTeam.Click += new System.EventHandler(this.myTeam_Click);
             // 
             // logout

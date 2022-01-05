@@ -451,6 +451,15 @@
     <Content Include="CricBlast.ico" />
     <Content Include="Libraries\Players.dll" />
     <Content Include="Libraries\Teams.dll" />
+    <None Include="Resources\Icon_Tournament.png" />
+    <None Include="Resources\Icon_PlayerStats.png" />
+    <None Include="Resources\Icon_Play.png" />
+    <None Include="Resources\Icon_MyTeam.png" />
+    <None Include="Resources\Icon_ManageUser.png" />
+    <None Include="Resources\Icon_Info.png" />
+    <None Include="Resources\Icon_Dashboard.png" />
+    <None Include="Resources\Icon_CustomizeTeam.png" />
+    <None Include="Resources\Icon_AddUser.png" />
     <None Include="Resources\CricBlast.ico" />
     <None Include="Resources\PlayingRecords.png" />
     <None Include="Resources\Tournament.png" />

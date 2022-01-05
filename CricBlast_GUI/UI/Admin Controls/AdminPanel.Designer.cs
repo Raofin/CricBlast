@@ -157,6 +157,9 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.manageUser.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.manageUser.ForeColor = System.Drawing.Color.White;
             this.manageUser.HoverState.Parent = this.manageUser;
+            this.manageUser.Image = global::CricBlast_GUI.Properties.Resources.Icon_ManageUser;
+            this.manageUser.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.manageUser.ImageOffset = new System.Drawing.Point(3, 1);
             this.manageUser.Location = new System.Drawing.Point(45, 365);
             this.manageUser.Name = "manageUser";
             this.manageUser.ShadowDecoration.Parent = this.manageUser;
@@ -164,6 +167,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.manageUser.TabIndex = 1;
             this.manageUser.Text = "Manage Users";
             this.manageUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.manageUser.TextOffset = new System.Drawing.Point(2, 0);
             this.manageUser.Click += new System.EventHandler(this.manageUser_Click);
             // 
             // tournament
@@ -182,6 +186,9 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.tournament.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.tournament.ForeColor = System.Drawing.Color.White;
             this.tournament.HoverState.Parent = this.tournament;
+            this.tournament.Image = global::CricBlast_GUI.Properties.Resources.Icon_Tournament;
+            this.tournament.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tournament.ImageOffset = new System.Drawing.Point(3, 1);
             this.tournament.Location = new System.Drawing.Point(45, 223);
             this.tournament.Name = "tournament";
             this.tournament.ShadowDecoration.Parent = this.tournament;
@@ -189,6 +196,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.tournament.TabIndex = 1;
             this.tournament.Text = "Tournament";
             this.tournament.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.tournament.TextOffset = new System.Drawing.Point(2, 0);
             this.tournament.Click += new System.EventHandler(this.tournaments_Click);
             // 
             // projectDetails
@@ -207,6 +215,9 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.projectDetails.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.projectDetails.ForeColor = System.Drawing.Color.White;
             this.projectDetails.HoverState.Parent = this.projectDetails;
+            this.projectDetails.Image = global::CricBlast_GUI.Properties.Resources.Icon_Info;
+            this.projectDetails.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.projectDetails.ImageOffset = new System.Drawing.Point(3, 1);
             this.projectDetails.Location = new System.Drawing.Point(45, 436);
             this.projectDetails.Name = "projectDetails";
             this.projectDetails.ShadowDecoration.Parent = this.projectDetails;
@@ -214,6 +225,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.projectDetails.TabIndex = 1;
             this.projectDetails.Text = "Project Info";
             this.projectDetails.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.projectDetails.TextOffset = new System.Drawing.Point(2, 0);
             this.projectDetails.Click += new System.EventHandler(this.projectDetails_Click);
             // 
             // addUser
@@ -232,6 +244,9 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.addUser.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.addUser.ForeColor = System.Drawing.Color.White;
             this.addUser.HoverState.Parent = this.addUser;
+            this.addUser.Image = global::CricBlast_GUI.Properties.Resources.Icon_AddUser;
+            this.addUser.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.addUser.ImageOffset = new System.Drawing.Point(3, 1);
             this.addUser.Location = new System.Drawing.Point(45, 294);
             this.addUser.Name = "addUser";
             this.addUser.ShadowDecoration.Parent = this.addUser;
@@ -239,6 +254,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.addUser.TabIndex = 1;
             this.addUser.Text = "Add Users";
             this.addUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.addUser.TextOffset = new System.Drawing.Point(2, 0);
             this.addUser.Click += new System.EventHandler(this.addUser_Click);
             // 
             // dashboard
@@ -258,6 +274,9 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.dashboard.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.dashboard.ForeColor = System.Drawing.Color.White;
             this.dashboard.HoverState.Parent = this.dashboard;
+            this.dashboard.Image = global::CricBlast_GUI.Properties.Resources.Icon_Dashboard;
+            this.dashboard.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dashboard.ImageOffset = new System.Drawing.Point(3, 1);
             this.dashboard.Location = new System.Drawing.Point(45, 152);
             this.dashboard.Name = "dashboard";
             this.dashboard.ShadowDecoration.Parent = this.dashboard;
@@ -265,6 +284,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.dashboard.TabIndex = 1;
             this.dashboard.Text = "Dashboard";
             this.dashboard.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.dashboard.TextOffset = new System.Drawing.Point(2, 0);
             this.dashboard.Click += new System.EventHandler(this.dashboard_Click);
             // 
             // logout
