@@ -30,7 +30,7 @@ namespace CricBlast_GUI.Database
         {
             var query = $"SELECT * FROM Users " +
                         $"WHERE (Username = '{nameOrEmail}' OR Email = '{nameOrEmail}') " +
-                        $"AND Password = '{password}'";
+                        $"AND Password = '{password}' COLLATE SQL_Latin1_General_CP1_CS_AS";
 
             using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
             {

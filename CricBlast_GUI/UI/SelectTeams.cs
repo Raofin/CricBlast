@@ -35,7 +35,7 @@ namespace CricBlast_GUI.UI
                 !newzealandCheckBox.Checked || !pakistanCheckBox.Checked || !southafricaCheckBox.Checked ||
                 !srilankaCheckBox.Checked || !westindiesCheckBox.Checked)
             {
-                new MessageBoxOk(1, "Please select teams properly.").ShowDialog();
+                new MessageBoxOk(1, "Please choose at least eight teams.").ShowDialog();
                 return;
             }
 
