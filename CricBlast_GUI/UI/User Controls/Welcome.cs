@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 using CricBlast_GUI.Database;
 using CricBlast_GUI.UI.Admin_Controls;
@@ -87,13 +88,33 @@ namespace CricBlast_GUI.UI.User_Controls
                 {
                     case true when usernameTextBox.Text.ToLower() == "admin" && passwordTextBox.Text.ToLower() == "admin":
                         Controls.Clear();
-                        new MessageBoxOk(Selected.CheckMark, "You have successfully logged in.").Show();
-                        Controls.Add(new AdminPanel());
+
+                        var threadParameters = new ThreadStart(() =>
+                        {
+                            Invoke((Action)(() =>
+                            {
+                                new MessageBoxOk(Selected.CheckMark, "You have successfully logged in.").Show();
+                                Controls.Add(new AdminPanel());
+                            }));
+                        });
+
+                        var thread = new Thread(threadParameters);
+                        thread.Start();
                         return;
                     case false when Login.Verify(usernameTextBox.Text, passwordTextBox.Text):
-                        new MessageBoxOk(Selected.CheckMark, "You have successfully logged in.").ShowDialog();
                         Controls.Clear();
-                        Controls.Add(new Home());
+
+                        var threadParameters1 = new ThreadStart(() =>
+                        {
+                            Invoke((Action)(() =>
+                            {
+                                new MessageBoxOk(Selected.CheckMark, "You have successfully logged in.").ShowDialog();
+                                Controls.Add(new Home());
+                            }));
+                        });
+
+                        var thread1 = new Thread(threadParameters1);
+                        thread1.Start();
                         return;
                     default:
                         new MessageBoxOk(Selected.ErrorMark, "Bad credentials. Please login again.").ShowDialog();
