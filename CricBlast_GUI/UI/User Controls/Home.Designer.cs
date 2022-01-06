@@ -47,6 +47,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.logoPicture = new System.Windows.Forms.PictureBox();
             this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.DragControl2 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.loading = new System.Windows.Forms.Label();
             this.menuPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.availabilityIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.userPhoto)).BeginInit();
@@ -371,12 +372,25 @@ namespace CricBlast_GUI.UI.User_Controls
             this.DragControl2.TargetControl = this.homeSubPanel;
             this.DragControl2.TransparentWhileDrag = false;
             // 
+            // loading
+            // 
+            this.loading.AutoSize = true;
+            this.loading.BackColor = System.Drawing.Color.Transparent;
+            this.loading.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.loading.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.loading.Location = new System.Drawing.Point(696, 337);
+            this.loading.Name = "loading";
+            this.loading.Size = new System.Drawing.Size(176, 46);
+            this.loading.TabIndex = 19;
+            this.loading.Text = "Loading...";
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.Background;
+            this.Controls.Add(this.loading);
             this.Controls.Add(this.homeSubPanel);
             this.Controls.Add(this.menuPanel);
             this.DoubleBuffered = true;
@@ -389,6 +403,7 @@ namespace CricBlast_GUI.UI.User_Controls
             ((System.ComponentModel.ISupportInitialize)(this.userPhoto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPicture)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -410,5 +425,6 @@ namespace CricBlast_GUI.UI.User_Controls
         private Guna.UI2.WinForms.Guna2Button tournament;
         private Guna.UI2.WinForms.Guna2DragControl DragControl;
         private Guna.UI2.WinForms.Guna2DragControl DragControl2;
+        private System.Windows.Forms.Label loading;
     }
 }

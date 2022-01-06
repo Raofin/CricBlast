@@ -1,5 +1,7 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Drawing;
+using System.Threading;
 using System.Windows.Forms;
 using Guna.UI2.WinForms;
 
@@ -20,65 +22,127 @@ namespace CricBlast_GUI.UI.User_Controls
             usernameLabel.Text = Selected.UserDetails[1];
             userPhoto.Image = Selected.UserImage;
             new ChooseTeam().ShowDialog();
-            homeSubPanel.Controls.Add(value: new MyTeam());
+
+            var threadParameters = new ThreadStart(() =>
+            {
+                Invoke((Action)(() =>
+                {
+                    homeSubPanel.Controls.Add(value: new MyTeam());
+                    loading.Visible = false;
+                }));
+            });
+            var thread = new Thread(threadParameters);
+            thread.Start();
         }
 
         private void myTeam_Click(object sender, EventArgs e)
         {
             if (SelectedMenu == 1) return;
-            homeSubPanel.Controls.Clear();
-            homeSubPanel.Controls.Add(value: new MyTeam());
             ChangeButtonColor(myTeam, 1);
+
+            var threadParameters = new ThreadStart(() =>
+            {
+                Invoke((Action)(() =>
+                {
+                    homeSubPanel.Controls.Add(value: new MyTeam());
+                    loading.Visible = false;
+                }));
+            });
+            var thread = new Thread(threadParameters);
+            thread.Start();
         }
 
         private void playerStats_Click(object sender, EventArgs e)
         {
             if (SelectedMenu == 2) return;
-            homeSubPanel.Controls.Clear();
-            homeSubPanel.Controls.Add(value: new PlayerStats());
             ChangeButtonColor(playerStats, 2);
+
+            var threadParameters = new ThreadStart(() =>
+            {
+                Invoke((Action)(() =>
+                {
+                    homeSubPanel.Controls.Add(value: new PlayerStats());
+                    loading.Visible = false;
+                }));
+            });
+            var thread = new Thread(threadParameters);
+            thread.Start();
         }
 
         private void customizeTeam_Click(object sender, EventArgs e)
         {
             if (SelectedMenu == 3) return;
-            homeSubPanel.Controls.Clear();
-            homeSubPanel.Controls.Add(value: new CustomizeTeam());
             ChangeButtonColor(customizeTeam, 3);
+
+            var threadParameters = new ThreadStart(() =>
+            {
+                Invoke((Action)(() =>
+                {
+                    homeSubPanel.Controls.Add(value: new CustomizeTeam());
+                    loading.Visible = false;
+                }));
+            });
+            var thread = new Thread(threadParameters);
+            thread.Start();
         }
 
         private void addPlayers_Click(object sender, EventArgs e)
         {
             if (SelectedMenu == 4) return;
-            homeSubPanel.Controls.Clear();
-            homeSubPanel.Controls.Add(value: new AddPlayer());
             ChangeButtonColor(addPlayers, 4);
+
+            var threadParameters = new ThreadStart(() =>
+            {
+                Invoke((Action)(() =>
+                {
+                    homeSubPanel.Controls.Add(value: new AddPlayer());
+                    loading.Visible = false;
+                }));
+            });
+            var thread = new Thread(threadParameters);
+            thread.Start();
         }
 
         public void playMatch_Click(object sender, EventArgs e)
         {
             if (SelectedMenu == 5) return;
-            homeSubPanel.Controls.Clear();
-            homeSubPanel.Controls.Add(value: new PlayMatch());
             ChangeButtonColor(playMatch, 5);
+
+            var threadParameters = new ThreadStart(() =>
+            {
+                Invoke((Action)(() =>
+                {
+                    homeSubPanel.Controls.Add(value: new PlayMatch());
+                    loading.Visible = false;
+                }));
+            });
+            var thread = new Thread(threadParameters);
+            thread.Start();
         }
 
         private void tournament_Click(object sender, EventArgs e)
         {
             if (SelectedMenu == 6) return;
-            homeSubPanel.Controls.Clear();
-            if (Selected.Tournament)
-                homeSubPanel.Controls.Add(value: new TournamentPlay());
-            else
-                homeSubPanel.Controls.Add(value: new TournamentPlayError());
-
             ChangeButtonColor(tournament, 6);
+
+            var threadParameters = new ThreadStart(() =>
+            {
+                Invoke((Action)(() =>
+                {
+                    if (Selected.Tournament)
+                        homeSubPanel.Controls.Add(value: new TournamentPlay());
+                    else
+                        homeSubPanel.Controls.Add(value: new TournamentPlayError());
+                    loading.Visible = false;
+                }));
+            });
+            var thread = new Thread(threadParameters);
+            thread.Start();
         }
 
         private void logout_Click(object sender, EventArgs e)
         {
             new MessageBoxYesNo(1, "Are you sure you want to log out?").ShowDialog();
-
             if (!Selected.MessageBoxYesOrNo) return;
 
             clearUserDetails();
@@ -102,6 +166,8 @@ namespace CricBlast_GUI.UI.User_Controls
         private void ChangeButtonColor(Guna2Button button, int changeMenu)
         {
             button.FillColor = Color.FromArgb(246, 161, 47);
+            homeSubPanel.Controls.Clear();
+            loading.Visible = true;
 
             switch (SelectedMenu)
             {

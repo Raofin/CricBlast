@@ -135,6 +135,11 @@ namespace CricBlast_GUI.UI.User_Controls
             passwordRequired.Visible = false;
         }
 
+        private void usernameTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter) login.PerformClick();
+        }
+
         private void passwordTextBox_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter) login.PerformClick();

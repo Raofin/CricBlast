@@ -131,6 +131,7 @@ namespace CricBlast_GUI.UI.User_Controls
             this.usernameTextBox.TabIndex = 1;
             this.usernameTextBox.TextChanged += new System.EventHandler(this.usernameTextBox_TextChanged);
             this.usernameTextBox.Load += new System.EventHandler(this.usernameTextBox_Load);
+            this.usernameTextBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.usernameTextBox_KeyDown);
             // 
             // label3
             // 
