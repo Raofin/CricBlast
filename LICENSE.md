@@ -1,6 +1,6 @@
 BSD 3-Clause License
 
-Copyright (c) `2022`, `Zaid Amin Raofin`
+Copyright (c) `2022`, `Zaid Amin Raofin`  
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
