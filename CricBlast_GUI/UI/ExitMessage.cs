@@ -20,6 +20,7 @@ namespace CricBlast_GUI.UI
         {
             InitializeComponent();
             SystemSounds.Asterisk.Play();
+            FormLocation.CenterToScreen(this);
             Icon = Properties.Resources.CricBlast;
         }
 

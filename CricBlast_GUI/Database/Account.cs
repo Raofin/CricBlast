@@ -1,5 +1,4 @@
-﻿using System;
-using System.Data.SqlClient;
+﻿using System.Data.SQLite;
 using System.Drawing;
 
 namespace CricBlast_GUI.Database
@@ -12,13 +11,13 @@ namespace CricBlast_GUI.Database
                         $"FROM Users " +
                         $"WHERE Email = '{email}'";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqLiteConnection = new SQLiteConnection(ConnectionString.CricBlastDB))
             {
-                using (var sqlCommand = new SqlCommand(query, sqlConnection))
+                using (var sqLiteCommand = new SQLiteCommand(query, sqLiteConnection))
                 {
-                    sqlConnection.Open();
-                    var sqlDataReader = sqlCommand.ExecuteReader();
-                    return sqlDataReader.HasRows;
+                    sqLiteConnection.Open();
+                    var sqLiteDataReader = sqLiteCommand.ExecuteReader();
+                    return sqLiteDataReader.HasRows;
                 }
             }
         }
@@ -26,15 +25,15 @@ namespace CricBlast_GUI.Database
         public static void Create(string username, string email, string password, string phoneNumber, int gender, Image image)
         {
             var query = "INSERT INTO Users (Username, Email, Password, PhoneNumber, Gender, Image, Joined, Played, Won) " +
-                        $"VALUES ('{username}', '{email}', '{password}', '{phoneNumber}', '{gender}', @image, '{DateTime.Now}', '0', '0')";
+                        $"VALUES ('{username}', '{email}', '{password}', '{phoneNumber}', '{gender}', @image, DateTime('now'), '0', '0')";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqLiteConnection = new SQLiteConnection(ConnectionString.CricBlastDB))
             {
-                using (var sqlCommand = new SqlCommand(query, sqlConnection))
+                using (var sqLiteCommand = new SQLiteCommand(query, sqLiteConnection))
                 {
-                    sqlCommand.Parameters.AddWithValue("@image", ConvertImage.ToBytes(image));
-                    sqlConnection.Open();
-                    sqlCommand.ExecuteNonQuery();
+                    sqLiteCommand.Parameters.AddWithValue("@image", ConvertImage.ToBytes(image));
+                    sqLiteConnection.Open();
+                    sqLiteCommand.ExecuteNonQuery();
                 }
             }
         }
@@ -45,15 +44,15 @@ namespace CricBlast_GUI.Database
                         $"SET Username = '{username}', Email = '{email}', Password = '{password}', " +
                             $"PhoneNumber = '{phoneNumber}' WHERE Id = '{id}'";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqLiteConnection = new SQLiteConnection(ConnectionString.CricBlastDB))
             {
-                using (var sqlCommand = new SqlCommand(query, sqlConnection))
+                using (var sqLiteCommand = new SQLiteCommand(query, sqLiteConnection))
                 {
-                    sqlConnection.Open();
-                    sqlCommand.ExecuteNonQuery();
+                    sqLiteConnection.Open();
+                    sqLiteCommand.ExecuteNonQuery();
 
-                    var sqlDataReader = sqlCommand.ExecuteReader();
-                    Login.LoadProfile(sqlDataReader);
+                    var sqLiteDataReader = sqLiteCommand.ExecuteReader();
+                    Login.LoadProfile(sqLiteDataReader);
                 }
             }
         }
@@ -64,16 +63,16 @@ namespace CricBlast_GUI.Database
                         $"SET Image = @image " +
                         $"WHERE Id = '{id}'";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqLiteConnection = new SQLiteConnection(ConnectionString.CricBlastDB))
             {
-                using (var sqlCommand = new SqlCommand(query, sqlConnection))
+                using (var sqLiteCommand = new SQLiteCommand(query, sqLiteConnection))
                 {
-                    sqlCommand.Parameters.AddWithValue("@image", ConvertImage.ToBytes(image));
-                    sqlConnection.Open();
-                    sqlCommand.ExecuteNonQuery();
+                    sqLiteCommand.Parameters.AddWithValue("@image", ConvertImage.ToBytes(image));
+                    sqLiteConnection.Open();
+                    sqLiteCommand.ExecuteNonQuery();
 
-                    var sqlDataReader = sqlCommand.ExecuteReader();
-                    Login.LoadProfile(sqlDataReader);
+                    var sqLiteDataReader = sqLiteCommand.ExecuteReader();
+                    Login.LoadProfile(sqLiteDataReader);
                 }
             }
         }

@@ -19,6 +19,7 @@ namespace CricBlast_GUI.UI
         public MessageBoxYesNo(byte mark, string message)
         {
             InitializeComponent();
+            FormLocation.CenterToScreen(this);
             Icon = Properties.Resources.CricBlast;
 
             this.message.Text = message;

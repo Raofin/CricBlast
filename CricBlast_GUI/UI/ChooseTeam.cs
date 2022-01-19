@@ -19,6 +19,7 @@ namespace CricBlast_GUI.UI
         public ChooseTeam()
         {
             InitializeComponent();
+            FormLocation.CenterToScreen(this);
             Icon = Properties.Resources.CricBlast;
         }
 

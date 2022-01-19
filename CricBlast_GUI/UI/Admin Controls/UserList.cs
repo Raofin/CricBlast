@@ -1,5 +1,5 @@
 ﻿using System.Data;
-using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Windows.Forms;
 using CricBlast_GUI.Database;
 
@@ -18,13 +18,13 @@ namespace CricBlast_GUI.UI.Admin_Controls
             var query = "SELECT Email, Image " +
                         "FROM Users";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqLiteConnection = new SQLiteConnection(ConnectionString.CricBlastDB))
             {
-                using (var sqlDataAdapter = new SqlDataAdapter(query, sqlConnection))
+                using (var sqLiteDataAdapter = new SQLiteDataAdapter(query, sqLiteConnection))
                 {
-                    sqlConnection.Open();
+                    sqLiteConnection.Open();
                     var dataTable = new DataTable();
-                    sqlDataAdapter.Fill(dataTable);
+                    sqLiteDataAdapter.Fill(dataTable);
                     UserPreviewGrid.Columns[0].DataPropertyName = "Image";
                     UserPreviewGrid.Columns[1].DataPropertyName = "Email";
                     UserPreviewGrid.DataSource = dataTable;

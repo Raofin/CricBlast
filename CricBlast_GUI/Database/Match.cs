@@ -1,4 +1,4 @@
-﻿using System.Data.SqlClient;
+﻿using System.Data.SQLite;
 using CricBlast_GUI.UI;
 
 namespace CricBlast_GUI.Database
@@ -27,12 +27,12 @@ namespace CricBlast_GUI.Database
                         $"SET Played = Played + 1 {win} " +
                         $"WHERE ID = '{Selected.UserDetails[0]}'";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqLiteConnection = new SQLiteConnection(ConnectionString.CricBlastDB))
             {
-                using (var sqlCommand = new SqlCommand(query, sqlConnection))
+                using (var sqLiteCommand = new SQLiteCommand(query, sqLiteConnection))
                 {
-                    sqlConnection.Open();
-                    sqlCommand.ExecuteReader();
+                    sqLiteConnection.Open();
+                    sqLiteCommand.ExecuteReader();
                 }
             }
         }
@@ -44,12 +44,12 @@ namespace CricBlast_GUI.Database
             var query = "INSERT INTO Matches (UserId, UserTeam, Result) " +
                         $"VALUES ('{Selected.UserDetails[0]}', '{Selected.UserTeamName}', '{result}')";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqLiteConnection = new SQLiteConnection(ConnectionString.CricBlastDB))
             {
-                using (var sqlCommand = new SqlCommand(query, sqlConnection))
+                using (var sqLiteCommand = new SQLiteCommand(query, sqLiteConnection))
                 {
-                    sqlConnection.Open();
-                    sqlCommand.ExecuteNonQuery();
+                    sqLiteConnection.Open();
+                    sqLiteCommand.ExecuteNonQuery();
                 }
             }
         }

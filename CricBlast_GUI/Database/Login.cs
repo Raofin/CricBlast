@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Data.SqlClient;
+using System.Data.SQLite;
 using static CricBlast_GUI.UI.Selected;
 
 namespace CricBlast_GUI.Database
@@ -8,14 +8,14 @@ namespace CricBlast_GUI.Database
     {
         public static bool IsDatabaseConnected()
         {
-            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqLiteConnection = new SQLiteConnection(ConnectionString.CricBlastDB))
             {
-                using (var sqlCommand = new SqlCommand("SELECT * FROM Users", sqlConnection))
+                using (var sqLiteCommand = new SQLiteCommand("SELECT * FROM Users", sqLiteConnection))
                 {
                     try
                     {
-                        sqlConnection.Open();
-                        sqlCommand.ExecuteReader();
+                        sqLiteConnection.Open();
+                        sqLiteCommand.ExecuteReader();
                         return true;
                     }
                     catch
@@ -30,17 +30,17 @@ namespace CricBlast_GUI.Database
         {
             var query = $"SELECT * FROM Users " +
                         $"WHERE (Username = '{nameOrEmail}' OR Email = '{nameOrEmail}') " +
-                        $"AND Password = '{password}' COLLATE SQL_Latin1_General_CP1_CS_AS";
+                        $"AND Password = '{password}'";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqLiteConnection = new SQLiteConnection(ConnectionString.CricBlastDB))
             {
-                using (var sqlCommand = new SqlCommand(query, sqlConnection))
+                using (var sqLiteCommand = new SQLiteCommand(query, sqLiteConnection))
                 {
-                    sqlConnection.Open();
-                    var sqlDataReader = sqlCommand.ExecuteReader();
+                    sqLiteConnection.Open();
+                    var sqLiteDataReader = sqLiteCommand.ExecuteReader();
 
-                    if (!sqlDataReader.HasRows) return false;
-                    LoadProfile(sqlDataReader);
+                    if (!sqLiteDataReader.HasRows) return false;
+                    LoadProfile(sqLiteDataReader);
                     return true;
                 }
             }
@@ -52,37 +52,37 @@ namespace CricBlast_GUI.Database
                         $"FROM Users " +
                         $"WHERE Email = '{email}'";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqLiteConnection = new SQLiteConnection(ConnectionString.CricBlastDB))
             {
-                using (var sqlCommand = new SqlCommand(query, sqlConnection))
+                using (var sqLiteCommand = new SQLiteCommand(query, sqLiteConnection))
                 {
-                    sqlConnection.Open();
-                    var sqlDataReader = sqlCommand.ExecuteReader();
+                    sqLiteConnection.Open();
+                    var sqLiteDataReader = sqLiteCommand.ExecuteReader();
 
-                    if (!sqlDataReader.HasRows) return false;
-                    LoadProfile(sqlDataReader);
+                    if (!sqLiteDataReader.HasRows) return false;
+                    LoadProfile(sqLiteDataReader);
                     return true;
                 }
             }
         }
 
-        public static void LoadProfile(SqlDataReader sqlDataReader)
+        public static void LoadProfile(SQLiteDataReader sqLiteDataReader)
         {
-            while (sqlDataReader.Read())
+            while (sqLiteDataReader.Read())
             {
-                UserDetails[0] = sqlDataReader["Id"].ToString();
-                UserDetails[1] = sqlDataReader["UserName"].ToString();
-                UserDetails[2] = sqlDataReader["Email"].ToString();
-                UserDetails[3] = sqlDataReader["Password"].ToString();
-                UserDetails[4] = sqlDataReader["PhoneNumber"].ToString();
-                UserDetails[5] = sqlDataReader["Gender"].ToString();
-                UserDetails[6] = Convert.ToDateTime(sqlDataReader["Joined"]).ToString("dd/MM/yyyy");
-                UserDetails[7] = sqlDataReader["Played"].ToString();
-                UserDetails[8] = sqlDataReader["Won"].ToString();
+                UserDetails[0] = sqLiteDataReader["Id"].ToString();
+                UserDetails[1] = sqLiteDataReader["UserName"].ToString();
+                UserDetails[2] = sqLiteDataReader["Email"].ToString();
+                UserDetails[3] = sqLiteDataReader["Password"].ToString();
+                UserDetails[4] = sqLiteDataReader["PhoneNumber"].ToString();
+                UserDetails[5] = sqLiteDataReader["Gender"].ToString();
+                UserDetails[6] = Convert.ToDateTime(sqLiteDataReader["Joined"]).ToString("dd/MM/yyyy");
+                UserDetails[7] = sqLiteDataReader["Played"].ToString();
+                UserDetails[8] = sqLiteDataReader["Won"].ToString();
 
                 try
                 {
-                    UserImage = ConvertImage.ToImage((byte[])sqlDataReader["Image"]);
+                    UserImage = ConvertImage.ToImage((byte[])sqLiteDataReader["Image"]);
                 }
                 catch
                 {

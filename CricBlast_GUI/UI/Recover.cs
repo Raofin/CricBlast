@@ -21,6 +21,7 @@ namespace CricBlast_GUI.UI
         public Recover()
         {
             InitializeComponent();
+            FormLocation.CenterToScreen(this);
             Icon = Properties.Resources.CricBlast;
         }
 

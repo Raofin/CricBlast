@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
-using System.Data.SqlClient;
+using System.Data.SQLite;
+using System.IO;
 using System.Windows.Forms;
 using CricBlast_GUI.Database;
 
@@ -17,16 +18,16 @@ namespace CricBlast_GUI.UI.Admin_Controls
         private void LoadData()
         {
             var query = "SELECT Username, Email, Password, PhoneNumber, Image, " +
-                        "FORMAT (Joined, 'dd/MM/yyyy') as Joined, Played, Won " +
+                        "strftime('%d/%m/%Y', Joined) As Joined, Played, Won " +
                         "FROM Users";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqLiteConnection = new SQLiteConnection(ConnectionString.CricBlastDB))
             {
-                using (var sqlDataAdapter = new SqlDataAdapter(query, sqlConnection))
+                using (var sqLiteDataAdapter = new SQLiteDataAdapter(query, sqLiteConnection))
                 {
-                    sqlConnection.Open();
+                    sqLiteConnection.Open();
                     var dataTable = new DataTable();
-                    sqlDataAdapter.Fill(dataTable);
+                    sqLiteDataAdapter.Fill(dataTable);
 
                     UserGrid.Columns[0].DataPropertyName = "Image";
                     UserGrid.Columns[1].DataPropertyName = "Username";
@@ -83,6 +84,13 @@ namespace CricBlast_GUI.UI.Admin_Controls
             {
                 // ignored
             }
+        }
+
+        private void reset_Click(object sender, EventArgs e)
+        {
+            File.WriteAllBytes(Path.GetTempPath() + @"CricBlast.db", Properties.Resources.CricBlastDB);
+            Controls.Clear();
+            Controls.Add(new ManageUser());
         }
     }
 }

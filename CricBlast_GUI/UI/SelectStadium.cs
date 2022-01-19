@@ -18,6 +18,7 @@ namespace CricBlast_GUI.UI
         public SelectStadium()
         {
             InitializeComponent();
+            FormLocation.CenterToScreen(this);
             Icon = Properties.Resources.CricBlast;
         }
 

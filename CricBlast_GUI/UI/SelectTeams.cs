@@ -18,6 +18,7 @@ namespace CricBlast_GUI.UI
         public SelectTeams()
         {
             InitializeComponent();
+            FormLocation.CenterToScreen(this);
             Icon = Properties.Resources.CricBlast;
             australiaPictureBox.Image = Teams.Team.GetLogo(1);
             bangladeshPictureBox.Image = Teams.Team.GetLogo(2);

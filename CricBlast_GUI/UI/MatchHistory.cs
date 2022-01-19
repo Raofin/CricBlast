@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Data;
-using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Windows.Forms;
 using CricBlast_GUI.Database;
 
@@ -13,6 +13,7 @@ namespace CricBlast_GUI.UI
             InitializeComponent();
             LoadUserData();
             LoadMatchHistory();
+            FormLocation.CenterToScreen(this);
             Icon = Properties.Resources.CricBlast;
         }
 
@@ -22,13 +23,13 @@ namespace CricBlast_GUI.UI
                         $"WHERE UserId = {Selected.UserDetails[0]} " +
                         $"ORDER BY MatchId DESC";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqLiteConnection = new SQLiteConnection(ConnectionString.CricBlastDB))
             {
-                var sqlDataAdapter = new SqlDataAdapter(query, sqlConnection);
+                var sqLiteDataAdapter = new SQLiteDataAdapter(query, sqLiteConnection);
                 var dataTable = new DataTable();
 
-                sqlConnection.Open();
-                sqlDataAdapter.Fill(dataTable);
+                sqLiteConnection.Open();
+                sqLiteDataAdapter.Fill(dataTable);
                 MatchHistoryGrid.Columns[0].DataPropertyName = "UserTeam";
                 MatchHistoryGrid.Columns[1].DataPropertyName = "Result";
                 MatchHistoryGrid.DataSource = dataTable;
@@ -41,18 +42,18 @@ namespace CricBlast_GUI.UI
                         $"FROM Users " +
                         $"WHERE Id = {Selected.UserDetails[0]}";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqLiteConnection = new SQLiteConnection(ConnectionString.CricBlastDB))
             {
-                using (var sqlCommand = new SqlCommand(query, sqlConnection))
+                using (var sqLiteCommand = new SQLiteCommand(query, sqLiteConnection))
                 {
-                    sqlConnection.Open();
-                    var sqlDataReader = sqlCommand.ExecuteReader();
+                    sqLiteConnection.Open();
+                    var sqLiteDataReader = sqLiteCommand.ExecuteReader();
 
-                    while (sqlDataReader.Read())
+                    while (sqLiteDataReader.Read())
                     {
-                        userPhoto.Image = ConvertImage.ToImage((byte[])sqlDataReader["Image"]);
-                        won.Text = sqlDataReader["Won"].ToString();
-                        played.Text = sqlDataReader["Played"].ToString();
+                        userPhoto.Image = ConvertImage.ToImage((byte[])sqLiteDataReader["Image"]);
+                        won.Text = sqLiteDataReader["Won"].ToString();
+                        played.Text = sqLiteDataReader["Played"].ToString();
                     }
                 }
             }

@@ -30,13 +30,13 @@ namespace CricBlast_GUI.UI.Admin_Controls
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dbPanel = new Guna.UI2.WinForms.Guna2Panel();
             this.UserGrid = new Guna.UI2.WinForms.Guna2DataGridView();
             this.User = new System.Windows.Forms.DataGridViewImageColumn();
@@ -51,6 +51,7 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.modify = new Guna.UI2.WinForms.Guna2Button();
             this.delete = new Guna.UI2.WinForms.Guna2Button();
             this.DragControl = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.reset = new Guna.UI2.WinForms.Guna2Button();
             this.dbPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UserGrid)).BeginInit();
             this.SuspendLayout();
@@ -77,22 +78,22 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.UserGrid.AllowUserToOrderColumns = true;
             this.UserGrid.AllowUserToResizeColumns = false;
             this.UserGrid.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.UserGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            this.UserGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle15;
             this.UserGrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.UserGrid.BackgroundColor = System.Drawing.Color.White;
             this.UserGrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.UserGrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.UserGrid.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.EnableWithoutHeaderText;
             this.UserGrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.UserGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.UserGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.UserGrid.ColumnHeadersHeight = 40;
             this.UserGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.User,
@@ -102,14 +103,14 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.Joined,
             this.Played,
             this.Won});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(214)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.UserGrid.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(214)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.UserGrid.DefaultCellStyle = dataGridViewCellStyle21;
             this.UserGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.UserGrid.EnableHeadersVisualStyles = false;
             this.UserGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
@@ -177,8 +178,8 @@ namespace CricBlast_GUI.UI.Admin_Controls
             // Password
             // 
             this.Password.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
-            this.Password.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            this.Password.DefaultCellStyle = dataGridViewCellStyle17;
             this.Password.HeaderText = "PASSWORD";
             this.Password.Name = "Password";
             this.Password.ReadOnly = true;
@@ -187,8 +188,8 @@ namespace CricBlast_GUI.UI.Admin_Controls
             // Joined
             // 
             this.Joined.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
-            this.Joined.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            this.Joined.DefaultCellStyle = dataGridViewCellStyle18;
             this.Joined.HeaderText = "JOINED";
             this.Joined.Name = "Joined";
             this.Joined.ReadOnly = true;
@@ -197,8 +198,8 @@ namespace CricBlast_GUI.UI.Admin_Controls
             // Played
             // 
             this.Played.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Played.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Played.DefaultCellStyle = dataGridViewCellStyle19;
             this.Played.HeaderText = "PLAYED";
             this.Played.Name = "Played";
             this.Played.ReadOnly = true;
@@ -207,8 +208,8 @@ namespace CricBlast_GUI.UI.Admin_Controls
             // Won
             // 
             this.Won.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
-            this.Won.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.Won.DefaultCellStyle = dataGridViewCellStyle20;
             this.Won.HeaderText = "  WON";
             this.Won.Name = "Won";
             this.Won.ReadOnly = true;
@@ -241,10 +242,10 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.viewDetails.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.viewDetails.ForeColor = System.Drawing.Color.White;
             this.viewDetails.HoverState.Parent = this.viewDetails;
-            this.viewDetails.Location = new System.Drawing.Point(598, 605);
+            this.viewDetails.Location = new System.Drawing.Point(709, 605);
             this.viewDetails.Name = "viewDetails";
             this.viewDetails.ShadowDecoration.Parent = this.viewDetails;
-            this.viewDetails.Size = new System.Drawing.Size(180, 45);
+            this.viewDetails.Size = new System.Drawing.Size(159, 45);
             this.viewDetails.TabIndex = 45;
             this.viewDetails.Text = "View Details";
             this.viewDetails.Click += new System.EventHandler(this.viewDetails_Click);
@@ -264,10 +265,10 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.modify.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.modify.ForeColor = System.Drawing.Color.White;
             this.modify.HoverState.Parent = this.modify;
-            this.modify.Location = new System.Drawing.Point(396, 605);
+            this.modify.Location = new System.Drawing.Point(507, 605);
             this.modify.Name = "modify";
             this.modify.ShadowDecoration.Parent = this.modify;
-            this.modify.Size = new System.Drawing.Size(180, 45);
+            this.modify.Size = new System.Drawing.Size(159, 45);
             this.modify.TabIndex = 46;
             this.modify.Text = "Modify";
             this.modify.Click += new System.EventHandler(this.modify_Click);
@@ -288,10 +289,10 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.delete.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.delete.ForeColor = System.Drawing.Color.White;
             this.delete.HoverState.Parent = this.delete;
-            this.delete.Location = new System.Drawing.Point(191, 605);
+            this.delete.Location = new System.Drawing.Point(305, 605);
             this.delete.Name = "delete";
             this.delete.ShadowDecoration.Parent = this.delete;
-            this.delete.Size = new System.Drawing.Size(180, 45);
+            this.delete.Size = new System.Drawing.Size(159, 45);
             this.delete.TabIndex = 47;
             this.delete.Text = "Delete";
             this.delete.Click += new System.EventHandler(this.delete_Click);
@@ -302,12 +303,37 @@ namespace CricBlast_GUI.UI.Admin_Controls
             this.DragControl.TargetControl = this;
             this.DragControl.TransparentWhileDrag = false;
             // 
+            // reset
+            // 
+            this.reset.BackColor = System.Drawing.Color.Transparent;
+            this.reset.BorderRadius = 4;
+            this.reset.CheckedState.Parent = this.reset;
+            this.reset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.reset.CustomImages.Parent = this.reset;
+            this.reset.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.reset.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.reset.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.reset.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.reset.DisabledState.Parent = this.reset;
+            this.reset.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(161)))), ((int)(((byte)(92)))));
+            this.reset.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.reset.ForeColor = System.Drawing.Color.White;
+            this.reset.HoverState.Parent = this.reset;
+            this.reset.Location = new System.Drawing.Point(103, 605);
+            this.reset.Name = "reset";
+            this.reset.ShadowDecoration.Parent = this.reset;
+            this.reset.Size = new System.Drawing.Size(159, 45);
+            this.reset.TabIndex = 48;
+            this.reset.Text = "Reset";
+            this.reset.Click += new System.EventHandler(this.reset_Click);
+            // 
             // ManageUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(44)))), ((int)(((byte)(88)))));
             this.BackgroundImage = global::CricBlast_GUI.Properties.Resources.BackgroundHome;
+            this.Controls.Add(this.reset);
             this.Controls.Add(this.delete);
             this.Controls.Add(this.modify);
             this.Controls.Add(this.viewDetails);
@@ -339,5 +365,6 @@ namespace CricBlast_GUI.UI.Admin_Controls
         private System.Windows.Forms.DataGridViewTextBoxColumn Played;
         private System.Windows.Forms.DataGridViewTextBoxColumn Won;
         private Guna.UI2.WinForms.Guna2DragControl DragControl;
+        private Guna.UI2.WinForms.Guna2Button reset;
     }
 }

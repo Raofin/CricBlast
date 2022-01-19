@@ -25,6 +25,7 @@ namespace CricBlast_GUI.UI
         public AdminProfileView()
         {
             InitializeComponent();
+            FormLocation.CenterToScreen(this);
             Icon = Properties.Resources.CricBlast;
             LoadProfile();
         }

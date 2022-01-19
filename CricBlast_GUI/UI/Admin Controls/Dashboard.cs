@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Data;
-using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Windows.Forms;
 using CricBlast_GUI.Database;
 
@@ -23,17 +23,17 @@ namespace CricBlast_GUI.UI.Admin_Controls
             var query = "SELECT COUNT(id), SUM(Played) " +
                         "FROM Users";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqLiteConnection = new SQLiteConnection(ConnectionString.CricBlastDB))
             {
-                using (var sqlCommand = new SqlCommand(query, sqlConnection))
+                using (var sqLiteCommand = new SQLiteCommand(query, sqLiteConnection))
                 {
-                    sqlConnection.Open();
-                    var sqlDataReader = sqlCommand.ExecuteReader();
+                    sqLiteConnection.Open();
+                    var sqLiteDataReader = sqLiteCommand.ExecuteReader();
 
-                    while (sqlDataReader.Read())
+                    while (sqLiteDataReader.Read())
                     {
-                        totalUsers.Text = sqlDataReader[0].ToString();
-                        totalMatches.Text = sqlDataReader[1].ToString();
+                        totalUsers.Text = sqLiteDataReader[0].ToString();
+                        totalMatches.Text = sqLiteDataReader[1].ToString();
                     }
                 }
             }
@@ -41,19 +41,20 @@ namespace CricBlast_GUI.UI.Admin_Controls
 
         private void LoadRecentlyJoined()
         {
-            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqLiteConnection = new SQLiteConnection(ConnectionString.CricBlastDB))
             {
-                var query = "SELECT TOP 6 Username, Email, Image " +
+                var query = "SELECT Username, Email, Image " +
                             "FROM Users " +
-                            "ORDER BY ID DESC";
+                            "ORDER BY ID DESC " +
+                            "LIMIT 6";
 
-                using (var sqlCommand = new SqlCommand(query, sqlConnection))
+                using (var sqLiteCommand = new SQLiteCommand(query, sqLiteConnection))
                 {
-                    sqlConnection.Open();
-                    var sqlDataReader = sqlCommand.ExecuteReader();
+                    sqLiteConnection.Open();
+                    var sqLiteDataReader = sqLiteCommand.ExecuteReader();
 
                     var dataTable = new DataTable();
-                    dataTable.Load(sqlDataReader);
+                    dataTable.Load(sqLiteDataReader);
 
                     user1Name.Text = dataTable.Rows[0]["UserName"].ToString();
                     user1Email.Text = dataTable.Rows[0]["Email"].ToString();

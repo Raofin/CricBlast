@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Data.SqlClient;
+using System.Data.SQLite;
 using System.Drawing;
 using CricBlast_GUI.UI;
 
@@ -16,30 +16,30 @@ namespace CricBlast_GUI.Database
                         $"FROM Users " +
                         $"WHERE Email = '{email}'";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqLiteConnection = new SQLiteConnection(ConnectionString.CricBlastDB))
             {
-                using (var sqlCommand = new SqlCommand(query, sqlConnection))
+                using (var sqLiteCommand = new SQLiteCommand(query, sqLiteConnection))
                 {
-                    sqlConnection.Open();
-                    var sqlDataReader = sqlCommand.ExecuteReader();
+                    sqLiteConnection.Open();
+                    var sqLiteDataReader = sqLiteCommand.ExecuteReader();
 
-                    if (!sqlDataReader.HasRows) return false;
+                    if (!sqLiteDataReader.HasRows) return false;
 
-                    while (sqlDataReader.Read())
+                    while (sqLiteDataReader.Read())
                     {
-                        TempUserDetails[0] = sqlDataReader["Id"].ToString();
-                        TempUserDetails[1] = sqlDataReader["UserName"].ToString();
-                        TempUserDetails[2] = sqlDataReader["Email"].ToString();
-                        TempUserDetails[3] = sqlDataReader["Password"].ToString();
-                        TempUserDetails[4] = sqlDataReader["PhoneNumber"].ToString();
-                        TempUserDetails[5] = sqlDataReader["Gender"].ToString();
-                        TempUserDetails[6] = Convert.ToDateTime(sqlDataReader["Joined"]).ToString("dd/MM/yyyy");
-                        TempUserDetails[7] = sqlDataReader["Played"].ToString();
-                        TempUserDetails[8] = sqlDataReader["Won"].ToString();
+                        TempUserDetails[0] = sqLiteDataReader["Id"].ToString();
+                        TempUserDetails[1] = sqLiteDataReader["UserName"].ToString();
+                        TempUserDetails[2] = sqLiteDataReader["Email"].ToString();
+                        TempUserDetails[3] = sqLiteDataReader["Password"].ToString();
+                        TempUserDetails[4] = sqLiteDataReader["PhoneNumber"].ToString();
+                        TempUserDetails[5] = sqLiteDataReader["Gender"].ToString();
+                        TempUserDetails[6] = Convert.ToDateTime(sqLiteDataReader["Joined"]).ToString("dd/MM/yyyy");
+                        TempUserDetails[7] = sqLiteDataReader["Played"].ToString();
+                        TempUserDetails[8] = sqLiteDataReader["Won"].ToString();
 
                         try
                         {
-                            TempUserImage = ConvertImage.ToImage((byte[])sqlDataReader["Image"]);
+                            TempUserImage = ConvertImage.ToImage((byte[])sqLiteDataReader["Image"]);
                         }
                         catch
                         {
@@ -58,12 +58,12 @@ namespace CricBlast_GUI.Database
             var query = $"DELETE FROM Users " +
                         $"WHERE Email = '{email}'";
 
-            using (var sqlConnection = new SqlConnection(ConnectionString.CricBlastDB))
+            using (var sqLiteConnection = new SQLiteConnection(ConnectionString.CricBlastDB))
             {
-                using (var sqlCommand = new SqlCommand(query, sqlConnection))
+                using (var sqLiteCommand = new SQLiteCommand(query, sqLiteConnection))
                 {
-                    sqlConnection.Open();
-                    sqlCommand.ExecuteReader();
+                    sqLiteConnection.Open();
+                    sqLiteCommand.ExecuteReader();
                 }
             }
         }
