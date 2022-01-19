@@ -1,4 +1,4 @@
-<h1 align="center">Download the project from <span><a href="#">Releases</a></span></h1>
+<h1 align="center">Download the project from <span><a href="https://github.com/Raofin/CricBlast/releases">Releases</a></span></h1>
 
 <br/>
 <p align= "center">
