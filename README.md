@@ -5,10 +5,10 @@
 </p>
 
 ## How to Run
-* **Standalone Executable:** Does not require any configuration. Simply download the [`CricBlast.exe`](https://github.com/Raofin/CricBlast/releases/download/v1.0.0/CricBlast.exe) and run!
+* **Standalone Executable:** Does not require any configuration. Simply download the [`CricBlast.exe`](https://github.com/Raofin/CricBlast/releases/download/v1.0.1/CricBlast.exe) and run!
 * **Source Code:**
     1. Clone the repository
-    2. Import the database backup ([`CricBlast.bacpac`](https://github.com/Raofin/CricBlast/releases/download/v1.0.0/CricBlast.bacpac)) file into **Microsoft SQL Server**
+    2. Import the database backup ([`CricBlast.bacpac`](https://github.com/Raofin/CricBlast/releases/download/v1.0.1/CricBlast.bacpac)) file into **Microsoft SQL Server**
      <img src="https://raofin.github.io/r/img/CricBlast/Tut-1.png" width="690"><br/>
     3. Enter your server name into `App.config`
      <img src="https://raofin.github.io/r/img/CricBlast/Tut-2.png" width="690"><br/>
